@@ -3,7 +3,7 @@
 ## Dev
 
 ```
-hivemind
+yarn start
 ```
 
 ## Pro
