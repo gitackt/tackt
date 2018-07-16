@@ -44,7 +44,7 @@ class ProfileComponent extends Component {
 
             技術<br/>
             Python, Django, Rails, Node, React, React-native, Mysql, Nginx, Docker, Aws,
-            Affinty Designer
+            Affinty Designer, Clip Studio
 
             <br/>
             <br/>
@@ -59,6 +59,47 @@ class ProfileComponent extends Component {
             生年月日　     1997年6月30日<br/>
             Email        git.tackt@gmail.com<br/>
             Ethereum     0x9ddb22480bd6f3d56de73457fe657520d5da6693<br/>
+
+            <a
+              href="https://www.facebook.com/profile.php?id=100013371464347"
+              target="_blank"
+            >
+            <img
+              style={{ position: 'relative', width: '60px', height: '20px', marginTop: '30px', marginLeft: '5px', marginRight: '5px'  }}
+              src="/facebook.png"
+              alt={'facebook'}
+            />
+            </a>
+            <a
+              href="https://twitter.com/picos_tackt"
+              target="_blank"
+            >
+            <img
+              style={{ position: 'relative', width: '60px', height: '20px', marginTop: '30px', marginLeft: '5px', marginRight: '5px'  }}
+              src="/twitter.png"
+                alt={'twitter'}
+            />
+            </a>
+            <a
+              href="https://github.com/gitackt/tackt"
+              target="_blank"
+            >
+            <img
+              style={{ position: 'relative', width: '60px', height: '20px', marginTop: '30px', marginLeft: '5px', marginRight: '5px'  }}
+              src="/github.png"
+              alt={'github'}
+            />
+            </a>
+            <a
+              href="https://valu.is/tackt3"
+              target="_blank"
+            >
+            <img
+                style={{ position: 'relative', width: '60px', height: '20px', marginTop: '30px', marginLeft: '5px', marginRight: '5px' }}
+              src="/valu.png"
+              alt={'valu'}
+            />
+            </a>
           </p>
           </Grid>
           <Grid item xs={12} md={2} />
