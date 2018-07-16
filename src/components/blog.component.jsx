@@ -10,8 +10,14 @@ class BlogComponent extends Component {
 
   render() {
     return (
-      <div className={styles.root} style={{ height: '300px' }}>
+      <div className={styles.root} style={{ position: 'relative', top: -95, padding: '30px', height: '100%' }}>
         <h2>blog</h2>
+        <a
+          href="https://monetizealchemist.com"
+          target="_blank"
+        >
+          https://monetizealchemist.com
+        </a>
       </div>
     );
   }
