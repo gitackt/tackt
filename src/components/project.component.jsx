@@ -10,7 +10,7 @@ class ProjectComponent extends Component {
 
   render() {
     return (
-      <div className={styles.root} style={{ height: '300px' }}>
+      <div className={styles.root} style={{ position: 'relative', top: -95, padding: '30px', height: '100%' }}>
         <h2>projects</h2>
       </div>
     );
