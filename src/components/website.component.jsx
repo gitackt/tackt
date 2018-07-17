@@ -14,7 +14,7 @@ class WebsiteComponent extends Component {
       <div className={styles.root} style={{ position: 'relative', top: -95, padding: '30px', height: '100%' }}>
         <h2>websites</h2>
         <Grid container spacing={24} justify={'center'}>
-          <Grid item xs={12} md={3} style={{ textAlign: 'center' }}>
+          <Grid item xs={12} md={3} style={{ textAlign: 'center', marginBottom: '30px', marginTop: '30px' }}>
             <img
               style={{ position: 'relative', width: '250px', height: 'auto', borderRadius: '20px' }}
               src="/babelbubble.png"
@@ -31,7 +31,7 @@ class WebsiteComponent extends Component {
               https://babel-bubble.com
             </a>
           </Grid>
-          <Grid item xs={12} md={3} style={{ textAlign: 'center' }}>
+          <Grid item xs={12} md={3} style={{ textAlign: 'center', marginBottom: '30px', marginTop: '30px' }}>
             <img
               style={{ position: 'relative', width: '250px', height: 'auto', borderRadius: '20px' }}
               src="/vcu.png"
@@ -48,7 +48,7 @@ class WebsiteComponent extends Component {
               https://v-cu.com
           </a>
           </Grid>
-          <Grid item xs={12} md={3} style={{ textAlign: 'center' }}>
+          <Grid item xs={12} md={3} style={{ textAlign: 'center', marginBottom: '30px', marginTop: '30px' }}>
             <img
               style={{ position: 'relative', width: '250px', height: 'auto', borderRadius: '20px' }}
               src="/bug.png"

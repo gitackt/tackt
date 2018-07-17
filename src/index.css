@@ -1,10 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Playfair Display SC', serif;
-  /* font-family: 'Prata', serif;
-  font-family: 'Vidaloka', serif;
-  font-family: 'Rufina', serif; */
+  font-family: helvetica, arial, 'hiragino kaku gothic pro', 'ms pgothic', sans-serif;
 }
 
 h1 {
@@ -13,6 +10,11 @@ h1 {
 
 h2 {
   font-size: 45px;
+  font-family: 'Playfair Display SC','hiragino kaku gothic pro','ms pgothic', serif;
+}
+
+h3 {
+  font-family: 'hiragino kaku gothic pro','ms pgothic', 'Playfair Display SC', serif;
 }
 
 p {

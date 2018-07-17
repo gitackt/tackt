@@ -11,7 +11,7 @@ class ProfileComponent extends Component {
 
   render() {
     return (
-      <div className={styles.root} style={{ position: 'relative', top: -95, padding: '80px', paddingBottom: '120px', height: '100%', background: '#1D1E19', color: 'white' }}>
+      <div className={styles.root} style={{ position: 'relative', top: -95, padding: '30px', paddingTop: '30px', paddingBottom: '120px', height: '100%', background: '#1D1E19', color: 'white' }}>
         <h2>profile</h2>
         <Grid container spacing={5}>
           <Grid item xs={12} md={2}/>
@@ -65,7 +65,7 @@ class ProfileComponent extends Component {
               target="_blank"
             >
             <img
-              style={{ position: 'relative', width: '60px', height: '20px', marginTop: '30px', marginLeft: '5px', marginRight: '5px'  }}
+              style={{ position: 'relative', width: '90px', height: '32px', marginTop: '30px', marginLeft: '5px', marginRight: '5px'  }}
               src="/facebook.png"
               alt={'facebook'}
             />
@@ -75,7 +75,7 @@ class ProfileComponent extends Component {
               target="_blank"
             >
             <img
-              style={{ position: 'relative', width: '60px', height: '20px', marginTop: '30px', marginLeft: '5px', marginRight: '5px'  }}
+              style={{ position: 'relative', width: '90px', height: '32px', marginTop: '30px', marginLeft: '5px', marginRight: '5px'  }}
               src="/twitter.png"
                 alt={'twitter'}
             />
@@ -85,7 +85,7 @@ class ProfileComponent extends Component {
               target="_blank"
             >
             <img
-              style={{ position: 'relative', width: '60px', height: '20px', marginTop: '30px', marginLeft: '5px', marginRight: '5px'  }}
+              style={{ position: 'relative', width: '90px', height: '32px', marginTop: '30px', marginLeft: '5px', marginRight: '5px'  }}
               src="/github.png"
               alt={'github'}
             />
@@ -95,7 +95,7 @@ class ProfileComponent extends Component {
               target="_blank"
             >
             <img
-                style={{ position: 'relative', width: '60px', height: '20px', marginTop: '30px', marginLeft: '5px', marginRight: '5px' }}
+              style={{ position: 'relative', width: '90px', height: '32px', marginTop: '30px', marginLeft: '5px', marginRight: '5px' }}
               src="/valu.png"
               alt={'valu'}
             />

@@ -15,11 +15,11 @@ class App extends Component {
     return (
       <div className="App">
         <JumbotronComponent />
-        <img
+        {/* <img
           style={{ position: 'relative', width: '100%', height: '40px', top: '-55px', zIndex: '10000' }}
           src="/drop.png"
           alt={'drop'}
-        />
+        /> */}
         <ProfileComponent />
         <img
           style={{ position: 'relative', width: '100%', height: '40px', top: '-130px'}}

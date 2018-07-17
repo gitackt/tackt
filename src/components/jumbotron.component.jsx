@@ -6,7 +6,7 @@ class JumbotronComponent extends Component {
     return (
       <div 
         // style={{ position: 'relative', top: -55, paddingTop: '200px', height: '450px', backgroundImage: `url('/background.jpg')`, backgroundSize: 'cover', color: 'white', backgroundPosition: 'center center' }}
-        style={{ position: 'relative', top: -55, paddingTop: '210px', height: '440px' }}
+        style={{ position: 'relative', top: -55, paddingTop: '230px', height: '460px' }}
       >
         <h1>
           <img
