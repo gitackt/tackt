@@ -10,7 +10,7 @@ class AppComponent extends Component {
 
   render() {
     return (
-      <div className={styles.root} style={{ position: 'relative', top: -95, padding: '30px', height: '100%', background: '#1D1E19', color: 'white' }}>
+      <div className={styles.root} style={{ position: 'relative', top: -95, padding: '30px', height: '100%', background: '#2a2929', color: 'white' }}>
         <h2>apps</h2>
       </div>
     );
