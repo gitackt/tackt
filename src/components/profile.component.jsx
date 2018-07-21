@@ -18,49 +18,21 @@ class ProfileComponent extends Component {
           <Grid item xs={12} md={3} style={{ textAlign: 'center' }}>
             <div>
               <img
-                style={{ position: 'relative', width: '200px', height: '200px', borderRadius: '100px' }}
+                style={{ position: 'relative', width: '100px', height: '100px', borderRadius: '100px' }}
                 src="/profile.jpg"
                 alt={'Tackt Mitsuhashi'}
               />
-              <h3 style={{ fontSize: '27px' }}>三橋拓人</h3>
-              <h4 style={{ fontSize: '17px' }}>Tackt Mitsuhashi</h4>
+              <h3 style={{ fontSize: '20px' }}>三橋拓人</h3>
+              <h4 style={{ fontSize: '13px' }}>Tackt Mitsuhashi</h4>
             </div>
           </Grid>
-          <Grid item xs={12} md={5} style={{ textAlign: 'left' }}>
+          <Grid item xs={12} md={5} style={{ fontSize: '11px', textAlign: 'left' }}>
           <p>
             自己紹介<br/>
             Web開発、アプリ開発、Bot開発、デザイン制作、イラスト制作、漫画制作、記事制作、アイテム制作やってます！
         
             <br/>
             <br/>
-            
-            <div style={{ fontSize: '10px', color: 'rgb(149, 149, 149)' }}>
-            経歴<br/>
-            2016 ~           明治大学 商学部<br/>
-            2017 ~ 2018      株式会社Whatzmoney<br/>
-            2018 ~           株式会社MICIN 
-            
-            <br/>
-            <br/>
-
-            技術<br/>
-            Python, Django, Rails, Node, React, React-native, Mysql, Nginx, Docker, Aws,
-            Affinty Designer, Clip Studio
-
-            <br/>
-            <br/>
-            
-            資格<br/>
-            {/* 証券アナリスト, FP */}
-  
-            <br />
-            <br/>
-            
-            詳細<br/>
-            生年月日　     1997年6月30日<br/>
-            Email        git.tackt@gmail.com<br/>
-            Ethereum     0x9ddb22480bd6f3d56de73457fe657520d5da6693<br/>
-            </div>
 
             <a
               href="https://www.facebook.com/profile.php?id=100013371464347"

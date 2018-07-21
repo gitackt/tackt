@@ -18,12 +18,12 @@ class LandingComponent extends Component {
       <div>
         <NavigationComponent />
         <JumbotronComponent />
-        <ProfileComponent />
+        {/* <ProfileComponent /> */}
         <WebsiteComponent />
+        <BlogComponent />
         <AppComponent />
         <ProjectComponent />
         <WorkComponent />
-        <BlogComponent />
         <FooterComponent />
       </div>
     );

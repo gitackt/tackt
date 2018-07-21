@@ -30,6 +30,34 @@ class SmallProfileComponent extends Component {
 
             <br />
 
+            <div style={{ fontSize: '10px', color: 'rgb(149, 149, 149)',textAlign: 'left' }}>
+            経歴<br/>
+            2016 ~           明治大学 商学部<br/>
+            2017 ~ 2018      株式会社Whatzmoney<br/>
+            2018 ~           株式会社MICIN 
+            
+            <br/>
+            <br/>
+
+            技術<br/>
+            Python, Django, Rails, Node, React, React-native, Mysql, Nginx, Docker, Aws,
+            Affinty Designer, Clip Studio
+
+            <br/>
+            <br/>
+            
+            {/* 資格<br/> */}
+                <br />
+            {/* 証券アナリスト, FP */}
+
+                生年月日　     1997年6月30日<br />
+                Email        git.tackt@gmail.com<br />
+                Ethereum     0x9ddb22480bd6f3d56de73457fe657520d5da6693<br />
+
+  
+            <br />
+            <br/>
+            </div>
             <a
               href="https://www.facebook.com/profile.php?id=100013371464347"
               target="_blank"
