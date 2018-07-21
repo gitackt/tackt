@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import ProfileComponent from './components/profile.component';
 import JumbotronComponent from './components/jumbotron.component';
@@ -9,29 +9,36 @@ import ProjectComponent from './components/project.component';
 import BlogComponent from './components/blog.component';
 import WorkComponent from './components/work.component';
 import FooterComponent from './components/footer.component';
+import NavigationComponent from './components/navi.component';
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 
-class App extends Component {
+class LandingComponent extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
+        <NavigationComponent />
         <JumbotronComponent />
-        {/* <img
-          style={{ position: 'relative', width: '100%', height: '40px', top: '-55px', zIndex: '10000' }}
-          src="/drop.png"
-          alt={'drop'}
-        /> */}
         <ProfileComponent />
-        <img
-          style={{ position: 'relative', width: '100%', height: '40px', top: '-130px'}}
-          src="/wave.png"
-          alt={'wave'}
-        />
         <WebsiteComponent />
         <AppComponent />
         <ProjectComponent />
         <WorkComponent />
         <BlogComponent />
         <FooterComponent />
+      </div>
+    );
+  }
+}
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+      <Router>
+        <Switch>
+          <Route exact={true} path="/" component={LandingComponent} />
+        </Switch>
+      </Router>
       </div>
     );
   }
