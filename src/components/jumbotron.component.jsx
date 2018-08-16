@@ -19,12 +19,12 @@ class JumbotronComponent extends Component {
 
     return (
       <div 
-        style={{ position: 'relative', top: -55, paddingTop: '80px', paddingBottom: '100px', height: '470px', backgroundImage: `url('/bubble.png')`, backgroundSize: 'cover', color: 'white', backgroundPosition: 'center center', marginBottom: '20px' }}
+        style={{ position: 'relative', top: -85, paddingTop: '250px', paddingBottom: '70px', height: '420px', backgroundImage: `url('/bubble.png')`, backgroundSize: 'cover', color: 'white', backgroundPosition: 'center center', marginBottom: '20px' }}
         // style={{ position: 'relative', top: -55, paddingTop: '230px', height: '470px' }}
       >
         <h1>
           <img
-            style={{ position: 'relative', width: '170px', height: 'auto' }}
+            style={{ position: 'relative', width: '210px', height: 'auto' }}
             src="/tackt_logo.png"
             alt={'tackt'}
           />
@@ -33,7 +33,7 @@ class JumbotronComponent extends Component {
         <div
           style={{ width: '300px', marginLeft: 'auto', paddingTop: '20px', marginRight: 'auto' }}
         >
-          <Slider {...settings}>
+          {/* <Slider {...settings}>
             <div>
               <img
                 style={{ position: 'relative', width: '300px', height: 'auto', borderRadius: '30px' }}
@@ -48,35 +48,7 @@ class JumbotronComponent extends Component {
                 alt={'vcu'}
               />
             </div>
-            <div>
-              <img
-                style={{ position: 'relative', width: '300px', height: 'auto', borderRadius: '30px' }}
-                src="/vcu.png"
-                alt={'vcu'}
-              />
-            </div>
-            <div>
-              <img
-                style={{ position: 'relative', width: '300px', height: 'auto', borderRadius: '30px' }}
-                src="/vcu.png"
-                alt={'vcu'}
-              />
-            </div>
-            <div>
-              <img
-                style={{ position: 'relative', width: '300px', height: 'auto', borderRadius: '30px' }}
-                src="/vcu.png"
-                alt={'vcu'}
-              />
-            </div>
-            <div>
-              <img
-                style={{ position: 'relative', width: '300px', height: 'auto', borderRadius: '30px' }}
-                src="/vcu.png"
-                alt={'vcu'}
-              />
-            </div>
-          </Slider>
+          </Slider> */}
         </div>
 
         <br />

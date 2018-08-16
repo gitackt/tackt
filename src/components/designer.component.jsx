@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 const styles = {
   root: {
@@ -10,14 +11,16 @@ class DesignerComponent extends Component {
 
   render() {
     return (
-      <div className={styles.root} style={{ position: 'relative', top: -95, padding: '30px', height: '100%', background: 'white', color: '#2a2929' }}>
+      <div className={styles.root} style={{ position: 'relative', height: '100%', background: 'white', color: '#2a2929' }}>
+        <Link to="/designer" style={{ textDecoration: 'none' }}>
         <h2>
           <img
-            style={{ position: 'relative', width: '300px', height: 'auto', borderRadius: '20px', marginTop: '100px' }}
+            style={{ position: 'relative', width: '270px', height: 'auto', borderRadius: '20px', marginTop: '100px' }}
             src="/designer.png"
             alt={'designer'}
           />
         </h2>
+        </Link>
       </div>
     );
   }

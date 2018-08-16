@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
+// import request from 'sync-request';
+import { Link } from 'react-router-dom';
 
 const styles = {
   root: {
@@ -9,30 +11,37 @@ const styles = {
 
 class BlogComponent extends Component {
 
+  // constructor(props) {
+  //   super(props);
+
+  //   this.state = {
+  //     posts: [],
+  //   };
+  // }
+
+  // componentWillMount() {
+  //   const url = "https://monetizealchemist.com/wp-json/wp/v2/posts?_embed&filter[posts_per_page]=5%";
+
+  //   const response = JSON.parse(request('GET', url).getBody('utf8'));
+  //   this.setState({ posts: response })
+
+  //   console.warn(this.state.posts);
+    
+  // }
+
   render() {
+
     return (
-      <div className={styles.root} style={{ position: 'relative', top: -95, padding: '30px', height: '100%' }}>
+      <div className={styles.root} style={{ position: 'relative', height: '100%' }}>
+        <Link to="/blog" style={{ textDecoration: 'none' }}>
         <h2>
           <img
-            style={{ position: 'relative', width: '300px', height: 'auto', borderRadius: '20px', marginTop: '100px' }}
+            style={{ position: 'relative', width: '270px', height: 'auto', borderRadius: '20px', marginTop: '100px' }}
             src="/blog.png"
             alt={'blog'}
           />
         </h2>
-        <Grid container spacing={24} justify={'center'}>
-          <Grid item xs={12} md={12} style={{ textAlign: 'center', marginBottom: '10px', marginTop: '10px', paddingLeft: '20px', paddingRight: '20px' }}>
-            <a
-              href="https://monetizealchemist.com/"
-              target="_blank"
-            >
-              <h3>人生は運ゲー</h3>
-            </a>
-            {/* <p>
-              花などの植物の関する知識をまとめたカテゴリです。
-            </p> */}
-          </Grid>
-
-        </Grid>
+        </Link>
       </div>
     );
   }

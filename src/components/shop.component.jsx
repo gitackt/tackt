@@ -7,18 +7,19 @@ const styles = {
   },
 };
 
-class ComicComponent extends Component {
+class ShopComponent extends Component {
 
   render() {
     return (
       <div className={styles.root} style={{ position: 'relative', height: '100%', background: 'white', color: '#2a2929' }}>
-        <Link to="/comic" style={{ textDecoration: 'none' }}>
+        <Link to="/shop" style={{ textDecoration: 'none' }}>
         <h2>
           <img
             style={{ position: 'relative', width: '270px', height: 'auto', borderRadius: '20px', marginTop: '100px' }}
-            src="/comic.png"
-            alt={'comic'}
+            src="/shop.png"
+            alt={'shop'}
           />
+          {/* https://tackt.official.ec/ */}
         </h2>
         </Link>
       </div>
@@ -26,4 +27,4 @@ class ComicComponent extends Component {
   }
 }
 
-export default ComicComponent;
+export default ShopComponent;
