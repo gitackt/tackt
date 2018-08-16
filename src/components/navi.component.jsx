@@ -8,7 +8,7 @@ import { List, ListItem } from '@material-ui/core/List';
 import Toolbar from '@material-ui/core/Toolbar';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import SmallProfileComponent from './small.profile.component';
+// import SmallProfileComponent from './small.profile.component';
 
 class NavigationComponent extends Component {
 
@@ -29,7 +29,60 @@ class NavigationComponent extends Component {
             >
               <ChevronRightIcon />
             </IconButton>
-            <SmallProfileComponent />
+
+
+          <div style={{ padding: "20px", paddingTop: "40px", fontSize: "20px" }}>
+            <Link to="/" style={{ textDecoration: 'none' }}>
+              <h4
+                style={{ paddingTop: "20px", paddingBottom: "20px" }}
+                onClick={() => this.setState({ open: false })}
+              >
+                トップ
+              </h4>
+            </Link>
+            <Link to="/engeneer" style={{ textDecoration: 'none' }}>
+                <h4
+                style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                onClick={() => this.setState({ open: false })}
+              >
+                エンジニア
+              </h4>
+            </Link>
+            <Link to="/designer" style={{ textDecoration: 'none' }}>
+                <h4
+                style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                onClick={() => this.setState({ open: false })}
+              >
+                デザイナー
+              </h4>
+            </Link>
+            <Link to="/comic" style={{ textDecoration: 'none' }}>
+              <h4
+                style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                onClick={() => this.setState({ open: false })}
+              >
+                コミック
+              </h4>
+            </Link>
+            <Link to="/shop" style={{ textDecoration: 'none' }}>
+              <h4
+                style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                onClick={() => this.setState({ open: false })}
+              >
+                ショップ
+              </h4>
+            </Link>
+            <Link to="/blog" style={{ textDecoration: 'none' }}>
+              <h4
+                style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                onClick={() => this.setState({ open: false })}
+              >
+                ブログ
+              </h4>
+            </Link>
+          </div>
+
+            {/* <SmallProfileComponent /> */}
           </div>
           
         </Drawer>

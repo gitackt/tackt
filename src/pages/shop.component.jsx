@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import NavigationComponent from '../components/navi.component';
+import FooterComponent from '../components/footer.component';
 
 const styles = {
   root: {
@@ -26,6 +27,7 @@ class ShopPageComponent extends Component {
           />
           {/* https://tackt.official.ec/ */}
         </h2>
+        <FooterComponent />
       </div>
     );
   }

@@ -1,10 +1,21 @@
 import React, { Component } from 'react';
-import Slider from "react-slick";
+// import Slider from "react-slick";
+import Modal from '@material-ui/core/Modal';
+import Card from '@material-ui/core/Card';
+import SmallProfileComponent from './small.profile.component';
 
 class JumbotronComponent extends Component {
 
   state = {
     open: false
+  };
+
+  handleOpen = () => {
+    this.setState({ open: true });
+  };
+
+  handleClose = () => {
+    this.setState({ open: false });
   };
 
   render() {
@@ -56,8 +67,17 @@ class JumbotronComponent extends Component {
           style={{ position: 'relative', width: '180px', marginTop: '70px', height: 'auto' }}
           src="/profile_button.png"
           alt={'profile_button'}
-          onClick={() => this.setState({ open: true })}
+          onClick={this.handleOpen}
         />
+
+        <Modal
+          open={this.state.open}
+          onClose={this.handleClose}
+        >
+          <Card style={{ background: "white", margin: "5%" }}>
+            <SmallProfileComponent />
+          </Card>
+        </Modal>
         
       </div>
     );

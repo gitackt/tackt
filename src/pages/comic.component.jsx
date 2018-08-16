@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import NavigationComponent from '../components/navi.component';
+import FooterComponent from '../components/footer.component';
 
 const styles = {
   root: {
@@ -25,6 +26,7 @@ class ComicPageComponent extends Component {
             alt={'comic'}
           />
         </h2>
+        <FooterComponent />
       </div>
     );
   }
