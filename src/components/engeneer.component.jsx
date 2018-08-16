@@ -7,14 +7,20 @@ const styles = {
   },
 };
 
-class WebsiteComponent extends Component {
+class EngeneerComponent extends Component {
 
   render() {
     return (
-      <div className={styles.root} style={{ position: 'relative', top: -95, padding: '30px', height: '100%' }}>
-        <h2>websites</h2>
+      <div className={styles.root} style={{ position: 'relative', padding: '30px', height: '100%' }}>
+        <h2>
+          <img
+            style={{ position: 'relative', width: '300px', height: 'auto', borderRadius: '20px', marginTop: '20px' }}
+            src="/engeneer.png"
+            alt={'engeneer'}
+          />
+        </h2>
         <Grid container spacing={24} justify={'center'}>
-          <Grid item xs={12} md={4} style={{ textAlign: 'center', marginBottom: '50px', marginTop: '50px' }}>
+          <Grid item xs={12} md={4} style={{ textAlign: 'center', marginBottom: '10px', marginTop: '10px' }}>
             <img
               style={{ position: 'relative', width: '250px', height: 'auto', borderRadius: '20px' }}
               src="/babelbubble.png"
@@ -69,4 +75,4 @@ class WebsiteComponent extends Component {
   }
 }
 
-export default WebsiteComponent;
+export default EngeneerComponent;
