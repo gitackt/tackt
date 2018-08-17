@@ -60,7 +60,7 @@ class EngeneerPageComponent extends Component {
             </p>
           </Grid>
 
-          <Grid item xs={12} md={4} style={{ textAlign: 'center', marginBottom: '50px', marginTop: '50px' }}>
+          {/* <Grid item xs={12} md={4} style={{ textAlign: 'center', marginBottom: '50px', marginTop: '50px' }}>
             <img
               style={{ position: 'relative', width: '100%', height: 'auto', borderRadius: '20px' }}
               src="/vcu.png"
@@ -75,7 +75,7 @@ class EngeneerPageComponent extends Component {
             <p>
               Propsは、スマホで簡単に持ち物を管理できるアプリです。自分の持ち物の名前と価格を入力して現在どれくらいの物を持っているのかチェックできます。断捨離の必須アイテムです。
             </p>
-          </Grid>
+          </Grid> */}
 
         </Grid>
         <FooterComponent />
