@@ -10,13 +10,13 @@ class FooterComponent extends Component {
 
   render() {
     return (
-      <div className={styles.root} style={{ position: 'relative', padding: '30px', height: '40px', background: 'white', color: '#2a2929' }}>
+      <div className={styles.root} style={{ position: 'relative', padding: '30px', paddingTop: '150px', height: '100px', background: 'white', color: '#2a2929' }}>
         <a
           href="https://www.facebook.com/profile.php?id=100013371464347"
           target="_blank"
         >
           <img
-            style={{ position: 'relative', width: '90px', height: '32px', marginTop: '30px', marginLeft: '5px', marginRight: '5px' }}
+            style={{ position: 'relative', width: '50px', height: '18px', marginTop: '30px', marginLeft: '5px', marginRight: '5px' }}
             src="/facebook.png"
             alt={'facebook'}
           />
@@ -26,7 +26,7 @@ class FooterComponent extends Component {
           target="_blank"
         >
           <img
-            style={{ position: 'relative', width: '90px', height: '32px', marginTop: '30px', marginLeft: '5px', marginRight: '5px' }}
+            style={{ position: 'relative', width: '50px', height: '18px', marginTop: '30px', marginLeft: '5px', marginRight: '5px' }}
             src="/twitter.png"
             alt={'twitter'}
           />
@@ -36,7 +36,7 @@ class FooterComponent extends Component {
           target="_blank"
         >
           <img
-            style={{ position: 'relative', width: '90px', height: '32px', marginTop: '30px', marginLeft: '5px', marginRight: '5px' }}
+            style={{ position: 'relative', width: '50px', height: '18px', marginTop: '30px', marginLeft: '5px', marginRight: '5px' }}
             src="/github.png"
             alt={'github'}
           />
@@ -46,7 +46,7 @@ class FooterComponent extends Component {
           target="_blank"
         >
           <img
-            style={{ position: 'relative', width: '90px', height: '32px', marginTop: '30px', marginLeft: '5px', marginRight: '5px' }}
+            style={{ position: 'relative', width: '50px', height: '18px', marginTop: '30px', marginLeft: '5px', marginRight: '5px' }}
             src="/valu.png"
             alt={'valu'}
           />
@@ -56,7 +56,7 @@ class FooterComponent extends Component {
           target="_blank"
         >
           <img
-            style={{ position: 'relative', width: '90px', height: '32px', marginTop: '30px', marginLeft: '5px', marginRight: '5px' }}
+            style={{ position: 'relative', width: '50px', height: '18px', marginTop: '30px', marginLeft: '5px', marginRight: '5px' }}
             src="/pixiv.png"
             alt={'pixiv'}
           />

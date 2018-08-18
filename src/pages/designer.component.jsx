@@ -21,7 +21,7 @@ class DesignerPageComponent extends Component {
         <NavigationComponent />
         <h2>
           <img
-            style={{ position: 'relative', width: '300px', height: 'auto', borderRadius: '20px', marginTop: '100px' }}
+            style={{ position: 'relative', width: '300px', height: 'auto', borderRadius: '20px', marginTop: '100px', marginBottom: '150px' }}
             src="/designer.png"
             alt={'designer'}
           />
