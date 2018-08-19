@@ -58,7 +58,7 @@ class BlogPageComponent extends Component {
         <NavigationComponent />
         <h2>
           <img
-            style={{ position: 'relative', width: '300px', height: 'auto', borderRadius: '20px', marginTop: '50px', marginBottom: '50px' }}
+            style={{ position: 'relative', width: '150px', height: 'auto', borderRadius: '20px', marginTop: '50px', marginBottom: '50px' }}
             src="/blog.png"
             alt={'blog'}
           />

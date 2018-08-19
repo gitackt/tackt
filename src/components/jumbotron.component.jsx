@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Modal from '@material-ui/core/Modal';
 import Card from '@material-ui/core/Card';
 import SmallProfileComponent from './small.profile.component';
+import Button from '@material-ui/core/Button';
 
 class JumbotronComponent extends Component {
 
@@ -63,12 +64,20 @@ class JumbotronComponent extends Component {
         </div>
 
         <br />
-        <img
+        {/* <img
           style={{ position: 'relative', width: '180px', marginTop: '70px', height: 'auto' }}
           src="/profile_button.png"
           alt={'profile_button'}
           onClick={this.handleOpen}
-        />
+        /> */}
+        <Button 
+          variant="outlined" 
+          size="large"
+          onClick={this.handleOpen}
+          style={{ color: '#1DD6D1', borderColor: '#1DD6D1' }}
+        >
+          profile
+        </Button>
 
         <Modal
           open={this.state.open}

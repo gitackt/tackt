@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import { Link } from 'react-router-dom';
-
+import Button from '@material-ui/core/Button';
 
 const styles = {
   root: {
@@ -32,25 +32,22 @@ class SmallProfileComponent extends Component {
           </p>
             <br />
             <br />
-
             <Link 
               to="/profile" 
               style={
                 { 
                   textDecoration: 'none', 
-                  fontSize:'13px',
-                  paddingTop: "15px", 
-                  paddingBottom: "15px", 
-                  paddingLeft: "55px", 
-                  paddingRight: "55px", 
-                  background: '#6CD9F6', 
-                  color: 'white', 
-                  width: '100px', 
-                  borderRadius: '50px',
                 }
               }
             >
+              <Button
+                variant="outlined"
+                size="large"
+                onClick={this.handleOpen}
+                style={{ color: '#6CD9F6', borderColor: '#6CD9F6' }}
+              >
                 プロフィール詳細を見る
+              </Button>
             </Link>
           </Grid>
         </Grid>
