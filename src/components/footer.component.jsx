@@ -11,6 +11,8 @@ class FooterComponent extends Component {
   render() {
     return (
       <div className={styles.root} style={{ position: 'relative', padding: '30px', paddingTop: '150px', height: '100px', background: 'white', color: '#2a2929' }}>
+
+
         <a
           href="https://www.facebook.com/profile.php?id=100013371464347"
           target="_blank"

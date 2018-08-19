@@ -40,6 +40,14 @@ class NavigationComponent extends Component {
                 トップ
               </h4>
             </Link>
+            <Link to="/profile" style={{ textDecoration: 'none' }}>
+              <h4
+                style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                onClick={() => this.setState({ open: false })}
+              >
+                プロフィール
+            </h4>
+            </Link>
             <Link to="/engeneer" style={{ textDecoration: 'none' }}>
                 <h4
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}

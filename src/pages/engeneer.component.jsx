@@ -35,7 +35,7 @@ class EngeneerPageComponent extends Component {
         <NavigationComponent />
         <h2>
           <img
-            style={{ position: 'relative', width: '300px', height: 'auto', borderRadius: '20px', marginTop: '20px', marginBottom: '150px' }}
+            style={{ position: 'relative', width: '300px', height: 'auto', borderRadius: '20px', marginTop: '50px', marginBottom: '50px' }}
             src="/engeneer.png"
             alt={'engeneer'}
           />

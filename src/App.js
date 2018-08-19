@@ -16,6 +16,7 @@ import DesignerPageComponent from './pages/designer.component';
 import ComicPageComponent from './pages/comic.component';
 import ShopPageComponent from './pages/shop.component';
 import BlogPageComponent from './pages/blog.component';
+import ProfilePageComponent from './pages/profile.component';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 
 class LandingComponent extends Component {
@@ -49,6 +50,7 @@ class App extends Component {
           <Route path="/comic" component={ComicPageComponent} />
           <Route path="/shop" component={ShopPageComponent} />
           <Route path="/blog" component={BlogPageComponent} />
+          <Route path="/profile" component={ProfilePageComponent} />
         </Switch>
       </Router>
       </div>
