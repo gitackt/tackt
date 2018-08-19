@@ -5,7 +5,7 @@ import './App.css';
 import JumbotronComponent from './components/jumbotron.component';
 import EngeneerComponent from './components/engeneer.component';
 import DesignerComponent from './components/designer.component';
-// import ProjectComponent from './components/project.component';
+import ProjectComponent from './components/project.component';
 import BlogComponent from './components/blog.component';
 import ComicComponent from './components/comic.component';
 import ShopComponent from './components/shop.component';
@@ -16,6 +16,7 @@ import DesignerPageComponent from './pages/designer.component';
 import ComicPageComponent from './pages/comic.component';
 import ShopPageComponent from './pages/shop.component';
 import BlogPageComponent from './pages/blog.component';
+import ProjectPageComponent from './pages/project.component';
 import ProfilePageComponent from './pages/profile.component';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 
@@ -25,10 +26,10 @@ class LandingComponent extends Component {
       <div>
         <NavigationComponent />
         <JumbotronComponent />
-        {/* <ProfileComponent /> */}
         <EngeneerComponent />
         <DesignerComponent />
         <ComicComponent />
+        <ProjectComponent />
         <ShopComponent /> 
         <BlogComponent />
         <FooterComponent />
@@ -48,6 +49,7 @@ class App extends Component {
           <Route path="/engeneer" component={EngeneerPageComponent} />
           <Route path="/designer" component={DesignerPageComponent} />
           <Route path="/comic" component={ComicPageComponent} />
+          <Route path="/project" component={ProjectPageComponent} />
           <Route path="/shop" component={ShopPageComponent} />
           <Route path="/blog" component={BlogPageComponent} />
           <Route path="/profile" component={ProfilePageComponent} />

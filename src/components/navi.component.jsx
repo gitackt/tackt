@@ -37,7 +37,7 @@ class NavigationComponent extends Component {
                 style={{ paddingTop: "20px", paddingBottom: "20px" }}
                 onClick={() => this.setState({ open: false })}
               >
-                トップ
+                Top
               </h4>
             </Link>
             <Link to="/profile" style={{ textDecoration: 'none' }}>
@@ -45,7 +45,7 @@ class NavigationComponent extends Component {
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
-                プロフィール
+                Profile
             </h4>
             </Link>
             <Link to="/engeneer" style={{ textDecoration: 'none' }}>
@@ -53,7 +53,7 @@ class NavigationComponent extends Component {
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
-                エンジニア
+                Engeneer
               </h4>
             </Link>
             <Link to="/designer" style={{ textDecoration: 'none' }}>
@@ -61,7 +61,7 @@ class NavigationComponent extends Component {
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
-                デザイナー
+                Designer
               </h4>
             </Link>
             <Link to="/comic" style={{ textDecoration: 'none' }}>
@@ -69,7 +69,7 @@ class NavigationComponent extends Component {
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
-                コミック
+                Comic
               </h4>
             </Link>
             <Link to="/shop" style={{ textDecoration: 'none' }}>
@@ -77,7 +77,7 @@ class NavigationComponent extends Component {
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
-                ショップ
+                Shop
               </h4>
             </Link>
             <Link to="/blog" style={{ textDecoration: 'none' }}>
@@ -85,7 +85,7 @@ class NavigationComponent extends Component {
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
-                ブログ
+                Blog
               </h4>
             </Link>
           </div>
