@@ -27,8 +27,18 @@ class ProfilePageComponent extends Component {
             alt={'profile'}
           />
         </h2>
-        <p>
+        <div>
             <br />
+
+          <div>
+            <img
+              style={{ position: 'relative', width: '130px', height: '130px', borderRadius: '100px', marginTop: "-60px" }}
+              src="/profile.jpg"
+              alt={'Tackt Mitsuhashi'}
+            />
+            <h3 style={{ fontSize: '17px' }}>三橋拓人</h3>
+            <h4 style={{ fontSize: '12px' }}>Tackt Mitsuhashi</h4>
+          </div>
 
             <div style={{ fontSize: '7px', color: 'rgb(149, 149, 149)',textAlign: 'left', textAlign: 'center' }}>
             経歴 
@@ -66,10 +76,9 @@ class ProfilePageComponent extends Component {
                 username: 'picos_tackt',
                 height: '400'
               }}
-              onLoad={() => console.log('Timeline is loaded!')}
             />
           </div>
-          </p>
+          </div>
         <FooterComponent />
       </div>
     );

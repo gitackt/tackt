@@ -14,7 +14,7 @@ class SmallProfileComponent extends Component {
   render() {
     return (
       <div className={styles.root} style={{ position: 'relative', top: '70px', padding: '30px', paddingBottom: '90px', height: '350px', background: 'transparent', color: '#2a2929' }}>
-        <Grid container spacing={5}>
+        <Grid container spacing={8}>
           <Grid item xs={12} style={{ textAlign: 'center' }}>
             <div>
               <img

@@ -37,8 +37,15 @@ class BlogPageComponent extends Component {
   componentWillMount() {
     const url = "https://monetizealchemist.com/wp-json/wp/v2/posts?_embed&filter[posts_per_page]=5%";
 
-    const response = JSON.parse(request('GET', url).getBody('utf8'));
-    this.setState({ posts: response })
+    fetch(url, {
+      method: 'GET'
+    }).then((response) => {
+      return response.json()
+      }).then((data) => {
+      // console.warn(data)
+      // const responseJSON = response.text();
+      this.setState({ posts: data })
+      })
   }
 
   componentDidMount() {
@@ -65,7 +72,7 @@ class BlogPageComponent extends Component {
         <Grid container spacing={24} justify={'center'}> 
             {this.state.posts.map(post => {
               return (
-                <Grid item xs={12} md={4} style={{ textAlign: 'center', marginBottom: '10px', marginTop: '10px', paddingLeft: '20px', paddingRight: '20px' }}>
+                <Grid key={post.id} item xs={12} md={4} style={{ textAlign: 'center', marginBottom: '10px', marginTop: '10px', paddingLeft: '20px', paddingRight: '20px' }}>
                   <Card className={styles.card}>
                     <img
                       style={{ position: 'relative', width: '100%', height: 'auto' }}
