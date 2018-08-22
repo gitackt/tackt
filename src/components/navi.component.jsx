@@ -72,6 +72,14 @@ class NavigationComponent extends Component {
                 Comic
               </h4>
             </Link>
+            <Link to="/project" style={{ textDecoration: 'none' }}>
+              <h4
+                style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                onClick={() => this.setState({ open: false })}
+              >
+                Project
+            </h4>
+            </Link>
             <Link to="/shop" style={{ textDecoration: 'none' }}>
               <h4
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
