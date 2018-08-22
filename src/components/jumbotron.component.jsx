@@ -31,14 +31,10 @@ class JumbotronComponent extends Component {
 
     return (
       <div 
-        style={{ position: 'relative', top: -85, paddingTop: '220px', paddingBottom: '170px', height: '420px', backgroundImage: `url('/bubble.png')`, backgroundSize: 'cover', color: 'white', backgroundPosition: 'center center', marginBottom: '20px' }}
+        style={{ position: 'relative', top: -85, paddingTop: '100px', paddingBottom: '200px', height: '420px', backgroundImage: `url('/bubble.png')`, backgroundSize: 'cover', color: 'white', backgroundPosition: 'center center', marginBottom: '20px' }}
         // style={{ position: 'relative', top: -55, paddingTop: '230px', height: '470px' }}
       >
-        <img
-          style={{ position: 'relative', width: '170px', height: 'auto', marginTop: '-50px' }}
-          src="/haruka.png"
-          alt={'haruka'}
-        />
+
         <h1>
           <img
             style={{ position: 'relative', width: '150px', height: 'auto', marginTop: '-50px' }}
@@ -46,6 +42,12 @@ class JumbotronComponent extends Component {
             alt={'tackt_logo'}
           />
         </h1>
+
+        <img
+          style={{ position: 'relative', width: '170px', height: 'auto', marginTop: '-10px', marginLeft: '17px' }}
+          src="/haruka.png"
+          alt={'haruka'}
+        />
 
         <div
           style={{ width: '300px', marginLeft: 'auto', paddingTop: '20px', marginRight: 'auto' }}
@@ -79,7 +81,7 @@ class JumbotronComponent extends Component {
           variant="outlined" 
           size="large"
           onClick={this.handleOpen}
-          style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '-70px' }}
+          style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '10px' }}
         >
           profile
         </Button>
