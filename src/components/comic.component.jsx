@@ -21,7 +21,7 @@ class ComicComponent extends Component {
           />
         </h2>
         <br />
-          <Link to="/engeneer" style={{ textDecoration: 'none' }}>
+          <Link to="/comic" style={{ textDecoration: 'none' }}>
             <Button
               variant="outlined"
               onClick={this.handleOpen}
