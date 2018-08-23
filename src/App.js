@@ -28,7 +28,7 @@ class LandingComponent extends Component {
       <div>
         <NavigationComponent />
         <JumbotronComponent />
-        <Grid container spacing={24} justify={'center'}> 
+        <Grid container justify={'center'}> 
           <Grid item xs={12} md={4}>
             <EngeneerComponent />            
           </Grid>

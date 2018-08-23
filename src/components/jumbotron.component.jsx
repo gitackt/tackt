@@ -31,7 +31,7 @@ class JumbotronComponent extends Component {
 
     return (
       <div 
-        style={{ position: 'relative', top: -85, paddingTop: '100px', paddingBottom: '200px', height: '420px', backgroundImage: `url('/bubble.png')`, backgroundSize: 'cover', color: 'white', backgroundPosition: 'center center', marginBottom: '-100px' }}
+        style={{ position: 'relative', top: -85, paddingTop: '50px', paddingBottom: '200px', height: '420px', backgroundImage: `url('/bubble.png')`, backgroundSize: 'cover', color: 'white', backgroundPosition: 'center center', marginBottom: '-100px' }}
         // style={{ position: 'relative', top: -55, paddingTop: '230px', height: '470px' }}
       >
 

@@ -41,7 +41,7 @@ class EngeneerPageComponent extends Component {
           />
         </h2>
         <Grid container spacing={24} justify={'center'}>
-          <Grid item xs={12} md={4} style={{ textAlign: 'center', marginBottom: '10px', marginTop: '10px' }}>
+          <Grid item xs={12} md={4} style={{ textAlign: 'left', marginBottom: '10px', marginTop: '10px' }}>
             <Card className={styles.card}>
               <img
                 style={{ position: 'relative', width: '100%', height: 'auto' }}
@@ -60,13 +60,20 @@ class EngeneerPageComponent extends Component {
                     babel bubble
                   </Button>
                 </Typography>
-                <Typography component="p">
+                <Typography component="p" style={{ fontSize: '11px', color: 'gray' }}>
+                  React Redux Rxjs MaterialUi
+                </Typography>
+                <Typography component="p" style={{ fontSize: '11px', color: 'gray' }}>
+                  Django Python Nginx Mysql
+                </Typography>
+                <br />
+                <Typography component="p" style={{ fontSize: '12px' }}>
                   バベルバブルは無料で遊べる投資シミュレーションゲームです。ゲーム内で流通するアイテムをゲーム内通貨で売買して遊びます。アイテムを安い時に買って高い時に売ることで架空の市場取引を体験できます。
                 </Typography>
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={12} md={4} style={{ textAlign: 'center', marginBottom: '10px', marginTop: '10px' }}>
+          <Grid item xs={12} md={4} style={{ textAlign: 'left', marginBottom: '10px', marginTop: '10px' }}>
             <Card className={styles.card}>
               <img
                 style={{ position: 'relative', width: '100%', height: 'auto' }}
@@ -85,7 +92,14 @@ class EngeneerPageComponent extends Component {
                     vcu
                   </Button>
                 </Typography>
-                <Typography component="p">
+                <Typography component="p" style={{ fontSize: '11px', color: 'gray' }}>
+                  Django Bootstrap 
+                </Typography>
+                <Typography component="p" style={{ fontSize: '11px', color: 'gray' }}>
+                  Django Python Nginx Mysql
+                </Typography>
+                <br />
+                <Typography component="p" style={{ fontSize: '12px' }}>
                   VCUは、複数の取引所から自動でデータを取得し、 仮想通貨のポートフォリオを簡単にチェックすることができるサービスです。保有残高を取引所とデータ連携を行うことで自動的に取得します。
                 </Typography>
               </CardContent>

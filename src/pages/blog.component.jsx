@@ -91,7 +91,7 @@ class BlogPageComponent extends Component {
                         {String(post.title.rendered)}
                         </Button>
                       </Typography>
-                      <Typography component="p">
+                      <Typography component="p" style={{ fontSize: '12px' }}>
                         {String(post.excerpt.rendered).replace(/<("[^"]*"|'[^']*'|[^'">])*>/g, '')}
                       </Typography>
                     </CardContent>
