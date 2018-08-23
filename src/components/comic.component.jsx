@@ -15,7 +15,7 @@ class ComicComponent extends Component {
       <div className={styles.root} style={{ position: 'relative', height: '100%', background: 'white', color: '#2a2929' }}>
         <h2>
           <img
-            style={{ position: 'relative', width: '220px', height: 'auto', borderRadius: '20px', marginTop: '100px' }}
+            style={{ position: 'relative', width: '220px', height: 'auto', borderRadius: '20px', marginBottom: '20px', marginTop: '100px' }}
             src="/comic.png"
             alt={'comic'}
           />

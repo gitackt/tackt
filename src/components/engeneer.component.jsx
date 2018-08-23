@@ -13,10 +13,10 @@ class EngeneerComponent extends Component {
 
   render() {
     return (
-      <div className={styles.root} style={{ position: 'relative', height: '100%' }}>
+      <div className={styles.root} style={{ position: 'relative', height: '100%', background: 'white', color: '#2a2929' }}>
           <h2>
             <img
-            style={{ position: 'relative', width: '220px', height: 'auto', borderRadius: '20px', marginBottom: '20px' }}
+            style={{ position: 'relative', width: '220px', height: 'auto', borderRadius: '20px', marginBottom: '50px', marginTop: '100px' }}
               src="/engeneer.png"
               alt={'engeneer'}
             />

@@ -21,17 +21,17 @@ class JumbotronComponent extends Component {
 
   render() {
 
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
+    // const settings = {
+    //   dots: true,
+    //   infinite: true,
+    //   speed: 500,
+    //   slidesToShow: 1,
+    //   slidesToScroll: 1
+    // };
 
     return (
       <div 
-        style={{ position: 'relative', top: -85, paddingTop: '100px', paddingBottom: '200px', height: '420px', backgroundImage: `url('/bubble.png')`, backgroundSize: 'cover', color: 'white', backgroundPosition: 'center center', marginBottom: '20px' }}
+        style={{ position: 'relative', top: -85, paddingTop: '100px', paddingBottom: '200px', height: '420px', backgroundImage: `url('/bubble.png')`, backgroundSize: 'cover', color: 'white', backgroundPosition: 'center center', marginBottom: '-100px' }}
         // style={{ position: 'relative', top: -55, paddingTop: '230px', height: '470px' }}
       >
 

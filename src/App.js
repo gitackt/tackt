@@ -19,6 +19,8 @@ import BlogPageComponent from './pages/blog.component';
 import ProjectPageComponent from './pages/project.component';
 import ProfilePageComponent from './pages/profile.component';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
+import Grid from '@material-ui/core/Grid';
+
 
 class LandingComponent extends Component {
   render() {
@@ -26,12 +28,26 @@ class LandingComponent extends Component {
       <div>
         <NavigationComponent />
         <JumbotronComponent />
-        <EngeneerComponent />
-        <DesignerComponent />
-        <ComicComponent />
-        <ProjectComponent />
-        <ShopComponent /> 
-        <BlogComponent />
+        <Grid container spacing={24} justify={'center'}> 
+          <Grid item xs={12} md={4}>
+            <EngeneerComponent />            
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <DesignerComponent />            
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <ComicComponent />            
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <ProjectComponent />            
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <ShopComponent />            
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <BlogComponent />            
+          </Grid>
+        </Grid>
         <FooterComponent />
       </div>
     );
