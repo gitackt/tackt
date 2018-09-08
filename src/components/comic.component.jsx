@@ -12,24 +12,16 @@ class ComicComponent extends Component {
 
   render() {
     return (
-      <div className={styles.root} style={{ position: 'relative', height: '100%', background: 'white', color: '#2a2929' }}>
-        <h2>
-          <img
-            style={{ position: 'relative', width: '220px', height: 'auto', borderRadius: '20px', marginBottom: '20px', marginTop: '100px' }}
-            src="/comic.png"
-            alt={'comic'}
-          />
-        </h2>
-        <br />
-          <Link to="/comic" style={{ textDecoration: 'none' }}>
-            <Button
-              variant="outlined"
-              onClick={this.handleOpen}
-              style={{ color: '#EACC8E', borderColor: '#EACC8E' }}
-            >
-              コミック実績を見る
-              </Button>
-          </Link>
+      <div className={styles.root} style={{ position: 'relative', height: '100%', background: 'white', color: '#2a2929', padding: '50px' }}>
+        <Link to="/comic" style={{ textDecoration: 'none' }}>
+          <Button
+            size="small"
+            onClick={this.handleOpen}
+            style={{ color: '#1DD6D1', borderColor: '#1DD6D1' }}
+          >
+            コミック実績を見る
+            </Button>
+        </Link>
       </div>
     );
   }

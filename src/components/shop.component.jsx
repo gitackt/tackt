@@ -12,21 +12,12 @@ class ShopComponent extends Component {
 
   render() {
     return (
-      <div className={styles.root} style={{ position: 'relative', height: '100%', background: 'white', color: '#2a2929' }}>
-        <h2>
-          <img
-            style={{ position: 'relative', width: '220px', height: 'auto', borderRadius: '20px', marginBottom: '20px', marginTop: '100px' }}
-            src="/shop.png"
-            alt={'shop'}
-          />
-          {/* https://tackt.official.ec/ */}
-        </h2>
-        <br />
+      <div className={styles.root} style={{ position: 'relative', height: '100%', background: 'white', color: '#2a2929', padding: '50px' }}>
         <Link to="/shop" style={{ textDecoration: 'none' }}>
             <Button
-              variant="outlined"
+              size="small"
               onClick={this.handleOpen}
-              style={{ color: '#B0A7FC', borderColor: '#B0A7FC' }}
+              style={{ color: '#1DD6D1', borderColor: '#1DD6D1' }}
             >
               公式ショップを見る
               </Button>

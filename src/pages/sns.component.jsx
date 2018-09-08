@@ -10,7 +10,7 @@ const styles = {
   },
 };
 
-class ProfilePageComponent extends Component {
+class SnsPageComponent extends Component {
 
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -127,4 +127,4 @@ class ProfilePageComponent extends Component {
   }
 }
 
-export default ProfilePageComponent;
+export default SnsPageComponent;

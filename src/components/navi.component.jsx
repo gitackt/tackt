@@ -4,11 +4,9 @@ import { Link } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Drawer from '@material-ui/core/Drawer';
 import IconButton from '@material-ui/core/IconButton';
-import { List, ListItem } from '@material-ui/core/List';
 import Toolbar from '@material-ui/core/Toolbar';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-// import SmallProfileComponent from './small.profile.component';
 
 class NavigationComponent extends Component {
 
@@ -31,13 +29,13 @@ class NavigationComponent extends Component {
             </IconButton>
 
 
-          <div style={{ padding: "20px", paddingTop: "40px", fontSize: "20px" }}>
+          <div style={{ padding: "20px", paddingTop: "40px", fontSize: "15px" }}>
             <Link to="/" style={{ textDecoration: 'none' }}>
               <h4
-                style={{ paddingTop: "20px", paddingBottom: "20px" }}
+                style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
-                Top
+                TOP
               </h4>
             </Link>
             <Link to="/profile" style={{ textDecoration: 'none' }}>
@@ -45,23 +43,26 @@ class NavigationComponent extends Component {
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
-                Profile
+                自己紹介
             </h4>
             </Link>
+            <Link to="/sns" style={{ textDecoration: 'none' }}>
+                <h4
+                  style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                  onClick={() => this.setState({ open: false })}
+                >
+                連絡先
+            </h4>
+            </Link>
+            </div>
+
+            <div style={{ padding: "20px", paddingTop: "-20px", fontSize: "12px" }}>
             <Link to="/engeneer" style={{ textDecoration: 'none' }}>
                 <h4
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
-                Engeneer
-              </h4>
-            </Link>
-            <Link to="/designer" style={{ textDecoration: 'none' }}>
-                <h4
-                style={{ paddingTop: "10px", paddingBottom: "10px" }}
-                onClick={() => this.setState({ open: false })}
-              >
-                Designer
+                エンジニア実績を見る
               </h4>
             </Link>
             <Link to="/comic" style={{ textDecoration: 'none' }}>
@@ -69,23 +70,15 @@ class NavigationComponent extends Component {
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
-                Comic
+                コミック実績を見る
               </h4>
-            </Link>
-            <Link to="/project" style={{ textDecoration: 'none' }}>
-              <h4
-                style={{ paddingTop: "10px", paddingBottom: "10px" }}
-                onClick={() => this.setState({ open: false })}
-              >
-                Project
-            </h4>
             </Link>
             <Link to="/shop" style={{ textDecoration: 'none' }}>
               <h4
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
-                Shop
+                公式ショップを見る
               </h4>
             </Link>
             <Link to="/blog" style={{ textDecoration: 'none' }}>
@@ -93,12 +86,10 @@ class NavigationComponent extends Component {
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
-                Blog
+                公式ブログを見る
               </h4>
             </Link>
           </div>
-
-            {/* <SmallProfileComponent /> */}
           </div>
           
         </Drawer>
