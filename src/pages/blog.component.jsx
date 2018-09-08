@@ -2,11 +2,8 @@ import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import NavigationComponent from '../components/navi.component';
 import FooterComponent from '../components/footer.component';
-import request from 'sync-request';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
@@ -42,8 +39,6 @@ class BlogPageComponent extends Component {
     }).then((response) => {
       return response.json()
       }).then((data) => {
-      // console.warn(data)
-      // const responseJSON = response.text();
       this.setState({ posts: data })
       })
   }
@@ -56,19 +51,34 @@ class BlogPageComponent extends Component {
     return (
       <div className={styles.root} style={{ position: 'relative', padding: '30px', height: '100%' }}>
         <NavigationComponent />
-        <h2>
-          <img
-            style={{ position: 'relative', width: '150px', height: 'auto', borderRadius: '20px', marginTop: '50px', marginBottom: '50px' }}
-            src="/blog.png"
-            alt={'blog'}
-          />
+        <h2 style={{ color: '#1DD6D1' }}>
+         ブログ
         </h2>
-        {/* <a
+
+        <p>
+          たまに「人生は運ゲー」という元も子もないタイトルのブログを書いてます。「アプリ・サイトの作り方」や「使えるお金の知識」を紹介する雑記ブログです。
+
+        </p>
+
+        <a
           href="https://monetizealchemist.com/"
           target="_blank"
+          style={{ textDecoration: 'none' }}
         >
-          人生は運ゲー
-        </a> */}
+          <Button
+            variant="outlined"
+            size="large"
+            style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '30px' }}
+          >
+            人生は運ゲー
+          </Button>
+        </a>
+
+        <br/>
+        <br />
+        <br />
+        <br />
+
         <Grid container spacing={24} justify={'center'}> 
             {this.state.posts.map(post => {
               return (

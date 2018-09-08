@@ -33,13 +33,34 @@ class EngeneerPageComponent extends Component {
     return (
       <div className={styles.root} style={{ position: 'relative', padding: '30px', height: '100%' }}>
         <NavigationComponent />
-        <h2>
-          <img
-            style={{ position: 'relative', width: '150px', height: 'auto', borderRadius: '20px', marginTop: '50px', marginBottom: '50px' }}
-            src="/engeneer.png"
-            alt={'engeneer'}
-          />
+
+        <h2 style={{ color: '#1DD6D1' }}>
+          エンジニア
         </h2>
+
+        <p>
+          WEBを中心に色々開発をやってます。フロントエンドはReactサーバサイドはDjangoやRailsを使うことが多いです。
+        </p>
+
+        <a
+          href="https://github.com/gitackt"
+          target="_blank"
+          style={{ textDecoration: 'none' }}
+        >
+          <Button
+            variant="outlined"
+            size="large"
+            style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '30px' }}
+          >
+            Githubを見る
+          </Button>
+        </a>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
         <Grid container spacing={24} justify={'center'}>
           <Grid item xs={12} md={4} style={{ textAlign: 'left', marginBottom: '10px', marginTop: '10px' }}>
             <Card className={styles.card}>

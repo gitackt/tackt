@@ -14,7 +14,7 @@ class BlogComponent extends Component {
   render() {
 
     return (
-      <div className={styles.root} style={{ position: 'relative', height: '100%', background: 'white', color: '#2a2929', padding: '50px' }}>
+      <div className={styles.root} style={{ position: 'relative', height: '100%', background: 'white', color: '#2a2929', padding: '20px' }}>
         <Link to="/blog" style={{ textDecoration: 'none' }}>
           <Button
             size="small"

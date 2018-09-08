@@ -12,26 +12,22 @@ class JumbotronComponent extends Component {
         style={{ backgroundSize: 'cover', color: 'white', backgroundPosition: 'center center' }}
       >
         <div
-          style={{ position: 'relative', height: '400px', color: 'white', paddingTop: '10px', top: -85, paddingBottom: '200px', marginBottom: '-100px' }}
+          style={{ position: 'relative', height: '400px', color: 'white', paddingTop: '40px', paddingBottom: '200px', marginBottom: '-100px' }}
         >
 
-        <h3>
-          何か色々作ってます
-        </h3>
-
-        <p></p>
-
-        <div
-          style={{ width: '300px', marginLeft: 'auto', paddingTop: '200px', marginRight: 'auto' }}
-        >
-        </div>
+        <h1>
+          <img
+            style={{ position: 'relative', width: '150px', height: 'auto' }}
+            src="/tackt_logo.png"
+            alt={'tackt_logo'}
+          />
+        </h1>
 
         <br />
         <Link to="/profile" style={{ textDecoration: 'none' }}>
           <Button
             variant="outlined"
             size="large"
-            onClick={this.handleOpen}
             style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '10px' }}
           >
             自己紹介
@@ -44,7 +40,6 @@ class JumbotronComponent extends Component {
             <Button
               variant="outlined"
               size="large"
-              onClick={this.handleOpen}
               style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '10px' }}
             >
               連絡先
