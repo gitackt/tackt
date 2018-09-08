@@ -56,7 +56,7 @@ class BlogPageComponent extends Component {
         </h2>
 
         <p>
-          たまに「人生は運ゲー」という元も子もないタイトルのブログを書いてます。「アプリ・サイトの作り方」や「使えるお金の知識」を紹介する雑記ブログです。
+          人生は運ゲーという元も子もないタイトルのブログを書いてます。「アプリ・サイトの作り方」や「使えるお金の知識」を紹介する雑記ブログです。
 
         </p>
 
@@ -105,16 +105,6 @@ class BlogPageComponent extends Component {
                         {String(post.excerpt.rendered).replace(/<("[^"]*"|'[^']*'|[^'">])*>/g, '')}
                       </Typography>
                     </CardContent>
-                    {/* <CardActions>
-                      <Button 
-                        size="small" 
-                        color="primary"
-                        href={String(post.guid.rendered)}
-                        target="_blank"
-                      >
-                          記事を読む
-                      </Button>
-                    </CardActions> */}
                   </Card>
                 </Grid>
               )
