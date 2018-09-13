@@ -65,22 +65,32 @@ class NavigationComponent extends Component {
                 作品紹介を見る
               </h4>
             </Link>
-            <Link to="/shop" style={{ textDecoration: 'none' }}>
+            <a
+              href="https://tackt.official.ec/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none' }}
+            >
               <h4
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
                 ショップを見る
               </h4>
-            </Link>
-            <Link to="/blog" style={{ textDecoration: 'none' }}>
+            </a>
+            <a
+              href="https://monetizealchemist.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none' }}
+            >
               <h4
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
                 ブログを見る
               </h4>
-            </Link>
+            </a>
             <Link to="/sns" style={{ textDecoration: 'none' }}>
               <h4
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}

@@ -12,7 +12,7 @@ class JumbotronComponent extends Component {
         style={{ backgroundSize: 'cover', color: 'white', backgroundPosition: 'center center' }}
       >
         <div
-          style={{ position: 'relative', height: '100%', color: 'white', paddingTop: '10px', paddingBottom: '50px'  }}
+          style={{ position: 'relative', height: '100%', color: 'white', paddingTop: '10px', paddingBottom: '80px'  }}
         >
 
         <h1>
@@ -59,7 +59,12 @@ class JumbotronComponent extends Component {
 
           <br />
 
-          <Link to="/shop" style={{ textDecoration: 'none' }}>
+          <a
+            href="https://tackt.official.ec/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: 'none' }}
+          >
             <Button
               variant="outlined"
               size="large"
@@ -67,11 +72,16 @@ class JumbotronComponent extends Component {
             >
               ショップ
             </Button>
-          </Link>
+          </a>
 
           <br />
 
-          <Link to="/blog" style={{ textDecoration: 'none' }}>
+          <a
+            href="https://monetizealchemist.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: 'none' }}
+          >
             <Button
               variant="outlined"
               size="large"
@@ -79,7 +89,7 @@ class JumbotronComponent extends Component {
             >
               ブログ
             </Button>
-          </Link>
+          </a>
 
           <br />
 
