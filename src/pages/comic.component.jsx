@@ -22,7 +22,7 @@ class ComicPageComponent extends Component {
         <NavigationComponent />
 
         <h2 style={{ color: '#1DD6D1' }}>
-          コミック
+          作品紹介
         </h2>
 
         <p>
@@ -30,8 +30,9 @@ class ComicPageComponent extends Component {
         </p>
 
         <a
-          href="https://www.pixiv.net/member.php?id=29647166"
+          href="https://www.pixiv.net/member_illust.php?id=29647166"
           target="_blank"
+          rel="noopener noreferrer"
           style={{ textDecoration: 'none' }}
         >
           <Button

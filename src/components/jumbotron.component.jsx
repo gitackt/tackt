@@ -12,7 +12,7 @@ class JumbotronComponent extends Component {
         style={{ backgroundSize: 'cover', color: 'white', backgroundPosition: 'center center' }}
       >
         <div
-          style={{ position: 'relative', height: '400px', color: 'white', paddingTop: '40px', paddingBottom: '200px', marginBottom: '-100px' }}
+          style={{ position: 'relative', height: '100%', color: 'white', paddingTop: '10px', paddingBottom: '50px'  }}
         >
 
         <h1>
@@ -23,7 +23,6 @@ class JumbotronComponent extends Component {
           />
         </h1>
 
-        <br />
         <Link to="/profile" style={{ textDecoration: 'none' }}>
           <Button
             variant="outlined"
@@ -34,7 +33,55 @@ class JumbotronComponent extends Component {
           </Button>
         </Link>
 
-        <br />
+          <br />
+
+          <Link to="/engeneer" style={{ textDecoration: 'none' }}>
+            <Button
+              variant="outlined"
+              size="large"
+              style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '10px' }}
+            >
+              製作実績
+            </Button>
+          </Link>
+
+          <br />
+
+          <Link to="/comic" style={{ textDecoration: 'none' }}>
+            <Button
+              variant="outlined"
+              size="large"
+              style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '10px' }}
+            >
+              作品紹介
+            </Button>
+          </Link>
+
+          <br />
+
+          <Link to="/shop" style={{ textDecoration: 'none' }}>
+            <Button
+              variant="outlined"
+              size="large"
+              style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '10px' }}
+            >
+              ショップ
+            </Button>
+          </Link>
+
+          <br />
+
+          <Link to="/blog" style={{ textDecoration: 'none' }}>
+            <Button
+              variant="outlined"
+              size="large"
+              style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '10px' }}
+            >
+              ブログ
+            </Button>
+          </Link>
+
+          <br />
 
           <Link to="/sns" style={{ textDecoration: 'none' }}>
             <Button

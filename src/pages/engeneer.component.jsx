@@ -3,9 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import NavigationComponent from '../components/navi.component';
 import FooterComponent from '../components/footer.component';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
@@ -35,16 +33,17 @@ class EngeneerPageComponent extends Component {
         <NavigationComponent />
 
         <h2 style={{ color: '#1DD6D1' }}>
-          エンジニア
+          製作実績
         </h2>
 
         <p>
-          WEBを中心に色々開発をやってます。フロントエンドはReactサーバサイドはDjangoやRailsを使うことが多いです。
+          WEBを中心に色々開発をやってます。基本的にデザイン・設計からコーディングまで全部一人でやります。フロントエンドはReactサーバサイドはDjangoやRailsを使うことが多いです。
         </p>
 
         <a
           href="https://github.com/gitackt"
           target="_blank"
+          rel="noopener noreferrer"
           style={{ textDecoration: 'none' }}
         >
           <Button

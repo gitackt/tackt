@@ -20,7 +20,7 @@ class ProfilePageComponent extends Component {
       <div className={styles.root} style={{ position: 'relative', padding: '30px', height: '100%' }}>
         <NavigationComponent />
 
-        <div style={{ marginTop: '100px' }}>
+        <div style={{ marginTop: '50px' }}>
 
 
           <Grid container spacing={24} justify={'center'}>

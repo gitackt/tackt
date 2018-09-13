@@ -43,15 +43,7 @@ class NavigationComponent extends Component {
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
-                自己紹介
-            </h4>
-            </Link>
-            <Link to="/sns" style={{ textDecoration: 'none' }}>
-                <h4
-                  style={{ paddingTop: "10px", paddingBottom: "10px" }}
-                  onClick={() => this.setState({ open: false })}
-                >
-                連絡先
+                自己紹介を見る
             </h4>
             </Link>
             </div>
@@ -62,7 +54,7 @@ class NavigationComponent extends Component {
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
-                エンジニア実績を見る
+                製作実績を見る
               </h4>
             </Link>
             <Link to="/comic" style={{ textDecoration: 'none' }}>
@@ -70,7 +62,7 @@ class NavigationComponent extends Component {
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
-                コミック実績を見る
+                作品紹介を見る
               </h4>
             </Link>
             <Link to="/shop" style={{ textDecoration: 'none' }}>
@@ -78,7 +70,7 @@ class NavigationComponent extends Component {
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
-                公式ショップを見る
+                ショップを見る
               </h4>
             </Link>
             <Link to="/blog" style={{ textDecoration: 'none' }}>
@@ -86,8 +78,16 @@ class NavigationComponent extends Component {
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
                 onClick={() => this.setState({ open: false })}
               >
-                公式ブログを見る
+                ブログを見る
               </h4>
+            </Link>
+            <Link to="/sns" style={{ textDecoration: 'none' }}>
+              <h4
+                style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                onClick={() => this.setState({ open: false })}
+              >
+                連絡先を見る
+            </h4>
             </Link>
           </div>
           </div>

@@ -56,13 +56,14 @@ class BlogPageComponent extends Component {
         </h2>
 
         <p>
-          人生は運ゲーという元も子もないタイトルのブログを書いてます。「アプリ・サイトの作り方」や「使えるお金の知識」を紹介する雑記ブログです。
+          人生は運ゲーという元も子もないタイトルのブログを書いてます。プログラミングやお金の知識を紹介する雑記ブログです。
 
         </p>
 
         <a
           href="https://monetizealchemist.com/"
           target="_blank"
+          rel="noopener noreferrer"
           style={{ textDecoration: 'none' }}
         >
           <Button
