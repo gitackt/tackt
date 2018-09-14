@@ -61,8 +61,6 @@ class JumbotronComponent extends Component {
 
           <a
             href="https://tackt.official.ec/"
-            target="_blank"
-            rel="noopener noreferrer"
             style={{ textDecoration: 'none' }}
           >
             <Button
@@ -78,8 +76,6 @@ class JumbotronComponent extends Component {
 
           <a
             href="https://monetizealchemist.com/"
-            target="_blank"
-            rel="noopener noreferrer"
             style={{ textDecoration: 'none' }}
           >
             <Button

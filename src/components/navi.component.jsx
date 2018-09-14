@@ -67,8 +67,6 @@ class NavigationComponent extends Component {
             </Link>
             <a
               href="https://tackt.official.ec/"
-              target="_blank"
-              rel="noopener noreferrer"
               style={{ textDecoration: 'none' }}
             >
               <h4
@@ -80,8 +78,6 @@ class NavigationComponent extends Component {
             </a>
             <a
               href="https://monetizealchemist.com/"
-              target="_blank"
-              rel="noopener noreferrer"
               style={{ textDecoration: 'none' }}
             >
               <h4
