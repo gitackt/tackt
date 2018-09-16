@@ -32,9 +32,7 @@ class App extends Component {
           <Route path="/comic" component={ComicPageComponent} />
           <Route path="/profile" component={ProfilePageComponent} />
           <Route path="/sns" component={SnsPageComponent} />
-          <Route render={() => (
-            <Redirect to={"/"} />
-          )} />
+          <Route render={() => (<Redirect to={"/"} />)} />
         </Switch>
       </Router>
       </div>

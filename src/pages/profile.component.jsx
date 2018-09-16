@@ -28,11 +28,13 @@ class ProfilePageComponent extends Component {
               <div>
                 <img
                   style={{ position: 'relative', width: '200px', height: '200px', borderRadius: '100px' }}
-                  src="/profile.jpg"
+                  src="/images/profile.jpg"
                   alt={'Tackt Mitsuhashi'}
                 />
+                
                 <h2 style={{ fontSize: '25px' }}>三橋拓人</h2>
                 <h3 style={{ fontSize: '15px' }}>Tackt Mitsuhashi</h3>
+
                 <p style={{ maxWidth: '400px', marginLeft: 'auto', marginRight: 'auto' }}>
                   WEB開発と漫画書いてる21歳です！とりあえずいつも何か作ってます。
                   18歳の頃から独学をし始めて、ITベンチャー企業でプログラミング技術を身につけました。

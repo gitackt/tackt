@@ -23,9 +23,8 @@ class SnsPageComponent extends Component {
         
         <div style={{ marginTop: '50px' }}>
 
-        <h2 style={{ color: '#1DD6D1' }}>
-          連絡先
-        </h2>
+          <h2 style={{ color: '#1DD6D1' }}>連絡先</h2>
+
           <Grid container spacing={24} justify={'center'}>
             <Grid item xs={12}>
               <div style={{ fontSize: '15px', color: 'rgb(149, 149, 149)', textAlign: 'center', maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto' }}>
@@ -34,8 +33,6 @@ class SnsPageComponent extends Component {
                     <h3>
                       <a
                         href="https://twitter.com/picos_tackt?lang=ja"
-                        target="_blank"
-                        rel="noopener noreferrer"
                         style={{ textDecoration: 'none' }}
                       >
                         <Button
@@ -52,8 +49,6 @@ class SnsPageComponent extends Component {
                     <h3>
                       <a
                         href="https://www.facebook.com/profile.php?id=100013371464347"
-                        target="_blank"
-                        rel="noopener noreferrer"
                         style={{ textDecoration: 'none' }}
                       >
                         <Button
@@ -70,8 +65,6 @@ class SnsPageComponent extends Component {
                     <h3>
                       <a
                         href="https://github.com/gitackt"
-                        target="_blank"
-                        rel="noopener noreferrer"
                         style={{ textDecoration: 'none' }}
                       >
                         <Button
@@ -88,8 +81,6 @@ class SnsPageComponent extends Component {
                     <h3>
                       <a
                         href="https://www.pixiv.net/member.php?id=29647166"
-                        target="_blank"
-                        rel="noopener noreferrer"
                         style={{ textDecoration: 'none' }}
                       >
                         <Button
@@ -106,8 +97,6 @@ class SnsPageComponent extends Component {
                     <h3>
                       <a
                         href="https://valu.is/tackt3"
-                        target="_blank"
-                        rel="noopener noreferrer"
                         style={{ textDecoration: 'none' }}
                       >
                         <Button
@@ -124,8 +113,6 @@ class SnsPageComponent extends Component {
                     <h3>
                       <a
                         href="https://tackt.official.ec/"
-                        target="_blank"
-                        rel="noopener noreferrer"
                         style={{ textDecoration: 'none' }}
                       >
                         <Button
@@ -142,8 +129,6 @@ class SnsPageComponent extends Component {
                     <h3>
                       <a
                         href="https://monetizealchemist.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
                         style={{ textDecoration: 'none' }}
                       >
                         <Button

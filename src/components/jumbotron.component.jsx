@@ -18,7 +18,7 @@ class JumbotronComponent extends Component {
         <h1>
           <img
             style={{ position: 'relative', width: '150px', height: 'auto' }}
-            src="/tackt_logo.png"
+            src="/images/tackt_logo.png"
             alt={'tackt_logo'}
           />
         </h1>

@@ -21,9 +21,7 @@ class ComicPageComponent extends Component {
       <div className={styles.root} style={{ position: 'relative', padding: '30px', height: '100%' }}>
         <NavigationComponent />
 
-        <h2 style={{ color: '#1DD6D1' }}>
-          作品紹介
-        </h2>
+        <h2 style={{ color: '#1DD6D1' }}> 作品紹介</h2>
 
         <p>
           漫画とかイラスト書いてます。
@@ -31,8 +29,6 @@ class ComicPageComponent extends Component {
 
         <a
           href="https://www.pixiv.net/member_illust.php?id=29647166"
-          target="_blank"
-          rel="noopener noreferrer"
           style={{ textDecoration: 'none' }}
         >
           <Button
