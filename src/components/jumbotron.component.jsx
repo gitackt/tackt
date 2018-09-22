@@ -146,6 +146,8 @@ class JumbotronComponent extends Component {
               <a
                 href="https://tackt.official.ec/"
                 style={{ textDecoration: 'none' }}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div style={styles.shop}>
                   <div style={styles.list_text}>ショップ</div>
@@ -157,6 +159,8 @@ class JumbotronComponent extends Component {
               <a
                 href="https://monetizealchemist.com/"
                 style={{ textDecoration: 'none' }}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div style={styles.blog}>
                   <div style={styles.list_text}>ブログ</div>

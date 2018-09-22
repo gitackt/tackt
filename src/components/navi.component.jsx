@@ -68,6 +68,8 @@ class NavigationComponent extends Component {
             <a
               href="https://tackt.official.ec/"
               style={{ textDecoration: 'none' }}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <h4
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
@@ -79,6 +81,8 @@ class NavigationComponent extends Component {
             <a
               href="https://monetizealchemist.com/"
               style={{ textDecoration: 'none' }}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <h4
                 style={{ paddingTop: "10px", paddingBottom: "10px" }}
