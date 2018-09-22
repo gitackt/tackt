@@ -21,7 +21,9 @@ class ComicPageComponent extends Component {
       <div className={styles.root} style={{ position: 'relative', padding: '30px', height: '100%' }}>
         <NavigationComponent />
 
-        <h2 style={{ color: '#1DD6D1' }}> 作品紹介</h2>
+        <div style={{ marginTop: '60px' }}>
+
+        <h3 style={{ color: '#1DD6D1' }}> 作品紹介</h3>
 
         <p>
           漫画とかイラスト書いてます。
@@ -47,6 +49,7 @@ class ComicPageComponent extends Component {
 
         <FooterComponent />
       </div>
+      </div >
     );
   }
 }

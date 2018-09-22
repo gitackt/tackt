@@ -22,8 +22,10 @@ class EngeneerPageComponent extends Component {
     return (
       <div className={styles.root} style={{ position: 'relative', padding: '30px', height: '100%' }}>
         <NavigationComponent />
+        
+        <div style={{ marginTop: '60px' }}>
 
-        <h2 style={{ color: '#1DD6D1' }}>製作実績</h2>
+        <h3 style={{ color: '#1DD6D1' }}>製作実績</h3>
 
         <p>
           WEBを中心に色々開発をやってます。基本的にデザイン・設計からコーディングまで全部一人でやります。フロントエンドはReactサーバサイドはDjangoやRailsを使うことが多いです。
@@ -57,6 +59,7 @@ class EngeneerPageComponent extends Component {
 
         </Grid>
         <FooterComponent />
+      </div>
       </div>
     );
   }

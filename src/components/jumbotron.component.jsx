@@ -94,7 +94,7 @@ const styles = {
     backgroundPosition: 'center center',
   },
   list_text: {
-    fontSize: '22px',
+    fontSize: '20px',
     color: 'white',
     marginTop: '85px'
   },
