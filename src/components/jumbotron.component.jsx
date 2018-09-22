@@ -8,7 +8,7 @@ const styles = {
     height: '250px',
     color: 'white',
     maxWidth: '400px',
-    background: `linear-gradient(rgba(34, 64, 61, 0.2),rgba(26, 33, 33, 0.8)), url('/images/list/profile.jpg')`,
+    background: `linear-gradient(rgba(34, 64, 61, 0.2),rgba(26, 33, 33, 0.5)), url('/images/list/profile.jpg')`,
     borderRadius: '30px',
     textAlign: 'center',
     margin: 'auto',
@@ -23,7 +23,7 @@ const styles = {
     height: '250px',
     color: 'white',
     maxWidth: '400px',
-    background: `linear-gradient(rgba(34, 64, 61, 0.2),rgba(26, 33, 33, 0.8)), url('/images/list/engeneer.jpg')`,
+    background: `linear-gradient(rgba(34, 64, 61, 0.2),rgba(26, 33, 33, 0.5)), url('/images/list/engeneer.jpg')`,
     borderRadius: '30px',
     textAlign: 'center',
     margin: 'auto',
@@ -38,7 +38,7 @@ const styles = {
     height: '250px',
     color: 'white',
     maxWidth: '400px',
-    background: `linear-gradient(rgba(34, 64, 61, 0.2),rgba(26, 33, 33, 0.8)), url('/images/list/work.jpg')`,
+    background: `linear-gradient(rgba(34, 64, 61, 0.2),rgba(26, 33, 33, 0.5)), url('/images/list/work.jpg')`,
     borderRadius: '30px',
     textAlign: 'center',
     margin: 'auto',
@@ -53,7 +53,7 @@ const styles = {
     height: '250px',
     color: 'white',
     maxWidth: '400px',
-    background: `linear-gradient(rgba(34, 64, 61, 0.2),rgba(26, 33, 33, 0.8)), url('/images/list/shop.jpg')`,
+    background: `linear-gradient(rgba(34, 64, 61, 0.2),rgba(26, 33, 33, 0.5)), url('/images/list/shop.jpg')`,
     borderRadius: '30px',
     textAlign: 'center',
     margin: 'auto',
@@ -68,7 +68,7 @@ const styles = {
     height: '250px',
     color: 'white',
     maxWidth: '400px',
-    background: `linear-gradient(rgba(34, 64, 61, 0.2),rgba(26, 33, 33, 0.8)), url('/images/list/blog.jpg')`,
+    background: `linear-gradient(rgba(34, 64, 61, 0.2),rgba(26, 33, 33, 0.5)), url('/images/list/blog.jpg')`,
     borderRadius: '30px',
     textAlign: 'center',
     margin: 'auto',
@@ -83,7 +83,7 @@ const styles = {
     height: '250px',
     color: 'white',
     maxWidth: '400px',
-    background: `linear-gradient(rgba(34, 64, 61, 0.2),rgba(26, 33, 33, 0.8)), url('/images/list/sns.jpg')`,
+    background: `linear-gradient(rgba(34, 64, 61, 0.2),rgba(26, 33, 33, 0.5)), url('/images/list/sns.jpg')`,
     borderRadius: '30px',
     textAlign: 'center',
     margin: 'auto',
@@ -94,9 +94,9 @@ const styles = {
     backgroundPosition: 'center center',
   },
   list_text: {
-    fontSize: '20px',
+    fontSize: '25px',
     color: 'white',
-    marginTop: '190px'
+    marginTop: '110px'
   }
 };
 
