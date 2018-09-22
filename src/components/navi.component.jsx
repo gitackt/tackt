@@ -100,13 +100,20 @@ class NavigationComponent extends Component {
           
         </Drawer>
 
-        <AppBar style={{ background: 'transparent', boxShadow: 'none' }}>
+        <AppBar style={{ background: 'white', boxShadow: 'none' }}>
           <Toolbar>
             <IconButton 
               onClick={() => this.setState({ open: true })}
             >
               <MenuIcon />
             </IconButton>
+              <Link to="/" style={{ textDecoration: 'none' }}>
+                <img
+                  style={{ width: '70px', height: 'auto', marginLeft: '15px', marginTop: '6px' }}
+                  src="/images/tackt_logo.png"
+                  alt={'tackt_logo'}
+                />
+              </Link>
           </Toolbar>
         </AppBar>
       </div>

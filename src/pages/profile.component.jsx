@@ -17,34 +17,32 @@ class ProfilePageComponent extends Component {
 
   render() {
     return (
-      <div className={styles.root} style={{ position: 'relative', padding: '30px', height: '100%' }}>
+      <div className={styles.root} style={{ position: 'relative', height: '100%' }}>
         <NavigationComponent />
 
-        <div style={{ marginTop: '50px' }}>
+        <div>
 
+          <div style={{ display: 'inline-block', height: '300px', overflow: 'hidden' }}>
+            <img
+              style={{ width: '100%', height: 'auto' }}
+              src="/images/profile.jpg"
+              alt={'Tackt Mitsuhashi'}
+            />
+          </div>
 
-          <Grid container spacing={24} justify={'center'}>
-            <Grid item xs={12}>
-              <div>
-                <img
-                  style={{ position: 'relative', width: '200px', height: '200px', borderRadius: '100px' }}
-                  src="/images/profile.jpg"
-                  alt={'Tackt Mitsuhashi'}
-                />
-                
-                <h2 style={{ fontSize: '25px' }}>三橋拓人</h2>
-                <h3 style={{ fontSize: '15px' }}>Tackt Mitsuhashi</h3>
+          <div style={{ padding: '20px' }}>
+          <h2 style={{ fontSize: '25px' }}>三橋拓人</h2>
+          <h3 style={{ fontSize: '15px' }}>Tackt Mitsuhashi</h3>
 
-                <p style={{ maxWidth: '400px', marginLeft: 'auto', marginRight: 'auto' }}>
-                  WEB開発と漫画書いてる21歳です！とりあえずいつも何か作ってます。
-                  18歳の頃から独学をし始めて、ITベンチャー企業でプログラミング技術を身につけました。
-                  証券アナリスト資格二次試験合格。投資シミュレーションゲームや自動トレードシステムなど、金融系のシステムを作るのが好きです。
-                  趣味で漫画・イラストやレジン・ハーバリウム製作をやってます。ショップやブログあります。
-                  web開発・webデザイン・webスクレイピング等、お仕事の依頼承ります！
-                </p>
+          <p style={{ maxWidth: '400px', marginLeft: 'auto', marginRight: 'auto' }}>
+            WEB開発と漫画書いてる21歳です！とりあえずいつも何か作ってます。
+            18歳の頃から独学をし始めて、ITベンチャー企業でプログラミング技術を身につけました。
+            証券アナリスト資格二次試験合格。投資シミュレーションゲームや自動トレードシステムなど、金融系のシステムを作るのが好きです。
+            趣味で漫画・イラストやレジン・ハーバリウム製作をやってます。ショップやブログあります。
+            web開発・webデザイン・webスクレイピング等、お仕事の依頼承ります！
+          </p>
 
-              </div>
-            </Grid>
+          <Grid container justify={'center'}>
             <Grid item xs={12}>
               <div style={{ fontSize: '15px', color: 'rgb(149, 149, 149)', textAlign: 'left', maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto' }}>
                 <Grid container spacing={24} justify={'center'}>
@@ -92,6 +90,8 @@ class ProfilePageComponent extends Component {
               </div>
             </Grid>
           </Grid>
+
+          </div>
 
         </div>
         <FooterComponent />

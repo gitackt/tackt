@@ -21,7 +21,7 @@ class SnsPageComponent extends Component {
       <div className={styles.root} style={{ position: 'relative', padding: '30px', height: '100%' }}>
         <NavigationComponent />
         
-        <div style={{ marginTop: '50px' }}>
+        <div style={{ marginTop: '20px' }}>
 
           <h2 style={{ color: '#1DD6D1' }}>連絡先</h2>
 
@@ -29,7 +29,7 @@ class SnsPageComponent extends Component {
             <Grid item xs={12}>
               <div style={{ fontSize: '15px', color: 'rgb(149, 149, 149)', textAlign: 'center', maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto' }}>
                 <Grid container spacing={24} justify={'center'}>               
-                  <Grid item xs={12} md={3}>
+                  <Grid item xs={6} md={3}>
                     <h3>
                       <a
                         href="https://twitter.com/picos_tackt?lang=ja"
@@ -38,14 +38,14 @@ class SnsPageComponent extends Component {
                         <Button
                           variant="outlined"
                           size="large"
-                          style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '30px' }}
+                          style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '10px' }}
                         >
                           Twitter
                         </Button>
                       </a>
                     </h3>
                   </Grid>
-                  <Grid item xs={12} md={3}>
+                  <Grid item xs={6} md={3}>
                     <h3>
                       <a
                         href="https://www.facebook.com/profile.php?id=100013371464347"
@@ -54,14 +54,14 @@ class SnsPageComponent extends Component {
                         <Button
                           variant="outlined"
                           size="large"
-                          style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '30px' }}
+                          style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '10px' }}
                         >
                           Facebook
                         </Button>
                       </a>
                     </h3>
                   </Grid>
-                  <Grid item xs={12} md={3}>
+                  <Grid item xs={6} md={3}>
                     <h3>
                       <a
                         href="https://github.com/gitackt"
@@ -70,14 +70,14 @@ class SnsPageComponent extends Component {
                         <Button
                           variant="outlined"
                           size="large"
-                          style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '30px' }}
+                          style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '10px' }}
                         >
                           Github
                         </Button>
                       </a>
                     </h3>
                   </Grid>
-                  <Grid item xs={12} md={3}>
+                  <Grid item xs={6} md={3}>
                     <h3>
                       <a
                         href="https://www.pixiv.net/member.php?id=29647166"
@@ -86,14 +86,14 @@ class SnsPageComponent extends Component {
                         <Button
                           variant="outlined"
                           size="large"
-                          style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '30px' }}
+                          style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '10px' }}
                         >
                           Pixiv
                         </Button>
                       </a>
                     </h3>
                   </Grid>
-                  <Grid item xs={12} md={3}>
+                  <Grid item xs={6} md={3}>
                     <h3>
                       <a
                         href="https://valu.is/tackt3"
@@ -102,14 +102,14 @@ class SnsPageComponent extends Component {
                         <Button
                           variant="outlined"
                           size="large"
-                          style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '30px' }}
+                          style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '10px' }}
                         >
                           Valu
                         </Button>
                       </a>
                     </h3>
                   </Grid>
-                  <Grid item xs={12} md={3}>
+                  <Grid item xs={6} md={3}>
                     <h3>
                       <a
                         href="https://tackt.official.ec/"
@@ -118,14 +118,14 @@ class SnsPageComponent extends Component {
                         <Button
                           variant="outlined"
                           size="large"
-                          style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '30px' }}
+                          style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '10px' }}
                         >
                           Shop
                         </Button>
                       </a>
                     </h3>
                   </Grid>
-                  <Grid item xs={12} md={3}>
+                  <Grid item xs={6} md={3}>
                     <h3>
                       <a
                         href="https://monetizealchemist.com/"
@@ -134,7 +134,7 @@ class SnsPageComponent extends Component {
                         <Button
                           variant="outlined"
                           size="large"
-                          style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '30px' }}
+                          style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '10px' }}
                         >
                           Blog
                         </Button>
