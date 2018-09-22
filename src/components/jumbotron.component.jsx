@@ -114,7 +114,7 @@ class JumbotronComponent extends Component {
         style={{ backgroundSize: 'cover', color: 'white', backgroundPosition: 'center center' }}
       >
         <div
-          style={{ position: 'relative', height: '100%', color: 'white', paddingTop: '10px', paddingBottom: '80px', marginTop: '70px'  }}
+          style={{ position: 'relative', height: '100%', color: 'white', paddingTop: '10px', paddingBottom: '80px', marginTop: '45px'  }}
         >
 
           <Grid container justify={'center'} style={{ maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
