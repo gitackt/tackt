@@ -22,7 +22,7 @@ class ProfilePageComponent extends Component {
 
         <div>
 
-          <div style={{ display: 'inline-block', height: '300px', overflow: 'hidden' }}>
+          <div style={{ display: 'inline-block', height: '100%', overflow: 'hidden', paddingTop: '60px', maxHeight: '300px' }}>
             <img
               style={{ width: '100%', height: 'auto' }}
               src="/images/profile.jpg"
