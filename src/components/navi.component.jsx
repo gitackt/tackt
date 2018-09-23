@@ -91,14 +91,6 @@ class NavigationComponent extends Component {
                 ブログを見る
               </h4>
             </a>
-            <Link to="/sns" style={{ textDecoration: 'none' }}>
-              <h4
-                style={{ paddingTop: "10px", paddingBottom: "10px" }}
-                onClick={() => this.setState({ open: false })}
-              >
-                連絡先を見る
-            </h4>
-            </Link>
           </div>
           </div>
           

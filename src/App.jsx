@@ -5,7 +5,6 @@ import NavigationComponent from './components/navi.component';
 import EngeneerPageComponent from './pages/engeneer.component';
 import ComicPageComponent from './pages/comic.component';
 import ProfilePageComponent from './pages/profile.component';
-import SnsPageComponent from './pages/sns.component';
 import { Route, Switch, BrowserRouter as Router,Redirect } from 'react-router-dom';
 
 
@@ -31,7 +30,6 @@ class App extends Component {
           <Route path="/engeneer" component={EngeneerPageComponent} />
           <Route path="/comic" component={ComicPageComponent} />
           <Route path="/profile" component={ProfilePageComponent} />
-          <Route path="/sns" component={SnsPageComponent} />
           <Route render={() => (<Redirect to={"/"} />)} />
         </Switch>
       </Router>
