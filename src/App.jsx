@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './App.scss';
 import JumbotronComponent from './components/jumbotron.component';
 import NavigationComponent from './components/navi.component';
-import EngeneerPageComponent from './pages/engeneer.component';
-import ComicPageComponent from './pages/comic.component';
 import ProfilePageComponent from './pages/profile.component';
 import { Route, Switch, BrowserRouter as Router,Redirect } from 'react-router-dom';
 
@@ -27,8 +25,6 @@ class App extends Component {
       <Router>
         <Switch>
           <Route exact={true} path="/" component={LandingComponent} />
-          <Route path="/engeneer" component={EngeneerPageComponent} />
-          <Route path="/comic" component={ComicPageComponent} />
           <Route path="/profile" component={ProfilePageComponent} />
           <Route render={() => (<Redirect to={"/"} />)} />
         </Switch>

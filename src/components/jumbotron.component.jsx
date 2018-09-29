@@ -1,41 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import FooterComponent from '../components/footer.component';
-
-const styles = {
-  list: {
-    height: '100%',
-    color: 'white',
-    borderRadius: '20px',
-    textAlign: 'left',
-    margin: 'auto',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    marginTop: '40px',
-  },
-  list_text_nomal: {
-    fontSize: '20px',
-    color: 'white',
-    textShadow: '0px 0px 50px rgba(50, 50, 50, 1)'
-  },
-  list_small_text: {
-    fontSize: '10px',
-    color: 'white',
-  },
-  list_text_container: {
-    height: '20px',
-    marginTop: '-60px',
-    borderRadius: '0px 0px 20px 20px',
-    padding: '20px',
-    paddingLeft: '30px',
-  },
-  image: { 
-    width: '100%', 
-    height: 'auto', 
-    borderRadius: '20px 20px 20px 20px' 
-  }
-};
+import { BabelBubbleComponent } from '../services/babel.bubble.component';
+import { VcuComponent } from '../services/vcu.component';
+import { ProfilePageComponent } from '../pages/profile.component';
 
 class JumbotronComponent extends Component {
 
@@ -63,90 +31,43 @@ class JumbotronComponent extends Component {
             alt={'website'}
           />
 
-          <Grid container justify={'center'} style={{ maxWidth: '800px', marginTop: '200px', marginLeft: 'auto', marginRight: 'auto', paddingRight: '5%', paddingLeft: '5%' }}>
-            <Grid item xs={12}>
-              <Link to="/profile" style={{ textDecoration: 'none' }}>
-                <div style={styles.list}>
-                  <img
-                    style={styles.image}
-                    src="/images/profile.jpg"
-                    alt={'Tackt Mitsuhashi'}
-                  />
-                  <div style={styles.list_text_container}>
-                    <div style={styles.list_text_nomal}>Profile</div>
-                  </div>
-                </div>
-              </Link>
-            </Grid>
-            <Grid item xs={12}>
-              <Link to="/engeneer" style={{ textDecoration: 'none' }}>
-                <div style={styles.list}>
-                  <img
-                    style={styles.image}
-                    src="/images/profile.jpg"
-                    alt={'Tackt Mitsuhashi'}
-                  />
-                  <div style={styles.list_text_container}>
-                    <div style={styles.list_text_nomal}>Portfolio</div>
-                    
-                  </div>
-                </div>
-              </Link>
-            </Grid>
-            <Grid item xs={12}>
-              <Link to="/comic" style={{ textDecoration: 'none' }}>
-                <div style={styles.list}>
-                  <img
-                    style={styles.image}
-                    src="/images/profile.jpg"
-                    alt={'Tackt Mitsuhashi'}
-                  />
-                  <div style={styles.list_text_container}>
-                    <div style={styles.list_text_nomal}>Works</div>
-                    
-                  </div>
-                </div>
-              </Link>
-            </Grid>
-            
-            <Grid item xs={12}>
+          <Grid container justify={'center'} style={{ maxWidth: '300px', marginTop: '50px', marginLeft: 'auto', marginRight: 'auto' }}>
+            <Grid item xs={6}>
               <a
-                href="https://tackt.official.ec/"
+                href={"https://tackt.official.ec/"}
+                target={"_blank"}
                 style={{ textDecoration: 'none' }}
-                target="_blank"
-                rel="noopener noreferrer"
               >
-                <div style={styles.list}>
-                  <img
-                    style={styles.image}
-                    src="/images/profile.jpg"
-                    alt={'Tackt Mitsuhashi'}
-                  />
-                  <div style={styles.list_text_container}>
-                    <div style={styles.list_text_nomal}>Shop</div>
-                    
-                  </div>
-                </div>
+                <img
+                  style={{ marginTop: '10px', marginLeft: 'auto', marginRight: 'auto', width: '100px', height: 'auto' }}
+                  src="/images/common/shop.png"
+                  alt={'shop'}
+                />
               </a>
             </Grid>
-            <Grid item xs={12}>
+            <Grid item xs={6}>
               <a
-                href="https://monetizealchemist.com/"
+                href={"https://monetizealchemist.com/"}
+                target={"_blank"}
                 style={{ textDecoration: 'none' }}
-                target="_blank"
-                rel="noopener noreferrer"
               >
-                <div style={styles.list}>
-                  <img
-                    style={styles.image}
-                    src="/images/profile.jpg"
-                    alt={'Tackt Mitsuhashi'}
-                  />
-                  <div style={styles.list_text_container}>
-                    <div style={styles.list_text_nomal}>Blog</div>
-                  </div>
-                </div>
+                <img
+                  style={{ marginTop: '10px', marginLeft: 'auto', marginRight: 'auto', width: '100px', height: 'auto' }}
+                  src="/images/common/blog.png"
+                  alt={'website'}
+                />
               </a>
+            </Grid>
+          </Grid>
+
+          <ProfilePageComponent />
+
+          <Grid container justify={'center'} style={{ maxWidth: '500px', marginTop: '50px', marginLeft: 'auto', marginRight: 'auto', paddingRight: '5%', paddingLeft: '5%' }}>
+            <Grid item xs={12} style={{ textAlign: 'left', marginBottom: '10px', marginTop: '10px' }}>
+              <BabelBubbleComponent />
+            </Grid>
+            <Grid item xs={12} style={{ textAlign: 'left', marginBottom: '10px', marginTop: '10px' }}>
+              <VcuComponent />
             </Grid>
           </Grid>
         </div>

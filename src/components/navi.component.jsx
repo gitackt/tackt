@@ -38,33 +38,9 @@ class NavigationComponent extends Component {
                 TOP
               </h4>
             </Link>
-            <Link to="/profile" style={{ textDecoration: 'none' }}>
-              <h4
-                style={{ paddingTop: "10px", paddingBottom: "10px" }}
-                onClick={() => this.setState({ open: false })}
-              >
-                自己紹介を見る
-            </h4>
-            </Link>
             </div>
 
             <div style={{ padding: "20px", paddingTop: "-20px", fontSize: "12px" }}>
-            <Link to="/engeneer" style={{ textDecoration: 'none' }}>
-                <h4
-                style={{ paddingTop: "10px", paddingBottom: "10px" }}
-                onClick={() => this.setState({ open: false })}
-              >
-                製作実績を見る
-              </h4>
-            </Link>
-            <Link to="/comic" style={{ textDecoration: 'none' }}>
-              <h4
-                style={{ paddingTop: "10px", paddingBottom: "10px" }}
-                onClick={() => this.setState({ open: false })}
-              >
-                作品紹介を見る
-              </h4>
-            </Link>
             <a
               href="https://tackt.official.ec/"
               style={{ textDecoration: 'none' }}

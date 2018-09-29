@@ -6,15 +6,14 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = {
   card: {
-    maxWidth: 345,
-    paddingTop: 50,
+    background: 'black',
   },
 };
 
 export const VcuComponent = () => {
 
     return (
-      <Card className={styles.card}>
+      <Card style={styles.card}>
         <img
           style={{ position: 'relative', width: '100%', height: 'auto' }}
           src="/images/services/vcu.png"
@@ -23,7 +22,7 @@ export const VcuComponent = () => {
         <CardContent>
           <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '18px' }}>
             <Button
-              style={{ fontSize: '15px' }}
+              style={{ fontSize: '15px', color: 'white' }}
               size="small"
               color="primary"
               href="https://v-cu.com"
@@ -39,7 +38,7 @@ export const VcuComponent = () => {
             Django Python Nginx Mysql
                 </Typography>
           <br />
-          <Typography component="p" style={{ fontSize: '12px' }}>
+          <Typography component="p" style={{ fontSize: '12px', color: 'rgba(143, 143, 143, 1)' }}>
             VCUは、複数の取引所から自動でデータを取得し、 仮想通貨のポートフォリオを簡単にチェックすることができるサービスです。保有残高を取引所とデータ連携を行うことで自動的に取得します。
                 </Typography>
         </CardContent>

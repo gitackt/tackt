@@ -6,15 +6,14 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = {
   card: {
-    maxWidth: 345,
-    paddingTop: 50,
+    background: 'black',
   },
 };
 
 export const BabelBubbleComponent = () => {
 
     return (
-      <Card className={styles.card}>
+      <Card style={styles.card}>
         <img
           style={{ position: 'relative', width: '100%', height: 'auto' }}
           src="/images/services/babelbubble.png"
@@ -23,9 +22,8 @@ export const BabelBubbleComponent = () => {
         <CardContent>
           <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '18px' }}>
             <Button
-              style={{ fontSize: '15px' }}
+              style={{ fontSize: '15px', color: 'white' }}
               size="small"
-              color="primary"
               href="https://babel-bubble.com"
               target="_blank"
             >
@@ -39,7 +37,7 @@ export const BabelBubbleComponent = () => {
             Django Python Nginx Mysql
                 </Typography>
           <br />
-          <Typography component="p" style={{ fontSize: '12px' }}>
+          <Typography component="p" style={{ fontSize: '12px', color: 'rgba(143, 143, 143, 1)' }}>
             バベルバブルは無料で遊べる投資シミュレーションゲームです。ゲーム内で流通するアイテムをゲーム内通貨で売買して遊びます。アイテムを安い時に買って高い時に売ることで架空の市場取引を体験できます。
                 </Typography>
         </CardContent>

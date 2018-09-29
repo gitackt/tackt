@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import NavigationComponent from '../components/navi.component';
-import FooterComponent from '../components/footer.component';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
@@ -8,18 +6,10 @@ import Typography from '@material-ui/core/Typography';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
-import Grid from '@material-ui/core/Grid';
 
-const styles = {
-  root: {
-    flexGrow: 1,
-  },
-};
-
-class ProfilePageComponent extends Component {
+export class ProfilePageComponent extends Component {
 
   state = {
-    is_basic: false,
     is_education: false,
     is_license: false,
     is_skill: false,
@@ -31,47 +21,37 @@ class ProfilePageComponent extends Component {
 
   render() {
     return (
-      <div className={styles.root} style={{ position: 'relative', height: '100%' }}>
-        <NavigationComponent />
 
-        <div>
+      <div>
 
-          <div style={{ display: 'inline-block', height: '100%', overflow: 'hidden', paddingTop: '80px', maxHeight: '300px' }}>
-            <img
+        <div style={{ marginTop: '100px', maxWidth: '500px', display: 'inline-block', height: '100%', overflow: 'hidden', paddingTop: '80px', maxHeight: '300px' }}>
+            {/* <img
               style={{ width: '100%', height: 'auto' }}
               src="/images/profile.jpg"
               alt={'Tackt Mitsuhashi'}
-            />
+            /> */}
           </div>
 
-          <div style={{ padding: '20px', textAlign: 'left' }}>
+          <div style={{ padding: '20px', textAlign: 'left', maxWidth: '500px', marginLeft: 'auto' , marginRight: 'auto' }}>
 
-            <Card>
+            <Card
+             style={{ background: 'black', color: 'white' }}
+            >
               <CardActionArea>
                 <CardContent>
                   <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '18px' }}>
-                    <h2 style={{ fontSize: '18px' }}>三橋拓人</h2>
+                    <h2 style={{ fontSize: '18px',color: 'white' }}>三橋拓人</h2>
                   </Typography>
                   <Typography component="p" style={{ fontSize: '11px', color: 'gray' }}>
                     Tackt Mitsuhashi
                     </Typography>
                   <br />
-                  <Typography component="p" style={{ fontSize: '12px' }}>
-                    三橋拓人のポートフォリオサイト。WEB開発と漫画書いてる21歳です。いつも何か作ってます。
-                    18歳の頃から独学をし始めて、ITベンチャー企業でプログラミング技術を身につけました。
-                    証券アナリスト資格二次試験合格。投資シミュレーションゲームや自動トレードシステムなど、金融系のシステムを作るのが好きです。
-                    趣味で漫画・イラストやレジン・ハーバリウム製作をやってます。ショップやブログあります。
-                    制作実績 仮想通貨ポートフォリオサイトVCU 投資シミュレーションゲームBabelBubble
+                  <Typography component="p" style={{ fontSize: '12px', color: 'rgba(177, 177, 177, 1)' }}>
+                    18歳からプログラミングを始め、大学在学中にITベンチャー企業で開発を行う。証券アナリスト試験合格。
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions>
-                  <Button
-                    color={'primary'}
-                    onClick={() => this.setState({ is_basic: !this.state.is_basic })}
-                  >
-                    情報
-                  </Button>
+            <CardActions>
                   <Button
                     color={'primary'}
                     onClick={() => this.setState({ is_education: !this.state.is_education })}
@@ -93,19 +73,8 @@ class ProfilePageComponent extends Component {
               </CardActions>
             </Card>
 
-            <Collapse in={this.state.is_basic}>
-              <Card style={{ marginTop: '20px' }}>
-                <p style={{ padding: '20px' }}>
-                  <h4>生年月日</h4>
-                  1997年6月30日<br />
-                  <h4>メールアドレス</h4>
-                  git.tackt@gmail.com<br />
-                </p>
-              </Card>
-            </Collapse>
-
             <Collapse in={this.state.is_education}>
-              <Card style={{ marginTop: '20px' }}>
+              <Card style={{ marginTop: '20px', background: 'black', color:'rgba(143, 143, 143, 1)' }}>
                 <p style={{ padding: '20px' }}>
                   <h4>学歴</h4>
                   明治大学 商学部 (2016 ~ )<br />
@@ -117,7 +86,7 @@ class ProfilePageComponent extends Component {
             </Collapse>
 
             <Collapse in={this.state.is_license}>
-              <Card style={{ marginTop: '20px' }}>
+              <Card style={{ marginTop: '20px' , background: 'black', color: 'rgba(143, 143, 143, 1)'}}>
                 <p style={{ padding: '20px' }}>
                   <h4>金融系</h4>
                   証券アナリスト, FP<br />
@@ -126,7 +95,7 @@ class ProfilePageComponent extends Component {
             </Collapse>
 
             <Collapse in={this.state.is_skill}>
-              <Card style={{ marginTop: '20px' }}>
+              <Card style={{ marginTop: '20px', background: 'black', color: 'rgba(143, 143, 143, 1)' }}>
                 <p style={{ padding: '20px' }}>
                   <h4>サーバサイド</h4>
                   Python, Django, Rails, Node<br />
@@ -141,88 +110,6 @@ class ProfilePageComponent extends Component {
             </Collapse>
 
           </div>
-
-          <div style={{ marginTop: '60px' }}>
-
-            <h3 style={{ color: '#1DD6D1' }}>連絡先</h3>
-
-            <Grid container spacing={24} justify={'center'}>
-              <Grid item xs={12}>
-                <div style={{ fontSize: '15px', color: 'rgb(149, 149, 149)', textAlign: 'center', maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto' }}>
-                  <Grid container spacing={24} justify={'center'}>
-                    <Grid item xs={6} md={3}>
-                      <h3>
-                        <a
-                          href="https://twitter.com/picos_tackt?lang=ja"
-                          style={{ textDecoration: 'none' }}
-                        >
-                          <Button
-                            variant="outlined"
-                            size="large"
-                            style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '10px' }}
-                          >
-                            Twitter
-                        </Button>
-                        </a>
-                      </h3>
-                    </Grid>
-                    <Grid item xs={6} md={3}>
-                      <h3>
-                        <a
-                          href="https://www.facebook.com/profile.php?id=100013371464347"
-                          style={{ textDecoration: 'none' }}
-                        >
-                          <Button
-                            variant="outlined"
-                            size="large"
-                            style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '10px' }}
-                          >
-                            Facebook
-                        </Button>
-                        </a>
-                      </h3>
-                    </Grid>
-                    <Grid item xs={6} md={3}>
-                      <h3>
-                        <a
-                          href="https://github.com/gitackt"
-                          style={{ textDecoration: 'none' }}
-                        >
-                          <Button
-                            variant="outlined"
-                            size="large"
-                            style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '10px' }}
-                          >
-                            Github
-                        </Button>
-                        </a>
-                      </h3>
-                    </Grid>
-                    <Grid item xs={6} md={3}>
-                      <h3>
-                        <a
-                          href="https://valu.is/tackt3"
-                          style={{ textDecoration: 'none' }}
-                        >
-                          <Button
-                            variant="outlined"
-                            size="large"
-                            style={{ color: '#1DD6D1', borderColor: '#1DD6D1', marginTop: '10px' }}
-                          >
-                            Valu
-                        </Button>
-                        </a>
-                      </h3>
-                    </Grid>
-                  </Grid>
-                </div>
-              </Grid>
-            </Grid>
-
-          </div>
-
-        </div>
-        <FooterComponent />
       </div>
     );
   }
