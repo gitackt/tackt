@@ -1,102 +1,39 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
+import FooterComponent from '../components/footer.component';
 
 const styles = {
-  profile: {
-    width: '95%',
-    height: '330px',
+  list: {
+    height: '100%',
     color: 'white',
-    maxWidth: '400px',
-    background: `linear-gradient(rgba(34, 64, 61, 0.2),rgba(26, 33, 33, 0.5)), url('/images/list/profile.jpg')`,
     borderRadius: '20px',
-    textAlign: 'center',
+    textAlign: 'left',
     margin: 'auto',
-    marginTop: '5px',
-    marginBottom: '5px',
-    display: 'inline-block',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center',
-  },
-  record: {
-    width: '95%',
-    height: '160px',
-    color: 'white',
-    maxWidth: '400px',
-    background: `linear-gradient(rgba(34, 64, 61, 0.2),rgba(26, 33, 33, 0.5)), url('/images/list/babelbubble.png')`,
-    borderRadius: '20px',
-    textAlign: 'center',
-    margin: 'auto',
-    marginTop: '5px',
-    marginBottom: '5px',
-    display: 'inline-block',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center',
-  },
-  work: {
-    width: '95%',
-    height: '160px',
-    color: 'white',
-    maxWidth: '400px',
-    background: `linear-gradient(rgba(34, 64, 61, 0.2),rgba(26, 33, 33, 0.5)), url('/images/list/work.jpg')`,
-    borderRadius: '20px',
-    textAlign: 'center',
-    margin: 'auto',
-    marginTop: '5px',
-    marginBottom: '5px',
-    display: 'inline-block',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center',
-  },
-  shop: {
-    width: '95%',
-    height: '100px',
-    color: 'white',
-    maxWidth: '400px',
-    background: `linear-gradient(rgba(34, 64, 61, 0.2),rgba(26, 33, 33, 0.5)), url('/images/list/shop.jpg')`,
-    borderRadius: '20px',
-    textAlign: 'center',
-    margin: 'auto',
-    marginTop: '5px',
-    marginBottom: '5px',
-    display: 'inline-block',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center',
-  },
-  blog: {
-    width: '95%',
-    height: '100px',
-    color: 'white',
-    maxWidth: '400px',
-    background: `linear-gradient(rgba(34, 64, 61, 0.2),rgba(26, 33, 33, 0.5)), url('/images/list/blog.png')`,
-    borderRadius: '20px',
-    textAlign: 'center',
-    margin: 'auto',
-    marginTop: '5px',
-    marginBottom: '5px',
-    display: 'inline-block',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop: '40px',
   },
   list_text_nomal: {
     fontSize: '20px',
     color: 'white',
-    marginTop: '85px'
-  },
-  list_text_profile: {
-    fontSize: '20px',
-    color: 'white',
-    marginTop: '255px'
-  },
-  list_text_small: {
-    fontSize: '20px',
-    color: 'white',
-    marginTop: '30px'
+    textShadow: '0px 0px 50px rgba(50, 50, 50, 1)'
   },
   list_small_text: {
-    fontSize: '15px',
+    fontSize: '10px',
     color: 'white',
-    marginTop: '5px'
+  },
+  list_text_container: {
+    height: '20px',
+    marginTop: '-60px',
+    borderRadius: '0px 0px 20px 20px',
+    padding: '20px',
+    paddingLeft: '30px',
+  },
+  image: { 
+    width: '100%', 
+    height: 'auto', 
+    borderRadius: '20px 20px 20px 20px' 
   }
 };
 
@@ -109,65 +46,111 @@ class JumbotronComponent extends Component {
         style={{ backgroundSize: 'cover', color: 'white' }}
       >
         <div
-          style={{ position: 'relative', height: '100%', color: 'white', paddingTop: '10px', paddingBottom: '80px', marginTop: '70px'  }}
+          style={{ position: 'relative', height: '100%', paddingTop: '80px', paddingBottom: '80px', textAlign: 'center'  }}
         >
 
-          <Grid container justify={'center'} style={{ maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
-            <Grid item xs={6}>
+          <img
+            style={{ marginTop: '30px', marginLeft: 'auto', marginRight: 'auto', width: '200px', height: 'auto'}}
+            src="/images/common/jack_the_ripper.png"
+            alt={'jack the ripper'}
+          />
+
+          <br />
+
+          <img
+            style={{ marginTop: '50px', marginLeft: 'auto', marginRight: 'auto', width: '170px', height: 'auto' }}
+            src="/images/common/website.png"
+            alt={'website'}
+          />
+
+          <Grid container justify={'center'} style={{ maxWidth: '800px', marginTop: '200px', marginLeft: 'auto', marginRight: 'auto', paddingRight: '5%', paddingLeft: '5%' }}>
+            <Grid item xs={12}>
               <Link to="/profile" style={{ textDecoration: 'none' }}>
-                <div style={styles.profile}>
-                  <div style={styles.list_text_profile}>自己紹介</div>
-                  <div style={styles.list_small_text}>Profile</div>
+                <div style={styles.list}>
+                  <img
+                    style={styles.image}
+                    src="/images/profile.jpg"
+                    alt={'Tackt Mitsuhashi'}
+                  />
+                  <div style={styles.list_text_container}>
+                    <div style={styles.list_text_nomal}>Profile</div>
+                  </div>
                 </div>
               </Link>
             </Grid>
-            <Grid item xs={6}>
-              <Grid item xs={12}>
-                <Link to="/engeneer" style={{ textDecoration: 'none' }}>
-                  <div style={styles.record}>
-                    <div style={styles.list_text_nomal}>製作実績</div>
-                    <div style={styles.list_small_text}>Portfolio</div>
+            <Grid item xs={12}>
+              <Link to="/engeneer" style={{ textDecoration: 'none' }}>
+                <div style={styles.list}>
+                  <img
+                    style={styles.image}
+                    src="/images/profile.jpg"
+                    alt={'Tackt Mitsuhashi'}
+                  />
+                  <div style={styles.list_text_container}>
+                    <div style={styles.list_text_nomal}>Portfolio</div>
+                    
                   </div>
-                </Link>
-              </Grid>
-              <Grid item xs={12}>
-                <Link to="/comic" style={{ textDecoration: 'none' }}>
-                  <div style={styles.work}>
-                    <div style={styles.list_text_nomal}>作品紹介</div>
-                    <div style={styles.list_small_text}>Works</div>
+                </div>
+              </Link>
+            </Grid>
+            <Grid item xs={12}>
+              <Link to="/comic" style={{ textDecoration: 'none' }}>
+                <div style={styles.list}>
+                  <img
+                    style={styles.image}
+                    src="/images/profile.jpg"
+                    alt={'Tackt Mitsuhashi'}
+                  />
+                  <div style={styles.list_text_container}>
+                    <div style={styles.list_text_nomal}>Works</div>
+                    
                   </div>
-                </Link>
-              </Grid>
+                </div>
+              </Link>
             </Grid>
             
-            <Grid item xs={6}>
+            <Grid item xs={12}>
               <a
                 href="https://tackt.official.ec/"
                 style={{ textDecoration: 'none' }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div style={styles.shop}>
-                  <div style={styles.list_text_small}>ショップ</div>
-                  <div style={styles.list_small_text}>Shop</div>
+                <div style={styles.list}>
+                  <img
+                    style={styles.image}
+                    src="/images/profile.jpg"
+                    alt={'Tackt Mitsuhashi'}
+                  />
+                  <div style={styles.list_text_container}>
+                    <div style={styles.list_text_nomal}>Shop</div>
+                    
+                  </div>
                 </div>
               </a>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12}>
               <a
                 href="https://monetizealchemist.com/"
                 style={{ textDecoration: 'none' }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div style={styles.blog}>
-                  <div style={styles.list_text_small}>ブログ</div>
-                  <div style={styles.list_small_text}>Blog</div>
+                <div style={styles.list}>
+                  <img
+                    style={styles.image}
+                    src="/images/profile.jpg"
+                    alt={'Tackt Mitsuhashi'}
+                  />
+                  <div style={styles.list_text_container}>
+                    <div style={styles.list_text_nomal}>Blog</div>
+                  </div>
                 </div>
               </a>
             </Grid>
           </Grid>
         </div>
+        <FooterComponent />
       </div>
     );
   }

@@ -57,11 +57,11 @@ class ProfilePageComponent extends Component {
                     </Typography>
                   <br />
                   <Typography component="p" style={{ fontSize: '12px' }}>
-                    WEB開発と漫画書いてる21歳です！とりあえずいつも何か作ってます。
+                    三橋拓人のポートフォリオサイト。WEB開発と漫画書いてる21歳です。いつも何か作ってます。
                     18歳の頃から独学をし始めて、ITベンチャー企業でプログラミング技術を身につけました。
                     証券アナリスト資格二次試験合格。投資シミュレーションゲームや自動トレードシステムなど、金融系のシステムを作るのが好きです。
                     趣味で漫画・イラストやレジン・ハーバリウム製作をやってます。ショップやブログあります。
-                    web開発・webデザイン・webスクレイピング等、お仕事の依頼承ります！
+                    制作実績 仮想通貨ポートフォリオサイトVCU 投資シミュレーションゲームBabelBubble
                   </Typography>
                 </CardContent>
               </CardActionArea>

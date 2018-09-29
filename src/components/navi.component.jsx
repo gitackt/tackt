@@ -19,8 +19,8 @@ class NavigationComponent extends Component {
       <div>
         <Drawer
           open={this.state.open}
-        >
-          <div style={{ width: '300px', height: '100px', background: 'white' }}>
+      >
+          <div style={{ width: '300px', height: '100px' }}>
             <IconButton 
               onClick={() => this.setState({ open: false })}
               style={{ right: 10, top: 5, position: 'absolute' }}
@@ -96,20 +96,14 @@ class NavigationComponent extends Component {
           
         </Drawer>
 
-        <AppBar style={{ background: 'white', boxShadow: 'none' }}>
+        <AppBar style={{ background: 'transparent', boxShadow: 'none' }}>
           <Toolbar>
             <IconButton 
+              color={"inherit"}
               onClick={() => this.setState({ open: true })}
             >
               <MenuIcon />
             </IconButton>
-              <Link to="/" style={{ textDecoration: 'none' }}>
-                <img
-                  style={{ width: '70px', height: 'auto', marginLeft: '15px', marginTop: '6px' }}
-                  src="/images/tackt_logo.png"
-                  alt={'tackt_logo'}
-                />
-              </Link>
           </Toolbar>
         </AppBar>
       </div>

@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+  background-color: black;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, -1000px);
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  transform-style: preserve-3d;
+
+}
+
+.bubbleWrap {
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  perspective: 600px;
+}
+
+.bubble {
+  position: absolute;
+  background: black;
+  opacity: .7;
+  border-radius: 50%;
+  animation: move 3s infinite;
+
+}
+
+@for $i from 1 through 100 {
+  .bubble:nth-child(#{$i}) {
+    $size: random(30)+px;
+    height: $size;
+    width: $size;
+    animation-delay: -$i * .2s;
+    transform: translate3d((random(1000) * 1px), (random(1000) * 1px), (random(2000) * 1px));
+    background: hsl(random(360), 70%, 50%);
+  }
+
+}

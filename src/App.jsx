@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import JumbotronComponent from './components/jumbotron.component';
 import NavigationComponent from './components/navi.component';
 import EngeneerPageComponent from './pages/engeneer.component';
@@ -23,7 +23,7 @@ class App extends Component {
   render() {
 
     return (
-      <div className="App">
+      <div style={{ background: 'black' }}>
       <Router>
         <Switch>
           <Route exact={true} path="/" component={LandingComponent} />
