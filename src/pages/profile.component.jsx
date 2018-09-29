@@ -53,19 +53,22 @@ export class ProfilePageComponent extends Component {
               </CardActionArea>
             <CardActions>
                   <Button
-                    color={'primary'}
+                    variant={'outlined'}
+                    style={{ color: 'white', borderColor: 'white' }}
                     onClick={() => this.setState({ is_education: !this.state.is_education })}
                   >
                     経歴
                   </Button>
                   <Button
-                    color={'primary'}
+                    variant={'outlined'}
+                    style={{ color: 'white', borderColor: 'white' }}
                     onClick={() => this.setState({ is_license: !this.state.is_license })}
                   >
                     資格
                   </Button>
                   <Button
-                    color={'primary'}
+                    variant={'outlined'}
+                    style={{ color: 'white', borderColor: 'white' }}
                     onClick={() => this.setState({ is_skill: !this.state.is_skill })}
                   >
                     技術
