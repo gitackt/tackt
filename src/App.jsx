@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './App.scss';
 import JumbotronComponent from './components/jumbotron.component';
 import NavigationComponent from './components/navi.component';
-import ProfilePageComponent from './pages/profile.component';
 import { Route, Switch, BrowserRouter as Router,Redirect } from 'react-router-dom';
-
+import FooterComponent from './components/footer.component';
+import ProfileComponent from './components/profile.component';
+import ContentComponent from './components/content.component';
 
 class LandingComponent extends Component {
   render() {
@@ -12,6 +12,9 @@ class LandingComponent extends Component {
       <div>
         <NavigationComponent />
         <JumbotronComponent />
+        <ProfileComponent />
+        <ContentComponent />
+        <FooterComponent />
       </div>
     );
   }
@@ -25,7 +28,6 @@ class App extends Component {
       <Router>
         <Switch>
           <Route exact={true} path="/" component={LandingComponent} />
-          <Route path="/profile" component={ProfilePageComponent} />
           <Route render={() => (<Redirect to={"/"} />)} />
         </Switch>
       </Router>

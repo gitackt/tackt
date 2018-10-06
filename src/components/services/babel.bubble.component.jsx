@@ -7,39 +7,40 @@ import Typography from '@material-ui/core/Typography';
 const styles = {
   card: {
     background: 'black',
+    marginLeft: 'auto',
+    marginRight: 'auto',
   },
 };
 
-export const VcuComponent = () => {
+export const BabelBubbleComponent = () => {
 
     return (
       <Card style={styles.card}>
         <img
           style={{ position: 'relative', width: '100%', height: 'auto' }}
-          src="/images/services/vcu.png"
-          alt={'vcu'}
+          src="/images/services/babelbubble.png"
+          alt={'babelbubble'}
         />
         <CardContent>
           <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '18px' }}>
             <Button
               style={{ fontSize: '15px', color: 'white' }}
               size="small"
-              color="primary"
-              href="https://v-cu.com"
+              href="https://babel-bubble.com"
               target="_blank"
             >
-              vcu
+              babel bubble
             </Button>
           </Typography>
           <Typography component="p" style={{ fontSize: '11px', color: 'gray' }}>
-            Django Bootstrap
+            React Redux Rxjs MaterialUi
                 </Typography>
           <Typography component="p" style={{ fontSize: '11px', color: 'gray' }}>
             Django Python Nginx Mysql
                 </Typography>
           <br />
           <Typography component="p" style={{ fontSize: '12px', color: 'rgba(143, 143, 143, 1)' }}>
-            VCUは、複数の取引所から自動でデータを取得し、 仮想通貨のポートフォリオを簡単にチェックすることができるサービスです。保有残高を取引所とデータ連携を行うことで自動的に取得します。
+            バベルバブルは無料で遊べる投資シミュレーションゲームです。ゲーム内で流通するアイテムをゲーム内通貨で売買して遊びます。アイテムを安い時に買って高い時に売ることで架空の市場取引を体験できます。
                 </Typography>
         </CardContent>
       </Card>

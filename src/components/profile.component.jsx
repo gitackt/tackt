@@ -7,7 +7,29 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
 
-export class ProfilePageComponent extends Component {
+const styles = {
+  root: {
+    flexGrow: 1,
+  },
+  image: { 
+    marginTop: '100px', 
+    maxWidth: '500px', 
+    display: 'inline-block', 
+    height: '100%', 
+    overflow: 'hidden', 
+    paddingTop: '80px', 
+    maxHeight: '300px' 
+  },
+  container: { 
+    padding: '20px', 
+    textAlign: 'left', 
+    maxWidth: '500px', 
+    marginLeft: 'auto', 
+    marginRight: 'auto' 
+  },
+};
+
+class ProfileComponent extends Component {
 
   state = {
     is_education: false,
@@ -24,7 +46,7 @@ export class ProfilePageComponent extends Component {
 
       <div>
 
-        <div style={{ marginTop: '100px', maxWidth: '500px', display: 'inline-block', height: '100%', overflow: 'hidden', paddingTop: '80px', maxHeight: '300px' }}>
+        <div style={styles.image}>
             {/* <img
               style={{ width: '100%', height: 'auto' }}
               src="/images/profile.jpg"
@@ -32,8 +54,8 @@ export class ProfilePageComponent extends Component {
             /> */}
           </div>
 
-          <div style={{ padding: '20px', textAlign: 'left', maxWidth: '500px', marginLeft: 'auto' , marginRight: 'auto' }}>
-
+          <div style={styles.container}>
+          
             <Card
              style={{ background: 'black', color: 'white' }}
             >
@@ -118,4 +140,4 @@ export class ProfilePageComponent extends Component {
   }
 }
 
-export default ProfilePageComponent;
+export default ProfileComponent;

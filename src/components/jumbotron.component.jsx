@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
-import FooterComponent from '../components/footer.component';
-import { BabelBubbleComponent } from '../services/babel.bubble.component';
-import { VcuComponent } from '../services/vcu.component';
-import { ProfilePageComponent } from '../pages/profile.component';
 
 class JumbotronComponent extends Component {
 
@@ -59,19 +55,7 @@ class JumbotronComponent extends Component {
               </a>
             </Grid>
           </Grid>
-
-          <ProfilePageComponent />
-
-          <Grid container justify={'center'} style={{ maxWidth: '500px', marginTop: '50px', marginLeft: 'auto', marginRight: 'auto', paddingRight: '5%', paddingLeft: '5%' }}>
-            <Grid item xs={12} style={{ textAlign: 'left', marginBottom: '10px', marginTop: '10px' }}>
-              <BabelBubbleComponent />
-            </Grid>
-            <Grid item xs={12} style={{ textAlign: 'left', marginBottom: '10px', marginTop: '10px' }}>
-              <VcuComponent />
-            </Grid>
-          </Grid>
         </div>
-        <FooterComponent />
       </div>
     );
   }
