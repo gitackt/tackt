@@ -1,60 +1,44 @@
 import React, { Component } from 'react';
-import Grid from '@material-ui/core/Grid';
+
+const styles = {
+  container: {
+    position: 'relative',
+    height: '100%',
+    paddingTop: '80px',
+    paddingBottom: '80px',
+    textAlign: 'center',
+    background: "url('/images/gradations/test1.jpg')",
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  },
+  image: {
+    marginTop: '30px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: '200px',
+    height: 'auto',
+  },
+}
 
 class JumbotronComponent extends Component {
 
   render() {
 
     return (
-      <div 
-        style={{ backgroundSize: 'cover', color: 'white' }}
+      <div
+        style={{ color: 'white' }}
       >
         <div
-          style={{ position: 'relative', height: '100%', paddingTop: '80px', paddingBottom: '80px', textAlign: 'center'  }}
+          style={styles.container}
         >
-
           <img
-            style={{ marginTop: '30px', marginLeft: 'auto', marginRight: 'auto', width: '200px', height: 'auto'}}
-            src="/images/common/jack_the_ripper.png"
-            alt={'jack the ripper'}
+            style={styles.image}
+            src="/images/gradations/test1.jpg"
+            alt={'title'}
           />
-
-          <br />
-
-          <img
-            style={{ marginTop: '50px', marginLeft: 'auto', marginRight: 'auto', width: '170px', height: 'auto' }}
-            src="/images/common/website.png"
-            alt={'website'}
-          />
-
-          <Grid container justify={'center'} style={{ maxWidth: '300px', marginTop: '50px', marginLeft: 'auto', marginRight: 'auto' }}>
-            <Grid item xs={6}>
-              <a
-                href={"https://tackt.official.ec/"}
-                target={"_blank"}
-                style={{ textDecoration: 'none' }}
-              >
-                <img
-                  style={{ marginTop: '10px', marginLeft: 'auto', marginRight: 'auto', width: '100px', height: 'auto' }}
-                  src="/images/common/shop.png"
-                  alt={'shop'}
-                />
-              </a>
-            </Grid>
-            <Grid item xs={6}>
-              <a
-                href={"https://monetizealchemist.com/"}
-                target={"_blank"}
-                style={{ textDecoration: 'none' }}
-              >
-                <img
-                  style={{ marginTop: '10px', marginLeft: 'auto', marginRight: 'auto', width: '100px', height: 'auto' }}
-                  src="/images/common/blog.png"
-                  alt={'website'}
-                />
-              </a>
-            </Grid>
-          </Grid>
+          <h2>I need jobs.</h2>
+          <p>This is Mitsuhashi Takuto's portfolio website.</p>
         </div>
       </div>
     );
