@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
 import Grid from '@material-ui/core/Grid';
+import { FacebookIcon, TwitterIcon } from 'react-share';
 
 const styles = {
   root: {
@@ -43,15 +44,15 @@ export class ProfileComponent extends Component {
 
       <div style={styles.card}>
         <Grid container justify={'center'}>
-          <Grid item xs={12} md={4} style={{ paddingLeft: '10px', paddingRight: '10px' }}
+          <Grid item xs={12} sm={4} style={{ paddingLeft: '10px', paddingRight: '10px' }}
           >
             <img
-              style={{ maxHeight: '300px', width: '100%', borderRadius: '20px' }}
+              style={{ maxHeight: '350px', width: '100%', borderRadius: '20px' }}
               src="/images/profile.jpg"
               alt={'三橋拓人'}
             />
           </Grid>
-          <Grid item xs={12} md={8}>
+          <Grid item xs={12} sm={8}>
             <CardContent>
               <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '18px' }}>
                 <h2 style={{ fontSize: '16px', color: '#5b5b5b' }}>三橋拓人</h2>
@@ -61,34 +62,67 @@ export class ProfileComponent extends Component {
               </Typography>
               <br />
               <Typography component="p" style={{ fontSize: '12px', color: '#5b5b5b' }}>
-                18歳からプログラミングを始め、大学在学中にITベンチャー企業で開発を行う。証券アナリスト試験合格。
-                18歳からプログラミングを始め、大学在学中にITベンチャー企業で開発を行う。証券アナリスト試験合格。
-                18歳からプログラミングを始め、大学在学中にITベンチャー企業で開発を行う。証券アナリスト試験合格。
-          </Typography>
+                <p>ただの大学生。</p>
+                <p>
+                  ・ヒッチハイク中に高速道路で雨の中遭難して死にかける。<br />
+                  ・怪しい雑居ビルのオフィスに迷い込んで変な契約を結びかける。<br />
+                  ・日本円を送金用のRippleに変えた途端仮想通貨バブルが弾けて一時資産を半分失う。<br />
+                  ・株で儲けようと機械学習の自動トレードシステムの開発を行うが一瞬でデモ口座の資産を溶かす。<br />
+                </p>
+                <p>
+                  特技は初めて行った場所でも空いている綺麗なトイレを一瞬で見つけられること。
+                  18歳くらいの時からプログラミングを始め企業でプログラマーとして働きながら個人でサービス開発を行う。
+                </p>
+                <p>漫画家になりたい。</p>
+
+                <Grid container justify={'center'} style={{ marginTop: '40px', marginBottom: '20px' }}>
+                  <Grid item xs={2} md={1}>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100013371464347"
+                      style={{ textDecoration: 'none' }}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FacebookIcon size={42} round={true} />
+                    </a>
+                  </Grid>
+                  <Grid item xs={2} md={1}>
+                    <a
+                      href="https://twitter.com/picos_tackt?lang=ja"
+                      style={{ textDecoration: 'none' }}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <TwitterIcon size={42} round={true} />
+                    </a>
+                  </Grid>
+                  <Grid item xs={8} md={10} />
+                </Grid>
+              </Typography>
+              <CardActions>
+                <Button
+                  variant={'outlined'}
+                  style={{ color: '#727272', borderColor: '#727272' }}
+                  onClick={() => this.setState({ is_education: !this.state.is_education })}
+                >
+                  経歴
+                </Button>
+                <Button
+                  variant={'outlined'}
+                  style={{ color: '#727272', borderColor: '#727272' }}
+                  onClick={() => this.setState({ is_license: !this.state.is_license })}
+                >
+                  資格
+                 </Button>
+                <Button
+                  variant={'outlined'}
+                  style={{ color: '#727272', borderColor: '#727272' }}
+                  onClick={() => this.setState({ is_skill: !this.state.is_skill })}
+                >
+                  技術
+                </Button>
+              </CardActions>
             </CardContent>
-            <CardActions>
-              <Button
-                variant={'outlined'}
-                style={{ color: '#727272', borderColor: '#727272' }}
-                onClick={() => this.setState({ is_education: !this.state.is_education })}
-              >
-                経歴
-          </Button>
-              <Button
-                variant={'outlined'}
-                style={{ color: '#727272', borderColor: '#727272' }}
-                onClick={() => this.setState({ is_license: !this.state.is_license })}
-              >
-                資格
-          </Button>
-              <Button
-                variant={'outlined'}
-                style={{ color: '#727272', borderColor: '#727272' }}
-                onClick={() => this.setState({ is_skill: !this.state.is_skill })}
-              >
-                技術
-          </Button>
-            </CardActions>
           </Grid>
         </Grid>
 

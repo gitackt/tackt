@@ -19,7 +19,7 @@ export class EachComponent extends Component {
     return (
       <div style={styles.card}>
         <img
-          style={{ position: 'relative', width: '100%', height: 'auto', borderRadius: '20px' }}
+          style={{ position: 'relative', width: '100%', height: 'auto', borderRadius: '20px', maxHeight: '180px' }}
           src={this.props.data.image}
           alt={this.props.data.name}
         />

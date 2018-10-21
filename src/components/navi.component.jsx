@@ -19,9 +19,9 @@ class NavigationComponent extends Component {
       <div>
         <Drawer
           open={this.state.open}
-      >
-          <div style={{ width: '300px', height: '100px' }}>
-            <IconButton 
+        >
+          <div style={{ width: '200px', height: '100px' }}>
+            <IconButton
               onClick={() => this.setState({ open: false })}
               style={{ right: 10, top: 5, position: 'absolute' }}
             >
@@ -29,52 +29,52 @@ class NavigationComponent extends Component {
             </IconButton>
 
 
-          <div style={{ padding: "20px", paddingTop: "40px", fontSize: "15px" }}>
-            <Link to="/" style={{ textDecoration: 'none' }}>
-              <h4
-                style={{ paddingTop: "10px", paddingBottom: "10px" }}
-                onClick={() => this.setState({ open: false })}
-              >
-                TOP
+            <div style={{ padding: "20px", paddingTop: "40px", fontSize: "15px" }}>
+              <Link to="/" style={{ textDecoration: 'none' }}>
+                <h4
+                  style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                  onClick={() => this.setState({ open: false })}
+                >
+                  TOP
               </h4>
-            </Link>
+              </Link>
             </div>
 
             <div style={{ padding: "20px", paddingTop: "-20px", fontSize: "12px" }}>
-            <a
-              href="https://tackt.official.ec/"
-              style={{ textDecoration: 'none' }}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h4
-                style={{ paddingTop: "10px", paddingBottom: "10px" }}
-                onClick={() => this.setState({ open: false })}
+              <a
+                href="https://tackt.official.ec/"
+                style={{ textDecoration: 'none' }}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                ショップを見る
+                <h4
+                  style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                  onClick={() => this.setState({ open: false })}
+                >
+                  ショップを見る
               </h4>
-            </a>
-            <a
-              href="https://monetizealchemist.com/"
-              style={{ textDecoration: 'none' }}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h4
-                style={{ paddingTop: "10px", paddingBottom: "10px" }}
-                onClick={() => this.setState({ open: false })}
+              </a>
+              <a
+                href="https://monetizealchemist.com/"
+                style={{ textDecoration: 'none' }}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                ブログを見る
+                <h4
+                  style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                  onClick={() => this.setState({ open: false })}
+                >
+                  ブログを見る
               </h4>
-            </a>
+              </a>
+            </div>
           </div>
-          </div>
-          
+
         </Drawer>
 
         <AppBar style={{ background: 'transparent', boxShadow: 'none' }}>
           <Toolbar>
-            <IconButton 
+            <IconButton
               color={"inherit"}
               onClick={() => this.setState({ open: true })}
             >

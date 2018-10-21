@@ -42,7 +42,7 @@ class ContentComponent extends Component {
         <h2>Services</h2>
         <Grid container justify={'center'} style={styles.container2}>
           {listData.map((each) => (
-            <Grid item xs={12} md={4} style={styles.grid}>
+            <Grid item xs={12} sm={6} md={4} style={styles.grid}>
               <EachComponent data={each} />
             </Grid>
           ))}

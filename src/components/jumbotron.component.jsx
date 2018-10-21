@@ -32,11 +32,11 @@ class JumbotronComponent extends Component {
         <div
           style={styles.container}
         >
-          <img
+          {/* <img
             style={styles.image}
             src="/images/gradations/test1.jpg"
             alt={'title'}
-          />
+          /> */}
           <h2>I need jobs.</h2>
           <p>This is Mitsuhashi Takuto's portfolio website.</p>
         </div>

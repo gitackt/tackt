@@ -1,5 +1,19 @@
 export const listData = [
   {
+    name: "Props! [開発中]",
+    url: "https://tackt-m.com",
+    image: "/images/services/props.png",
+    skill: "ReactNative Redux",
+    info: "持ち物管理アプリです。自分が今持っている持ち物をスマホで簡単に管理できます。断捨離のために持ち物を整理したい時や資産総額を把握したいときに便利です。",
+  },
+  {
+    name: "ヒモフレ [開発中]",
+    url: "https://tackt-m.com",
+    image: "/images/services/himofriend.png",
+    skill: "ReactNative Redux Rxjs Django Python Nginx Mysql",
+    info: "ヒモとパトロンのマッチングアプリです。「養ってほしい人」と「養いたい人」が出会えるプラットフォームを提供します。サービスは20歳以上しか使えません。",
+  },
+  {
     name: "babel bubble",
     url: "https://babel-bubble.com",
     image: "/images/services/babelbubble.png",
@@ -16,8 +30,15 @@ export const listData = [
   {
     name: "人生は運ゲー",
     url: "https://monetizealchemist.com",
-    image: "/images/services/monetize.png",
+    image: "/images/services/monetize.jpg",
     skill: "Wordpress",
-    info: "個人的な雑誌ブログです。",
+    info: "個人的な雑誌ブログです。カテゴリはサバイバル・プログラミング・ファイナンスですがネタが無いときは適当に書いてます。",
+  },
+  {
+    name: "Flower and Blight",
+    url: "https://tackt.official.ec",
+    image: "/images/gradations/test2.jpg",
+    skill: "Base",
+    info: "レジンとフラワーアイテムのショップです。",
   },
 ]
