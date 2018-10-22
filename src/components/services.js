@@ -37,7 +37,7 @@ export const listData = [
   {
     name: "Flower and Blight",
     url: "https://tackt.official.ec",
-    image: "/images/gradations/test2.jpg",
+    image: "/images/gradations/test1.jpg",
     skill: "Base",
     info: "レジンとフラワーアイテムのショップです。",
   },

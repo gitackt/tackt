@@ -5,7 +5,7 @@ const styles = {
     position: 'relative',
     height: '100%',
     paddingTop: '30px',
-    paddingBottom: '60px',
+    paddingBottom: '134px',
     textAlign: 'center',
     background: "url('/images/gradations/test1.jpg')",
     backgroundRepeat: 'no-repeat',
@@ -20,7 +20,8 @@ const styles = {
     height: 'auto',
   },
   title: {
-    marginTop: '-20px',
+    marginTop: '-290px',
+    textShadow: '#7f727a 1px 0 20px',
   },
 }
 

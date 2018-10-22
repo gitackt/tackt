@@ -25,6 +25,10 @@ const styles = {
     marginLeft: 'auto',
     marginRight: 'auto'
   },
+  card: {
+    textAlign: 'center',
+    paddingTop: '30px',
+  },
 };
 
 export class ProfileComponent extends Component {
@@ -44,16 +48,17 @@ export class ProfileComponent extends Component {
     return (
 
       <div style={styles.card}>
-        <Grid container justify={'center'}>
-          <Grid item xs={12} sm={4} style={{ paddingLeft: '10px', paddingRight: '10px' }}
+        <h2>Profile</h2>
+        <Grid container justify={'center'} style={{ paddingTop: '20px' }}>
+          <Grid item xs={12} sm={3} style={{ paddingLeft: '10px', paddingRight: '10px' }}
           >
             <img
-              style={{ maxHeight: '350px', width: '100%', borderRadius: '20px' }}
+              style={{ maxHeight: '250px', width: '100%', borderRadius: '20px' }}
               src="/images/profile.jpg"
               alt={'三橋拓人'}
             />
           </Grid>
-          <Grid item xs={12} sm={8}>
+          <Grid item xs={12} sm={9} style={{ textAlign: 'left' }}>
             <CardContent>
               <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '18px' }}>
                 <h2 style={{ fontSize: '16px', color: '#5b5b5b' }}>三橋拓人</h2>
@@ -65,7 +70,7 @@ export class ProfileComponent extends Component {
               <Typography component="p" style={{ fontSize: '12px', color: '#5b5b5b' }}>
                 <p>ただの大学生。</p>
                 <p>
-                  初めて行った場所でも空いている綺麗なトイレを一瞬で見つけるのが得意です。
+                  初めて行った場所でも空いている綺麗なトイレを一瞬で見つけられます。
                   プログラマーとして働きながら個人でサービス開発をやってます。
                 </p>
                 <p>漫画家になりたい。</p>
