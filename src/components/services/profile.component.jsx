@@ -33,6 +33,7 @@ export class ProfileComponent extends Component {
     is_education: false,
     is_license: false,
     is_skill: false,
+    other: false,
   };
 
   componentDidMount() {
@@ -58,20 +59,14 @@ export class ProfileComponent extends Component {
                 <h2 style={{ fontSize: '16px', color: '#5b5b5b' }}>三橋拓人</h2>
               </Typography>
               <Typography component="p" style={{ fontSize: '11px', color: 'gray' }}>
-                プログラミング　漫画　イラスト　DTM
+                プログラミング　漫画
               </Typography>
               <br />
               <Typography component="p" style={{ fontSize: '12px', color: '#5b5b5b' }}>
                 <p>ただの大学生。</p>
                 <p>
-                  ・ヒッチハイク中に高速道路で雨の中遭難して死にかける。<br />
-                  ・怪しい雑居ビルのオフィスに迷い込んで変な契約を結びかける。<br />
-                  ・日本円を送金用のRippleに変えた途端仮想通貨バブルが弾けて一時資産を半分失う。<br />
-                  ・株で儲けようと機械学習の自動トレードシステムの開発を行うが一瞬でデモ口座の資産を溶かす。<br />
-                </p>
-                <p>
-                  特技は初めて行った場所でも空いている綺麗なトイレを一瞬で見つけられること。
-                  18歳くらいの時からプログラミングを始め企業でプログラマーとして働きながら個人でサービス開発を行う。
+                  初めて行った場所でも空いている綺麗なトイレを一瞬で見つけるのが得意です。
+                  プログラマーとして働きながら個人でサービス開発をやってます。
                 </p>
                 <p>漫画家になりたい。</p>
 
@@ -121,6 +116,13 @@ export class ProfileComponent extends Component {
                 >
                   技術
                 </Button>
+                <Button
+                  variant={'outlined'}
+                  style={{ color: '#727272', borderColor: '#727272' }}
+                  onClick={() => this.setState({ other: !this.state.other })}
+                >
+                  他
+                </Button>
               </CardActions>
             </CardContent>
           </Grid>
@@ -158,6 +160,19 @@ export class ProfileComponent extends Component {
               Mysql, Nginx, Docker, Aws<br />
               <h4>デザイン</h4>
               Affinty Designer, Clip Studio<br />
+            </p>
+          </Card>
+        </Collapse>
+
+        <Collapse in={this.state.other} style={{ borderRadius: '30px' }}>
+          <Card style={{ marginTop: '20px', background: 'rgba(143, 143, 143, 0.1)', color: 'rgba(143, 143, 143, 1)', borderRadius: '30px' }}>
+            <p style={{ padding: '20px' }}>
+              ヒッチハイク中に高速道路で雨の中遭難して死にかける。<br />
+              {/* ・初日の出を見るために海岸まで行ったが反対側から日が昇る。<br /> */}
+              怪しい雑居ビルのオフィスに迷い込んで変な契約を結びかける。<br />
+              日本円を送金用のRippleに変えた途端仮想通貨バブルが弾けて一時資産を半分失う。<br />
+              株で儲けようと機械学習の自動トレードシステムの開発を行うが一瞬でデモ口座の資産を溶かす。<br />
+              {/* ・美術の先生: 心の中の情景を絵にして → 蜂に追われる絵を描いて賞を取る。(何日か前にハチに刺された)<br /> */}
             </p>
           </Card>
         </Collapse>
