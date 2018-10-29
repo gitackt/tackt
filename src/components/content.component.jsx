@@ -34,12 +34,7 @@ class ContentComponent extends Component {
   render() {
     return (
       <div style={{ textAlign: 'center' }}>
-        <Grid container justify={'center'} style={styles.container1}>
-          <Grid item xs={12} style={styles.grid}>
-            <ProfileComponent />
-          </Grid>
-        </Grid>
-        <h2>Services</h2>
+        <ProfileComponent />
         <Grid container justify={'center'} style={styles.container2}>
           {listData.map((each) => (
             <Grid item xs={12} sm={6} md={4} style={styles.grid}>

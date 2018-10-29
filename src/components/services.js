@@ -1,5 +1,4 @@
-export const listData = [
-  {
+export const listData = [{
     name: "Props! [開発中]",
     url: "https://tackt-m.com",
     image: "/images/services/props.png",
@@ -30,14 +29,14 @@ export const listData = [
   {
     name: "人生は運ゲー",
     url: "https://monetizealchemist.com",
-    image: "/images/services/monetize.jpg",
+    image: "/images/services/monetize.png",
     skill: "Wordpress",
     info: "個人的な雑誌ブログです。カテゴリはサバイバル・プログラミング・ファイナンスですがネタが無いときは適当に書いてます。",
   },
   {
     name: "Flower and Blight",
     url: "https://tackt.official.ec",
-    image: "/images/gradations/test1.jpg",
+    image: "/images/services/flower.jpg",
     skill: "Base",
     info: "レジンとフラワーアイテムのショップです。",
   },

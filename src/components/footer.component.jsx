@@ -4,13 +4,13 @@ const styles = {
   root: {
     flexGrow: 1,
   },
-  container: { 
-    position: 'relative', 
-    padding: '10px', 
-    paddingTop: '100px', 
-    height: '60px', 
-    background: 'transparent', 
-    color: 'rgb(135, 135, 135)', 
+  container: {
+    position: 'relative',
+    padding: '10px',
+    paddingTop: '100px',
+    height: '60px',
+    background: 'transparent',
+    color: 'rgb(135, 135, 135)',
     textAlign: 'center',
   },
 };

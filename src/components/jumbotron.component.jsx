@@ -2,15 +2,11 @@ import React, { Component } from 'react';
 
 const styles = {
   container: {
+    paddingBottom: '80px',
     position: 'relative',
-    height: '100%',
-    paddingTop: '30px',
-    paddingBottom: '134px',
+    height: '300px',
+    paddingTop: '50px',
     textAlign: 'center',
-    background: "url('/images/gradations/test1.jpg')",
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
   },
   image: {
     marginTop: '30px',
@@ -21,7 +17,7 @@ const styles = {
   },
   title: {
     marginTop: '-290px',
-    textShadow: '#7f727a 1px 0 20px',
+    textShadow: 'black 7px 0 100px',
   },
 }
 

@@ -3,32 +3,52 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
-import Grid from '@material-ui/core/Grid';
-import { FacebookIcon, TwitterIcon } from 'react-share';
 
 const styles = {
   root: {
-    flexGrow: 1,
+    textAlign: 'center',
+    paddingTop: '200px',
+    // background: 'black',
+    paddingLeft: '5%',
+    paddingRight: '5%',
   },
   image: {
-    marginTop: '100px',
-    display: 'inline-block',
-    height: '100%',
-    overflow: 'hidden',
-    maxHeight: '300px'
+    width: '250px',
+    height: '250px',
+    borderRadius: '130px',
+    marginTop: '20px',
+    marginBottom: '20px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    boxShadow: '2px 2px 50px rgba(0,0,0,0.2)',
   },
   container: {
     padding: '20px',
     textAlign: 'left',
     marginLeft: 'auto',
-    marginRight: 'auto'
+    marginRight: 'auto',
   },
-  card: {
-    textAlign: 'center',
-    paddingTop: '30px',
+  content: {
+    background: 'white',
+    borderRadius: '10px',
+    padding: '10px 20px 10px 20px',
+    boxShadow: '2px 2px 20px rgba(0,0,0,0.1)',
   },
+  button: {
+    color: 'white',
+    fontSize: '12px',
+    marginTop: '20px',
+    marginBottom: '20px',
+    marginLeft: '5px',
+    marginRight: '5px',
+    width: '60px',
+    borderRadius: '10px',
+    borderStyle: 'none',
+    padding: '10px 10px 10px 10px',
+    boxShadow: '2px 2px 20px rgba(0,0,0,0.2)',
+    background: '#6b6b6b',
+  }
 };
 
 export class ProfileComponent extends Component {
@@ -47,94 +67,65 @@ export class ProfileComponent extends Component {
   render() {
     return (
 
-      <div style={styles.card}>
-        <h2>Profile</h2>
-        <Grid container justify={'center'} style={{ paddingTop: '20px' }}>
-          <Grid item xs={12} sm={3} style={{ paddingLeft: '10px', paddingRight: '10px' }}
-          >
-            <img
-              style={{ maxHeight: '250px', width: '100%', borderRadius: '20px' }}
-              src="/images/profile.jpg"
-              alt={'三橋拓人'}
-            />
-          </Grid>
-          <Grid item xs={12} sm={9} style={{ textAlign: 'left' }}>
-            <CardContent>
-              <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '18px' }}>
-                <h2 style={{ fontSize: '16px', color: '#5b5b5b' }}>三橋拓人</h2>
+      <div style={styles.root}>
+        <CardContent style={styles.content}>
+          <img
+            style={styles.image}
+            src="/images/profile.jpg"
+            alt={'三橋拓人'}
+          />
+          <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '18px' }}>
+            <h2 style={{ fontSize: '20px', color: '#5b5b5b' }}>三橋拓人</h2>
+          </Typography>
+          <Typography component="p" style={{ fontSize: '11px', color: 'gray' }}>
+            Takuto Mitsuhashi
               </Typography>
-              <Typography component="p" style={{ fontSize: '11px', color: 'gray' }}>
-                プログラミング　漫画
-              </Typography>
-              <br />
-              <Typography component="p" style={{ fontSize: '12px', color: '#5b5b5b' }}>
-                <p>ただの大学生。</p>
-                <p>
-                  初めて行った場所でも空いている綺麗なトイレを一瞬で見つけられます。
-                  プログラマーとして働きながら個人でサービス開発をやってます。
-                </p>
-                <p>漫画家になりたい。</p>
+          <br />
+          <Typography component="p" style={{ fontSize: '12px', color: '#5b5b5b' }}>
+            <p>ただの大学生。</p>
+            <p>
+              初めて行った場所でも空いている綺麗なトイレを一瞬で見つけられます。
+              プログラマーとして働きながら個人でサービス開発をやってます。
+            </p>
+            <p>漫画家になりたい。</p>
 
-                <Grid container justify={'center'} style={{ marginTop: '40px', marginBottom: '20px' }}>
-                  <Grid item xs={2} md={1}>
-                    <a
-                      href="https://www.facebook.com/profile.php?id=100013371464347"
-                      style={{ textDecoration: 'none' }}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FacebookIcon size={42} round={true} />
-                    </a>
-                  </Grid>
-                  <Grid item xs={2} md={1}>
-                    <a
-                      href="https://twitter.com/picos_tackt?lang=ja"
-                      style={{ textDecoration: 'none' }}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <TwitterIcon size={42} round={true} />
-                    </a>
-                  </Grid>
-                  <Grid item xs={8} md={10} />
-                </Grid>
-              </Typography>
-              <CardActions>
-                <Button
-                  variant={'outlined'}
-                  style={{ color: '#727272', borderColor: '#727272' }}
-                  onClick={() => this.setState({ is_education: !this.state.is_education })}
-                >
-                  経歴
+          </Typography>
+          <div style={{
+            maxWidth: '500px', textAlign: 'center', marginLeft: 'auto', marginRight: 'auto'
+          }}>
+            <Button
+              variant={'outlined'}
+              style={styles.button}
+              onClick={() => this.setState({ is_education: !this.state.is_education })}
+            >
+              経歴
                 </Button>
-                <Button
-                  variant={'outlined'}
-                  style={{ color: '#727272', borderColor: '#727272' }}
-                  onClick={() => this.setState({ is_license: !this.state.is_license })}
-                >
-                  資格
+            <Button
+              variant={'outlined'}
+              style={styles.button}
+              onClick={() => this.setState({ is_license: !this.state.is_license })}
+            >
+              資格
                  </Button>
-                <Button
-                  variant={'outlined'}
-                  style={{ color: '#727272', borderColor: '#727272' }}
-                  onClick={() => this.setState({ is_skill: !this.state.is_skill })}
-                >
-                  技術
+            <Button
+              variant={'outlined'}
+              style={styles.button}
+              onClick={() => this.setState({ is_skill: !this.state.is_skill })}
+            >
+              技術
                 </Button>
-                <Button
-                  variant={'outlined'}
-                  style={{ color: '#727272', borderColor: '#727272' }}
-                  onClick={() => this.setState({ other: !this.state.other })}
-                >
-                  他
+            <Button
+              variant={'outlined'}
+              style={styles.button}
+              onClick={() => this.setState({ other: !this.state.other })}
+            >
+              他
                 </Button>
-              </CardActions>
-            </CardContent>
-          </Grid>
-        </Grid>
+          </div>
+        </CardContent>
 
         <Collapse in={this.state.is_education} style={{ borderRadius: '30px' }}>
-          <Card style={{ marginTop: '20px', background: 'rgba(143, 143, 143, 0.1)', color: 'rgba(143, 143, 143, 1)', borderRadius: '30px' }}>
+          <Card style={{ marginTop: '20px', background: 'white', color: 'rgb(143, 143, 143)', borderRadius: '30px' }}>
             <p style={{ padding: '20px' }}>
               <h4>学歴</h4>
               明治大学 商学部 (2016 ~ )<br />
@@ -146,7 +137,7 @@ export class ProfileComponent extends Component {
         </Collapse>
 
         <Collapse in={this.state.is_license} style={{ borderRadius: '30px' }}>
-          <Card style={{ marginTop: '20px', background: 'rgba(143, 143, 143, 0.1)', color: 'rgba(143, 143, 143, 1)', borderRadius: '30px' }}>
+          <Card style={{ marginTop: '20px', background: 'white', color: 'rgb(143, 143, 143)', borderRadius: '30px' }}>
             <p style={{ padding: '20px' }}>
               <h4>金融系</h4>
               証券アナリスト, FP<br />
@@ -155,7 +146,7 @@ export class ProfileComponent extends Component {
         </Collapse>
 
         <Collapse in={this.state.is_skill} style={{ borderRadius: '30px' }}>
-          <Card style={{ marginTop: '20px', background: 'rgba(143, 143, 143, 0.1)', color: 'rgba(143, 143, 143, 1)', borderRadius: '30px' }}>
+          <Card style={{ marginTop: '20px', background: 'white', color: 'rgb(143, 143, 143)', borderRadius: '30px' }}>
             <p style={{ padding: '20px' }}>
               <h4>サーバサイド</h4>
               Python, Django, Rails, Node<br />
@@ -170,7 +161,7 @@ export class ProfileComponent extends Component {
         </Collapse>
 
         <Collapse in={this.state.other} style={{ borderRadius: '30px' }}>
-          <Card style={{ marginTop: '20px', background: 'rgba(143, 143, 143, 0.1)', color: 'rgba(143, 143, 143, 1)', borderRadius: '30px' }}>
+          <Card style={{ marginTop: '20px', background: 'white', color: 'rgb(143, 143, 143)', borderRadius: '30px' }}>
             <p style={{ padding: '20px' }}>
               ヒッチハイク中に高速道路で雨の中遭難して死にかける。<br />
               {/* ・初日の出を見るために海岸まで行ったが反対側から日が昇る。<br /> */}
