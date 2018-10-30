@@ -10,9 +10,10 @@ const styles = {
   background: {
     background: "url('/images/background.png')",
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
+    backgroundSize: 'content',
     backgroundPosition: 'center',
     backgroundAttachment: 'fixed',
+    width: '100%',
   }
 }
 
