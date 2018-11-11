@@ -4,15 +4,16 @@ import NavigationComponent from './components/navi.component';
 import { Route, Switch, BrowserRouter as Router, Redirect } from 'react-router-dom';
 import FooterComponent from './components/footer.component';
 import ContentComponent from './components/content.component';
-import SnsComponent from './components/sns.component';
+import { ProfileComponent } from './components/services/profile.component';
+
 
 const styles = {
   background: {
-    background: "url('/images/background.png')",
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'content',
-    backgroundPosition: 'center',
-    backgroundAttachment: 'fixed',
+    // background: "url('/images/background.png')",
+    // backgroundRepeat: 'no-repeat',
+    // backgroundSize: 'content',
+    // backgroundPosition: 'center',
+    // backgroundAttachment: 'fixed',
     width: '100%',
   }
 }
@@ -23,9 +24,9 @@ class LandingComponent extends Component {
       <div style={styles.background}>
         <NavigationComponent />
         <JumbotronComponent />
+        <ProfileComponent />
         <ContentComponent />
         <FooterComponent />
-        <SnsComponent />
       </div>
     );
   }
@@ -35,7 +36,7 @@ class App extends Component {
   render() {
 
     return (
-      <div style={{ background: 'white' }}>
+      <div style={{ background: '#white' }}>
         <Router>
           <Switch>
             <Route exact={true} path="/" component={LandingComponent} />

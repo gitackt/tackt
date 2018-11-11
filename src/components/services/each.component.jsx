@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = {
   card: {
-    background: 'white',
+    background: '#ffffff',
     marginLeft: 'auto',
     marginRight: 'auto',
     borderRadius: '10px',
@@ -19,15 +19,8 @@ const styles = {
     borderRadius: '10px 10px 0px 0px',
   },
   button: {
-    color: 'white',
-    fontSize: '15px',
-    marginTop: '50px',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    borderRadius: '30px',
-    padding: '10px 60px 10px 60px',
-    boxShadow: '2px 2px 20px rgba(0,0,0,0.2)',
-    background: '#ea3c8e',
+    color: '#eb346b',
+    fontSize: '18px',
   },
 };
 
@@ -43,29 +36,24 @@ export class EachComponent extends Component {
           alt={this.props.data.name}
         />
         <CardContent>
-          <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '18px', color: '#545454' }}>
-            {this.props.data.name}
+          <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '18px', color: '#533B3F' }}>
+            <a
+              href={this.props.data.url}
+              target="_blank"
+              style={styles.button}
+            >
+              {this.props.data.name}
+            </a>
           </Typography>
-          <Typography component="p" style={{ fontSize: '11px', color: 'gray' }}>
+          <Typography component="p" style={{ fontSize: '11px', color: '#533B3F' }}>
             {this.props.data.skill}
           </Typography>
           <br />
-          <Typography component="p" style={{ fontSize: '12px', color: '#5b5b5b' }}>
+          <Typography component="p" style={{ fontSize: '12px', color: '#533B3F' }}>
             {this.props.data.info}
           </Typography>
-          <div style={{ textAlign: 'center' }}>
-            <Button
-              style={styles.button}
-              size="small"
-              color="primary"
-              href={this.props.data.url}
-              target="_blank"
-            >
-              サイトを見る
-          </Button>
-          </div>
         </CardContent>
-      </div>
+      </div >
     );
   }
 }

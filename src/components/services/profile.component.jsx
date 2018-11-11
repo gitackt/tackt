@@ -1,64 +1,38 @@
 import React, { Component } from 'react';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import Collapse from '@material-ui/core/Collapse';
 
 const styles = {
   root: {
     textAlign: 'center',
-    paddingTop: '200px',
-    // background: 'black',
     paddingLeft: '5%',
     paddingRight: '5%',
   },
-  image: {
-    width: '250px',
-    height: '250px',
-    borderRadius: '130px',
-    marginTop: '20px',
-    marginBottom: '20px',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    boxShadow: '2px 2px 50px rgba(0,0,0,0.2)',
-  },
   container: {
-    padding: '20px',
+    maxWidth: '800px',
     textAlign: 'left',
     marginLeft: 'auto',
     marginRight: 'auto',
-  },
-  content: {
     background: 'white',
-    borderRadius: '10px',
-    padding: '10px 20px 10px 20px',
-    boxShadow: '2px 2px 20px rgba(0,0,0,0.1)',
+    borderRadous: '20px'
   },
-  button: {
-    color: 'white',
-    fontSize: '12px',
+  modal: {
     marginTop: '20px',
-    marginBottom: '20px',
-    marginLeft: '5px',
-    marginRight: '5px',
-    width: '60px',
+    padding: '10px',
+    fontSize: '15px',
+    textAlign: 'left',
+    color: '#533B3F',
+  },
+  image: {
+    width: '100%',
+  },
+  sub: {
+    color: 'white',
+    background: '#44373c',
     borderRadius: '10px',
-    borderStyle: 'none',
-    padding: '10px 10px 10px 10px',
-    boxShadow: '2px 2px 20px rgba(0,0,0,0.2)',
-    background: '#6b6b6b',
+    padding: '20px',
   }
 };
 
 export class ProfileComponent extends Component {
-
-  state = {
-    is_education: false,
-    is_license: false,
-    is_skill: false,
-    other: false,
-  };
 
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -68,110 +42,74 @@ export class ProfileComponent extends Component {
     return (
 
       <div style={styles.root}>
-        <CardContent style={styles.content}>
-          <img
+        <div style={styles.container}>
+
+          {/* <img
             style={styles.image}
-            src="/images/profile.jpg"
-            alt={'三橋拓人'}
-          />
-          <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '18px' }}>
-            <h2 style={{ fontSize: '20px', color: '#5b5b5b' }}>三橋拓人</h2>
-          </Typography>
-          <Typography component="p" style={{ fontSize: '11px', color: 'gray' }}>
-            Takuto Mitsuhashi
-              </Typography>
-          <br />
-          <Typography component="p" style={{ fontSize: '12px', color: '#5b5b5b' }}>
-            <p>ただの大学生。</p>
-            <p>
-              初めて行った場所でも空いている綺麗なトイレを一瞬で見つけられます。
-              プログラマーとして働きながら個人でサービス開発をやってます。
-            </p>
-            <p>漫画家になりたい。</p>
+            src="/images/thumb.jpg"
+            alt="Thumbnail"
+          /> */}
+          <p style={styles.modal}>
 
-          </Typography>
-          <div style={{
-            maxWidth: '500px', textAlign: 'center', marginLeft: 'auto', marginRight: 'auto'
-          }}>
-            <Button
-              variant={'outlined'}
-              style={styles.button}
-              onClick={() => this.setState({ is_education: !this.state.is_education })}
+            <h2 style={styles.sub}>はじめにお読みください</h2>
+            こんにちは。<span style={{ fontWeight: 'bold', color: '#eb346b' }}>三橋拓人</span>と申します。このサイトは私の活動をまとめたポートフォリオサイトです。
+            間違えてサイトに来てしまったという方もせっかくなので流し読みしてください。<br /><br /><br />
+            <h3>一体何者？</h3>
+            私はバイト代を<span style={{ fontWeight: 'bold' }}>株と仮想通貨</span>にほぼ全額投入する<span style={{ fontWeight: 'bold' }}>大学生投資家</span>です。
+            証券アナリスト(CCMA)というそこそこ金融の知識がある人が取れる資格を持っています。<br /><br />
+
+
+            <h2 style={styles.sub}>経歴と特殊能力</h2>
+            <h3>プログラミング</h3>
+            高校3年の頃プログラミングに出会い独学で学んできました。大学2年生からITベンチャー企業でインターンをしながら個人で仕事を請け負ってます。
+            主に使う技術はPython, Ruby, Django, Rails, JavaScript, React, React-native, Nginx, MySQLです。Webサービスを作って全て1人で動かせます。<br /><br />
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/gitackt"
             >
-              経歴
-                </Button>
-            <Button
-              variant={'outlined'}
-              style={styles.button}
-              onClick={() => this.setState({ is_license: !this.state.is_license })}
+              Githubのページはこちら
+            </a>
+
+            <h3>ファイナンス</h3>
+            金融の分野に興味があったので証券アナリスト資格を取得しました。バイトで稼いだお金はほぼ株、仮想通貨、投資信託に投資しています。
+            過去に機械学習で過去のチャートを学習させてFXのデモトレード口座で運用してみましたが資産がどんどん溶けていき市場の効率性を思い知りました。
+            現在はこの反省を生かしてネット上の財務データをスクレイピングで取得しファンダメンタル分析を行うシステムを作っています。<br />
+
+
+            <h3>漫画</h3>
+            趣味で漫画とかイラストを描いています。ゴシックホラーとかアール・ヌーヴォーのかっこかわいい世界観が好きです。<br /><br />
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.pixiv.net/member_illust.php?id=29647166&type=illust"
             >
-              資格
-                 </Button>
-            <Button
-              variant={'outlined'}
-              style={styles.button}
-              onClick={() => this.setState({ is_skill: !this.state.is_skill })}
+              Pixivのページはこちら
+            </a>
+
+
+            <h3>経歴</h3>
+            明治大学 商学部 (2016 ~ )<br />
+            株式会社Whatzmoney (2017 ~ 2018)<br />
+            株式会社MICIN (2018 ~ )<br /><br />
+
+            <h2 style={styles.sub}>VALUプロジェクト</h2>
+            <h4>「投資に過剰な嫌悪感を示す人」を撲滅するためのサービスを開発する</h4>
+            このマニュフェストを掲げた理由は、投資やお金を怪しいと決めつけて全く聞く耳を持たない人が多いからです。<br />
+            投資は、商品の性質を理解して、無謀な投機を行わなければ、資産を守る強力な手段になります。<br />
+            僕はこのように「本当はいい奴」である投資が一方的に「悪い奴」のように扱われていることに我慢できません。<br />
+            たしかに中には怪しい話もあります。しかし全てが悪ではありません。犯罪者が1人でもいる国の国民は全員が犯罪者なのでしょうか？<br />
+            僕はこのような投資やお金の「悪いイメージ」を変えていきたいと思っています。学生であるからこそ、エンジニアであるからこそできる事があると思い、このようなマニュフェストを掲げました。<br /><br />
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://valu.is/tackt3"
             >
-              技術
-                </Button>
-            <Button
-              variant={'outlined'}
-              style={styles.button}
-              onClick={() => this.setState({ other: !this.state.other })}
-            >
-              他
-                </Button>
-          </div>
-        </CardContent>
+              VALUのページはこちら
+            </a>
 
-        <Collapse in={this.state.is_education} style={{ borderRadius: '30px' }}>
-          <Card style={{ marginTop: '20px', background: 'white', color: 'rgb(143, 143, 143)', borderRadius: '30px' }}>
-            <p style={{ padding: '20px' }}>
-              <h4>学歴</h4>
-              明治大学 商学部 (2016 ~ )<br />
-              <h4>職歴</h4>
-              株式会社Whatzmoney (2017 ~ 2018)<br />
-              株式会社MICIN (2018 ~ )<br />
-            </p>
-          </Card>
-        </Collapse>
-
-        <Collapse in={this.state.is_license} style={{ borderRadius: '30px' }}>
-          <Card style={{ marginTop: '20px', background: 'white', color: 'rgb(143, 143, 143)', borderRadius: '30px' }}>
-            <p style={{ padding: '20px' }}>
-              <h4>金融系</h4>
-              証券アナリスト, FP<br />
-            </p>
-          </Card>
-        </Collapse>
-
-        <Collapse in={this.state.is_skill} style={{ borderRadius: '30px' }}>
-          <Card style={{ marginTop: '20px', background: 'white', color: 'rgb(143, 143, 143)', borderRadius: '30px' }}>
-            <p style={{ padding: '20px' }}>
-              <h4>サーバサイド</h4>
-              Python, Django, Rails, Node<br />
-              <h4>フロントエンド</h4>
-              React, React-native<br />
-              <h4>インフラ</h4>
-              Mysql, Nginx, Docker, Aws<br />
-              <h4>デザイン</h4>
-              Affinty Designer, Clip Studio<br />
-            </p>
-          </Card>
-        </Collapse>
-
-        <Collapse in={this.state.other} style={{ borderRadius: '30px' }}>
-          <Card style={{ marginTop: '20px', background: 'white', color: 'rgb(143, 143, 143)', borderRadius: '30px' }}>
-            <p style={{ padding: '20px' }}>
-              ヒッチハイク中に高速道路で雨の中遭難して死にかける。<br />
-              {/* ・初日の出を見るために海岸まで行ったが反対側から日が昇る。<br /> */}
-              怪しい雑居ビルのオフィスに迷い込んで変な契約を結びかける。<br />
-              日本円を送金用のRippleに変えた途端仮想通貨バブルが弾けて一時資産を半分失う。<br />
-              株で儲けようと機械学習の自動トレードシステムの開発を行うが一瞬でデモ口座の資産を溶かす。<br />
-              {/* ・美術の先生: 心の中の情景を絵にして → 蜂に追われる絵を描いて賞を取る。(何日か前にハチに刺された)<br /> */}
-            </p>
-          </Card>
-        </Collapse>
+          </p>
+        </div>
       </div>
 
     );

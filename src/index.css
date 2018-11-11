@@ -6,11 +6,11 @@ body {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 29px;
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 19px;
 }
 
 h3 {
@@ -23,6 +23,6 @@ p {
 }
 
 a {
-  color: rgb(131, 131, 131);
+  color: #eb346b;
   font-weight: normal;
 }

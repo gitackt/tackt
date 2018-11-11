@@ -75,7 +75,7 @@ class NavigationComponent extends Component {
         <AppBar style={{ background: 'transparent', boxShadow: 'none' }}>
           <Toolbar>
             <IconButton
-              color={"inherit"}
+              color={"#44373c"}
               onClick={() => this.setState({ open: true })}
             >
               <MenuIcon />

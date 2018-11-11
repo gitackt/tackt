@@ -1,10 +1,11 @@
-export const listData = [{
-    name: "Props! [開発中]",
-    url: "https://tackt-m.com",
-    image: "/images/services/props.png",
-    skill: "ReactNative Redux",
-    info: "持ち物管理アプリです。自分が今持っている持ち物をスマホで簡単に管理できます。断捨離のために持ち物を整理したい時や資産総額を把握したいときに便利です。",
-  },
+export const listData = [
+  //   {
+  //   name: "Props! [開発中]",
+  //   url: "https://tackt-m.com",
+  //   image: "/images/services/props.png",
+  //   skill: "ReactNative Redux",
+  //   info: "持ち物管理アプリです。自分が今持っている持ち物をスマホで簡単に管理できます。断捨離のために持ち物を整理したい時や資産総額を把握したいときに便利です。",
+  // },
   // {
   //   name: "ヒモフレ [開発中]",
   //   url: "https://tackt-m.com",
@@ -25,19 +26,5 @@ export const listData = [{
     image: "/images/services/vcu.png",
     skill: "Django Bootstrap Python Nginx Mysql",
     info: "VCUは、複数の取引所から自動でデータを取得し、 仮想通貨のポートフォリオを簡単にチェックすることができるサービスです。保有残高を取引所とデータ連携を行うことで自動的に取得します。",
-  },
-  {
-    name: "人生は運ゲー",
-    url: "https://monetizealchemist.com",
-    image: "/images/services/monetize.png",
-    skill: "Wordpress",
-    info: "個人的な雑誌ブログです。カテゴリはサバイバル・プログラミング・ファイナンスですがネタが無いときは適当に書いてます。",
-  },
-  {
-    name: "Flower and Blight",
-    url: "https://tackt.official.ec",
-    image: "/images/services/flower.jpg",
-    skill: "Base",
-    info: "レジンとフラワーアイテムのショップです。",
   },
 ]

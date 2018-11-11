@@ -4,19 +4,18 @@ const styles = {
   container: {
     paddingBottom: '80px',
     position: 'relative',
-    height: '300px',
-    paddingTop: '50px',
+    height: '320px',
+    paddingTop: '100px',
     textAlign: 'center',
   },
   image: {
-    marginTop: '30px',
     marginLeft: 'auto',
     marginRight: 'auto',
-    width: '200px',
+    width: '240px',
     height: 'auto',
   },
   title: {
-    marginTop: '-290px',
+    marginTop: '-100px',
     textShadow: 'black 7px 0 100px',
   },
 }
@@ -27,18 +26,18 @@ class JumbotronComponent extends Component {
 
     return (
       <div
-        style={{ color: 'white' }}
+        style={{ color: 'white', background: '#FCF3F7' }}
       >
         <div
           style={styles.container}
         >
           <img
             style={styles.image}
-            src="/images/flower_girl.png"
-            alt={'flower_girl'}
+            src="/images/profile_pure.png"
+            alt={'profile_pure'}
           />
           <div style={styles.title}>
-            <h2>I need jobs.</h2>
+            <h1>Gothic Style.</h1>
             <p>This is Mitsuhashi Takuto's portfolio website.</p>
           </div>
         </div>
