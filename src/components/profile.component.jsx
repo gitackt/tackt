@@ -29,6 +29,20 @@ const styles = {
     background: '#44373c',
     borderRadius: '10px',
     padding: '20px',
+  },
+  address: {
+    background: '#e0ded7',
+    color: '#44373c',
+    borderRadius: '10px',
+    padding: '10px',
+    paddingBottom: '30px',
+    textAlign: 'center',
+    fontSize: '16px',
+  },
+  eth: {
+    fontSize: '10px',
+    marginTop: '2px',
+    marginBotton: '30px',
   }
 };
 
@@ -52,16 +66,38 @@ export class ProfileComponent extends Component {
           <p style={styles.modal}>
 
             <h2 style={styles.sub}>はじめにお読みください</h2>
-            こんにちは。<span style={{ fontWeight: 'bold', color: '#eb346b' }}>三橋拓人</span>と申します。このサイトは私の活動をまとめたポートフォリオサイトです。
-            間違えてサイトに来てしまったという方もせっかくなので流し読みしてください。<br /><br /><br />
-            <h3>一体何者？</h3>
-            私はバイト代を<span style={{ fontWeight: 'bold' }}>株と仮想通貨</span>にほぼ全額投入する<span style={{ fontWeight: 'bold' }}>大学生投資家</span>です。
+            こんにちは。<span style={{ fontWeight: 'bold', color: '#eb346b' }}>三橋拓人（みつはしたくと）</span>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/picos_tackt?lang=ja"
+            >
+              picos_tackt
+            </a>
+            と申します。このサイトは私の活動をまとめたポートフォリオサイトです。
+            間違えてサイトに来てしまったという方もせっかくなので流し読みしてください。<br />
+
+            <h3>バイト代全額投資家</h3>
+            バイト代を<span style={{ fontWeight: 'bold' }}>株と仮想通貨</span>にほぼ全額投入する<span style={{ fontWeight: 'bold' }}>大学生投資家</span>です。
+            全てのバイト代を投資に充てるため、生活費として他の収入経路を増やす活動を行なっています。
             証券アナリスト(CCMA)というそこそこ金融の知識がある人が取れる資格を持っています。<br /><br />
 
+            <div style={styles.address}>
+              <h3 style={{ fontSize: '17px' }}>Ethereum</h3>
+              <div style={styles.eth}>
+                <br />
+                0xc487a5bcd3578a4dbaf6e7d8622130f54d3e3a06
+                <br />
+                <br />
+                <br />
+                <br />
+              </div>
+              Please Donate ETH!!
+            </div>
 
-            <h2 style={styles.sub}>経歴と特殊能力</h2>
+
+            <h2 style={styles.sub}>何ができるの？</h2>
             <h3>プログラミング</h3>
-            高校3年の頃プログラミングに出会い独学で学んできました。大学2年生からITベンチャー企業でインターンをしながら個人で仕事を請け負ってます。
             主に使う技術はPython, Ruby, Django, Rails, JavaScript, React, React-native, Nginx, MySQLです。Webサービスを作って全て1人で動かせます。<br /><br />
             <a
               target="_blank"
@@ -72,13 +108,11 @@ export class ProfileComponent extends Component {
             </a>
 
             <h3>ファイナンス</h3>
-            金融の分野に興味があったので証券アナリスト資格を取得しました。バイトで稼いだお金はほぼ株、仮想通貨、投資信託に投資しています。
-            過去に機械学習で過去のチャートを学習させてFXのデモトレード口座で運用してみましたが資産がどんどん溶けていき市場の効率性を思い知りました。
-            現在はこの反省を生かしてネット上の財務データをスクレイピングで取得しファンダメンタル分析を行うシステムを作っています。<br />
+            テクニカル指標を機械学習で分析して失敗した反省を生かして、ネット上の財務データをスクレイピングで取得しファンダメンタル分析を行うシステムを作っています。<br />
 
 
             <h3>漫画</h3>
-            趣味で漫画とかイラストを描いています。ゴシックホラーとかアール・ヌーヴォーのかっこかわいい世界観が好きです。<br /><br />
+            趣味でこのサイトやSNSのトップ画像を描いて遊んでいます。ゴシックホラーとかアール・ヌーヴォーの世界観が好きです。<br /><br />
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -86,6 +120,10 @@ export class ProfileComponent extends Component {
             >
               Pixivのページはこちら
             </a>
+
+
+            <h3>その他</h3>
+            DTMで作曲してみたい。<br /><br />
 
 
             <h3>経歴</h3>
@@ -106,6 +144,16 @@ export class ProfileComponent extends Component {
               href="https://valu.is/tackt3"
             >
               VALUのページはこちら
+            </a>
+
+            <h2 style={styles.sub}>人生は運ゲー</h2>
+            たまに更新されるブログです。ファイナンスやプログラミングの知識など、現代で生きるためのサバイバルスキルを書き残します。<br /><br />
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://monetizealchemist.com"
+            >
+              ブログはこちら
             </a>
 
           </p>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
-import { EachComponent } from './services/each.component';
+import { EachComponent } from './each.component';
 import { listData } from './services';
 
 const styles = {

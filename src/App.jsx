@@ -4,7 +4,7 @@ import NavigationComponent from './components/navi.component';
 import { Route, Switch, BrowserRouter as Router, Redirect } from 'react-router-dom';
 import FooterComponent from './components/footer.component';
 import ContentComponent from './components/content.component';
-import { ProfileComponent } from './components/services/profile.component';
+import { ProfileComponent } from './components/profile.component';
 
 
 const styles = {
