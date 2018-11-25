@@ -33,7 +33,7 @@ class ContentComponent extends Component {
   render() {
     return (
       <div style={{ paddingTop: '50px', textAlign: 'center', background: '#44373c' }}>
-        <h2 style={{ color: 'white' }}>作ったサービス一覧</h2>
+        <h2 style={{ color: 'white' }}>作ったサービス</h2>
         <Grid container justify={'center'} style={styles.container2}>
           {listData.map((each) => (
             <Grid item xs={12} sm={6} md={4} style={styles.grid}>
