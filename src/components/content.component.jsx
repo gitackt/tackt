@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import { EachComponent } from './each.component';
 import { listData } from './services';
+import { ProfileComponent } from './profile.component';
 
 const styles = {
   root: {
@@ -33,6 +34,7 @@ class ContentComponent extends Component {
   render() {
     return (
       <div style={{ paddingTop: '50px', textAlign: 'center', background: '#44373c' }}>
+        <ProfileComponent />
         <h2 style={{ color: 'white' }}>作ったサービス</h2>
         <Grid container justify={'center'} style={styles.container2}>
           {listData.map((each) => (

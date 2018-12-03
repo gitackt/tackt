@@ -11,15 +11,15 @@ const styles = {
     textAlign: 'left',
     marginLeft: 'auto',
     marginRight: 'auto',
-    background: 'white',
+    background: 'transparent',
     borderRadous: '20px'
   },
   modal: {
     marginTop: '20px',
     padding: '10px',
     fontSize: '15px',
-    textAlign: 'left',
-    color: '#533B3F',
+    textAlign: 'center',
+    color: 'white',
   },
   image: {
     width: '100%',
@@ -66,12 +66,27 @@ export class ProfileComponent extends Component {
             src="/images/thumb.jpg"
             alt="Thumbnail"
           /> */}
+
+          <div style={styles.address}>
+            <h3 style={{ fontSize: '17px' }}>Ethereum</h3>
+            <div style={styles.eth}>
+              <br />
+              0xc487a5bcd3578a4dbaf6e7d8622130f54d3e3a06
+              <br />
+              <br />
+              <br />
+              <br />
+            </div>
+            Please Donate ETH!!
+          </div>
+          <br />
+
           <p style={styles.modal}>
 
             <h2>バイト代全額投資家</h2>
 
             バイト代を投資にほぼ全額投入します。
-
+            <br /><br />
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -82,6 +97,7 @@ export class ProfileComponent extends Component {
           
             <h2>人生は運ゲー</h2>
             たまに更新されるブログです。
+            <br /><br />
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -90,6 +106,7 @@ export class ProfileComponent extends Component {
               ブログ
             </a>
 
+            <br /><br />
 
             {/* <h2 style={styles.sub}>何ができるの？</h2>
             <h3>プログラミング</h3>
