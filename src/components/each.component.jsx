@@ -35,7 +35,7 @@ export class EachComponent extends Component {
           alt={this.props.data.name}
         />
         <CardContent>
-          <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '18px', color: '#533B3F' }}>
+          <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '18px', color: '#202A38' }}>
             <a
               href={this.props.data.url}
               target="_blank"
@@ -44,11 +44,11 @@ export class EachComponent extends Component {
               {this.props.data.name}
             </a>
           </Typography>
-          <Typography component="p" style={{ fontSize: '11px', color: '#533B3F' }}>
+          <Typography component="p" style={{ fontSize: '10px', color: '#202A38' }}>
             {this.props.data.skill}
           </Typography>
           <br />
-          <Typography component="p" style={{ fontSize: '12px', color: '#533B3F' }}>
+          <Typography component="p" style={{ fontSize: '11px', color: '#202A38' }}>
             {this.props.data.info}
           </Typography>
         </CardContent>

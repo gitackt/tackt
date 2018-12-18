@@ -4,7 +4,7 @@ import NavigationComponent from './components/navi.component';
 import { Route, Switch, BrowserRouter as Router, Redirect } from 'react-router-dom';
 import FooterComponent from './components/footer.component';
 import ContentComponent from './components/content.component';
-
+import { ProfileComponent } from './components/profile.component';
 
 const styles = {
   background: {
@@ -23,6 +23,7 @@ class LandingComponent extends Component {
       <div style={styles.background}>
         <NavigationComponent />
         <JumbotronComponent />
+        <ProfileComponent />
         <ContentComponent />
         <FooterComponent />
       </div>

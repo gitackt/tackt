@@ -1,25 +1,13 @@
 import React, { Component } from 'react';
+import Grid from '@material-ui/core/Grid';
 
 const styles = {
-  root: {
-    textAlign: 'center',
-    paddingLeft: '5%',
-    paddingRight: '5%',
-  },
   container: {
-    maxWidth: '800px',
+    paddingTop: '80px',
+    paddingBottom: '20px',
     textAlign: 'left',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    background: 'transparent',
+    background: '#202A38',
     borderRadous: '20px'
-  },
-  modal: {
-    marginTop: '20px',
-    padding: '10px',
-    fontSize: '15px',
-    textAlign: 'center',
-    color: 'white',
   },
   image: {
     width: '100%',
@@ -30,22 +18,33 @@ const styles = {
     borderRadius: '10px',
     padding: '20px',
   },
-  address: {
+  container1: {
+    marginTop: '10px',
     marginLeft: 'auto',
     marginRight: 'auto',
-    width: '300px',
-    background: '#e0ded7',
-    color: '#44373c',
-    borderRadius: '10px',
-    padding: '10px',
-    paddingBottom: '30px',
-    textAlign: 'center',
-    fontSize: '16px',
+    marginBottom: '90px',
+    maxWidth: '1200px',
   },
-  eth: {
-    fontSize: '10px',
-    marginTop: '2px',
-    marginBotton: '30px',
+  grid: {
+    textAlign: 'center',
+    marginBottom: '10px',
+    marginTop: '10px',
+    padding: '20px',
+    color: 'white',
+    fontSize: '12px',
+  },
+  button: {
+    height: '30px',
+    width: '160px',
+    marginTop: '50px',
+    borderRadius: '10px',
+    background: '#eb346b',
+    color: 'white',
+    fontSize: '13px',
+    padding: '12px',
+    paddingLeft: '30px',
+    paddingRight: '30px',
+    textDecoration: 'none',
   }
 };
 
@@ -58,7 +57,6 @@ export class ProfileComponent extends Component {
   render() {
     return (
 
-      <div style={styles.root}>
         <div style={styles.container}>
 
           {/* <img
@@ -67,46 +65,51 @@ export class ProfileComponent extends Component {
             alt="Thumbnail"
           /> */}
 
-          <div style={styles.address}>
-            <h3 style={{ fontSize: '17px' }}>Ethereum</h3>
-            <div style={styles.eth}>
-              <br />
-              0xc487a5bcd3578a4dbaf6e7d8622130f54d3e3a06
-              <br />
-              <br />
-              <br />
-              <br />
-            </div>
-            Please Donate ETH!!
-          </div>
-          <br />
-
-          <p style={styles.modal}>
-
-            <h2>バイト代全額投資家</h2>
-
-            バイト代を投資にほぼ全額投入します。
-            <br /><br />
+        <Grid container justify={'center'} style={styles.container1}>
+          <Grid item xs={12} sm={6} md={4} style={styles.grid}>
+            <h3>エンジニア</h3>
+              Python, Ruby, Django, Rails, JavaScript, React, React-native, Nginx, MySQL等を使って開発を行います。
+              デザイン・サイト設計からコーディング・デプロイまで幅広く承ります。
+            <br /><br /><br />
             <a
+              style={styles.button}
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/gitackt"
+            >
+              Githubはこちら
+            </a>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4} style={styles.grid}>
+            <h3>投資家</h3>
+              「バイト代全額投資家」としてバイト代を投資にほぼ全額投入します。投資銘柄の詳細はVALUにて公開します。
+              FXの自動トレードシムテムの開発も行なっています。
+            <br /><br /><br />
+            <a
+              style={styles.button}
               target="_blank"
               rel="noopener noreferrer"
               href="https://valu.is/tackt3"
             >
-              VALU
+              VALUはこちら
             </a>
-          
-            <h2>人生は運ゲー</h2>
-            たまに更新されるブログです。
-            <br /><br />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4} style={styles.grid}>
+            <h3>ブロガー</h3>
+            「人生は運ゲー」というタイトルのブログをたまに更新します。
+            お金をかけずに生き延びるサバイバル術やファイナンス・プログラミングの記事を書いています。
+            <br /><br /><br />
             <a
+              style={styles.button}
               target="_blank"
               rel="noopener noreferrer"
               href="https://monetizealchemist.com"
             >
-              ブログ
+              ブログはこちら
             </a>
+          </Grid>
+        </Grid>
 
-            <br /><br />
 
             {/* <h2 style={styles.sub}>何ができるの？</h2>
             <h3>プログラミング</h3>
@@ -143,9 +146,7 @@ export class ProfileComponent extends Component {
             株式会社Whatzmoney (2017 ~ 2018)<br />
             株式会社MICIN (2018 ~ )<br /><br /> */}
 
-          </p>
         </div>
-      </div>
 
     );
   }

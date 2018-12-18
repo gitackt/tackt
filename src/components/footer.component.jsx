@@ -11,8 +11,8 @@ const styles = {
   container: {
     position: 'relative',
     padding: '10px',
-    paddingTop: '100px',
-    background: '#44373c',
+    paddingTop: '30px',
+    background: '#202A38',
     color: 'rgb(135, 135, 135)',
     textAlign: 'center',
     marginLeft: 'auto',
@@ -42,7 +42,7 @@ class FooterComponent extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <TwitterIcon size={64} round={true} style={{ boxShadow: '2px 2px 50px rgba(0,0,0,0.2)' }} />
+            <TwitterIcon size={32} round={true} style={{ boxShadow: '2px 2px 50px rgba(0,0,0,0.2)' }} />
           </a>
           <br />
           <a
@@ -51,7 +51,7 @@ class FooterComponent extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FacebookIcon size={64} round={true} style={{ boxShadow: '2px 2px 50px rgba(0,0,0,0.2)' }} />
+            <FacebookIcon size={32} round={true} style={{ boxShadow: '2px 2px 50px rgba(0,0,0,0.2)' }} />
           </a>
         </div>
         <h6>copyright 2018 tackt mitsuhashi</h6>
