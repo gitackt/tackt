@@ -41,8 +41,8 @@ class NavigationComponent extends Component {
             </div>
 
             <div style={{ padding: "20px", paddingTop: "-20px", fontSize: "12px" }}>
-              <a
-                href="https://tackt.official.ec/"
+            <a
+                href="https://twitter.com/picos_tackt?lang=ja"
                 style={{ textDecoration: 'none' }}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -51,7 +51,72 @@ class NavigationComponent extends Component {
                   style={{ paddingTop: "10px", paddingBottom: "10px" }}
                   onClick={() => this.setState({ open: false })}
                 >
-                  ショップを見る
+                  Twitter
+              </h4>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100013371464347"
+                style={{ textDecoration: 'none' }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4
+                  style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                  onClick={() => this.setState({ open: false })}
+                >
+                  Facebook
+              </h4>
+              </a>
+              <a
+                href="https://github.com/gitackt"
+                style={{ textDecoration: 'none' }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4
+                  style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                  onClick={() => this.setState({ open: false })}
+                >
+                  Github
+              </h4>
+              </a>
+              <a
+                href="https://peepeth.com/tackt"
+                style={{ textDecoration: 'none' }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4
+                  style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                  onClick={() => this.setState({ open: false })}
+                >
+                  Peepeth
+              </h4>
+              </a>
+              <a
+                href="https://www.pixiv.net/member_illust.php?id=29647166&type=illust"
+                style={{ textDecoration: 'none' }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4
+                  style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                  onClick={() => this.setState({ open: false })}
+                >
+                  Pixiv
+              </h4>
+              </a>
+              <a
+                href="https://valu.is/tackt3"
+                style={{ textDecoration: 'none' }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4
+                  style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                  onClick={() => this.setState({ open: false })}
+                >
+                  VALU
               </h4>
               </a>
               <a
@@ -64,7 +129,20 @@ class NavigationComponent extends Component {
                   style={{ paddingTop: "10px", paddingBottom: "10px" }}
                   onClick={() => this.setState({ open: false })}
                 >
-                  ブログを見る
+                  ブログ
+              </h4>
+              </a>
+              <a
+                href="https://tackt.official.ec/"
+                style={{ textDecoration: 'none' }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4
+                  style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                  onClick={() => this.setState({ open: false })}
+                >
+                  ショップ
               </h4>
               </a>
             </div>
