@@ -6,16 +6,14 @@ import Button from '@material-ui/core/Button';
 const styles = {
   container: {
     position: 'relative',
-    height: '450px',
     paddingTop: '100px',
-    paddingBottom: '60px',
     textAlign: 'center',
   },
   image: {
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    width: '240px',
-    height: 'auto',
+    zIndex: 10, 
+    width: '100%',
+    marginTop: '-30%',
+    marginBottom: '-10px',
   },
   title: {
     width: '80%',
@@ -49,6 +47,7 @@ const styles = {
     height: '50px',
     width: '200px',
     marginTop: '50px',
+    marginBottom: '100px',
     borderRadius: '10px',
     background: '#eb346b',
     color: 'white',
@@ -81,15 +80,11 @@ class JumbotronComponent extends Component {
         <div
           style={styles.container}
         >
-          {/* <img
-            style={styles.image}
-            src={'/images/profile_pure.png'}
-          /> */}
           <div style={styles.title}>
             <h1>穴を見つけて<br/>穴を埋める</h1>
-            <h2>投資と開発でみんなHappy</h2>
+            <h2>それっぽいものを作る専門家</h2>
             <p style={styles.dis}>
-              三橋拓人の制作実績や作品が掲載されたオフィシャルサイトです。
+              三橋拓人の実績や作品が掲載されたポートフォリオサイトです。
             </p>
             <Button onClick={this.handleOpen} style={styles.button}>イーサリアムで繋がる</Button>
             {/* <div 
@@ -119,6 +114,10 @@ class JumbotronComponent extends Component {
               </div>
             </Modal>
           </div>
+          <img
+            style={styles.image}
+            src={'/images/top.png'}
+          />
         </div>
       </div>
     );

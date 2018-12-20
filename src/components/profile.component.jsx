@@ -45,6 +45,14 @@ const styles = {
     paddingLeft: '30px',
     paddingRight: '30px',
     textDecoration: 'none',
+  },
+  small_image_wrapper: { 
+    height: '120px',
+  },
+  small_image: { 
+    width: '120px',
+    height: 'auto',
+    margin: 'auto',
   }
 };
 
@@ -59,14 +67,15 @@ export class ProfileComponent extends Component {
 
         <div style={styles.container}>
 
-          {/* <img
-            style={styles.image}
-            src="/images/thumb.jpg"
-            alt="Thumbnail"
-          /> */}
-
         <Grid container justify={'center'} style={styles.container1}>
           <Grid item xs={12} sm={6} md={4} style={styles.grid}>
+            <div style={styles.small_image_wrapper}>
+              <img
+                style={styles.small_image}
+                src="/images/engineer.png"
+                alt="Engineer"
+              />
+            </div>
             <h3>エンジニア</h3>
               Python, Ruby, Django, Rails, JavaScript, React, React-native, Nginx, MySQL等を使って開発を行います。
               デザイン・サイト設計からコーディング・デプロイまで幅広く承ります。
@@ -81,6 +90,13 @@ export class ProfileComponent extends Component {
             </a>
           </Grid>
           <Grid item xs={12} sm={6} md={4} style={styles.grid}>
+            <div style={styles.small_image_wrapper}>
+              <img
+                style={styles.small_image}
+                src="/images/investor.png"
+                alt="Investor"
+              />
+            </div>
             <h3>投資家</h3>
               「バイト代全額投資家」としてバイト代を投資にほぼ全額投入します。投資銘柄の詳細はVALUにて公開します。
               FXの自動トレードシムテムの開発も行なっています。
@@ -95,6 +111,13 @@ export class ProfileComponent extends Component {
             </a>
           </Grid>
           <Grid item xs={12} sm={6} md={4} style={styles.grid}>
+            <div style={styles.small_image_wrapper}>
+              <img
+                style={styles.small_image}
+                src="/images/blogger.png"
+                alt="Blogger"
+              />
+            </div>
             <h3>ブロガー</h3>
             「人生は運ゲー」というタイトルのブログをたまに更新します。
             お金をかけずに生き延びるサバイバル術やファイナンス・プログラミングの記事を書いています。
