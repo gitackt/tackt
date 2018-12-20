@@ -16,6 +16,13 @@ const styles = {
   },
   button: {
     textDecoration: 'none',
+  },
+  twitter: {
+    maxWidth: '300px',
+    paddingTop: '30px',
+    paddingBottom: '30px',
+    marginLeft: 'auto',
+    marginRight: 'auto', 
   }
 };
 
@@ -23,8 +30,15 @@ class FooterComponent extends Component {
 
   render() {
     return (
-      <div className={styles.root} style={styles.container}>
-        <h6>copyright 2018 tackt mitsuhashi</h6>
+      <div>
+        <div style={styles.twitter}>
+          <a class="twitter-timeline" data-lang="ja" data-height="500" href="https://twitter.com/picos_tackt?ref_src=twsrc%5Etfw">
+            Tweets by picos_tackt
+          </a> 
+        </div>
+        <div className={styles.root} style={styles.container}>
+          <h6>copyright 2018 tackt mitsuhashi</h6>
+        </div>
       </div>
     );
   }
