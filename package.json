@@ -57,7 +57,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "postbuild": "react-snap"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -100,5 +101,9 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "react-helmet": "^5.2.0",
+    "react-snap": "^1.23.0"
   }
 }

@@ -1,16 +1,18 @@
 body {
   margin: 0;
   padding: 0;
-  color: rgb(131, 131, 131);
+  color: #6d6c6a;
   font-family: helvetica, arial, 'hiragino kaku gothic pro', 'ms pgothic', sans-serif;
 }
 
 h1 {
   font-size: 29px;
+  color: #3f3f3f;
 }
 
 h2 {
   font-size: 19px;
+  color: #3f3f3f;
 }
 
 h3 {

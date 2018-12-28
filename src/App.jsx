@@ -5,14 +5,10 @@ import { Route, Switch, BrowserRouter as Router, Redirect } from 'react-router-d
 import FooterComponent from './components/footer.component';
 import ContentComponent from './components/content.component';
 import { ProfileComponent } from './components/profile.component';
+import { Helmet } from "react-helmet";
 
 const styles = {
   background: {
-    // background: "url('/images/background.png')",
-    // backgroundRepeat: 'no-repeat',
-    // backgroundSize: 'content',
-    // backgroundPosition: 'center',
-    // backgroundAttachment: 'fixed',
     width: '100%',
   }
 }
@@ -21,6 +17,15 @@ class LandingComponent extends Component {
   render() {
     return (
       <div style={styles.background}>
+        <Helmet
+          title={'三橋拓人 official website'}
+          meta={[
+            { name: 'twitter:card', content: 'summary_large_image' },
+            { property: 'og:image', content: '/images/background.png' },
+            { property: 'og:title', content: '三橋拓人 official website' },
+            { property: 'og:url', content: 'https://tackt-m.com' },
+          ]}
+        />
         <NavigationComponent />
         <JumbotronComponent />
         <ProfileComponent />

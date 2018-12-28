@@ -8,7 +8,7 @@ const styles = {
     position: 'relative',
     paddingTop: '15px',
     paddingBottom: '15px',
-    background: '#202A38',
+    background: '#F9F8F6',
     color: '#cecece',
     textAlign: 'center',
     marginLeft: 'auto',
