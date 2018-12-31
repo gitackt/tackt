@@ -20,6 +20,20 @@ const styles = {
     marginTop: '10px',
     padding: '20px',
   },
+  title: {
+    color: '#6D6C6A',
+    maxWidth: '400px',
+    textAlign: 'center',
+    padding: '20px',
+    fontSize: '25px',
+    borderRadius: '10px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    borderTop: 'solid 2px #F3F1EE',
+    borderRight: 'solid 2px #F3F1EE',
+    borderBottom: 'solid 3px #F3F1EE',
+    borderLeft: 'solid 2px #F3F1EE',
+  },
 };
 
 class ContentComponent extends Component {
@@ -27,7 +41,7 @@ class ContentComponent extends Component {
   render() {
     return (
       <div style={{ paddingTop: '50px', textAlign: 'center', background: 'white', borderBottom: 'solid 6px #F3F1EE' }}>
-        <h2 style={{ fontSize: '30px' }}>作ったサービス</h2>
+        <h2 style={styles.title}>Services</h2>
         <Grid container justify={'center'} style={styles.container2}>
           {listData.map((each) => (
             <Grid item xs={12} sm={6} md={4} style={styles.grid}>

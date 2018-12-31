@@ -2,30 +2,68 @@ body {
   margin: 0;
   padding: 0;
   color: #6d6c6a;
-  font-family: helvetica, arial, 'hiragino kaku gothic pro', 'ms pgothic', sans-serif;
-}
+  font-family: helvetica, arial, 'hiragino kaku gothic pro', 'ms pgothic', sans-serif; }
+  body .particletext {
+    text-align: center;
+    font-size: 48px;
+    position: relative; }
+    body .particletext.hearts > .particle {
+      opacity: 0;
+      position: absolute;
+      background-color: #cc2a5d;
+      animation: hearts 3s ease-in infinite; }
+      body .particletext.hearts > .particle:before, body .particletext.hearts > .particle:after {
+        position: absolute;
+        content: '';
+        border-radius: 100px;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: #cc2a5d; }
+      body .particletext.hearts > .particle:before {
+        transform: translateX(-50%); }
+      body .particletext.hearts > .particle:after {
+        transform: translateY(-50%); }
 
 h1 {
   font-size: 29px;
-  color: #3f3f3f;
-}
+  color: #3f3f3f; }
 
 h2 {
   font-size: 19px;
-  color: #3f3f3f;
-}
+  color: #3f3f3f; }
 
 h3 {
   font-size: 14px;
-  font-family: 'hiragino kaku gothic pro','ms pgothic', 'Playfair Display SC', serif;
-}
+  font-family: 'hiragino kaku gothic pro','ms pgothic', 'Playfair Display SC', serif; }
+
+.toptext {
+  font-size: 50px;
+  display: inline-block;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 40px; }
 
 p {
   font-family: helvetica, arial, 'hiragino kaku gothic pro', 'ms pgothic', sans-serif;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 a {
   color: #313131;
-  font-weight: normal;
-}
+  font-weight: normal; }
+
+@media (min-width: 720px) {
+  .toptext {
+    font-size: 100px; } }
+
+@keyframes hearts {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0%) rotate(45deg); }
+  20% {
+    opacity: 0.8;
+    transform: translate(0, -20%) rotate(45deg); }
+  100% {
+    opacity: 0;
+    transform: translate(0, -1000%) rotate(45deg); } }

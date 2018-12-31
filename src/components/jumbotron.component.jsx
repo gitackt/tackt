@@ -10,6 +10,10 @@ const styles = {
     paddingTop: '100px',
     textAlign: 'center',
     borderBottom: 'solid 6px #F3F1EE',
+    // background: 'url(/images/background.png)',
+    // backgroundRepeat: 'no-repeat',
+    // backgroundPosition: 'right',
+    // backgroundSize: '60%',
   },
   image: {
     zIndex: 10, 
@@ -54,7 +58,7 @@ const styles = {
     height: '50px',
     width: '200px',
     marginTop: '50px',
-    marginBottom: '100px',
+    marginBottom: '40px',
     borderRadius: '10px',
     borderTop: 'solid 2px #d34e6f',
     borderRight: 'solid 2px #d34e6f',
@@ -65,7 +69,7 @@ const styles = {
   },
   twitter: {
     marginTop: '50px'
-  }
+  },
 }
 
 class JumbotronComponent extends Component {
@@ -84,6 +88,27 @@ class JumbotronComponent extends Component {
 
   render() {
 
+    let particles = []
+
+    function random_value(m,n) {
+      m = parseInt(m, 10);
+      n = parseInt(n, 10);
+      return Math.floor( Math.random() * (n - m + 1) ) + m;
+    }
+
+    const heartcount = (500/50)*5;
+    for(let i = 0; i <= heartcount; i++) {
+      let size = (random_value(60,120)/10);
+      const particle_style = {
+        top: random_value(20,80) + '%',
+        left: random_value(0,95) + '%',
+        width: size + 'px',
+        height: size + 'px',
+        animationDelay: (random_value(0,30)/10) + 's'
+      }
+      particles.push(<span class="particle" style={particle_style}></span>);
+    };
+
     return (
       <div
         style={{ background: 'white' }}
@@ -96,11 +121,12 @@ class JumbotronComponent extends Component {
               <div style={styles.title}>
               <h1>穴を見つけて<br/>穴を埋める</h1>
               <h2>それっぽいものを作る専門家</h2>
+              <br/><br/>
               <p style={styles.dis}>
-                「今風のそれっぽいサイトを作りたい！」という依頼は私におまかせください。
-                三橋拓人は必ず「それっぽいもの」が作れるWebエンジニアです。
+                「今風のそれっぽいサイトを作りたい！」
                 当サイトは私の様々な分野における実績や作品が掲載されたポートフォリオサイトです。
               </p>
+              <br/>
               <Button onClick={this.handleOpen} style={styles.button}>イーサリアムで繋がる</Button>
               <Modal
                 open={this.state.open}
@@ -120,13 +146,13 @@ class JumbotronComponent extends Component {
             </div>
             </Grid>
             <Grid item xs={12} md={4} style={styles.grid}>
-              <img
-                style={styles.image}
-                src={'/images/background.png'}
-                alt="takuto"
-              />
             </Grid>
           </Grid>
+          <div class="textcontainer">
+            <span class="particletext hearts toptext">
+              {particles}
+            </span>
+          </div>
         </div>
       </div>
     );

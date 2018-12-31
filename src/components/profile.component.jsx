@@ -20,7 +20,7 @@ const styles = {
     padding: '20px',
   },
   container1: {
-    marginTop: '10px',
+    marginTop: '80px',
     marginLeft: 'auto',
     marginRight: 'auto',
     marginBottom: '90px',
@@ -33,10 +33,10 @@ const styles = {
     fontSize: '12px',
     borderRadius: '10px',
     margin: '5px',
-    borderTop: 'solid 2px #F3F1EE',
-    borderRight: 'solid 2px #F3F1EE',
-    borderBottom: 'solid 3px #F3F1EE',
-    borderLeft: 'solid 2px #F3F1EE',
+    // borderTop: 'solid 2px #F3F1EE',
+    // borderRight: 'solid 2px #F3F1EE',
+    // borderBottom: 'solid 3px #F3F1EE',
+    // borderLeft: 'solid 2px #F3F1EE',
   },
   button: {
     height: '30px',
@@ -62,7 +62,21 @@ const styles = {
     width: '120px',
     height: 'auto',
     margin: 'auto',
-  }
+  },
+  title: {
+    color: '#6D6C6A',
+    maxWidth: '400px',
+    textAlign: 'center',
+    padding: '20px',
+    fontSize: '25px',
+    borderRadius: '10px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    borderTop: 'solid 2px #F3F1EE',
+    borderRight: 'solid 2px #F3F1EE',
+    borderBottom: 'solid 3px #F3F1EE',
+    borderLeft: 'solid 2px #F3F1EE',
+  },
 };
 
 export class ProfileComponent extends Component {
@@ -75,7 +89,7 @@ export class ProfileComponent extends Component {
     return (
 
         <div style={styles.container}>
-
+        <h2 style={styles.title}>Profile</h2>
         <Grid container justify={'center'} style={styles.container1}>
           <Grid item xs={12} sm={6} md={4} style={styles.grid}>
             <div style={styles.small_image_wrapper}>
