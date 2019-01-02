@@ -41,7 +41,7 @@ h3 {
 .toptext {
   font-size: 50px;
   display: inline-block;
-  width: 90%;
+  width: 100%;
   margin-top: 30px;
   margin-bottom: 40px; }
 
@@ -53,9 +53,12 @@ a {
   color: #313131;
   font-weight: normal; }
 
-@media (min-width: 720px) {
-  .toptext {
-    font-size: 100px; } }
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0; }
 
 @keyframes hearts {
   0% {

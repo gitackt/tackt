@@ -27,8 +27,10 @@ const styles = {
   },
   grid: {
     textAlign: 'center',
-    marginBottom: '10px',
-    marginTop: '10px',
+    marginBottom: '50px',
+    marginTop: '50px',
+    paddingBottom: '50px',
+    paddingTop: '50px',
     padding: '30px',
     fontSize: '12px',
     borderRadius: '10px',
@@ -64,6 +66,7 @@ const styles = {
     margin: 'auto',
   },
   title: {
+    width: '70%',
     color: '#6D6C6A',
     maxWidth: '400px',
     textAlign: 'center',

@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
+import Particles from 'react-particles-js';
 // import { TwitterIcon } from 'react-share';
 
 const styles = {
   container: {
     position: 'relative',
-    paddingTop: '100px',
+    paddingTop: '140px',
+    paddingBottom: '100px',
     textAlign: 'center',
     borderBottom: 'solid 6px #F3F1EE',
     // background: 'url(/images/background.png)',
@@ -88,27 +90,6 @@ class JumbotronComponent extends Component {
 
   render() {
 
-    let particles = []
-
-    function random_value(m,n) {
-      m = parseInt(m, 10);
-      n = parseInt(n, 10);
-      return Math.floor( Math.random() * (n - m + 1) ) + m;
-    }
-
-    const heartcount = (500/50)*5;
-    for(let i = 0; i <= heartcount; i++) {
-      let size = (random_value(60,120)/10);
-      const particle_style = {
-        top: random_value(20,80) + '%',
-        left: random_value(0,95) + '%',
-        width: size + 'px',
-        height: size + 'px',
-        animationDelay: (random_value(0,30)/10) + 's'
-      }
-      particles.push(<span class="particle" style={particle_style}></span>);
-    };
-
     return (
       <div
         style={{ background: 'white' }}
@@ -116,6 +97,119 @@ class JumbotronComponent extends Component {
         <div
           style={styles.container}
         >
+          <Particles 
+            style={{ position: 'absolute', top: 0, left: 0 }}
+            params={{
+              "particles": {
+                "number": {
+                  "value": 40,
+                  "density": {
+                    "enable": true,
+                    "value_area": 800
+                  }
+                },
+                "color": {
+                  "value": "#5e6375"
+                },
+                "shape": {
+                  "type": "circle",
+                  "stroke": {
+                    "width": 0,
+                    "color": "#000"
+                  },
+                  "polygon": {
+                    "nb_sides": 6
+                  },
+                  "image": {
+                    "src": "img/github.svg",
+                    "width": 100,
+                    "height": 100
+                  }
+                },
+                "opacity": {
+                  "value": 0.3,
+                  "random": true,
+                  "anim": {
+                    "enable": false,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                  }
+                },
+                "size": {
+                  "value": 40,
+                  "random": false,
+                  "anim": {
+                    "enable": true,
+                    "speed": 10,
+                    "size_min": 40,
+                    "sync": false
+                  }
+                },
+                "line_linked": {
+                  "enable": false,
+                  "distance": 200,
+                  "color": "#ffffff",
+                  "opacity": 1,
+                  "width": 2
+                },
+                "move": {
+                  "enable": true,
+                  "speed": 8,
+                  "direction": "none",
+                  "random": false,
+                  "straight": false,
+                  "out_mode": "out",
+                  "bounce": false,
+                  "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                  }
+                }
+              },
+              "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                  "onhover": {
+                    "enable": false,
+                    "mode": "grab"
+                  },
+                  "onclick": {
+                    "enable": false,
+                    "mode": "push"
+                  },
+                  "resize": true
+                },
+                "modes": {
+                  "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                      "opacity": 1
+                    }
+                  },
+                  "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 8,
+                    "speed": 3
+                  },
+                  "repulse": {
+                    "distance": 200,
+                    "duration": 0.4
+                  },
+                  "push": {
+                    "particles_nb": 4
+                  },
+                  "remove": {
+                    "particles_nb": 2
+                  }
+                }
+              },
+              "retina_detect": true
+            }} />
+
           <Grid container justify={'center'}>
             <Grid item xs={12} md={4}>
               <div style={styles.title}>
@@ -123,8 +217,8 @@ class JumbotronComponent extends Component {
               <h2>それっぽいものを作る専門家</h2>
               <br/><br/>
               <p style={styles.dis}>
-                「今風のそれっぽいサイトを作りたい！」
-                当サイトは私の様々な分野における実績や作品が掲載されたポートフォリオサイトです。
+                「今風のそれっぽいサイトを作る専門家」
+                当サイトは実績や作品が掲載されたポートフォリオサイトです。
               </p>
               <br/>
               <Button onClick={this.handleOpen} style={styles.button}>イーサリアムで繋がる</Button>
@@ -148,11 +242,6 @@ class JumbotronComponent extends Component {
             <Grid item xs={12} md={4} style={styles.grid}>
             </Grid>
           </Grid>
-          <div class="textcontainer">
-            <span class="particletext hearts toptext">
-              {particles}
-            </span>
-          </div>
         </div>
       </div>
     );

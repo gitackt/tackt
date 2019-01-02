@@ -21,6 +21,7 @@ const styles = {
     padding: '20px',
   },
   title: {
+    width: '70%',
     color: '#6D6C6A',
     maxWidth: '400px',
     textAlign: 'center',
