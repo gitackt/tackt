@@ -4,6 +4,7 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = {
   card: {
+    width: '90%',
     background: '#ffffff',
     marginLeft: 'auto',
     marginRight: 'auto',

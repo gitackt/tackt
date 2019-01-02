@@ -26,6 +26,7 @@ const styles = {
     marginBottom: '90px',
   },
   grid: {
+    maxWidth: '350px',
     textAlign: 'center',
     marginBottom: '50px',
     marginTop: '50px',
