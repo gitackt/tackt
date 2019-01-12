@@ -8,7 +8,7 @@ import Particles from 'react-particles-js';
 const styles = {
   container: {
     position: 'relative',
-    paddingTop: '140px',
+    paddingTop: '160px',
     paddingBottom: '100px',
     textAlign: 'center',
     borderBottom: 'solid 6px #F3F1EE',
@@ -18,15 +18,13 @@ const styles = {
     // backgroundSize: '60%',
   },
   image: {
-    zIndex: 10, 
     width: '100%',
-    maxWidth: '400px',
+    maxWidth: '300px',
   },
   title: {
     width: '90%',
     marginLeft: 'auto',
     marginRight: 'auto',
-    textAlign: 'left',
   },
   grid: {
     textAlign: 'center',
@@ -57,8 +55,9 @@ const styles = {
     marginBotton: '30px',
   },
   button: {
-    height: '50px',
-    width: '200px',
+    height: '60px',
+    width: '240px',
+    fontSize: '16px',
     marginTop: '50px',
     marginBottom: '40px',
     borderRadius: '10px',
@@ -102,23 +101,23 @@ class JumbotronComponent extends Component {
             params={{
               "particles": {
                 "number": {
-                  "value": 40,
+                  "value": 80,
                   "density": {
                     "enable": true,
                     "value_area": 800
                   }
                 },
                 "color": {
-                  "value": "#5e6375"
+                  "value": "#2d2d2d"
                 },
                 "shape": {
                   "type": "circle",
                   "stroke": {
                     "width": 0,
-                    "color": "#000"
+                    "color": "#000000"
                   },
                   "polygon": {
-                    "nb_sides": 6
+                    "nb_sides": 5
                   },
                   "image": {
                     "src": "img/github.svg",
@@ -127,8 +126,8 @@ class JumbotronComponent extends Component {
                   }
                 },
                 "opacity": {
-                  "value": 0.3,
-                  "random": true,
+                  "value": 0.5,
+                  "random": false,
                   "anim": {
                     "enable": false,
                     "speed": 1,
@@ -137,25 +136,25 @@ class JumbotronComponent extends Component {
                   }
                 },
                 "size": {
-                  "value": 40,
-                  "random": false,
+                  "value": 3,
+                  "random": true,
                   "anim": {
-                    "enable": true,
-                    "speed": 10,
-                    "size_min": 40,
+                    "enable": false,
+                    "speed": 40,
+                    "size_min": 0.1,
                     "sync": false
                   }
                 },
                 "line_linked": {
-                  "enable": false,
-                  "distance": 200,
-                  "color": "#ffffff",
-                  "opacity": 1,
-                  "width": 2
+                  "enable": true,
+                  "distance": 150,
+                  "color": "#3e3e3e",
+                  "opacity": 0.4,
+                  "width": 1
                 },
                 "move": {
                   "enable": true,
-                  "speed": 8,
+                  "speed": 6,
                   "direction": "none",
                   "random": false,
                   "straight": false,
@@ -173,7 +172,7 @@ class JumbotronComponent extends Component {
                 "events": {
                   "onhover": {
                     "enable": false,
-                    "mode": "grab"
+                    "mode": "repulse"
                   },
                   "onclick": {
                     "enable": false,
@@ -207,26 +206,26 @@ class JumbotronComponent extends Component {
                   }
                 }
               },
-              "retina_detect": true
+              "retina_detect": false
             }} />
-
+           
           <Grid container justify={'center'}>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} style={{ textAlign: 'center' }}>
               <div style={styles.title}>
-              <h1>穴を見つけて<br/>穴を埋める</h1>
-              <h2>それっぽいものを作る専門家</h2>
-              <br/><br/>
-              <p style={styles.dis}>
-                「今風のそれっぽいサイトを作る専門家」
-                当サイトは実績や作品が掲載されたポートフォリオサイトです。
-              </p>
+              <h1 style={{ fontSize: '35px' }}>Takuto Mitsuhashi</h1>
+              <h2 style={{ fontSize: '20px' }}>Portfolio Website</h2>
               <br/>
-              <Button onClick={this.handleOpen} style={styles.button}>イーサリアムで繋がる</Button>
+              <Button onClick={this.handleOpen} style={styles.button}>Ethereum</Button>
               <Modal
                 open={this.state.open}
                 onClose={this.handleClose}
               >
                 <div style={styles.address}>
+                  <img
+                    style={styles.image}
+                    src={"/images/background.png"}
+                    alt={"golden baby"}
+                  />   
                   <h3 style={{ fontSize: '19px' }}>Ethereum Adreess</h3>
                   <div style={styles.eth}>
                     <br />
@@ -238,8 +237,6 @@ class JumbotronComponent extends Component {
                 </div>
               </Modal>
             </div>
-            </Grid>
-            <Grid item xs={12} md={4} style={styles.grid}>
             </Grid>
           </Grid>
         </div>

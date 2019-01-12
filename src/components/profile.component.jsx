@@ -3,15 +3,19 @@ import Grid from '@material-ui/core/Grid';
 
 const styles = {
   container: {
-    paddingTop: '80px',
+    paddingTop: '40px',
     paddingBottom: '20px',
     textAlign: 'left',
     background: 'white',
-    borderRadous: '20px',
     borderBottom: 'solid 6px #F3F1EE'
   },
   image: {
-    width: '100%',
+    width: '250px',
+    marginTop: '30px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    borderRadius: '20px',
+    textAlign: 'center',
   },
   sub: {
     color: 'white',
@@ -66,14 +70,25 @@ const styles = {
     height: 'auto',
     margin: 'auto',
   },
+  title_image: {
+    width: '250px',
+    color: '#6D6C6A',
+    textAlign: 'center',
+    padding: '20px',
+    fontSize: '25px',
+    borderRadius: '30px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+  },
   title: {
-    width: '70%',
+    width: '60%',
     color: '#6D6C6A',
     maxWidth: '400px',
     textAlign: 'center',
     padding: '20px',
     fontSize: '25px',
     borderRadius: '10px',
+    marginBottom: '30px',
     marginLeft: 'auto',
     marginRight: 'auto',
     borderTop: 'solid 2px #F3F1EE',
@@ -94,71 +109,84 @@ export class ProfileComponent extends Component {
 
         <div style={styles.container}>
         <h2 style={styles.title}>Profile</h2>
-        <Grid container justify={'center'} style={styles.container1}>
-          <Grid item xs={12} sm={6} md={4} style={styles.grid}>
-            <div style={styles.small_image_wrapper}>
+          {/* <Grid container justify={'center'}>
+            <Grid item xs={12} sm={6} md={4} style={{textAlign: 'center'}}>
               <img
-                style={styles.small_image}
-                src="/images/engineer.png"
-                alt="Engineer"
+                style={styles.title_image}
+                src="/images/IMG_7412.jpg"
+                alt="Profile"
               />
-            </div>
-            <h3>エンジニア</h3>
-              Python, Ruby, Django, Rails, JavaScript, React, React-native, Nginx, MySQL等を使って開発を行います。
-              デザイン・サイト設計からコーディング・デプロイまで幅広く承ります。
-            <br /><br /><br />
-            <a
-              style={styles.button}
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/gitackt"
-            >
-              Githubはこちら
-            </a>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} style={styles.grid}>
-            <div style={styles.small_image_wrapper}>
-              <img
-                style={styles.small_image}
-                src="/images/investor.png"
-                alt="Investor"
-              />
-            </div>
-            <h3>投資家</h3>
-              「バイト代全額投資家」としてバイト代を投資にほぼ全額投入します。投資銘柄の詳細はVALUにて公開します。
-              FXの自動トレードシムテムの開発も行なっています。
-            <br /><br /><br />
-            <a
-              style={styles.button}
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://valu.is/tackt3"
-            >
-              VALUはこちら
-            </a>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} style={styles.grid}>
-            <div style={styles.small_image_wrapper}>
-              <img
-                style={styles.small_image}
-                src="/images/blogger.png"
-                alt="Blogger"
-              />
-            </div>
-            <h3>ブロガー</h3>
-            「人生は運ゲー」というタイトルのブログをたまに更新します。
-            お金をかけずに生き延びるサバイバル術やファイナンス・プログラミングの記事を書いています。
-            <br /><br /><br />
-            <a
-              style={styles.button}
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://monetizealchemist.com"
-            >
-              ブログはこちら
-            </a>
-          </Grid>
-        </Grid>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+            
+            </Grid>
+          </Grid> */}
+        
+          <Grid container justify={'center'} style={styles.container1}>
+              <Grid item xs={12} sm={6} md={4} style={styles.grid}>
+                <div style={styles.small_image_wrapper}>
+                  <img
+                    style={styles.small_image}
+                    src="/images/engineer.png"
+                    alt="Engineer"
+                  />
+                </div>
+                <h3>エンジニア</h3>
+                  Python, Ruby, Django, Rails, JavaScript, React, React-native, Nginx, MySQL等を使って開発を行います。
+                  デザイン・サイト設計からコーディング・デプロイまで幅広く承ります。
+                <br /><br /><br />
+                <a
+                  style={styles.button}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/gitackt"
+                >
+                  Githubはこちら
+                </a>
+              </Grid>
+              <Grid item xs={12} sm={6} md={4} style={styles.grid}>
+                <div style={styles.small_image_wrapper}>
+                  <img
+                    style={styles.small_image}
+                    src="/images/investor.png"
+                    alt="Investor"
+                  />
+                </div>
+                <h3>投資家</h3>
+                  「バイト代全額投資家」としてバイト代を投資にほぼ全額投入します。投資銘柄の詳細はVALUにて公開します。
+                  FXの自動トレードシムテムの開発も行なっています。
+                <br /><br /><br />
+                <a
+                  style={styles.button}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://valu.is/tackt3"
+                >
+                  VALUはこちら
+                </a>
+              </Grid>
+              <Grid item xs={12} sm={6} md={4} style={styles.grid}>
+                <div style={styles.small_image_wrapper}>
+                  <img
+                    style={styles.small_image}
+                    src="/images/blogger.png"
+                    alt="Blogger"
+                  />
+                </div>
+                <h3>ブロガー</h3>
+                「人生は運ゲー」というタイトルのブログをたまに更新します。
+                お金をかけずに生き延びるサバイバル術やファイナンス・プログラミングの記事を書いています。
+                <br /><br /><br />
+                <a
+                  style={styles.button}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://monetizealchemist.com"
+                >
+                  ブログはこちら
+                </a>
+              </Grid>
+            </Grid>
 
 
             {/* <h2 style={styles.sub}>何ができるの？</h2>

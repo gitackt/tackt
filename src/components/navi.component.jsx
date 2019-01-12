@@ -80,7 +80,7 @@ class NavigationComponent extends Component {
                   Github
               </h4>
               </a>
-              <a
+              {/* <a
                 href="https://peepeth.com/tackt"
                 style={{ textDecoration: 'none' }}
                 target="_blank"
@@ -92,7 +92,7 @@ class NavigationComponent extends Component {
                 >
                   Peepeth
               </h4>
-              </a>
+              </a> */}
               <a
                 href="https://www.pixiv.net/member_illust.php?id=29647166&type=illust"
                 style={{ textDecoration: 'none' }}
