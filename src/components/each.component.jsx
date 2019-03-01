@@ -9,12 +9,7 @@ const styles = {
     marginLeft: 'auto',
     marginRight: 'auto',
     borderRadius: '10px',
-    // borderTop: 'solid 3px #F3F1EE',
-    // borderRight: 'solid 3px #F3F1EE',
-    // borderBottom: 'solid 4px #F3F1EE',
-    // borderLeft: 'solid 3px #F3F1EE',
     textAlign: 'center',
-    // boxShadow: '2px 2px 20px rgba(0,0,0,0.1)',
   },
   image: {
     position: 'relative',
@@ -23,24 +18,22 @@ const styles = {
     marginLeft: 'auto',
     marginRight: 'auto',
     margin: '7px',
-    maxHeight: '160px',
     borderRadius: '10px 10px 10px 10px',
   },
   button: {
-    height: '30px',
-    width: '160px',
-    marginTop: '50px',
+    height: '20px',
+    width: '50%',
     borderRadius: '10px',
     borderTop: 'solid 2px #d34e6f',
     borderRight: 'solid 2px #d34e6f',
     borderBottom: 'solid 3px #d34e6f',
     borderLeft: 'solid 2px #d34e6f',
     background: '#ff517c',
+    marginLeft: 'auto',
+    marginRight: 'auto',
     color: 'white',
     fontSize: '13px',
-    padding: '12px',
-    paddingLeft: '30px',
-    paddingRight: '30px',
+    padding: '10px',
     textDecoration: 'none',
   },
 };
@@ -57,23 +50,25 @@ export class EachComponent extends Component {
           alt={this.props.data.name}
         />
         <CardContent>
-          <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '15px' }}>
+          <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '17px' }}>
             {this.props.data.name}
           </Typography>
-          <Typography component="p" style={{ fontSize: '10px' }}>
+          {/* <Typography component="p" style={{ fontSize: '13px' }}>
             {this.props.data.skill}
-          </Typography>
+          </Typography> */}
           <br />
-          <Typography component="p" style={{ fontSize: '11px' }}>
+          <Typography component="p" style={{ fontSize: '12px' }}>
             {this.props.data.info}
           </Typography>
-          <br /><br /><br />
+          <br /><br />
           <a
             href={this.props.data.url}
             target="_blank"
-            style={styles.button}
+            style={{ textDecoration: 'none', textAlign: 'center' }}
           >
-            サイトを見る
+            <div style={styles.button}>
+              サイトを見る
+            </div>
           </a>
         </CardContent>
       </div >

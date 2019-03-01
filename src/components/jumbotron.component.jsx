@@ -4,18 +4,16 @@ import Grid from '@material-ui/core/Grid';
 const styles = {
   container: {
     position: 'relative',
-    paddingTop: '160px',
-    paddingBottom: '100px',
+    paddingTop: '100px',
+    paddingBottom: '70px',
     textAlign: 'center',
     borderBottom: 'solid 6px #F3F1EE',
-    // background: 'url(/images/background.png)',
-    // backgroundRepeat: 'no-repeat',
-    // backgroundPosition: 'right',
-    // backgroundSize: '60%',
+    minHeight: '400px',
   },
   image: {
     width: '100%',
     maxWidth: '300px',
+    marginBottom: '50px',
   },
   title: {
     width: '90%',
@@ -42,9 +40,14 @@ class JumbotronComponent extends Component {
         >           
           <Grid container justify={'center'}>
             <Grid item xs={12} style={{ textAlign: 'center' }}>
+              {/* <img
+                style={styles.image}
+                src={'/images/test.jpg'}
+                alt={'test'}
+              /> */}
               <div style={styles.title}>
-              <h1 style={{ fontSize: '35px' }}>TAKUTO MITSHUKASHI</h1>
-              <h2 style={{ fontSize: '20px' }}>Portfolio Website</h2>
+              <h1 style={{ fontSize: '23px' }}>TAKUTO MITSHUKASHI</h1>
+              <h2 style={{ fontSize: '18px' }}>Portfolio Website</h2>
             </div>
             </Grid>
           </Grid>

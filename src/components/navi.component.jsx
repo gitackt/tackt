@@ -80,19 +80,6 @@ class NavigationComponent extends Component {
                   Github
               </h4>
               </a>
-              {/* <a
-                href="https://peepeth.com/tackt"
-                style={{ textDecoration: 'none' }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h4
-                  style={{ paddingTop: "10px", paddingBottom: "10px" }}
-                  onClick={() => this.setState({ open: false })}
-                >
-                  Peepeth
-              </h4>
-              </a> */}
               <a
                 href="https://www.pixiv.net/member_illust.php?id=29647166&type=illust"
                 style={{ textDecoration: 'none' }}

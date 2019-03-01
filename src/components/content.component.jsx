@@ -11,7 +11,7 @@ const styles = {
     marginTop: '60px',
     marginLeft: 'auto',
     marginRight: 'auto',
-    marginBottom: '80px',
+    marginBottom: '40px',
     maxWidth: '1200px',
   },
   grid: {
@@ -41,11 +41,11 @@ class ContentComponent extends Component {
 
   render() {
     return (
-      <div style={{ paddingTop: '50px', textAlign: 'center', background: 'white', borderBottom: 'solid 6px #F3F1EE' }}>
+      <div style={{ paddingTop: '50px', textAlign: 'center', background: 'white' }}>
         <h2 style={styles.title}>Services</h2>
         <Grid container justify={'center'} style={styles.container2}>
           {listData.map((each) => (
-            <Grid item xs={12} sm={6} md={4} style={styles.grid}>
+            <Grid item xs={12} sm={6} style={styles.grid}>
               <EachComponent data={each} />
             </Grid>
           ))}
