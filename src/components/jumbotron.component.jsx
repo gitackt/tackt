@@ -47,7 +47,7 @@ class JumbotronComponent extends Component {
                 alt={'screen'}
               /> */}
               <div style={styles.title}>
-              <h1 style={{ fontSize: '23px' }}>TAKUTO MITSHUKASHI</h1>
+              <h1 style={{ fontSize: '23px' }}>TAKUTO MITSUHASHI</h1>
               <h2 style={{ fontSize: '18px' }}>Portfolio Website</h2>
             </div>
             </Grid>
