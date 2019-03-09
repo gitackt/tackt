@@ -12,8 +12,9 @@ const styles = {
   },
   image: {
     width: '100%',
-    maxWidth: '300px',
+    maxWidth: '200px',
     marginBottom: '50px',
+    borderRadius: '10px',
   },
   title: {
     width: '90%',
@@ -42,8 +43,8 @@ class JumbotronComponent extends Component {
             <Grid item xs={12} style={{ textAlign: 'center' }}>
               {/* <img
                 style={styles.image}
-                src={'/images/test.jpg'}
-                alt={'test'}
+                src={'/images/screen.png'}
+                alt={'screen'}
               /> */}
               <div style={styles.title}>
               <h1 style={{ fontSize: '23px' }}>TAKUTO MITSHUKASHI</h1>

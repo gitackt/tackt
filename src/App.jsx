@@ -18,11 +18,11 @@ class LandingComponent extends Component {
     return (
       <div style={styles.background}>
         <Helmet
-          title={'三橋拓人 Takuto Mitsuhashi Portfolio'}
+          title={'三橋拓人ポートフォリオサイト'}
           meta={[
             { name: 'twitter:card', content: 'summary_large_image' },
             { property: 'og:image', content: '/images/background.png' },
-            { property: 'og:title', content: '三橋拓人 Takuto Mitsuhashi Portfolio' },
+            { property: 'og:title', content: '三橋拓人ポートフォリオサイト' },
             { property: 'og:url', content: 'https://tackt-m.com' },
           ]}
         />
