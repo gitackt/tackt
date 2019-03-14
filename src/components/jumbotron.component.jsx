@@ -28,6 +28,37 @@ const styles = {
     marginTop: '-50px',
     marginBottom: '50px',
   },
+  // button: {
+  //   height: '20px',
+  //   width: '80%',
+  //   borderRadius: '10px',
+  //   border: 'solid 1px #ff517c',
+  //   background: 'transparent',
+  //   marginLeft: 'auto',
+  //   marginRight: 'auto',
+  //   color: '#ff517c',
+  //   fontSize: '13px',
+  //   padding: '20px',
+  //   textDecoration: 'none',
+  //   marginTop: '70px',
+  // },
+  button: {
+    marginTop: '100px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    height: '50px',
+    width: '50px',
+    borderRadius: '300px',
+    borderTop: 'solid 2px #d34e6f',
+    borderRight: 'solid 2px #d34e6f',
+    borderBottom: 'solid 3px #d34e6f',
+    borderLeft: 'solid 2px #d34e6f',
+    background: '#ff517c',
+    color: 'white',
+    fontSize: '17px',
+    padding: '10px',
+    textDecoration: 'none',
+  },
 }
 
 class JumbotronComponent extends Component {
@@ -41,20 +72,32 @@ class JumbotronComponent extends Component {
           style={styles.container}
         >           
           <Grid container justify={'center'}>
-            <Grid item xs={12} style={{ textAlign: 'left', marginLeft: '10%', marginRight: '10%' }}>
+            <Grid item xs={12} sm={6} style={{ textAlign: 'left', marginLeft: '5%', marginRight: '5%' }}>
+              <div style={styles.title}>
+                <h1 style={{ fontSize: '30px' }}>TAKUTO MITSUHASHI</h1>
+                <h2 style={{ fontSize: '20px' }}><br />Portfolio Website</h2>
+                <p>
+                  フリーランスWebエンジニア。Webに関わるご相談やサイト制作はお任せ下さい。Webサイト制作のお悩み全てに対応いたします。<br /><br />
+                </p>
+                  {/* <div style={{ width: '250px', marginLeft: 'auto', marginRight: 'auto' }}>
+                    <a
+                      href={''}
+                      target="_blank"
+                      style={{ textDecoration: 'none', textAlign: 'center' }}
+                    >
+                      <div style={styles.button}>
+                        依頼
+                      </div>
+                    </a>
+                  </div> */}
+            </div>
+            </Grid>
+            <Grid item xs={12} sm={3} style={{ textAlign: 'center', marginLeft: '5%', marginRight: '5%' }}>
               {/* <img
                 style={styles.image}
                 src={'/images/screen.png'}
                 alt={'screen'}
               /> */}
-              <div style={styles.title}>
-                <h1 style={{ fontSize: '30px' }}>TAKUTO MITSUHASHI</h1>
-                <h2 style={{ fontSize: '20px' }}><br />Portfolio Website</h2>
-                <p>
-                  個人だから出来る柔軟な対応。確かな制作実績と信頼性。明瞭な価格設定と安心のサポート。
-                  Webサイト制作のお悩み全てに対応いたします。サイト制作はお任せ下さい。
-                </p>
-            </div>
             </Grid>
           </Grid>
         </div>

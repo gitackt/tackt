@@ -7,7 +7,7 @@ export const listData = [
     info: "Propsは持ち物管理アプリです。自分の持ち物をアプリでまとめて管理できます。これでもう物をなくしません！断捨離にも最適なアプリです。",
   },
   {
-    name: "BabelBubble",
+    name: "Babel Bubble",
     sold: false,
     url: "https://babel-bubble.com",
     image: "/images/services/babelbubble.png",

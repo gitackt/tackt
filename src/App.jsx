@@ -5,6 +5,7 @@ import { Route, Switch, BrowserRouter as Router, Redirect } from 'react-router-d
 import FooterComponent from './components/footer.component';
 import ContentComponent from './components/content.component';
 import { ProfileComponent } from './components/profile.component';
+import { PriceComponent } from './components/price.component';
 import { Helmet } from "react-helmet";
 
 const styles = {
@@ -28,8 +29,9 @@ class LandingComponent extends Component {
         />
         <NavigationComponent />
         <JumbotronComponent />
-        <ProfileComponent />
+        <PriceComponent />
         <ContentComponent />
+        <ProfileComponent />
         <FooterComponent />
       </div>
     );

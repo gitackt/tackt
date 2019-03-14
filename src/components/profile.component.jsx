@@ -8,14 +8,26 @@ const styles = {
     // borderBottom: 'solid 6px #F3F1EE',
   },
   image: {
-    width: '100%',
-    borderRadius: '10px',
+    width: '70%',
+    marginLeft: 'auto',
+    marginRight: 'auto',
   },
   grid: {
     textAlign: 'left',
-    paddingBottom: '30px',
-    paddingTop: '30px',
-    padding: '30px',
+    paddingBottom: '5px',
+    paddingTop: '5px',
+    paddingLeft: '30px',
+    paddingRight: '30px',
+    fontSize: '12px',
+    borderRadius: '10px',
+    margin: '5px',
+  },
+  gridLeft: {
+    textAlign: 'center',
+    paddingBottom: '5px',
+    paddingTop: '20px',
+    paddingLeft: '30px',
+    paddingRight: '30px',
     fontSize: '12px',
     borderRadius: '10px',
     margin: '5px',
@@ -40,19 +52,15 @@ const styles = {
     marginRight: 'auto',
   },
   title: {
-    width: '70%',
+    width: '80%',
     color: '#6D6C6A',
     maxWidth: '1200px',
     textAlign: 'left',
     padding: '20px',
     fontSize: '28px',
-    // borderRadius: '10px',
     marginLeft: 'auto',
     marginRight: 'auto',
-    // borderTop: 'solid 2px #F3F1EE',
-    // borderRight: 'solid 2px #F3F1EE',
     borderBottom: 'solid 7px #F3F1EE',
-    // borderLeft: 'solid 2px #F3F1EE',
   },
 };
 
@@ -70,10 +78,10 @@ export class ProfileComponent extends Component {
 
   render() {
     return (
-      <div style={{ paddingTop: '40px' }}>
+      <div style={{ paddingTop: '5px' }}>
         <h2 style={styles.title}>Profile</h2>
         <Grid container justify={'center'} style={styles.container}>
-          <Grid item xs={12} sm={4} style={styles.grid}>
+          <Grid item xs={12} sm={4} style={styles.gridLeft}>
             <img
               style={styles.image}
               src={'/images/background.png'}
@@ -84,14 +92,20 @@ export class ProfileComponent extends Component {
             <h2>名前</h2>
             <h1>三橋拓人</h1>
             <h2>経歴</h2>
-            明治大学 商学部 商学科 Finance Course (2016 ~ )<br />
-            株式会社Whatzmoney Engineer Intern (2017 ~ 2018)<br />
-            株式会社MICIN Engineer Intern (2018 ~ )
+            <p>
+              明治大学 商学部 商学科 Finance Course (2016 ~ )<br />
+              株式会社Whatzmoney Engineer Intern (2017 ~ 2018)<br />
+              株式会社MICIN Engineer Intern (2018 ~ )
+            </p>
             <h2>資格</h2>
-            証券アナリスト (CCMA)<br />
+              <p>
+                証券アナリスト (CCMA)<br />
+              </p>
             <h2>技術</h2>
-              Python, Ruby, Django, Rails, HTML, CSS, JavaScript, TypeScript, React, React-native, 
-              Angular, Nginx, MySQL, Wordpress, Golang
+              <p>
+                Python, Ruby, Django, Rails, HTML, CSS, JavaScript, TypeScript, React, React-native, 
+                Angular, Nginx, MySQL, Wordpress, Golang
+              </p>
           </Grid>
         </Grid>
       </div>
