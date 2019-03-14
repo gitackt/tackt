@@ -80,7 +80,7 @@ class NavigationComponent extends Component {
                   Github
               </h4>
               </a>
-              <a
+              {/* <a
                 href="https://www.pixiv.net/member_illust.php?id=29647166&type=illust"
                 style={{ textDecoration: 'none' }}
                 target="_blank"
@@ -92,8 +92,8 @@ class NavigationComponent extends Component {
                 >
                   Pixiv
               </h4>
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href="https://valu.is/tackt3"
                 style={{ textDecoration: 'none' }}
                 target="_blank"
@@ -105,7 +105,7 @@ class NavigationComponent extends Component {
                 >
                   VALU
               </h4>
-              </a>
+              </a> */}
               <a
                 href="https://monetizealchemist.com/"
                 style={{ textDecoration: 'none' }}
