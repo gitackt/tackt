@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = {
   card: {
-    width: '90%',
+    width: '95%',
     background: '#ffffff',
     marginLeft: 'auto',
     marginRight: 'auto',
@@ -22,7 +22,7 @@ const styles = {
   },
   button: {
     height: '20px',
-    width: '50%',
+    width: '90%',
     borderRadius: '10px',
     borderTop: 'solid 2px #d34e6f',
     borderRight: 'solid 2px #d34e6f',
@@ -50,14 +50,11 @@ export class EachComponent extends Component {
           alt={this.props.data.name}
         />
         <CardContent>
-          <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '17px' }}>
+          <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '17px', color: '#51504d' }}>
             {this.props.data.name}
           </Typography>
-          {/* <Typography component="p" style={{ fontSize: '13px' }}>
-            {this.props.data.skill}
-          </Typography> */}
           <br />
-          <Typography component="p" style={{ fontSize: '12px' }}>
+          <Typography component="p" style={{ fontSize: '12px', color: '#6D6C6A' }}>
             {this.props.data.info}
           </Typography>
           <br /><br />

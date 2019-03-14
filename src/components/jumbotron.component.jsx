@@ -7,7 +7,7 @@ const styles = {
     paddingTop: '100px',
     paddingBottom: '70px',
     textAlign: 'center',
-    borderBottom: 'solid 6px #F3F1EE',
+    // borderBottom: 'solid 6px #F3F1EE',
     minHeight: '400px',
   },
   image: {
