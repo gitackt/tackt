@@ -6,9 +6,10 @@ const styles = {
     position: 'relative',
     paddingTop: '100px',
     paddingBottom: '70px',
-    textAlign: 'center',
+    textAlign: 'left',
     // borderBottom: 'solid 6px #F3F1EE',
-    minHeight: '400px',
+    minHeight: '500px',
+    color: 'white',
   },
   image: {
     width: '100%',
@@ -34,21 +35,25 @@ class JumbotronComponent extends Component {
 
     return (
       <div
-        style={{ background: 'white' }}
+        style={{ background: '#183260' }}
       >
         <div
           style={styles.container}
         >           
           <Grid container justify={'center'}>
-            <Grid item xs={12} style={{ textAlign: 'center' }}>
+            <Grid item xs={12} style={{ textAlign: 'left', marginLeft: '10%', marginRight: '10%' }}>
               {/* <img
                 style={styles.image}
                 src={'/images/screen.png'}
                 alt={'screen'}
               /> */}
               <div style={styles.title}>
-              <h1 style={{ fontSize: '23px' }}>TAKUTO MITSUHASHI</h1>
-              <h2 style={{ fontSize: '18px' }}>Portfolio Website</h2>
+                <h1 style={{ fontSize: '30px' }}>TAKUTO MITSUHASHI</h1>
+                <h2 style={{ fontSize: '20px' }}><br />Portfolio Website</h2>
+                <p>
+                  個人だから出来る柔軟な対応。確かな制作実績と信頼性。明瞭な価格設定と安心のサポート。
+                  Webサイト制作のお悩み全てに対応いたします。サイト制作はお任せ下さい。
+                </p>
             </div>
             </Grid>
           </Grid>
