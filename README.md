@@ -5,7 +5,7 @@ This is my portfolio website repository. https://tackt-m.com (created by react)
 ## Dev
 
 ```
-hivemind
+yarn start
 ```
 
 ## Pro
