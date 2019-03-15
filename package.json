@@ -17,6 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "deploy": "sh deploy.sh",
     "build": "react-scripts build",
     "postbuild": "react-snap"
   },

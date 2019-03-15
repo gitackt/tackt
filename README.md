@@ -11,5 +11,5 @@ yarn start
 ## Pro
 
 ```
-yarn build
+yarn deploy
 ```
