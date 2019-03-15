@@ -58,6 +58,7 @@ export class EachComponent extends Component {
           <a
             href={this.props.data.url}
             target="_blank"
+            rel="noopener noreferrer"
             style={{ textDecoration: 'none', textAlign: 'center' }}
           >
             <div style={styles.button}>

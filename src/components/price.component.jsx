@@ -24,8 +24,8 @@ const styles = {
     margin: '5px',
   },
   button: {
-    height: '30px',
-    width: '250px',
+    height: '20px',
+    width: '220px',
     marginTop: '30px',
     textAlign: 'center',
     borderRadius: '200px',
@@ -37,7 +37,7 @@ const styles = {
     color: 'white',
     fontSize: '13px',
     padding: '10px',
-    paddingTop: '20px',
+    paddingTop: '11px',
     textDecoration: 'none',
     marginLeft: 'auto',
     marginRight: 'auto',
@@ -120,8 +120,9 @@ export class PriceComponent extends Component {
           </Grid>
         </Grid>
         <a
-            href={''}
+            href={'https://tackt-m.com'}
             target="_blank"
+            rel="noopener noreferrer"
             style={{ textDecoration: 'none', textAlign: 'center' }}
           >
             <div style={styles.button}>
