@@ -83,7 +83,7 @@ export class PriceComponent extends Component {
       <div style={{ paddingTop: '5px' }}>
         <Grid container justify={'center'} style={styles.container}>
           <Grid item xs={12} sm={3} style={styles.grid}>
-            <h2 style={styles.subtitle}>Light</h2>
+            <h2 style={styles.subtitle}>Web運用</h2>
             <p style={{ fontSize: '13px', padding: '10px', textAlign: 'center' }}>
               サーバ初期設定<br />
               サーバ保守管理<br />
@@ -92,10 +92,10 @@ export class PriceComponent extends Component {
               Baseネットショップ開設<br />
               サーバセキュリティ設定<br />
             </p>
-            <h2 style={styles.price}>5,000円 ~ </h2>
+            <h2 style={styles.price}>各5,000円 ~ </h2>
           </Grid>
           <Grid item xs={12} sm={3} style={styles.grid}>
-            <h2 style={styles.subtitle}>Standard</h2>
+            <h2 style={styles.subtitle}>サイト制作</h2>
             <p style={{ fontSize: '13px', padding: '10px', textAlign: 'center' }}>
               コーディング<br />
               Webサーバ構築<br />
@@ -104,10 +104,10 @@ export class PriceComponent extends Component {
               サイトコード修正<br />
               ホームページ作成<br />
             </p>
-            <h2 style={styles.price}>10,000円 ~ </h2>
+            <h2 style={styles.price}>各10,000円 ~ </h2>
           </Grid>
           <Grid item xs={12} sm={3} style={styles.grid}>
-            <h2 style={styles.subtitle}>Pro</h2>
+            <h2 style={styles.subtitle}>システム開発</h2>
             <p style={{ fontSize: '13px', padding: '10px', textAlign: 'center'  }}>
               LINE Bot<br />
               iOSアプリ<br />
@@ -116,7 +116,7 @@ export class PriceComponent extends Component {
               サイトデザイン<br />
               データベース設計<br />
             </p>
-            <h2 style={styles.price}>30,000円 ~ </h2>
+            <h2 style={styles.price}>各30,000円 ~ </h2>
           </Grid>
         </Grid>
         <a

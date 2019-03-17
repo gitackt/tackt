@@ -79,7 +79,7 @@ export class ProfileComponent extends Component {
   render() {
     return (
       <div style={{ paddingTop: '5px' }}>
-        <h2 style={styles.title}>Profile</h2>
+        <h2 style={styles.title}>プロフィール</h2>
         <Grid container justify={'center'} style={styles.container}>
           <Grid item xs={12} sm={4} style={styles.gridLeft}>
             <img
