@@ -88,11 +88,11 @@ export class PriceComponent extends Component {
               サーバ初期設定<br />
               サーバ保守管理<br />
               独自ドメイン取得<br />
-              Wordpressブログ開設<br />
-              Baseネットショップ開設<br />
+              ブログ開設<br />
+              ネットショップ開設<br />
               サーバセキュリティ設定<br />
             </p>
-            <h2 style={styles.price}>各5,000円 ~ </h2>
+            {/* <h2 style={styles.price}>5,000円 ~ </h2> */}
           </Grid>
           <Grid item xs={12} sm={3} style={styles.grid}>
             <h2 style={styles.subtitle}>サイト制作</h2>
@@ -103,8 +103,9 @@ export class PriceComponent extends Component {
               サイト常時SSL化<br />
               サイトコード修正<br />
               ホームページ作成<br />
+              Wordpressブログ開設<br />
             </p>
-            <h2 style={styles.price}>各10,000円 ~ </h2>
+            {/* <h2 style={styles.price}>10,000円 ~ </h2> */}
           </Grid>
           <Grid item xs={12} sm={3} style={styles.grid}>
             <h2 style={styles.subtitle}>システム開発</h2>
@@ -112,11 +113,12 @@ export class PriceComponent extends Component {
               LINE Bot<br />
               iOSアプリ<br />
               Androidアプリ<br />
+              インフラ構築<br />
               システム開発<br />
               サイトデザイン<br />
               データベース設計<br />
             </p>
-            <h2 style={styles.price}>各30,000円 ~ </h2>
+            {/* <h2 style={styles.price}>30,000円 ~ </h2> */}
           </Grid>
         </Grid>
         <a

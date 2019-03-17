@@ -104,7 +104,7 @@ export class ProfileComponent extends Component {
             <h2>技術</h2>
               <p>
                 Python, Ruby, Django, Rails, HTML, CSS, JavaScript, TypeScript, React, React-native, 
-                Angular, Nginx, MySQL, Wordpress, Golang
+                Angular, Nginx, MySQL, Wordpress, PHP,  Go, Docker, AWS
               </p>
           </Grid>
         </Grid>
