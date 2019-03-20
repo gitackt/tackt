@@ -30,7 +30,7 @@ const styles = {
     marginRight: 'auto',
     color: '#ff517c',
     fontSize: '13px',
-    padding: '20px',
+    padding: '15px',
     textDecoration: 'none',
   },
 };
@@ -51,7 +51,7 @@ export class EachComponent extends Component {
             {this.props.data.name}
           </Typography>
           <br />
-          <Typography component="p" style={{ fontSize: '12px', color: '#6D6C6A' }}>
+          <Typography component="p" style={{ fontSize: '12px', color: '#6D6C6A',height: '70px' }}>
             {this.props.data.info}
           </Typography>
           <br /><br />

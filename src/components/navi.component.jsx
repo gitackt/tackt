@@ -116,7 +116,7 @@ class NavigationComponent extends Component {
                   style={{ paddingTop: "10px", paddingBottom: "10px" }}
                   onClick={() => this.setState({ open: false })}
                 >
-                  ブログ
+                  Blog
               </h4>
               </a>
               <a
@@ -129,7 +129,7 @@ class NavigationComponent extends Component {
                   style={{ paddingTop: "10px", paddingBottom: "10px" }}
                   onClick={() => this.setState({ open: false })}
                 >
-                  ショップ
+                  Shop
               </h4>
               </a>
             </div>

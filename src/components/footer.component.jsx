@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { ProfileComponent } from './profile.component';
+
 
 const styles = {
   root: {
@@ -25,19 +27,15 @@ const styles = {
     marginRight: 'auto', 
   },
   title: {
-    width: '70%',
-    color: '#6D6C6A',
-    maxWidth: '400px',
-    textAlign: 'center',
+    width: '80%',
+    color: '#b7b5b2',
+    maxWidth: '1200px',
+    textAlign: 'left',
     padding: '20px',
-    fontSize: '25px',
-    borderRadius: '10px',
+    fontSize: '28px',
     marginLeft: 'auto',
     marginRight: 'auto',
-    borderTop: 'solid 2px #F3F1EE',
-    borderRight: 'solid 2px #F3F1EE',
-    borderBottom: 'solid 3px #F3F1EE',
-    borderLeft: 'solid 2px #F3F1EE',
+    borderBottom: 'solid 7px #F3F1EE',
   },
 };
 
@@ -55,6 +53,8 @@ class FooterComponent extends Component {
           </a> 
         </div> */}
         <div className={styles.root} style={styles.container}>
+          <h2 style={styles.title}>Profile</h2>
+          <ProfileComponent />
           <h6>copyright 2018~2019 takuto mitsuhashi</h6>
         </div>
       </div>

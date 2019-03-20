@@ -4,7 +4,6 @@ import NavigationComponent from './components/navi.component';
 import { Route, Switch, BrowserRouter as Router, Redirect } from 'react-router-dom';
 import FooterComponent from './components/footer.component';
 import ContentComponent from './components/content.component';
-import { ProfileComponent } from './components/profile.component';
 import { PriceComponent } from './components/price.component';
 import { Helmet } from "react-helmet";
 
@@ -31,7 +30,7 @@ class LandingComponent extends Component {
         <JumbotronComponent />
         <PriceComponent />
         <ContentComponent />
-        <ProfileComponent />
+        {/* <ProfileComponent /> */}
         <FooterComponent />
       </div>
     );

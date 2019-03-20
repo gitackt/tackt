@@ -82,19 +82,21 @@ export class PriceComponent extends Component {
     return (
       <div style={{ paddingTop: '5px' }}>
         <Grid container justify={'center'} style={styles.container}>
-          <Grid item xs={12} sm={3} style={styles.grid}>
+          <Grid item xs={12} md={3} style={styles.grid}>
             <h2 style={styles.subtitle}>Web運用</h2>
             <p style={{ fontSize: '13px', padding: '10px', textAlign: 'center' }}>
               サーバ初期設定<br />
               サーバ保守管理<br />
               独自ドメイン取得<br />
+              ドメイン変更<br />
+              サーバ復旧<br />
               ブログ開設<br />
               ネットショップ開設<br />
               サーバセキュリティ設定<br />
             </p>
             {/* <h2 style={styles.price}>5,000円 ~ </h2> */}
           </Grid>
-          <Grid item xs={12} sm={3} style={styles.grid}>
+          <Grid item xs={12} md={3} style={styles.grid}>
             <h2 style={styles.subtitle}>サイト制作</h2>
             <p style={{ fontSize: '13px', padding: '10px', textAlign: 'center' }}>
               コーディング<br />
@@ -104,10 +106,11 @@ export class PriceComponent extends Component {
               サイトコード修正<br />
               ホームページ作成<br />
               Wordpressブログ開設<br />
+              Wordpressサーバ移行<br />
             </p>
             {/* <h2 style={styles.price}>10,000円 ~ </h2> */}
           </Grid>
-          <Grid item xs={12} sm={3} style={styles.grid}>
+          <Grid item xs={12} md={3} style={styles.grid}>
             <h2 style={styles.subtitle}>システム開発</h2>
             <p style={{ fontSize: '13px', padding: '10px', textAlign: 'center'  }}>
               LINE Bot<br />
