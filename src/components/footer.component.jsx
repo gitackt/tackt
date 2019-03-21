@@ -10,7 +10,7 @@ const styles = {
     position: 'relative',
     paddingTop: '15px',
     paddingBottom: '15px',
-    background: '#F9F8F6',
+    background: '#000000',
     color: '#cecece',
     textAlign: 'center',
     marginLeft: 'auto',
@@ -27,7 +27,7 @@ const styles = {
     marginRight: 'auto', 
   },
   title: {
-    width: '80%',
+    width: '85%',
     color: '#b7b5b2',
     maxWidth: '1200px',
     textAlign: 'left',
@@ -35,7 +35,7 @@ const styles = {
     fontSize: '28px',
     marginLeft: 'auto',
     marginRight: 'auto',
-    borderBottom: 'solid 7px #F3F1EE',
+    // borderBottom: 'solid 7px #F3F1EE',
   },
 };
 
@@ -55,6 +55,10 @@ class FooterComponent extends Component {
         <div className={styles.root} style={styles.container}>
           <h2 style={styles.title}>Profile</h2>
           <ProfileComponent />
+          <br />
+          <br />
+          <br />
+          <br />
           <h6>copyright 2018~2019 takuto mitsuhashi</h6>
         </div>
       </div>

@@ -7,7 +7,7 @@ const styles = {
   },
   image: {
     width: '70%',
-    maxWidth: '220px',
+    maxWidth: '150px',
     marginLeft: 'auto',
     marginRight: 'auto',
   },
@@ -15,11 +15,11 @@ const styles = {
     textAlign: 'left',
     paddingBottom: '5px',
     paddingTop: '5px',
-    paddingLeft: '20px',
-    paddingRight: '20px',
+    paddingLeft: '30px',
+    paddingRight: '30px',
     fontSize: '12px',
     borderRadius: '10px',
-    margin: '5px',
+    // margin: '5px',
   },
   gridLeft: {
     textAlign: 'center',
@@ -29,7 +29,6 @@ const styles = {
     paddingRight: '30px',
     fontSize: '12px',
     borderRadius: '10px',
-    margin: '5px',
   },
   button: {
     height: '50px',
@@ -59,7 +58,7 @@ const styles = {
     fontSize: '28px',
     marginLeft: 'auto',
     marginRight: 'auto',
-    borderBottom: 'solid 7px #F3F1EE',
+    borderBottom: 'solid 7px #000000',
   },
 };
 
@@ -79,6 +78,13 @@ export class ProfileComponent extends Component {
     return (
       <div style={{ paddingTop: '5px' }}>
         <Grid container justify={'center'} style={styles.container}>
+          <Grid item xs={12} md={3} style={styles.gridLeft}>
+            <img
+              style={styles.image}
+              src={'/images/background.png'}
+              alt={'profile'}
+            />
+          </Grid>
           <Grid item xs={12} md={3} style={styles.grid}>
             <div>
               <p>名前</p>
