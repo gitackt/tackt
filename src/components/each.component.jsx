@@ -73,7 +73,37 @@ const styles = {
     borderRadius: '10px 0px 5px 0px',
     zIndex: '2134567865432123456',
   },
-  app: {
+  ios: {
+    position: 'absolute',
+    width: '100px',
+    background: '#33c9e0',
+    color: 'white',
+    fontSize: '17px',
+    padding: '10px',
+    borderRadius: '10px 0px 5px 0px',
+    zIndex: '2134567865432123456',
+  },
+  android: {
+    position: 'absolute',
+    width: '100px',
+    background: '#b54141',
+    color: 'white',
+    fontSize: '17px',
+    padding: '10px',
+    borderRadius: '10px 0px 5px 0px',
+    zIndex: '2134567865432123456',
+  },
+  line: {
+    position: 'absolute',
+    width: '100px',
+    background: '#4fd65a',
+    color: 'white',
+    fontSize: '17px',
+    padding: '10px',
+    borderRadius: '10px 0px 5px 0px',
+    zIndex: '2134567865432123456',
+  },
+  deactive: {
     position: 'absolute',
     width: '100px',
     background: '#fdc538',
@@ -82,7 +112,7 @@ const styles = {
     padding: '10px',
     borderRadius: '10px 0px 5px 0px',
     zIndex: '2134567865432123456',
-  },
+  }
 };
 
 class ContentComponent extends Component {
@@ -100,14 +130,29 @@ class ContentComponent extends Component {
             Active
           </div>
         )}
+        {this.props.data.status === 'deactive' && (
+          <div style={styles.deactive}>
+            Deactive
+          </div>
+        )}
         {this.props.data.status === 'github' && (
           <div style={styles.github}>
             Github
           </div>
         )}
-        {this.props.data.status === 'app' && (
-          <div style={styles.app}>
-            iOS Andoid
+        {this.props.data.status === 'ios' && (
+          <div style={styles.ios}>
+            iOS
+          </div>
+        )}
+        {this.props.data.status === 'android' && (
+          <div style={styles.android}>
+            Andoid
+          </div>
+        )}
+        {this.props.data.status === 'line' && (
+          <div style={styles.line}>
+            LINE Bot
           </div>
         )}
         <img

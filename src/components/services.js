@@ -1,11 +1,27 @@
 export const listData = [
   {
-    name: "Props",
-    status: "app",
+    name: "暗号くん",
+    status: "line",
+    complete: false,
+    url: "https://babel-bubble.com",
+    image: "/images/services/ango.png",
+    info: "暗号くんはブロックチェーンから仮想通貨の情報を返してくれるLINE Botです。アドレス残高やGas相場などの情報をチャットで教えてくれます。Ethereum, EOS.io, Tron, Lisk, Cardanoなどを対応予定です。",
+  },
+  {
+    name: "Props iOS",
+    status: "ios",
     complete: false,
     url: "https://babel-bubble.com",
     image: "/images/services/props.png",
-    info: "Propsは持ち物管理アプリです。自分の持ち物をアプリでまとめて管理できます。Propsで管理すれば物をなくしません。断捨離にも最適なアプリです。",
+    info: "Propsは持ち物管理ができるiOSアプリです。自分の持ち物をアプリでまとめて管理できます。Propsで管理すれば物をなくしません。断捨離にも最適なアプリです。",
+  },
+  {
+    name: "Props Android",
+    status: "android",
+    complete: false,
+    url: "https://babel-bubble.com",
+    image: "/images/services/props.png",
+    info: "Propsは持ち物管理ができるAndroidアプリです。自分の持ち物をアプリでまとめて管理できます。Propsで管理すれば物をなくしません。断捨離にも最適なアプリです。",
   },
   {
     name: "Freesia",

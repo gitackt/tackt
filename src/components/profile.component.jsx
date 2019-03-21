@@ -120,7 +120,7 @@ export class ProfileComponent extends Component {
                 rel="noopener noreferrer"
                 style={{ color: '#a0c6ff' }}
               >
-                https://twitter.com/picos_tackt
+                twitter
               </a>
               <br />
               <a
@@ -129,7 +129,7 @@ export class ProfileComponent extends Component {
                 rel="noopener noreferrer"
                 style={{ color: '#a0c6ff' }}
               >
-                https://www.facebook.com/
+                facebook
               </a>
               <br />
               <a
@@ -138,7 +138,7 @@ export class ProfileComponent extends Component {
                 rel="noopener noreferrer"
                 style={{ color: '#a0c6ff' }}
               >
-                https://github.com/gitackt
+                github
               </a>
               <br /><br />
               git.tackt@gmail.com
