@@ -25,7 +25,7 @@ export const listData = [
   },
   {
     name: "VCU",
-    status: "sold",
+    status: "active",
     complete: true,
     url: "https://v-cu.com",
     image: "/images/services/vcu.png",
