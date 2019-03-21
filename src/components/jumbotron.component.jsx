@@ -32,7 +32,7 @@ const styles = {
     height: '20px',
     width: '80%',
     borderRadius: '5px',
-    // border: 'solid 1px #ff517c',
+    // border: 'solid 1px white',
     background: '#2ed1ea',
     marginLeft: 'auto',
     marginRight: 'auto',

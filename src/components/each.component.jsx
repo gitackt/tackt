@@ -5,20 +5,30 @@ import Typography from '@material-ui/core/Typography';
 const styles = {
   card: {
     width: '95%',
+    height: '380px',
     background: '#ffffff',
+    overflow: 'hidden',
     marginLeft: 'auto',
     marginRight: 'auto',
     borderRadius: '10px',
     textAlign: 'center',
+    boxShadow: '1px 1px 15px 5px #edf0f4',
+  },
+  cardNoShadow: {
+    width: '95%',
+    height: '380px',
+    background: '#ffffff',
+    overflow: 'hidden',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    borderRadius: '10px',
+    textAlign: 'center',
+    // boxShadow: '1px 1px 15px 5px #edf0f4',
   },
   image: {
     position: 'relative',
-    width: '95%',
+    width: '100%',
     height: 'auto',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    margin: '7px',
-    borderRadius: '10px 10px 10px 10px',
   },
   button: {
     height: '20px',
@@ -33,14 +43,83 @@ const styles = {
     padding: '15px',
     textDecoration: 'none',
   },
+  github: {
+    position: 'absolute',
+    width: '100px',
+    background: '#924df2',
+    color: 'white',
+    fontSize: '17px',
+    padding: '10px',
+    borderRadius: '0px 0px 10px 0px',
+    zIndex: '2134567865432123456',
+  },
+  active: {
+    position: 'absolute',
+    width: '100px',
+    background: '#0dddb4',
+    color: 'white',
+    fontSize: '17px',
+    padding: '10px',
+    borderRadius: '0px 0px 10px 0px',
+    zIndex: '2134567865432123456',
+  },
+  sold: {
+    position: 'absolute',
+    width: '100px',
+    background: '#ff0050',
+    color: 'white',
+    fontSize: '17px',
+    padding: '10px',
+    borderRadius: '0px 0px 10px 0px',
+    zIndex: '2134567865432123456',
+  },
+  app: {
+    position: 'absolute',
+    width: '100px',
+    background: '#fdc538',
+    color: 'white',
+    fontSize: '17px',
+    padding: '10px',
+    borderRadius: '0px 0px 10px 0px',
+    zIndex: '2134567865432123456',
+  },
+  develop: {
+    position: 'absolute',
+    width: '100px',
+    background: '#fdc538',
+    color: 'white',
+    fontSize: '17px',
+    padding: '10px',
+    borderRadius: '0px 0px 10px 0px',
+    zIndex: '2134567865432123456',
+  },
 };
 
-export class EachComponent extends Component {
-
+class ContentComponent extends Component {
   render() {
 
     return (
-      <div style={styles.card}>
+      <div>
+        {this.props.data.status === 'sold' && (
+          <div style={styles.sold}>
+            Sold
+          </div>
+        )}
+        {this.props.data.status === 'active' && (
+          <div style={styles.active}>
+            Active
+          </div>
+        )}
+        {this.props.data.status === 'github' && (
+          <div style={styles.github}>
+            Github
+          </div>
+        )}
+        {this.props.data.status === 'app' && (
+          <div style={styles.app}>
+            iOS Andoid
+          </div>
+        )}
         <img
           style={styles.image}
           src={this.props.data.image}
@@ -53,19 +132,41 @@ export class EachComponent extends Component {
           <br />
           <Typography component="p" style={{ fontSize: '12px', color: '#6D6C6A',height: '70px' }}>
             {this.props.data.info}
+            <br /><br />
+            {this.props.data.complete ? (
+              this.props.data.url
+            ) : (
+              "Coming soon..."
+            )}
           </Typography>
-          <br /><br />
-          <a
-            href={this.props.data.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: 'none', textAlign: 'center' }}
-          >
-            <div style={styles.button}>
-              サイトを見る
-            </div>
-          </a>
         </CardContent>
+      </div>
+    )
+  }
+}
+
+export class EachComponent extends Component {
+
+  render() {
+
+    return (
+      <div>
+        {this.props.data.complete ? (
+          <div style={styles.card}>
+            <a
+              href={this.props.data.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none', textAlign: 'center' }}
+            >
+            <ContentComponent data={this.props.data} />
+            </a>
+          </div >
+        ) : (
+          <div style={styles.cardNoShadow}>
+            <ContentComponent data={this.props.data} />
+          </div >
+        )}
       </div >
     );
   }
