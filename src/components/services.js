@@ -1,5 +1,13 @@
 export const listData = [
   {
+    name: "Annabel",
+    status: "github",
+    complete: true,
+    url: "https://github.com/gitackt/annabel",
+    image: "/images/services/annabel.png",
+    info: "アナベルは複数のYouTube動画を同時に再生できるアプリケーションです。入力されたの動画のURLを検出し、すべてのビデオを1画面上に表示します。",
+  },
+  {
     name: "暗号くん",
     status: "line",
     complete: false,
