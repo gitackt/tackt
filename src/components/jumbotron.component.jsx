@@ -7,15 +7,8 @@ const styles = {
     paddingTop: '80px',
     paddingBottom: '70px',
     textAlign: 'center',
-    // borderBottom: 'solid 6px #F3F1EE',
     minHeight: '500px',
     color: 'white',
-  },
-  image: {
-    width: '100%',
-    maxWidth: '200px',
-    marginBottom: '50px',
-    borderRadius: '10px',
   },
   title: {
     width: '90%',
@@ -32,7 +25,6 @@ const styles = {
     height: '20px',
     width: '80%',
     borderRadius: '5px',
-    // border: 'solid 1px white',
     background: '#2ed1ea',
     marginLeft: 'auto',
     marginRight: 'auto',
@@ -58,7 +50,6 @@ class JumbotronComponent extends Component {
             <Grid item xs={12} style={{ textAlign: 'center', marginLeft: '5%', marginRight: '5%' }}>
               <div style={styles.title}>
                 <h1>Takuto Mitsuhashi. Portfolio Website.</h1>
-                {/* <h2 style={{ fontSize: '20px' }}><br />Portfolio Website</h2> */}
                 <p style={{ maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto', color: 'white' }}>
                 フリーランスWebエンジニア。Webに関わるご相談やサイト制作はお任せ下さい。Webサイト制作のお悩み全てに対応いたします。
                 Freelance Web Engineer. Please leave the consultation and site production related to the web. I cope with all the worries of website production.<br /><br />
