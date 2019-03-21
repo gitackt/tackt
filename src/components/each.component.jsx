@@ -50,7 +50,7 @@ const styles = {
     color: 'white',
     fontSize: '17px',
     padding: '10px',
-    borderRadius: '10px 0px 10px 0px',
+    borderRadius: '10px 0px 5px 0px',
     zIndex: '2134567865432123456',
   },
   active: {
@@ -60,7 +60,7 @@ const styles = {
     color: 'white',
     fontSize: '17px',
     padding: '10px',
-    borderRadius: '10px 0px 10px 0px',
+    borderRadius: '10px 0px 5px 0px',
     zIndex: '2134567865432123456',
   },
   sold: {
@@ -70,7 +70,7 @@ const styles = {
     color: 'white',
     fontSize: '17px',
     padding: '10px',
-    borderRadius: '10px 0px 10px 0px',
+    borderRadius: '10px 0px 5px 0px',
     zIndex: '2134567865432123456',
   },
   app: {
@@ -80,7 +80,7 @@ const styles = {
     color: 'white',
     fontSize: '17px',
     padding: '10px',
-    borderRadius: '10px 0px 10px 0px',
+    borderRadius: '10px 0px 5px 0px',
     zIndex: '2134567865432123456',
   },
 };
