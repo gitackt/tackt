@@ -101,12 +101,13 @@ export class ProfileComponent extends Component {
             <div>
               <p>資格</p>
               <p>
-                証券アナリスト (CCMA)<br />
+                証券アナリスト2次 (CCMA)<br />
               </p>
               <p>技術</p>
               <p>
                 Python, Ruby, Django, Rails, HTML, CSS, JavaScript, TypeScript, React, React-native, 
-                Angular, Nginx, MySQL, Wordpress, PHP,  Go, Docker, AWS
+                Nginx, MySQL, Wordpress, PHP, Node, Docker, AWS, Angular, Go, Solidity, Vue, Unity, C#,
+                Affinity Designer
               </p>
             </div>
           </Grid>
@@ -120,16 +121,7 @@ export class ProfileComponent extends Component {
                 rel="noopener noreferrer"
                 style={{ color: '#a0c6ff' }}
               >
-                twitter
-              </a>
-              <br />
-              <a
-                href={'https://www.facebook.com/profile.php?id=100013371464347'}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: '#a0c6ff' }}
-              >
-                facebook
+                Twitter
               </a>
               <br />
               <a
@@ -138,10 +130,28 @@ export class ProfileComponent extends Component {
                 rel="noopener noreferrer"
                 style={{ color: '#a0c6ff' }}
               >
-                github
+                Github
+              </a>
+              <br />
+              <a
+                href={'https://www.facebook.com/profile.php?id=100013371464347'}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#a0c6ff' }}
+              >
+                Facebook
+              </a>
+              <br />
+              <a
+                href={'https://etherscan.io/address/0x9Ddb22480BD6F3D56de73457Fe657520D5da6693'}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#a0c6ff' }}
+              >
+                Ethereum
               </a>
               <br /><br />
-              git.tackt@gmail.com
+              git.tackt@gmail.com<br />
               </p>
             </div>
           </Grid>

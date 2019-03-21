@@ -132,6 +132,19 @@ class NavigationComponent extends Component {
                   Shop
               </h4>
               </a>
+              <a
+                href="https://etherscan.io/address/0x9Ddb22480BD6F3D56de73457Fe657520D5da6693"
+                style={{ textDecoration: 'none' }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4
+                  style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                  onClick={() => this.setState({ open: false })}
+                >
+                  Ethereum
+              </h4>
+              </a>
             </div>
           </div>
 

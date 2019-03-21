@@ -47,13 +47,6 @@ class FooterComponent extends Component {
 
     return (
       <div>
-        <br />
-        {/* <h2 style={styles.title}>Twitter</h2>
-        <div style={styles.twitter}>
-          <a class="twitter-timeline" data-lang="ja" data-height="500" href="https://twitter.com/picos_tackt?ref_src=twsrc%5Etfw">
-            Tweets by picos_tackt
-          </a> 
-        </div> */}
         <div className={styles.root} style={styles.container}>
           <h2 style={styles.title}>Profile</h2>
           <ProfileComponent />
@@ -91,7 +84,7 @@ class FooterComponent extends Component {
           </div>
           <br />
           <br />
-          <h6>copyright 2018~2019 takuto mitsuhashi</h6>
+          <h6>Copyright 2018~{new Date().getFullYear()} Takuto Mitsuhashi All Rights Reserved.</h6>
         </div>
       </div>
     );
