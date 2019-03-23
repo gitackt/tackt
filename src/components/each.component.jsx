@@ -51,7 +51,7 @@ const styles = {
     fontSize: '17px',
     padding: '10px',
     borderRadius: '10px 0px 5px 0px',
-    zIndex: '2134567865432123456',
+    zIndex: '26',
   },
   active: {
     position: 'absolute',
@@ -61,7 +61,7 @@ const styles = {
     fontSize: '17px',
     padding: '10px',
     borderRadius: '10px 0px 5px 0px',
-    zIndex: '2134567865432123456',
+    zIndex: '26',
   },
   sold: {
     position: 'absolute',
@@ -71,7 +71,7 @@ const styles = {
     fontSize: '17px',
     padding: '10px',
     borderRadius: '10px 0px 5px 0px',
-    zIndex: '2134567865432123456',
+    zIndex: '26',
   },
   ios: {
     position: 'absolute',
@@ -81,7 +81,7 @@ const styles = {
     fontSize: '17px',
     padding: '10px',
     borderRadius: '10px 0px 5px 0px',
-    zIndex: '2134567865432123456',
+    zIndex: '26',
   },
   android: {
     position: 'absolute',
@@ -91,7 +91,7 @@ const styles = {
     fontSize: '17px',
     padding: '10px',
     borderRadius: '10px 0px 5px 0px',
-    zIndex: '2134567865432123456',
+    zIndex: '26',
   },
   line: {
     position: 'absolute',
@@ -101,7 +101,7 @@ const styles = {
     fontSize: '17px',
     padding: '10px',
     borderRadius: '10px 0px 5px 0px',
-    zIndex: '2134567865432123456',
+    zIndex: '26',
   },
   deactive: {
     position: 'absolute',
@@ -111,7 +111,7 @@ const styles = {
     fontSize: '17px',
     padding: '10px',
     borderRadius: '10px 0px 5px 0px',
-    zIndex: '2134567865432123456',
+    zIndex: '26',
   }
 };
 

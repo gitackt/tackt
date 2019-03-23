@@ -51,7 +51,7 @@ const styles = {
     fontSize: '28px',
     marginLeft: 'auto',
     marginRight: 'auto',
-    borderBottom: 'solid 7px #F3F1EE',
+    borderBottom: 'solid 2px #EAEAEA',
   },
   title: {
     width: '80%',
@@ -62,7 +62,7 @@ const styles = {
     fontSize: '28px',
     marginLeft: 'auto',
     marginRight: 'auto',
-    borderBottom: 'solid 7px #F3F1EE',
+    borderBottom: 'solid 2px #F3F1EE',
   },
   price: {
     fontSize: '25px',
@@ -85,14 +85,14 @@ export class PriceComponent extends Component {
           <Grid item xs={12} md={3} style={styles.grid}>
             <h2 style={styles.subtitle}>Web運用</h2>
             <p style={{ fontSize: '13px', padding: '10px', textAlign: 'center' }}>
+              サーバ復旧<br />
+              ブログ開設<br />
+              ショップ開設<br />
+              ドメイン変更<br />
               サーバ初期設定<br />
               サーバ保守管理<br />
               独自ドメイン取得<br />
-              ドメイン変更<br />
-              サーバ復旧<br />
-              ブログ開設<br />
-              ネットショップ開設<br />
-              サーバセキュリティ設定<br />
+              セキュリティ設定<br />
             </p>
             {/* <h2 style={styles.price}>5,000円 ~ </h2> */}
           </Grid>
@@ -124,7 +124,7 @@ export class PriceComponent extends Component {
             {/* <h2 style={styles.price}>30,000円 ~ </h2> */}
           </Grid>
         </Grid>
-        <a
+        {/* <a
             href={'https://tackt-m.com'}
             target="_blank"
             rel="noopener noreferrer"
@@ -133,7 +133,7 @@ export class PriceComponent extends Component {
             <div style={styles.button}>
               価格設定の詳細はこちら
             </div>
-          </a>
+          </a> */}
       </div>
     );
   }

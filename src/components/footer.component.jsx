@@ -84,7 +84,7 @@ class FooterComponent extends Component {
           </div>
           <br />
           <br />
-          <h6>Copyright 2018~{new Date().getFullYear()} Takuto Mitsuhashi All Rights Reserved.</h6>
+          <h6>Copyright 2018~{new Date().getFullYear()} Takuto Mitsuhashi</h6>
         </div>
       </div>
     );

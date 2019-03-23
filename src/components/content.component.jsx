@@ -28,7 +28,7 @@ const styles = {
     fontSize: '28px',
     marginLeft: 'auto',
     marginRight: 'auto',
-    borderBottom: 'solid 7px #F3F1EE',
+    borderBottom: 'solid 2px #EAEAEA',
   },
 };
 
