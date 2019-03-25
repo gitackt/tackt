@@ -5,7 +5,7 @@ const styles = {
   container: {
     position: 'relative',
     paddingTop: '70px',
-    paddingBottom: '70px',
+    paddingBottom: '40px',
     textAlign: 'center',
     minHeight: '500px',
     color: 'white',
@@ -20,6 +20,11 @@ const styles = {
     padding: '30px',
     marginTop: '-50px',
     marginBottom: '50px',
+  },
+  image: {
+    width: '100%',
+    maxWidth: '500px',
+    marginTop: '40px',
   },
   button: {
     height: '20px',
@@ -68,6 +73,11 @@ class JumbotronComponent extends Component {
                     </a>
                   </div>
             </div>
+            <img
+              style={styles.image}
+              src={"/images/profile.png"}
+              alt={"top"}
+            />
             </Grid>
           </Grid>
         </div>
