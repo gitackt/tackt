@@ -32,6 +32,11 @@ const styles = {
     fontSize: '13px', 
     padding: '10px', 
     textAlign: 'center'
+  },
+  image: {
+    width: '250px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
   }
 };
 
@@ -46,6 +51,11 @@ export class PriceComponent extends Component {
       <div style={{ paddingTop: '5px' }}>
         <Grid container justify={'center'} style={styles.container}>
           <Grid item xs={12} md={3} style={styles.grid}>
+            <img
+              style={styles.image}
+              src={"/images/web.png"}
+              alt={"web"}
+            />
             <h2 style={styles.subtitle}>Web運用</h2>
             <p style={styles.content}>
               サーバ復旧<br />
@@ -59,6 +69,11 @@ export class PriceComponent extends Component {
             </p>
           </Grid>
           <Grid item xs={12} md={3} style={styles.grid}>
+            <img
+              style={styles.image}
+              src={"/images/site.png"}
+              alt={"site"}
+            />
             <h2 style={styles.subtitle}>サイト制作</h2>
             <p style={styles.content}>
               コーディング<br />
@@ -72,6 +87,11 @@ export class PriceComponent extends Component {
             </p>
           </Grid>
           <Grid item xs={12} md={3} style={styles.grid}>
+            <img
+              style={styles.image}
+              src={"/images/db.png"}
+              alt={"db"}
+            />
             <h2 style={styles.subtitle}>システム開発</h2>
             <p style={styles.content}>
               LINE Bot<br />
