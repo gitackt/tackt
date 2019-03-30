@@ -6,12 +6,6 @@ const styles = {
     textAlign: 'left',
     background: 'white',
     marginTop: '30px',
-    // borderBottom: 'solid 6px #F3F1EE',
-  },
-  image: {
-    width: '100px',
-    marginLeft: 'auto',
-    marginRight: 'auto',
   },
   grid: {
     textAlign: 'center',
@@ -22,25 +16,6 @@ const styles = {
     fontSize: '12px',
     borderRadius: '10px',
     margin: '5px',
-  },
-  button: {
-    height: '20px',
-    width: '220px',
-    marginTop: '30px',
-    textAlign: 'center',
-    borderRadius: '200px',
-    borderTop: 'solid 2px #d34e6f',
-    borderRight: 'solid 2px #d34e6f',
-    borderBottom: 'solid 3px #d34e6f',
-    borderLeft: 'solid 2px #d34e6f',
-    background: '#ff517c',
-    color: 'white',
-    fontSize: '13px',
-    padding: '10px',
-    paddingTop: '11px',
-    textDecoration: 'none',
-    marginLeft: 'auto',
-    marginRight: 'auto',
   },
   subtitle: {
     width: '80%',
@@ -53,23 +28,11 @@ const styles = {
     marginRight: 'auto',
     borderBottom: 'solid 2px #EAEAEA',
   },
-  title: {
-    width: '80%',
-    color: '#6D6C6A',
-    maxWidth: '1200px',
-    textAlign: 'left',
-    padding: '20px',
-    fontSize: '28px',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    borderBottom: 'solid 2px #F3F1EE',
-  },
-  price: {
-    fontSize: '25px',
-    textAlign: 'center',
-    color: '#d9466c',
-    fontWeight: 'bold',
-  },
+  content: {
+    fontSize: '13px', 
+    padding: '10px', 
+    textAlign: 'center'
+  }
 };
 
 export class PriceComponent extends Component {
@@ -84,7 +47,7 @@ export class PriceComponent extends Component {
         <Grid container justify={'center'} style={styles.container}>
           <Grid item xs={12} md={3} style={styles.grid}>
             <h2 style={styles.subtitle}>Web運用</h2>
-            <p style={{ fontSize: '13px', padding: '10px', textAlign: 'center' }}>
+            <p style={styles.content}>
               サーバ復旧<br />
               ブログ開設<br />
               ショップ開設<br />
@@ -94,11 +57,10 @@ export class PriceComponent extends Component {
               独自ドメイン取得<br />
               セキュリティ設定<br />
             </p>
-            {/* <h2 style={styles.price}>5,000円 ~ </h2> */}
           </Grid>
           <Grid item xs={12} md={3} style={styles.grid}>
             <h2 style={styles.subtitle}>サイト制作</h2>
-            <p style={{ fontSize: '13px', padding: '10px', textAlign: 'center' }}>
+            <p style={styles.content}>
               コーディング<br />
               Webサーバ構築<br />
               サイトSEO設定<br />
@@ -108,11 +70,10 @@ export class PriceComponent extends Component {
               Wordpressブログ開設<br />
               Wordpressサーバ移行<br />
             </p>
-            {/* <h2 style={styles.price}>10,000円 ~ </h2> */}
           </Grid>
           <Grid item xs={12} md={3} style={styles.grid}>
             <h2 style={styles.subtitle}>システム開発</h2>
-            <p style={{ fontSize: '13px', padding: '10px', textAlign: 'center'  }}>
+            <p style={styles.content}>
               LINE Bot<br />
               iOSアプリ<br />
               Androidアプリ<br />
@@ -121,19 +82,8 @@ export class PriceComponent extends Component {
               サイトデザイン<br />
               データベース設計<br />
             </p>
-            {/* <h2 style={styles.price}>30,000円 ~ </h2> */}
           </Grid>
         </Grid>
-        {/* <a
-            href={'https://tackt-m.com'}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: 'none', textAlign: 'center' }}
-          >
-            <div style={styles.button}>
-              価格設定の詳細はこちら
-            </div>
-          </a> */}
       </div>
     );
   }

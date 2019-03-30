@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import JumbotronComponent from './components/jumbotron.component';
-import NavigationComponent from './components/navi.component';
-import { Route, Switch, BrowserRouter as Router, Redirect } from 'react-router-dom';
 import FooterComponent from './components/footer.component';
+import NavigationComponent from './components/navi.component';
 import ContentComponent from './components/content.component';
 import { PriceComponent } from './components/price.component';
-import { Helmet } from "react-helmet";
+import JumbotronComponent from './components/jumbotron.component';
+import { Route, Switch, BrowserRouter as Router, Redirect } from 'react-router-dom';
 
 const styles = {
   background: {
@@ -17,20 +16,10 @@ class LandingComponent extends Component {
   render() {
     return (
       <div style={styles.background}>
-        <Helmet
-          title={'三橋拓人ポートフォリオサイト フリーランスWebエンジニア'}
-          meta={[
-            { name: 'twitter:card', content: 'summary_large_image' },
-            { property: 'og:image', content: '/images/background.png' },
-            { property: 'og:title', content: '三橋拓人ポートフォリオサイト フリーランスWebエンジニア' },
-            { property: 'og:url', content: 'https://tackt-m.com' },
-          ]}
-        />
         <NavigationComponent />
         <JumbotronComponent />
         <PriceComponent />
         <ContentComponent />
-        {/* <ProfileComponent /> */}
         <FooterComponent />
       </div>
     );

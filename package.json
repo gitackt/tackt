@@ -13,7 +13,6 @@
     "react-scripts": "^2.1.8"
   },
   "devDependencies": {
-    "react-helmet": "^5.2.0",
     "react-snap": "^1.23.0"
   },
   "scripts": {

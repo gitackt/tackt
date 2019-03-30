@@ -3,9 +3,6 @@ import { ProfileComponent } from './profile.component';
 
 
 const styles = {
-  root: {
-    flexGrow: 1,
-  },
   container: {
     position: 'relative',
     paddingTop: '15px',
@@ -16,18 +13,8 @@ const styles = {
     marginLeft: 'auto',
     marginRight: 'auto',
   },
-  button: {
-    textDecoration: 'none',
-  },
   image: {
     width: '50px',
-  },
-  twitter: {
-    maxWidth: '300px',
-    paddingTop: '30px',
-    paddingBottom: '30px',
-    marginLeft: 'auto',
-    marginRight: 'auto', 
   },
   title: {
     width: '85%',
@@ -47,7 +34,7 @@ class FooterComponent extends Component {
 
     return (
       <div>
-        <div className={styles.root} style={styles.container}>
+        <div style={styles.container}>
           <h2 style={styles.title}>Profile</h2>
           <ProfileComponent />
           <div style={{ marginTop: '100px' }}>

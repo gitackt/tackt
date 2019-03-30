@@ -4,10 +4,7 @@ import { EachComponent } from './each.component';
 import { listData } from './services';
 
 const styles = {
-  root: {
-    flexGrow: 1,
-  },
-  container2: {
+  container: {
     marginTop: '10px',
     marginLeft: 'auto',
     marginRight: 'auto',
@@ -38,7 +35,7 @@ class ContentComponent extends Component {
     return (
       <div style={{ paddingTop: '5px', textAlign: 'center', background: 'white' }}>
         <h2 style={styles.title}>Services</h2>
-        <Grid container justify={'center'} style={styles.container2}>
+        <Grid container justify={'center'} style={styles.container}>
           {listData.map((each) => (
             <Grid item xs={12} sm={6} md={4} style={styles.grid}>
               <EachComponent data={each} />

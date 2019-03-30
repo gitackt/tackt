@@ -23,7 +23,6 @@ const styles = {
     marginRight: 'auto',
     borderRadius: '10px',
     textAlign: 'center',
-    // boxShadow: '1px 1px 15px 5px #edf0f4',
   },
   image: {
     position: 'relative',
