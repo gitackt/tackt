@@ -30,7 +30,7 @@ const styles = {
     height: '20px',
     width: '80%',
     borderRadius: '5px',
-    background: '#2ed1ea',
+    background: '#FFAF00',
     marginLeft: 'auto',
     marginRight: 'auto',
     color: 'white',
@@ -38,16 +38,16 @@ const styles = {
     padding: '15px',
     textDecoration: 'none',
     marginTop: '20px',
-    boxShadow: '1px 1px 5px 2px #1f69e0',
+    boxShadow: '1px 1px 5px 2px #1cb0ea',
   },
 }
 
 class JumbotronComponent extends PureComponent {
-  
+
   render() {
     return (
       <div
-        style={{ background: '#1a6aed' }}
+        style={{ background: '#1BB1EF' }}
       >
         <div
           style={styles.container}

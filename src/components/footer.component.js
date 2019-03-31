@@ -40,32 +40,32 @@ class FooterComponent extends PureComponent {
           <div style={{ marginTop: '100px' }}>
             <img
               style={styles.image}
-              src={'/images/bubble_coin.png'}
+              src={'/images/balls/bubble_coin.png'}
               alt={'bubble_coin'}
             />
             <img
               style={styles.image}
-              src={'/images/gum_coin.png'}
+              src={'/images/balls/gum_coin.png'}
               alt={'bubble_coin'}
             />
             <img
               style={styles.image}
-              src={'/images/cake_coin.png'}
+              src={'/images/balls/cake_coin.png'}
               alt={'bubble_coin'}
             />
             <img
               style={styles.image}
-              src={'/images/honey_coin.png'}
+              src={'/images/balls/honey_coin.png'}
               alt={'bubble_coin'}
             />
             <img
               style={styles.image}
-              src={'/images/cocoa_coin.png'}
+              src={'/images/balls/cocoa_coin.png'}
               alt={'bubble_coin'}
             />
             <img
               style={styles.image}
-              src={'/images/mono_coin.png'}
+              src={'/images/balls/mono_coin.png'}
               alt={'bubble_coin'}
             />
           </div>
