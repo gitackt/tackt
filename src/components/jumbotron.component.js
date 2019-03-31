@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Grid from '@material-ui/core/Grid';
 
 const styles = {
@@ -42,9 +42,9 @@ const styles = {
   },
 }
 
-class JumbotronComponent extends Component {
+class JumbotronComponent extends PureComponent {
+  
   render() {
-
     return (
       <div
         style={{ background: '#1a6aed' }}

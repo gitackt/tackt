@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Grid from '@material-ui/core/Grid';
 
 const styles = {
@@ -31,17 +31,7 @@ const styles = {
   },
 };
 
-export class ProfileComponent extends Component {
-
-  state = {
-    is_screen: false,
-    is_hobby: false,
-    is_book: false,
-  };
-
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
+export class ProfileComponent extends PureComponent {
 
   render() {
     return (

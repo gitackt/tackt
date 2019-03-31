@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Grid from '@material-ui/core/Grid';
 import { EachComponent } from './each.component';
 import { listData } from './services';
@@ -29,7 +29,7 @@ const styles = {
   },
 };
 
-class ContentComponent extends Component {
+class ContentComponent extends PureComponent {
 
   render() {
     return (

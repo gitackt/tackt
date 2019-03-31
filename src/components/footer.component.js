@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { ProfileComponent } from './profile.component';
 
 
@@ -28,7 +28,7 @@ const styles = {
   },
 };
 
-class FooterComponent extends Component {
+class FooterComponent extends PureComponent {
 
   render() {
 

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Grid from '@material-ui/core/Grid';
 
 const styles = {
@@ -40,11 +40,7 @@ const styles = {
   }
 };
 
-export class PriceComponent extends Component {
-
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
+export class PriceComponent extends PureComponent {
 
   render() {
     return (

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
@@ -114,7 +114,7 @@ const styles = {
   }
 };
 
-class ContentComponent extends Component {
+class ContentComponent extends PureComponent {
   render() {
 
     return (
@@ -179,7 +179,7 @@ class ContentComponent extends Component {
   }
 }
 
-export class EachComponent extends Component {
+export class EachComponent extends PureComponent {
 
   render() {
 
