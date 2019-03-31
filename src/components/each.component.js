@@ -114,94 +114,89 @@ const styles = {
   }
 };
 
-class ContentComponent extends PureComponent {
-  render() {
+const ContentComponent = () =>{
 
-    return (
-      <div>
-        {this.props.data.status === 'sold' && (
-          <div style={styles.sold}>
-            Sold
-          </div>
-        )}
-        {this.props.data.status === 'active' && (
-          <div style={styles.active}>
-            Active
-          </div>
-        )}
-        {this.props.data.status === 'deactive' && (
-          <div style={styles.deactive}>
-            Deactive
-          </div>
-        )}
-        {this.props.data.status === 'github' && (
-          <div style={styles.github}>
-            Github
-          </div>
-        )}
-        {this.props.data.status === 'ios' && (
-          <div style={styles.ios}>
-            iOS
-          </div>
-        )}
-        {this.props.data.status === 'android' && (
-          <div style={styles.android}>
-            Andoid
-          </div>
-        )}
-        {this.props.data.status === 'line' && (
-          <div style={styles.line}>
-            LINE Bot
-          </div>
-        )}
-        <img
-          style={styles.image}
-          src={this.props.data.image}
-          alt={this.props.data.name}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '17px', color: '#51504d' }}>
-            {this.props.data.name}
-          </Typography>
-          <br />
-          <Typography component="p" style={{ fontSize: '12px', color: '#6D6C6A',height: '70px' }}>
-            {this.props.data.info}
-            <br /><br />
-            {this.props.data.complete ? (
-              this.props.data.url
-            ) : (
-              "Coming soon..."
-            )}
-          </Typography>
-        </CardContent>
-      </div>
-    )
-  }
+return (
+    <div>
+      {this.props.data.status === 'sold' && (
+        <div style={styles.sold}>
+          Sold
+        </div>
+      )}
+      {this.props.data.status === 'active' && (
+        <div style={styles.active}>
+          Active
+        </div>
+      )}
+      {this.props.data.status === 'deactive' && (
+        <div style={styles.deactive}>
+          Deactive
+        </div>
+      )}
+      {this.props.data.status === 'github' && (
+        <div style={styles.github}>
+          Github
+        </div>
+      )}
+      {this.props.data.status === 'ios' && (
+        <div style={styles.ios}>
+          iOS
+        </div>
+      )}
+      {this.props.data.status === 'android' && (
+        <div style={styles.android}>
+          Andoid
+        </div>
+      )}
+      {this.props.data.status === 'line' && (
+        <div style={styles.line}>
+          LINE Bot
+        </div>
+      )}
+      <img
+        style={styles.image}
+        src={this.props.data.image}
+        alt={this.props.data.name}
+      />
+      <CardContent>
+        <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '17px', color: '#51504d' }}>
+          {this.props.data.name}
+        </Typography>
+        <br />
+        <Typography component="p" style={{ fontSize: '12px', color: '#6D6C6A',height: '70px' }}>
+          {this.props.data.info}
+          <br /><br />
+          {this.props.data.complete ? (
+            this.props.data.url
+          ) : (
+            "Coming soon..."
+          )}
+        </Typography>
+      </CardContent>
+    </div>
+  )
 }
 
-export class EachComponent extends PureComponent {
+export const EachComponent = () =>{
 
-  render() {
-
-    return (
-      <div>
-        {this.props.data.complete ? (
-          <div style={styles.card}>
-            <a
-              href={this.props.data.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none', textAlign: 'center' }}
-            >
-            <ContentComponent data={this.props.data} />
-            </a>
-          </div >
-        ) : (
-          <div style={styles.cardNoShadow}>
-            <ContentComponent data={this.props.data} />
-          </div >
-        )}
-      </div >
-    );
-  }
+  return (
+    <div>
+      {this.props.data.complete ? (
+        <div style={styles.card}>
+          <a
+            href={this.props.data.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: 'none', textAlign: 'center' }}
+          >
+          <ContentComponent data={this.props.data} />
+          </a>
+        </div >
+      ) : (
+        <div style={styles.cardNoShadow}>
+          <ContentComponent data={this.props.data} />
+        </div >
+      )}
+    </div >
+  );
 }
