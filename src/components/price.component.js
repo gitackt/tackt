@@ -23,7 +23,7 @@ const styles = {
     maxWidth: '1200px',
     textAlign: 'center',
     padding: '20px',
-    fontSize: '28px',
+    fontSize: '26px',
     marginLeft: 'auto',
     marginRight: 'auto',
     borderBottom: 'solid 2px #EAEAEA',
@@ -52,7 +52,7 @@ export class PriceComponent extends PureComponent {
               src={"/images/web.png"}
               alt={"web"}
             />
-            <h2 style={styles.subtitle}>Web運用</h2>
+            <h2 style={styles.subtitle}>ウェブ運用</h2>
             <p style={styles.content}>
               サーバ復旧<br />
               ブログ開設<br />

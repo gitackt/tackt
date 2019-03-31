@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
@@ -177,24 +177,24 @@ return (
   )
 }
 
-export const EachComponent = () =>{
+export const EachComponent = (props) =>{
 
   return (
     <div>
-      {this.props.data.complete ? (
+      {props.data.complete ? (
         <div style={styles.card}>
           <a
-            href={this.props.data.url}
+            href={props.data.url}
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: 'none', textAlign: 'center' }}
           >
-          <ContentComponent data={this.props.data} />
+          <ContentComponent data={props.data} />
           </a>
         </div >
       ) : (
         <div style={styles.cardNoShadow}>
-          <ContentComponent data={this.props.data} />
+          <ContentComponent data={props.data} />
         </div >
       )}
     </div >
