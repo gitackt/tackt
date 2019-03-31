@@ -114,60 +114,60 @@ const styles = {
   }
 };
 
-const ContentComponent = () =>{
+const ContentComponent = (props) =>{
 
 return (
     <div>
-      {this.props.data.status === 'sold' && (
+      {props.data.status === 'sold' && (
         <div style={styles.sold}>
           Sold
         </div>
       )}
-      {this.props.data.status === 'active' && (
+      {props.data.status === 'active' && (
         <div style={styles.active}>
           Active
         </div>
       )}
-      {this.props.data.status === 'deactive' && (
+      {props.data.status === 'deactive' && (
         <div style={styles.deactive}>
           Deactive
         </div>
       )}
-      {this.props.data.status === 'github' && (
+      {props.data.status === 'github' && (
         <div style={styles.github}>
           Github
         </div>
       )}
-      {this.props.data.status === 'ios' && (
+      {props.data.status === 'ios' && (
         <div style={styles.ios}>
           iOS
         </div>
       )}
-      {this.props.data.status === 'android' && (
+      {props.data.status === 'android' && (
         <div style={styles.android}>
           Andoid
         </div>
       )}
-      {this.props.data.status === 'line' && (
+      {props.data.status === 'line' && (
         <div style={styles.line}>
           LINE Bot
         </div>
       )}
       <img
         style={styles.image}
-        src={this.props.data.image}
-        alt={this.props.data.name}
+        src={props.data.image}
+        alt={props.data.name}
       />
       <CardContent>
         <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '17px', color: '#51504d' }}>
-          {this.props.data.name}
+          {props.data.name}
         </Typography>
         <br />
         <Typography component="p" style={{ fontSize: '12px', color: '#6D6C6A',height: '70px' }}>
-          {this.props.data.info}
+          {props.data.info}
           <br /><br />
-          {this.props.data.complete ? (
-            this.props.data.url
+          {props.data.complete ? (
+            props.data.url
           ) : (
             "Coming soon..."
           )}
