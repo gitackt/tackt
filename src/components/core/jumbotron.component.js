@@ -4,10 +4,9 @@ import Grid from '@material-ui/core/Grid';
 const styles = {
   container: {
     position: 'relative',
-    paddingTop: '100px',
-    paddingBottom: '100px',
+    paddingTop: '50px',
+    paddingBottom: '50px',
     textAlign: 'center',
-    minHeight: '300px',
     color: 'white',
   },
   title: {

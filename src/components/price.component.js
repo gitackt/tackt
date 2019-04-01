@@ -24,7 +24,6 @@ const styles = {
     textAlign: 'center',
     padding: '20px',
     fontSize: '26px',
-    fontWeight: 'normal',
     marginLeft: 'auto',
     marginRight: 'auto',
     borderBottom: 'solid 2px #EAEAEA',
