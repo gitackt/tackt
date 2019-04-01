@@ -76,7 +76,7 @@ const EachComponent = (props) =>{
   return (
     <div>
       <div style={styles.list}>
-        <div style={styles.number}>{props.data.number}</div>
+        {/* <div style={styles.number}>{props.data.number}</div> */}
         <img
           style={styles.image}
           src={props.data.image}
@@ -100,7 +100,7 @@ class GalleryComponent extends PureComponent {
     return (
       <div style={{ paddingTop: '5px', textAlign: 'center', background: 'white' }}>
         <h2 style={styles.title}>
-          Gallery <br /><span style={styles.titleInfo}>プロフィールアイコンになった歴代の自作イラスト達です。どこかで見たことあるかも？</span>
+          Gallery <br /><span style={styles.titleInfo}>アイコンだった自作イラスト達です。どこかで見たことあるかも？</span>
         </h2>
         <Grid container justify={'center'} style={styles.container}>
           {galleryData.map((each) => (
