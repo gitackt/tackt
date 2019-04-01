@@ -34,7 +34,7 @@ const styles = {
     textAlign: 'center'
   },
   image: {
-    height: '250px',
+    height: '150px',
     marginLeft: 'auto',
     marginRight: 'auto',
   }

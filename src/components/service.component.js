@@ -244,7 +244,7 @@ class ServiceComponent extends PureComponent {
 
         <Grid container justify={'center'} style={styles.container}>
           {listData.map((each) => (
-            <Grid item xs={12} sm={6} md={4} style={styles.grid}>
+            <Grid item xs={12} sm={6} md={4} lg={3} style={styles.grid}>
               <EachComponent data={each} />
             </Grid>
           ))}
