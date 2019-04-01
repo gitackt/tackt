@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import FooterComponent from './components/footer.component';
-import NavigationComponent from './components/navi.component';
-import ContentComponent from './components/content.component';
+import FooterComponent from './components/core/footer.component';
+import NavigationComponent from './components/core/navi.component';
+import ServiceComponent from './components/service.component';
+import GalleryComponent from './components/gallery.component';
 import { PriceComponent } from './components/price.component';
-import JumbotronComponent from './components/jumbotron.component';
+import JumbotronComponent from './components/core/jumbotron.component';
 import { Route, Switch, BrowserRouter as Router, Redirect } from 'react-router-dom';
 
 const styles = {
@@ -19,7 +20,8 @@ class LandingComponent extends Component {
         <NavigationComponent />
         <JumbotronComponent />
         <PriceComponent />
-        <ContentComponent />
+        <ServiceComponent />
+        <GalleryComponent />
         <FooterComponent />
       </div>
     );

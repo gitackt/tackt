@@ -24,6 +24,7 @@ const styles = {
     textAlign: 'center',
     padding: '20px',
     fontSize: '26px',
+    fontWeight: 'normal',
     marginLeft: 'auto',
     marginRight: 'auto',
     borderBottom: 'solid 2px #EAEAEA',
@@ -34,7 +35,7 @@ const styles = {
     textAlign: 'center'
   },
   image: {
-    width: '250px',
+    height: '250px',
     marginLeft: 'auto',
     marginRight: 'auto',
   }

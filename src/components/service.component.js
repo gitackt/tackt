@@ -1,8 +1,39 @@
-import React from 'react';
-import CardContent from '@material-ui/core/CardContent';
+import React, { PureComponent } from 'react';
+import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import CardContent from '@material-ui/core/CardContent';
+
+import { listData } from '../params/services';
 
 const styles = {
+  container: {
+    marginTop: '10px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    maxWidth: '1200px',
+  },
+  grid: {
+    textAlign: 'left',
+    marginBottom: '10px',
+    marginTop: '10px',
+    padding: '20px',
+  },
+  title: {
+    width: '80%',
+    color: '#6D6C6A',
+    maxWidth: '1200px',
+    textAlign: 'left',
+    padding: '15px',
+    fontSize: '28px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    borderBottom: 'solid 2px #EAEAEA',
+  },
+  titleInfo: {
+    fontSize: '13px',
+    fontWeight: 'normal',
+    marginTop: '10px',
+  },
   card: {
     width: '95%',
     height: '380px',
@@ -114,9 +145,10 @@ const styles = {
   }
 };
 
-const ContentComponent = (props) =>{
 
-return (
+const CardContentComponent = (props) => {
+
+  return (
     <div>
       {props.data.status === 'sold' && (
         <div style={styles.sold}>
@@ -177,7 +209,7 @@ return (
   )
 }
 
-export const EachComponent = (props) =>{
+const EachComponent = (props) =>{
 
   return (
     <div>
@@ -189,14 +221,38 @@ export const EachComponent = (props) =>{
             rel="noopener noreferrer"
             style={{ textDecoration: 'none', textAlign: 'center' }}
           >
-          <ContentComponent data={props.data} />
+          <CardContentComponent data={props.data} />
           </a>
         </div >
       ) : (
         <div style={styles.cardNoShadow}>
-          <ContentComponent data={props.data} />
+          <CardContentComponent data={props.data} />
         </div >
       )}
     </div >
   );
 }
+
+class ServiceComponent extends PureComponent {
+
+  render() {
+    return (
+      <div style={{ paddingTop: '5px', textAlign: 'center', background: 'white' }}>
+        <h2 style={styles.title}>
+          Services <br /><span style={styles.titleInfo}>作ったサービスの一覧です。</span>
+        </h2>
+
+        <Grid container justify={'center'} style={styles.container}>
+          {listData.map((each) => (
+            <Grid item xs={12} sm={6} md={4} style={styles.grid}>
+              <EachComponent data={each} />
+            </Grid>
+          ))}
+        </Grid>
+      </div>
+    );
+  }
+}
+
+export default ServiceComponent;
+

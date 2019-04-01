@@ -4,22 +4,16 @@ import Grid from '@material-ui/core/Grid';
 const styles = {
   container: {
     position: 'relative',
-    paddingTop: '70px',
-    paddingBottom: '40px',
+    paddingTop: '100px',
+    paddingBottom: '100px',
     textAlign: 'center',
-    minHeight: '500px',
+    minHeight: '300px',
     color: 'white',
   },
   title: {
     width: '90%',
     marginLeft: 'auto',
     marginRight: 'auto',
-  },
-  grid: {
-    textAlign: 'center',
-    padding: '30px',
-    marginTop: '-50px',
-    marginBottom: '50px',
   },
   image: {
     width: '100%',
@@ -73,11 +67,6 @@ class JumbotronComponent extends PureComponent {
                     </a>
                   </div>
             </div>
-            <img
-              style={styles.image}
-              src={"/images/profile.png"}
-              alt={"top"}
-            />
             </Grid>
           </Grid>
         </div>
