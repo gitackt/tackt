@@ -5,7 +5,7 @@ export const listData = [
     complete: true,
     url: "https://babel-bubble.com",
     image: "/images/services/babelbubble.png",
-    info: "バベルバブルは無料で遊べる投資シミュレーションゲームです。ゲーム内で流通するアイテムをゲーム内通貨で売買して遊びます。アイテムを安い時に買って高い時に売ることで架空の市場取引を体験できます。",
+    info: "バベルバブルは無料で遊べる投資シミュレーションゲームです。ゲーム内で流通するアイテムをゲーム内通貨で売買して遊びます。",
   },
   {
     name: "VCU",
@@ -13,7 +13,7 @@ export const listData = [
     complete: true,
     url: "https://v-cu.com",
     image: "/images/services/vcu.png",
-    info: "VCUは複数の取引所から自動でデータを取得して仮想通貨のポートフォリオを簡単にチェックすることができるサービスです。取引所とデータ連携を行うことで自動的に保有残高を取得します。",
+    info: "VCUは複数の取引所から自動でデータを取得して仮想通貨のポートフォリオを簡単にチェックすることができるサービスです。",
   },
   {
     name: "暗号くん",
@@ -21,7 +21,7 @@ export const listData = [
     complete: true,
     url: "https://line.me/R/ti/p/%40hbi0385s",
     image: "/images/services/ango.png",
-    info: "暗号くんはブロックチェーンから仮想通貨の情報を返してくれるLINE Botです。アドレス残高やGas相場などの情報をチャットで教えてくれます。Ethereum, EOS.io, Tron, Lisk, Cardanoなどを対応予定です。",
+    info: "暗号くんはブロックチェーンから仮想通貨の情報を返してくれるLINE Botです。アドレス残高やGas相場などの情報をチャットで教えてくれます。",
   },
   {
     name: "Props iOS",
@@ -29,7 +29,7 @@ export const listData = [
     complete: false,
     url: "https://babel-bubble.com",
     image: "/images/services/props.png",
-    info: "Propsは持ち物管理ができるiOSアプリです。自分の持ち物をアプリでまとめて管理できます。Propsで管理すれば物をなくしません。断捨離にも最適なアプリです。",
+    info: "Propsは持ち物管理ができるiOSアプリです。自分の持ち物をアプリでまとめて管理できます。Propsで管理すれば物をなくしません。",
   },
   {
     name: "Props Android",
@@ -37,7 +37,7 @@ export const listData = [
     complete: false,
     url: "https://babel-bubble.com",
     image: "/images/services/props.png",
-    info: "Propsは持ち物管理ができるAndroidアプリです。自分の持ち物をアプリでまとめて管理できます。Propsで管理すれば物をなくしません。断捨離にも最適なアプリです。",
+    info: "Propsは持ち物管理ができるAndroidアプリです。自分の持ち物をアプリでまとめて管理できます。Propsで管理すれば物をなくしません。",
   },
   {
     name: "Freesia",
@@ -53,7 +53,7 @@ export const listData = [
     complete: true,
     url: "https://github.com/gitackt/annabel",
     image: "/images/services/annabel.png",
-    info: "アナベルは複数のYouTube動画を同時に再生できるアプリケーションです。入力されたの動画のURLを検出し、すべてのビデオを1画面上に表示します。",
+    info: "アナベルは複数のYouTube動画を同時に再生できるアプリケーションです。入力されたの動画のURLを検出し、すべてのビデオを表示します。",
   },
   {
     name: "人生は運ゲー",

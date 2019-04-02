@@ -43,17 +43,6 @@ const styles = {
     marginRight: 'auto',
     borderRadius: '10px',
     textAlign: 'center',
-    boxShadow: '1px 1px 5px 3px #edf0f4',
-  },
-  cardNoShadow: {
-    width: '95%',
-    height: '380px',
-    background: '#ffffff',
-    overflow: 'hidden',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    borderRadius: '10px',
-    textAlign: 'center',
   },
   image: {
     position: 'relative',
@@ -62,7 +51,6 @@ const styles = {
   },
   button: {
     height: '20px',
-    width: '80%',
     borderRadius: '10px',
     border: 'solid 1px #ff517c',
     background: 'white',
@@ -70,75 +58,78 @@ const styles = {
     marginRight: 'auto',
     color: '#ff517c',
     fontSize: '13px',
-    padding: '15px',
+    paddingTop: '10px',
+    paddingBottom: '10px',
+    paddingLeft: '80px',
+    paddingRight: '80px',
     textDecoration: 'none',
   },
   github: {
     position: 'absolute',
-    width: '100px',
+    width: '60px',
     background: '#924df2',
     color: 'white',
-    fontSize: '17px',
+    fontSize: '15px',
     padding: '10px',
     borderRadius: '10px 0px 5px 0px',
     zIndex: '26',
   },
   active: {
     position: 'absolute',
-    width: '100px',
+    width: '60px',
     background: '#0dddb4',
     color: 'white',
-    fontSize: '17px',
+    fontSize: '15px',
     padding: '10px',
     borderRadius: '10px 0px 5px 0px',
     zIndex: '26',
   },
   sold: {
     position: 'absolute',
-    width: '100px',
+    width: '60px',
     background: '#ff0050',
     color: 'white',
-    fontSize: '17px',
+    fontSize: '15px',
     padding: '10px',
     borderRadius: '10px 0px 5px 0px',
     zIndex: '26',
   },
   ios: {
     position: 'absolute',
-    width: '100px',
+    width: '60px',
     background: '#33c9e0',
     color: 'white',
-    fontSize: '17px',
+    fontSize: '15px',
     padding: '10px',
     borderRadius: '10px 0px 5px 0px',
     zIndex: '26',
   },
   android: {
     position: 'absolute',
-    width: '100px',
+    width: '60px',
     background: '#b54141',
     color: 'white',
-    fontSize: '17px',
+    fontSize: '15px',
     padding: '10px',
     borderRadius: '10px 0px 5px 0px',
     zIndex: '26',
   },
   line: {
     position: 'absolute',
-    width: '100px',
+    width: '60px',
     background: '#4fd65a',
     color: 'white',
-    fontSize: '17px',
+    fontSize: '15px',
     padding: '10px',
     borderRadius: '10px 0px 5px 0px',
     zIndex: '26',
   },
   deactive: {
     position: 'absolute',
-    width: '100px',
+    width: '60px',
     background: '#fdc538',
     color: 'white',
-    fontSize: '17px',
+    fontSize: '15px',
     padding: '10px',
     borderRadius: '10px 0px 5px 0px',
     zIndex: '26',
@@ -185,25 +176,35 @@ const CardContentComponent = (props) => {
           LINE Bot
         </div>
       )}
-      <img
-        style={styles.image}
-        src={props.data.image}
-        alt={props.data.name}
-      />
+      <div style={{ overflow: 'hidden', maxHeight: '150px' }}>
+        <img
+          style={styles.image}
+          src={props.data.image}
+          alt={props.data.name}
+        />
+      </div>
       <CardContent>
         <Typography gutterBottom variant="headline" component="h2" style={{ fontSize: '17px', color: '#51504d' }}>
           {props.data.name}
         </Typography>
         <br />
-        <Typography component="p" style={{ fontSize: '12px', color: '#6D6C6A',height: '70px' }}>
+        <Typography component="p" style={{ fontSize: '12px', color: '#6D6C6A', height: '100px' }}>
           {props.data.info}
-          <br /><br />
+        </Typography>
+        <p>
           {props.data.complete ? (
-            props.data.url
+            <a
+              href={props.data.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={styles.button}
+            >
+              サービスを見る
+            </a>
           ) : (
             "Coming soon..."
           )}
-        </Typography>
+        </p>
       </CardContent>
     </div>
   )
@@ -213,22 +214,9 @@ const EachComponent = (props) =>{
 
   return (
     <div>
-      {props.data.complete ? (
-        <div style={styles.card}>
-          <a
-            href={props.data.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: 'none', textAlign: 'center' }}
-          >
-          <CardContentComponent data={props.data} />
-          </a>
-        </div >
-      ) : (
-        <div style={styles.cardNoShadow}>
-          <CardContentComponent data={props.data} />
-        </div >
-      )}
+      <div style={styles.card}>
+        <CardContentComponent data={props.data} />
+      </div >
     </div >
   );
 }
@@ -244,7 +232,7 @@ class ServiceComponent extends PureComponent {
 
         <Grid container justify={'center'} style={styles.container}>
           {listData.map((each) => (
-            <Grid item xs={12} sm={6} md={4} lg={3} style={styles.grid}>
+            <Grid item xs={12} sm={6} md={4} style={styles.grid}>
               <EachComponent data={each} />
             </Grid>
           ))}
