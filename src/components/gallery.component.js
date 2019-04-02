@@ -100,7 +100,7 @@ class GalleryComponent extends PureComponent {
     return (
       <div style={{ paddingTop: '5px', textAlign: 'center', background: 'white' }}>
         <h2 style={styles.title}>
-          Gallery <br /><span style={styles.titleInfo}>アイコンだった自作イラスト達です。どこかで見たことあるかも？</span>
+          Gallery <br /><span style={styles.titleInfo}>アイコンの自作イラストです。どこかで見たことあるかも？</span>
         </h2>
         <Grid container justify={'center'} style={styles.container}>
           {galleryData.map((each) => (

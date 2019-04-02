@@ -1,6 +1,6 @@
 export const galleryData = [
   {
-    name: "TPOK in jerry",
+    name: "TPOK in jelly",
     number: 4,
     term: "2019/4 ~ ",
     image: "/images/gallery/tpok.png",
@@ -19,12 +19,5 @@ export const galleryData = [
     term: "2018/11 ~ 2018/12",
     image: "/images/gallery/pink.jpg",
     info: "ピンク髪ゴシック風のイラストです。",
-  },
-  {
-    name: "Pencil",
-    number: 1,
-    term: "2018/9 ~ 2018/10",
-    image: "/images/gallery/girl.jpg",
-    info: "鉛筆で描いた女性のイラストです。",
   },
 ]
