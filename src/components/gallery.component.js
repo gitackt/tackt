@@ -4,32 +4,6 @@ import Grid from '@material-ui/core/Grid';
 import { galleryData } from '../params/gallery';
 
 const styles = {
-  container: {
-    marginTop: '10px',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    maxWidth: '1200px',
-  },
-  grid: {
-    textAlign: 'left',
-    padding: '20px',
-  },
-  title: {
-    width: '80%',
-    color: '#6D6C6A',
-    maxWidth: '1200px',
-    textAlign: 'left',
-    padding: '20px',
-    fontSize: '28px',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    borderBottom: 'solid 2px #EAEAEA',
-  },
-  titleInfo: {
-    fontSize: '13px',
-    fontWeight: 'normal',
-    marginTop: '10px',
-  },
   list: {
     width: '95%',
     maxWidth: '300px',
@@ -49,7 +23,7 @@ const styles = {
   content: {
     width: '100%',
     background: 'rgb(49, 57, 66)',
-    height: '100px',
+    height: '70px',
     paddingTop: '3px',
     paddingBottom: '15px',
     position: 'relative',
@@ -76,7 +50,6 @@ const EachComponent = (props) =>{
   return (
     <div>
       <div style={styles.list}>
-        {/* <div style={styles.number}>{props.data.number}</div> */}
         <img
           style={styles.image}
           src={props.data.image}
@@ -85,7 +58,7 @@ const EachComponent = (props) =>{
         <div style={styles.content}>
           <h3 style={{ color: 'white', fontSize: '16px' }}>{props.data.name}</h3>
           <p style={{ color: '#b7c5cc', fontSize: '12px' }}>
-            {props.data.info} <br />
+            {/* {props.data.info} <br /> */}
             {props.data.term}
           </p>
         </div>
@@ -99,12 +72,10 @@ class GalleryComponent extends PureComponent {
   render() {
     return (
       <div style={{ paddingTop: '5px', textAlign: 'center', background: 'white' }}>
-        <h2 style={styles.title}>
-          Gallery <br /><span style={styles.titleInfo}>アイコンの自作イラストです。どこかで見たことあるかも？</span>
-        </h2>
-        <Grid container justify={'center'} style={styles.container}>
+        <h2 className='title'>Gallery</h2>
+        <Grid container justify={'center'} className='container'>
           {galleryData.map((each) => (
-            <Grid item xs={12} sm={4} md={3} style={styles.grid}>
+            <Grid item xs={6} sm={3} md={2} className='grid'>
               <EachComponent data={each} />
             </Grid>
           ))}

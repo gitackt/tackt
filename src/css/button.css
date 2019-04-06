@@ -1,0 +1,86 @@
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+.down-button {
+  margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  max-width: 38px;
+  border-radius: 100px;
+  padding: 20px;
+  color: #6D6C6A;
+  border: solid 1px #6D6C6A;
+  text-align: center;
+  animation-name: ButtonVisible;
+  animation-duration: 2.5s;
+}
+
+.content-button {
+  color: #ff517d;
+  text-decoration: underline;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.content-button-small {
+  width: 100px;
+  border-radius: 5px;
+  background: #FFAF00;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  animation-name: ButtonVisible;
+  animation-duration: 2.5s;
+}
+
+@keyframes ButtonVisible {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  70% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

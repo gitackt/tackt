@@ -1,0 +1,66 @@
+.service-content {
+  padding: 15px;
+}
+
+.service-button {
+  height: 20px;
+  color: #ff517c;
+  background: white;
+  font-size: 13px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 10px;
+  width: 300px;
+  border: solid 1px #ff517c;
+}
+
+.service-button:hover {
+  padding-left: 80px;
+  padding-right: 80px;
+  color: white;
+  background: #ff517c;
+}
+
+.tag {
+  z-index: 26;
+  width: 60px;
+  position: absolute;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 10px 0px 5px 0px;
+}
+
+.tag.github {
+  background: #673ddb;
+}
+
+.tag.active {
+  background: #3ddbd8;
+}
+
+.tag.deactive {
+  background: #dbc33d;
+}
+
+.tag.sold {
+  background: #db3d6c;
+}
+
+.tag.ios {
+  background: #3dc3db;
+}
+
+.tag.android {
+  background: #db573d;
+}
+
+.tag.line {
+  background: #8cdb3d;
+}
+

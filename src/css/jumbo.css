@@ -1,0 +1,96 @@
+.github-button {
+  width: 80%;
+  border-radius: 5px;
+  background: #FFAF00;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 13px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.main-container {
+  margin-top: -80px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-container {
+  height: 600px;
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-container-dark {
+  height: 800px;
+  font-size: 25px;
+  background: #f4f2ec;
+  font-weight: bold;
+  padding-top: 100px;
+  padding-left: 10%;
+  text-align: left;
+}
+
+.main-title {
+  color: #6D6C6A;
+  animation-name: Visible;
+  animation-duration: 1.5s;
+}
+
+.portfolio {
+  color: #6D6C6A;
+  animation-name: Portfolio;
+  animation-duration: 2.5s;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.name-content {
+  font-size: 16px;
+}
+
+@media (min-width: 700px) {
+  .portfolio {
+    font-size: 60px; 
+  }
+  .name-container {
+    font-size: 40px; 
+  }
+  .name-container-dark {
+    font-size: 40px; 
+  }
+  .name-content {
+    font-size: 18px;
+  }
+}
+
+@keyframes Visible {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes Portfolio {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
