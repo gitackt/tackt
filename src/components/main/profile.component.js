@@ -67,7 +67,8 @@ export class ProfileComponent extends PureComponent {
             <Grid item xs={12} md={8} style={styles.gridLeft}>
               <div style={styles.content}>
               <h2 style={styles.sub}>はじめに</h2>
-              三橋拓人です。（
+              編集中です。
+              {/* 三橋拓人です。（
               <a 
                 href={'https://twitter.com/picos_tackt?lang=ja'}
                 target="_blank"
@@ -131,7 +132,7 @@ export class ProfileComponent extends PureComponent {
                     Github
                   </div>
                 </a>
-              </div>
+              </div> */}
               </div>
               <div style={styles.profile}>
                 <h3>三橋拓人（みつはしたくと）</h3>
