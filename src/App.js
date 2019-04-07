@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import FooterComponent from './components/core/footer.component';
 import NavigationComponent from './components/core/navi.component';
 import ServiceComponent from './components/main/service.component';
+import GalleryComponent from './components/main/gallery.component';
 import JumbotronSmallComponent from './components/main/jumbotron.small.component';
 import { ProfileComponent } from './components/main/profile.component';
 import { PriceComponent } from './components/main/price.component';
@@ -90,6 +91,7 @@ class MainComponent extends Component {
         <ProfileComponent />
         <PriceComponent />
         <ServiceComponent />
+        <GalleryComponent />
         <FooterComponent />
       </div>
     )

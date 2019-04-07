@@ -29,7 +29,7 @@ class JumbotronSmallComponent extends PureComponent {
           style={styles.container}
         >  
           <div style={styles.title}>
-            <h1>金融専攻の大学生が３年間のプログラマー半生を綴る</h1>
+            <h1>令和になったので、金融専攻の大学生が３年間のプログラマー半生を綴ります</h1>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import Grid from '@material-ui/core/Grid';
 
-import { galleryData } from '../params/gallery';
+import { galleryData } from '../../params/gallery';
 
 const styles = {
   list: {
