@@ -33,7 +33,7 @@ const styles = {
     fontSize: '18px',
     fontWeight: '400',
     color: '#574F5D',
-    lineHeight: '1.7',
+    lineHeight: '1.8',
     marginBottom : '1.8em',
   },
   sub: {
@@ -49,11 +49,15 @@ const styles = {
     marginLeft: 'auto',
     marginRight: 'auto',
     color: 'white',
-    fontSize: '17px',
+    fontSize: '16px',
     padding: '15px',
     textDecoration: 'none',
     marginTop: '20px',
   },
+  subimage: {
+    width: '100%',
+    maxWidth: '400px',
+  }
 };
 
 export class ProfileComponent extends PureComponent {
@@ -67,7 +71,14 @@ export class ProfileComponent extends PureComponent {
             <Grid item xs={12} md={8} style={styles.gridLeft}>
               <div style={styles.content}>
               <h2 style={styles.sub}>はじめに</h2>
-              三橋拓人です。（
+              <br />
+              {/* <img
+                style={styles.image}
+                src={'/images/gallery/tpok.png'}
+                alt={'tpok'}
+              />
+              <br /><br /> */}
+              三橋拓人(
               <a 
                 href={'https://twitter.com/picos_tackt?lang=ja'}
                 target="_blank"
@@ -75,8 +86,8 @@ export class ProfileComponent extends PureComponent {
               >
                 @picos_tackt
               </a>
-              ）
-              大学4年生で株式会社
+              )です。
+              株式会社 
               <a 
                 href={'https://micin.jp/'}
                 target="_blank"
@@ -84,24 +95,98 @@ export class ProfileComponent extends PureComponent {
               >
                 MICIN
               </a>
-              のエンジニアインターンをしています。<br /><br /><br />
-              普段は主にReact-NativeやAngularを使ったフロントエンドの開発を行っています。
-              またフリーランスエンジニアとして依頼を受けて開発をしたり、個人でWebサービスの開発も行っています。<br /><br /><br />
+               でエンジニアインターンをしている大学4年生です。
+              普段は主に 
+              <a 
+                href={'https://facebook.github.io/react-native/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                React-Native
+              </a>
+               や 
+              <a 
+                href={'https://angular.io/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+               Angular
+              </a>
+              でフロントエンドの開発をしています。
+              個人で受託開発やオリジナルWebサービスの開発も行っています。<br /><br /><br />
               <h2 style={styles.sub}>プログラミングの始まり (2016)</h2>
-              高校3年からプログラミングを始め、独学で技術を身につけました。<br /><br /><br />
-              大学1年の頃、ドットインストールで一番簡単そうなPHPを勉強しながら「都市伝説投稿サイト」を作りました。PHPで無理矢理それっぽく動くサイトを作ってたらいつの間にかCMSのような物が完成しました。（セキュリティ面はやばい）<br /><br /><br />
-              結果的にただの車輪の再発明になってしまいましたが、「自分の作ったシステムがそれなりに動く」という成功体験が、後のモチベーション維持に大きく貢献したと思います。<br /><br /><br />
+              <img
+                style={styles.subimage}
+                src={'/images/profile/code.jpg'}
+                alt={'code'}
+              /><br /><br />
+              高校3年からプログラミングを始め、<span className='marker'>独学で技術を身につけました。</span><br /><br /><br />
+              大学1年の頃、
+              <a 
+                href={'https://dotinstall.com/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ドットインストール
+              </a>
+              でPHPを勉強しながら
+              「都市伝説投稿サイト」を作りました。
+              この時の<span className='blue'>「自分の作ったシステムが動く」</span>という成功体験が、後にモチベーションを継続させる要因になりました。<br /><br /><br />
               <h2 style={styles.sub}>インターンで働く (2017)</h2>
-              大学2年になった頃、プログラミングに関してある程度の自信がありました。<br /><br /><br />
-              しかし、プログラマーという仕事をする上で私にが「チーム開発の経験がない」という大きな壁がありました。
-              情報系の学校に進んだ友人は学校の仲間とチームで開発をしていましたが、独学で開発を学んできた私は誰かと協力して一つのプロジェクトを作っていくイメージができませんでした。<br /><br /><br />
-              そこで私は企業で働くことにしました。<br /><br /><br />
-              Wantedlyから何社も訪問をした結果、株式会社whatzmoneyでインターンとして働けることになりました。whatzmoneyではRuby on Railsを使ったWebフレームワークの概念やgitの使い方まで、多くのチーム開発経験をする事が出来ました。<br /><br /><br />
+              <img
+                style={styles.subimage}
+                src={'/images/profile/work.jpg'}
+                alt={'work'}
+              /><br /><br />
+              大学2年になった頃、プログラミングに関してはある程度の自信がありました。<br /><br /><br />
+              しかし独学で開発を学んできた私は、<span className='blue'>「チーム開発の経験がない」</span>というプログラマーの仕事をする上での負い目がありました。
+              それまで一人で作ってきたので、誰かと協力して一つのプロジェクトを作っていくイメージが全く出来なかったのです。<br /><br /><br />
+              そこで、チーム開発を学ぶために<span className='marker'>企業でインターンとして働くことを決めました。</span><br /><br /><br />
+              何社も訪問をした結果、株式会社
+              <a 
+                href={'https://whatzmoney.com/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                whatzmoney
+              </a>
+              で働かせてもらえることになりました。
+              whatzmoneyでは
+              <a 
+                href={'https://rubyonrails.org/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ruby on Rails
+              </a>
+              を使った開発から、
+              <a 
+                href={'https://git-scm.com/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Git
+              </a>
+              の使い方までチーム開発に必要な多くのスキルを学びました。<br /><br /><br />
               <h2 style={styles.sub}>サービスを開発する (2017)</h2>
-              大学2年の冬、wantedlyで知り合った営業担当の方と一緒にWebサービスを作ることになりました。<br /><br /><br />
-              2017年の冬といえば「仮想通貨バブル」ですが、この時開発したサービスは「仮想通貨ポートフォリオ管理アプリ」です。<br /><br /><br />
-              当時、仮想通貨を持っている人の多くが複数の取引所に資産を分散して持っていました。そのような状況では「結局、総額でいくら持っているのか分からない！」という問題が起きます。
-              そこで、取引所のAPIキーを入力するだけで、全ての取引所の総額を簡単にチェックできるサービスを作りました。<br /><br /><br />
+              <img
+                style={styles.subimage}
+                src={'/images/profile/coin.jpg'}
+                alt={'coin'}
+              /><br /><br />
+              大学2年の冬、
+              <a 
+                href={'https://jp.wantedly.com/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                wantedly
+              </a>
+              で知り合った営業担当の方と、一緒にWebサービスを作ることになりました。<br /><br /><br />
+              2017年の冬といえば、仮想通貨バブルが起きた時期ですが、この時は<span className='blue'>「仮想通貨ポートフォリオ管理アプリ」</span>を作りました。<br /><br /><br />
+              当時、多くの人が複数の取引所に分散して仮想通貨を保有していました。<br /><br /><br />
+              すると<span className='blue'>「自分が総額でいくら仮想通貨を持っているのか分からない」</span>という人が続出します。<br /><br /><br />
+              そこで、<span className='marker'>取引所のAPIキーを入力するだけで、全ての取引所の総額を簡単にチェックできるサービスを作りました。</span><br /><br /><br />
               それが「
               <a 
                 href={'https://v-cu.com'}
@@ -111,23 +196,111 @@ export class ProfileComponent extends PureComponent {
                 VCU（ブイキュー）
               </a>
               」です。<br /><br /><br />
-              VCUは現在も稼働しており、対応している取引所はBitflyer, Binance, Poloniex, Bitbank, Coincheck, Zaif, Kucoin, Quoineです。また、ビットコインとイーサリアムに関しては、アドレスを入力すればブロックチェーンから直接残高を取得できます。<br /><br /><br />
-              リリース直後にバブル崩壊があり、サービス自体はそんなに使われませんでしたが、私にとってこれが初めてリリースした本格的なWebアプリケーションであり、nginxなどのWebサーバ技術や、AWSなどのインフラに関する知識や経験を積む事が出来ました。<br /><br /><br />
-              この時自分一人でサービスを公開させた経験は、今でも大きな自信になっています。<br /><br /><br />
-              <h2 style={styles.sub}>MICINへジョイン (2018)</h2>
-              大学3年になった頃、駆け出しの頃から仕事をいただいていた方にMICINを紹介してもらいました。<br /><br /><br />
-              MICINは今まで見た事がないようなスーパーエンジニアの方が何人もいて、React-nativeやAngularなどの最新技術を使っていたという事もあり、「ここなら絶対に成長できる！」と思い、インターンを希望しました。<br /><br /><br />
-              初期は主にReact-nativeを使ったアプリの開発に取り組みました。現在はAngularをやっています。<br /><br /><br />
-              多くのタスクをやらせてもらいましたが、中でも一番重かったタスクはReact-nativeのアップグレードです。現在のreact-native最新バージョンは0.58.1ですが、当時は0.51とかを使っていたので、それを「最新バージョンまでアップグレードさせる」というのがこの時のタスクでした。<br /><br /><br />
-              これは単なるバージョンアップ作業だと思うかもしれませんが、Reactはサードパーティのライブラリがほとんどなので、react-nativeのアップグレードに伴い、依存関係を全部調べてちゃんと動くように全てのライブラリを調整しなければならない大変な作業でした。
-              まあでもなんとか、最新バージョンへの移行を完了させる事ができました。<br /><br /><br />
-              このタスクをするにあたって、react-nativeの細かい部分やiOS,Androidのネイティブの部分にも触れる事が出来、かなり理解が深まりました。<br /><br /><br />
+              VCUは現在も稼働しており、対応している取引所は<br /><br />
+              ・<a 
+                href={'https://bitflyer.com/ja-jp/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bitflyer
+              </a><br />
+              ・<a 
+                href={'https://www.binance.com/en'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Binance
+              </a><br />
+              ・<a 
+                href={'https://poloniex.com/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Poloniex
+              </a><br />
+              ・<a 
+                href={'https://bitbank.cc/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bitbank
+              </a><br />
+              ・<a 
+                href={'https://coincheck.com/ja/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Coincheck
+              </a><br />
+              ・<a 
+                href={'https://zaif.jp/?lang=ja'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Zaif
+              </a><br />
+              ・<a 
+                href={'https://www.kucoin.com/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Kucoin
+              </a><br />
+              ・<a 
+                href={'https://www.liquid.com/ja/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Quoine
+              </a><br /><br />
+              です。<br /><br /><br />
+              また、
+              <a 
+                href={'https://www.bitcoin.com/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bitcoin
+              </a>
+              と
+              <a 
+                href={'https://www.ethereum.org/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ethereum
+              </a>
+              に関しては、アドレスを入力すればブロックチェーンから直接残高を取得できます。<br /><br /><br />
+              リリース直後にバブル崩壊があり、サービスはそんなに使われませんでした。<br /><br /><br />
+              しかし私にとって、VCUは初めてリリースした本格的なWebアプリケーションであり、サーバやインフラに関する知識や経験を積む事が出来ました。<br /><br /><br />
+              <span className='blue'>この時、自分一人でサービスを公開させた経験は、今でも大きな自信になっています。</span><br /><br /><br />
+              <h2 style={styles.sub}>MICINへ (2018)</h2>
+              <img
+                style={styles.subimage}
+                src={'/images/profile/medi.jpg'}
+                alt={'medi'}
+              /><br /><br />
+              大学3年になった頃、<span className='blue'>駆け出しの頃から仕事をいただいていた方にMICINを紹介してもらいました。</span><br /><br /><br />
+              MICINは今まで見た事がないようなスーパーエンジニアの方が何人もいて、React-nativeやAngularなどの最新技術を使っていたという事もあり、<span className='marker'>「ここなら絶対に成長できる」と思いインターンを希望しました。</span><br /><br /><br />
               <h2 style={styles.sub}>ブログを作る (2018)</h2>
-              大学3年の前期、「Webサイトをこれからも作っていくとなるとサーバ代が負担になる」という問題について真剣に考え始めました。<br /><br /><br />
-              バイト代はありましたが、新たな収入源としてブログを作ることにしました。<br /><br /><br />
-              ブログメディアを運営する事で、SEO対策やWordpress最適化の知識がつきました。<br /><br /><br />
-              現在はAdsenceの収入で、運営しているWebサービスのサーバ代を賄えているので、この計画はそこそこ成功したと思います。<br /><br /><br />
-              なんだかんだで作ったブログはこちら → 
+              <img
+                style={styles.subimage}
+                src={'/images/profile/blog.jpg'}
+                alt={'blog'}
+              /><br /><br />
+              大学3年の前期、<span className='blue'>「サーバ代が負担になる」</span>という問題について真剣に考え始めました。<br /><br /><br />
+              そこで<span className='marker'>新たな収入源としてブログを作ることにしました。</span><br /><br /><br />
+              現在はこのブログの
+              <a 
+                href={'https://www.google.co.jp/adsense/start/#/?modal_active=none'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Adsence
+              </a>
+              収入のみでサーバ代を賄えているので、この計画はそこそこ成功したと思います。<br /><br /><br />
+              ちなみに、ブログメディアを運営する事でSEO対策やWordpress最適化の知識がつきました。<br /><br /><br />
+              ブログはこちら → 
               <a 
                 href={'https://monetizealchemist.com/'}
                 target="_blank"
@@ -137,17 +310,27 @@ export class ProfileComponent extends PureComponent {
               </a>
               <br /><br /><br />
               <h2 style={styles.sub}>投資シミュレーションゲームの開発 (2018)</h2>
-              大学3年の夏、ゼミの課題で「日本人の金融リテラシーを向上させるための具体的な方法」について考えることになりました。<br /><br /><br />
-              プログラミングばかりしていますが、一応学校では金融を勉強しています。お金のことに興味があり、3年の夏には証券アナリスト2次試験にも合格しました。（受かれば学校からお金が戻ってくるから頑張った）<br /><br /><br />
-              調査を進めていく過程で、「金融取引の経験の有無」が金融リテラシーに関わってくるという情報を見つけたので、<br /><br /><br />
-              「みんなもっと株とか買えばいいんじゃない？」<br /><br /><br />
-              というアプローチで課題を進めることにしました。<br /><br /><br />
-              しかし実際は、何も知らない人がいきなり金融商品を買うハードルは高いと思い、投資シミュレーションゲームをもっと普及させる手段を用いました。<br /><br /><br />
-              ところが、この投資シミュレーションゲームに問題がありました。<br /><br /><br />
-              トレダビなど、素晴らしいゲームも多いのですが、現状の投資シミュレーションのほとんどはまるで1990年代の様なUIで、スマホファーストの時代にレスポンシブ対応すらされていない老舗ゲームばかりだったのです。<br /><br /><br />
+              <img
+                style={styles.subimage}
+                src={'/images/profile/stock.jpg'}
+                alt={'stock'}
+              /><br /><br />
+              大学3年の夏、ゼミの課題で<span className='blue'>「金融リテラシーを向上させる方法」</span>について考えました。<br /><br /><br />
+              プログラミングばかりしていますが、学校では金融を勉強しています。
+              お金のことに興味があり、3年の夏には
+              <a 
+                href={'https://www.saa.or.jp/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                証券アナリスト2次試験
+              </a>
+              にも合格しました。<br /><br /><br />
+              「投資シミュレーションゲームを普及させる」というアプローチをしたのですが、
+              現存するほとんどの投資シミュレーションは、レスポンシブ対応すらされていない<span className='blue'>1990年代の様な老舗ゲームばかりでした。</span><br /><br /><br />
               「これじゃスマホ世代は投資シミュレーションゲームとかやらないだろうな。」<br /><br /><br />
-              と思ったので、実際にそこそこ今風の投資シミュレーションゲームを作ることにしました。<br /><br /><br />
-              それが「
+              と思ったので、<span className='marker'>自分で投資シミュレーションゲームを作ることにしました。</span><br /><br /><br />
+              ゲーム内通貨を使ってアイテムを売買するゲーム「
               <a 
                 href={'https://babel-bubble.com/'}
                 target="_blank"
@@ -156,20 +339,11 @@ export class ProfileComponent extends PureComponent {
                 Babel bubble（バベルバブル）
               </a>
               」です。<br /><br /><br />
-              本当はバベルボブルにしたかったのですが、ドラクエの人に怒られたくないので少し変えました。Babel bubbleはゲーム内通貨を使って、株式に見立てたアイテムを売買するゲームです。このゲームはフロントエンドにReact、サーバサイドにDjangoを使って作りました。<br /><br /><br />
-              工夫した点は、アイテムの価格変動に関してランダムウォークさせるのではなく、実際のユーザーの取引によって時価が変動する様にした点です。価格変動を実際の株取引と同じ様にする事で、よりリアルなゲームを目指しました。<br /><br /><br />
-              しかし、この方法ではユーザー数が少ないと流動性が低く価格変動が起きません。<br /><br /><br />
-              よってノイズトレーダー（ランダムで取引するBot）、アービトラージャー（裁定取引するBot）、ヘッジファンド（大口取引するBot）の３種類のBotユーザーを大量に（1000体くらい）作成し、バックグラウンドでpythonのスクリプトを回す事でこれらを自動取引させることにしました。<br /><br /><br />
-              Babel bubbleの開発は、ほぼ株式市場のシステム（小さな東証?）を自分一人で作ったので、金融好きの私としては、指し値注文から決済のフローを実装する事が出来てとても楽しかったです。（ゼミの単位もきました）<br /><br /><br />
-              <h2 style={styles.sub}>コストカットにハマる (2019)</h2>
-              大学3年の冬、私の興味は「インフラのコストをどれだけ減らせるか？」に傾いていました。当時あまり深く考えずにさくらサーバやEC2サーバを契約していましたが、「頑張ればもっとコスト減らせそう」と思ってしまったのです。<br /><br /><br />
-              現在アクセスの少ないサイトはAmazon lightsailで建てたサーバの中で更にマルチドメインにして動かしています。（自分が使いたいだけでとりあえず公開させておきたいサイトってありますよね）<br /><br /><br />
-              このコストカット週間のおかげでサーバの理解がより深まりました。<br /><br /><br />
-                <img
-                  style={styles.image}
-                  src={'/images/gallery/tpok.png'}
-                  alt={'tpok'}
-                />
+              アイテムの価格をランダムウォークさせるのではなく、ユーザーの取引によって時価が変動する様にしたことでリアルな取引体験を目指しました。<br /><br /><br />
+              <h2 style={styles.sub}>終わりに</h2>
+              <span className='marker'>以上がプログラミングを始めてから今までの大まかな経歴です。</span><br /><br /><br />
+              <span className='blue'>作ったサービスのリンクはこのページの下の方にあるのでご覧ください。</span>
+              <br /><br /><br />
                 <div style={{ width: '200px', marginLeft: 'auto', marginRight: 'auto' }}>
                 <a
                   href={'https://github.com/gitackt'}

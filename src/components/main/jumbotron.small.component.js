@@ -3,8 +3,8 @@ import React, { PureComponent } from 'react';
 const styles = {
   container: {
     position: 'relative',
-    paddingTop: '60px',
-    paddingBottom: '30px',
+    paddingTop: '120px',
+    paddingBottom: '100px',
     textAlign: 'center',
     color: 'white',
   },
@@ -29,7 +29,7 @@ class JumbotronSmallComponent extends PureComponent {
           style={styles.container}
         >  
           <div style={styles.title}>
-            <h1>金融専攻の大学生が３年間のプログラマー半生を綴る</h1>
+            <h1>TAKUTO MITSUHASHI</h1>
           </div>
         </div>
       </div>

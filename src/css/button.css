@@ -1,3 +1,15 @@
+.marker {
+  background: linear-gradient(transparent 0%, transparent 60%, #FFE2E9 60%, #FFE2E9 100%);
+  font-weight: 600;
+  color: #2a262d;
+}
+
+.blue {
+  background: linear-gradient(transparent 0%, transparent 60%, #A9EAF2 60%, #A9EAF2 100%);
+  font-weight: 600;
+  color: #2a262d;
+}
+
 .down-button {
   margin-top: 100px;
   margin-left: auto;
@@ -19,6 +31,9 @@
   padding: 10px;
   cursor: pointer;
   text-decoration: none;
+  border: solid 3px #eda50b;
+  border-top: solid 2px #eda50b;
+  border-bottom: solid 4px #eda50b;
 }
 
 .skip-to-content {
@@ -33,6 +48,9 @@
   padding: 10px;
   cursor: pointer;
   text-decoration: none;
+  border: solid 2px #eda50b;
+  border-top: solid 1px #eda50b;
+  border-bottom: solid 3px #eda50b;
   animation-name: ButtonVisible;
   animation-duration: 2.5s;
 }
