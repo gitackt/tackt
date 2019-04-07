@@ -16,6 +16,54 @@ const styles = {
   }
 }
 
+class SlideComponent extends Component {
+  render() {
+    return (
+      <ReactFullpage
+        render={({ state, fullpageApi }) => {
+          return (
+            <ReactFullpage.Wrapper>
+              <div className="section">
+                <JumbotronComponent　onChange={this.props.changeScreen} />
+                <div className="down-button" onClick={() => fullpageApi.moveSectionDown()}>↓</div>
+              </div>
+              <div className="section">
+                <Name1Component />
+                <div className="down-button" onClick={() => fullpageApi.moveSectionDown()}>↓</div>
+              </div>
+              <div className="section">
+                <Name2Component />
+                <div className="down-button" onClick={() => fullpageApi.moveSectionDown()}>↓</div>
+              </div>
+              <div className="section">
+                <Name3Component />
+                <div className="down-button" onClick={() => fullpageApi.moveSectionDown()}>↓</div>
+              </div>
+              <div className="section">
+                <Name4Component onChange={this.props.changeScreen}/>
+              </div>
+            </ReactFullpage.Wrapper>
+          );
+        }}
+      />
+    )
+  }
+}
+
+class MainComponent extends Component {
+
+  render() {
+    return (
+      <div>
+        <ProfileComponent />
+        <PriceComponent />
+        <ServiceComponent />
+        <FooterComponent />
+      </div>
+    )
+  }
+}
+
 class LandingComponent extends Component {
 
   state = {
@@ -26,42 +74,7 @@ class LandingComponent extends Component {
     return (
       <div style={styles.background}>
         <NavigationComponent />
-        {this.state.screen ? (
-          <ReactFullpage
-            render={({ state, fullpageApi }) => {
-              return (
-                <ReactFullpage.Wrapper>
-                  <div className="section">
-                    <JumbotronComponent　onChange={() => this.setState({ screen: !this.state.screen })} />
-                    <div className="down-button" onClick={() => fullpageApi.moveSectionDown()}>↓</div>
-                  </div>
-                  <div className="section">
-                    <Name1Component />
-                    <div className="down-button" onClick={() => fullpageApi.moveSectionDown()}>↓</div>
-                  </div>
-                  <div className="section">
-                    <Name2Component />
-                    <div className="down-button" onClick={() => fullpageApi.moveSectionDown()}>↓</div>
-                  </div>
-                  <div className="section">
-                    <Name3Component />
-                    <div className="down-button" onClick={() => fullpageApi.moveSectionDown()}>↓</div>
-                  </div>
-                  <div className="section">
-                    <Name4Component onChange={() => this.setState({ screen: !this.state.screen })}/>
-                  </div>
-                </ReactFullpage.Wrapper>
-              );
-            }}
-          />
-        ) : (
-          <div>
-            <ProfileComponent />
-            <PriceComponent />
-            <ServiceComponent />
-            <FooterComponent />
-          </div>
-        )}
+        {this.state.screen ? <SlideComponent changeScreen={() => this.setState({ screen: !this.state.screen })}/> : <MainComponent />}
       </div>
     );
   }

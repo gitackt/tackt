@@ -1,31 +1,5 @@
-a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 46px;
-  height: 46px;
-  margin-left: -23px;
-  border: 1px solid #fff;
-  border-radius: 100%;
-  box-sizing: border-box;
-}
-a span::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  content: '';
-  width: 16px;
-  height: 16px;
-  margin: -12px 0 0 -8px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  box-sizing: border-box;
-}
-
 .down-button {
-  margin-top: -30px;
+  margin-top: -5%;
   margin-left: auto;
   margin-right: auto;
   font-size: 28px;
@@ -41,7 +15,7 @@ a span::after {
   animation-duration: 2.5s;
 }
 
-.content-button {
+.lead-to-content {
   color: #ff517d;
   text-decoration: underline;
   margin-left: auto;
@@ -54,7 +28,7 @@ a span::after {
   border-radius: 10px;
 }
 
-.content-button-small {
+.skip-to-content {
   width: 100px;
   border-radius: 5px;
   background: #FFAF00;

@@ -1,9 +1,4 @@
-html {
-  height: 100%;
-}
-
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
   color: #6d6c6a;
@@ -12,7 +7,6 @@ body {
 
 h1 {
   font-size: 23px; 
-  /* font-family: 'Quicksand', 'Raleway', 'Montserrat', 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック','Yu Gothic','メイリオ','ＭＳ Ｐゴシック','MS PGothic', sans-serif;  */
 }
 
 h2 {

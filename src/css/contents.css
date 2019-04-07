@@ -42,10 +42,3 @@
   margin-right: auto;
   border-bottom: solid 2px #EAEAEA;
 }
-
-.flex-container {
-  height: 750px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
