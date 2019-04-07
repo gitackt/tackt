@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import Grid from '@material-ui/core/Grid';
 
-import { listData } from '../params/services';
+import { listData } from '../../params/services';
 
 const styles = {
   card: {

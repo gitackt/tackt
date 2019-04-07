@@ -13,14 +13,10 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "^2.1.8"
   },
-  "devDependencies": {
-    "react-snap": "^1.23.0"
-  },
   "scripts": {
     "start": "react-scripts start",
     "deploy": "sh deploy.sh",
-    "build": "react-scripts build",
-    "postbuild": "react-snap"
+    "build": "react-scripts build"
   },
   "browserslist": [
     ">0.2%",

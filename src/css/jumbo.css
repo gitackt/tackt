@@ -1,6 +1,9 @@
+.small-jumbo {
+  background: linear-gradient(90deg, #2abcd6, #2ad6b6);
+}
+
 .main-container {
-  margin-top: -80px;
-  height: 600px;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +12,7 @@
 }
 
 .name-container {
-  height: 600px;
+  margin-top: 80px;
   font-size: 25px;
   font-weight: bold;
   display: flex;

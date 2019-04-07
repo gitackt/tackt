@@ -1,31 +1,24 @@
 .down-button {
-  margin-top: -5%;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 28px;
-  font-weight: bold;
   cursor: pointer;
-  max-width: 38px;
-  border-radius: 100px;
-  padding: 20px;
-  color: #6D6C6A;
-  border: solid 1px #6D6C6A;
   text-align: center;
   animation-name: ButtonVisible;
   animation-duration: 2.5s;
 }
 
 .lead-to-content {
-  color: #ff517d;
-  text-decoration: underline;
+  width: 250px;
+  border-radius: 5px;
+  background: #FFAF00;
   margin-left: auto;
   margin-right: auto;
-  font-size: 22px;
-  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
   cursor: pointer;
-  width: 250px;
-  padding: 20px;
-  border-radius: 10px;
+  text-decoration: none;
 }
 
 .skip-to-content {

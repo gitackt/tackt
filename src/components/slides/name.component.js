@@ -43,7 +43,7 @@ export class Name3Component extends PureComponent {
         <div>
           <span style={{ color: '#2dd8ca' }}>What</span> can you do?
           <br /><br />
-          <p className='slide-content'>Webサイトやアプリを作れます。</p>
+          <p className='slide-content'>Webサイトやアプリを作ります。</p>
         </div>
       </div>
     );
@@ -54,12 +54,12 @@ export class Name4Component extends PureComponent {
 
   render() {
     return (
-      <div className='name-container'>
+      <div className='name-container' style={{ marginTop: '-60px' }}>
         <div>
           <span style={{ color: '#2dd8ca' }}>Welcome!</span>
           <br /><br />
           <div className='lead-to-content' onClick={this.props.onChange}>
-          <p className='slide-content'>サイトを見る</p>
+          <p className='slide-content'>コンテンツページへ行く</p>
           </div>
         </div>
       </div>

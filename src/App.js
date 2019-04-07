@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import FooterComponent from './components/core/footer.component';
 import NavigationComponent from './components/core/navi.component';
-import ServiceComponent from './components/service.component';
-import { ProfileComponent } from './components/profile.component';
-import { PriceComponent } from './components/price.component';
-import JumbotronComponent from './components/core/jumbotron.component';
-import { Name1Component, Name2Component, Name3Component, Name4Component } from './components/name.component';
+import ServiceComponent from './components/main/service.component';
+import JumbotronSmallComponent from './components/main/jumbotron.small.component';
+import { ProfileComponent } from './components/main/profile.component';
+import { PriceComponent } from './components/main/price.component';
+import JumbotronComponent from './components/slides/jumbotron.component';
+import { 
+  Name1Component, 
+  Name2Component, 
+  Name3Component, 
+  Name4Component 
+} from './components/slides/name.component';
 import { Route, Switch, BrowserRouter as Router, Redirect } from 'react-router-dom';
 import ReactFullpage from '@fullpage/react-fullpage';
 
@@ -25,19 +31,43 @@ class SlideComponent extends Component {
             <ReactFullpage.Wrapper>
               <div className="section">
                 <JumbotronComponent　onChange={this.props.changeScreen} />
-                <div className="down-button" onClick={() => fullpageApi.moveSectionDown()}>↓</div>
+                <div className='down-button' onClick={() => fullpageApi.moveSectionDown()}>
+                  <img
+                    style={{ width: '70px' }}
+                    src={'/images/arrow.png'}
+                    alt={'arrow'}
+                  />
+                </div>
               </div>
               <div className="section">
                 <Name1Component />
-                <div className="down-button" onClick={() => fullpageApi.moveSectionDown()}>↓</div>
+                <div className='down-button' onClick={() => fullpageApi.moveSectionDown()}>
+                  <img
+                    style={{ width: '70px' }}
+                    src={'/images/arrow.png'}
+                    alt={'arrow'}
+                  />
+                </div>
               </div>
               <div className="section">
                 <Name2Component />
-                <div className="down-button" onClick={() => fullpageApi.moveSectionDown()}>↓</div>
+                <div className='down-button' onClick={() => fullpageApi.moveSectionDown()}>
+                  <img
+                    style={{ width: '70px' }}
+                    src={'/images/arrow.png'}
+                    alt={'arrow'}
+                  />
+                </div>
               </div>
               <div className="section">
                 <Name3Component />
-                <div className="down-button" onClick={() => fullpageApi.moveSectionDown()}>↓</div>
+                <div className='down-button' onClick={() => fullpageApi.moveSectionDown()}>
+                  <img
+                    style={{ width: '70px' }}
+                    src={'/images/arrow.png'}
+                    alt={'arrow'}
+                  />
+                </div>
               </div>
               <div className="section">
                 <Name4Component onChange={this.props.changeScreen}/>
@@ -55,6 +85,8 @@ class MainComponent extends Component {
   render() {
     return (
       <div>
+        <NavigationComponent onChange={this.props.changeScreen} />
+        <JumbotronSmallComponent />
         <ProfileComponent />
         <PriceComponent />
         <ServiceComponent />
@@ -73,8 +105,11 @@ class LandingComponent extends Component {
   render() {
     return (
       <div style={styles.background}>
-        <NavigationComponent />
-        {this.state.screen ? <SlideComponent changeScreen={() => this.setState({ screen: !this.state.screen })}/> : <MainComponent />}
+        {this.state.screen ? (
+          <SlideComponent changeScreen={() => this.setState({ screen: !this.state.screen })} /> 
+         ) : (
+          <MainComponent changeScreen={() => this.setState({ screen: !this.state.screen })} />
+        )}
       </div>
     );
   }

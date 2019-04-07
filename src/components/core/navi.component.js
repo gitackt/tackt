@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Component } from 'react';
-import { Link } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Drawer from '@material-ui/core/Drawer';
 import IconButton from '@material-ui/core/IconButton';
@@ -29,15 +28,16 @@ class NavigationComponent extends Component {
             </IconButton>
 
 
-            <div style={{ padding: "20px", paddingTop: "40px", fontSize: "15px" }}>
-              <Link to="/" style={{ textDecoration: 'none' }}>
-                <h4
-                  style={{ paddingTop: "10px", paddingBottom: "10px" }}
-                  onClick={() => this.setState({ open: false })}
-                >
-                  TOP
+            <div 
+              style={{ padding: "20px", paddingTop: "40px", fontSize: "15px", cursor: 'pointer' }}
+              onClick={this.props.onChange}
+            >
+              <h4
+                style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                onClick={() => this.setState({ open: false })}
+              >
+                TOP
               </h4>
-              </Link>
             </div>
 
             <div style={{ padding: "20px", paddingTop: "-20px", fontSize: "12px" }}>
