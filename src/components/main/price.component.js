@@ -33,7 +33,7 @@ export class PriceComponent extends PureComponent {
 
   render() {
     return (
-      <div style={{ paddingTop: '5px' }}>
+      <div style={{ paddingTop: '5px', background: 'white' }}>
         <h2 className='title'>Freelance</h2>
         <Grid container justify={'center'} style={styles.container}>
           <Grid item xs={12} md={3} style={styles.grid}>

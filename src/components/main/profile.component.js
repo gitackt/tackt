@@ -64,7 +64,7 @@ export class ProfileComponent extends PureComponent {
 
   render() {
     return (
-      <div className='flex-container'>
+      <div style={{ background: 'white' }}>
         <div>
           {/* <h2 className='title'>Profile</h2> */}
           <Grid container justify={'center'} style={styles.container}>

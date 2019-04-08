@@ -88,11 +88,13 @@ class MainComponent extends Component {
       <div>
         <NavigationComponent onChange={this.props.changeScreen} />
         <JumbotronSmallComponent />
-        <ProfileComponent />
-        <PriceComponent />
-        <ServiceComponent />
-        <GalleryComponent />
-        <FooterComponent />
+        <div className='flex-container-background'>
+          <ProfileComponent />
+          <PriceComponent />
+          <ServiceComponent />
+          <GalleryComponent />
+          <FooterComponent />
+        </div>
       </div>
     )
   }
@@ -121,7 +123,7 @@ class App extends Component {
   render() {
 
     return (
-      <div style={{ background: '#white' }}>
+      <div>
         <Router>
           <Switch>
             <Route exact={true} path="/" component={LandingComponent} />
