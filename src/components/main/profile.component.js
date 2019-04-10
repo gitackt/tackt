@@ -42,17 +42,20 @@ const styles = {
     borderBottom: 'solid 3px #333035',
   },
   button: {
-    height: '20px',
+    height: '30px',
     width: '80%',
     borderRadius: '5px',
     background: '#FFAF00',
     marginLeft: 'auto',
     marginRight: 'auto',
     color: 'white',
-    fontSize: '16px',
+    fontSize: '18px',
     padding: '15px',
     textDecoration: 'none',
-    marginTop: '20px',
+    marginTop: '10px',
+    border: 'solid 3px #eda50b',
+    borderTop: 'solid 2px #eda50b',
+    borderBottom: 'solid 4px #eda50b',
   },
   subimage: {
     width: '100%',
@@ -72,12 +75,6 @@ export class ProfileComponent extends PureComponent {
               <div style={styles.content}>
               <h2 style={styles.sub}>はじめに</h2>
               <br />
-              {/* <img
-                style={styles.image}
-                src={'/images/gallery/tpok.png'}
-                alt={'tpok'}
-              />
-              <br /><br /> */}
               三橋拓人(
               <a 
                 href={'https://twitter.com/picos_tackt?lang=ja'}
@@ -86,7 +83,7 @@ export class ProfileComponent extends PureComponent {
               >
                 @picos_tackt
               </a>
-              )です。
+              )と申します。
               株式会社 
               <a 
                 href={'https://micin.jp/'}
@@ -95,7 +92,7 @@ export class ProfileComponent extends PureComponent {
               >
                 MICIN
               </a>
-               でエンジニアインターンをしている大学4年生です。
+               でエンジニアインターンをしています。
               普段は主に 
               <a 
                 href={'https://facebook.github.io/react-native/'}
@@ -112,8 +109,8 @@ export class ProfileComponent extends PureComponent {
               >
                Angular
               </a>
-              でフロントエンドの開発をしています。
-              個人で受託開発やオリジナルWebサービスの開発も行っています。<br /><br /><br />
+              でフロントエンドの開発をしながら、
+              個人で受託開発やオリジナルWebサービスの開発を行っています。<br /><br /><br />
               <h2 style={styles.sub}>プログラミングの始まり (2016)</h2>
               <img
                 style={styles.subimage}
@@ -129,9 +126,8 @@ export class ProfileComponent extends PureComponent {
               >
                 ドットインストール
               </a>
-              でPHPを勉強しながら
-              「都市伝説投稿サイト」を作りました。
-              この時の<span className='blue'>「自分の作ったシステムが動く」</span>という成功体験が、後にモチベーションを継続させる要因になりました。<br /><br /><br />
+              でPHPを勉強しながら都市伝説投稿サイトを作りました。
+              <span className='blue'>「自分の作ったシステムが動く」</span>というこの時の成功体験が、開発モチベーションを高めました。<br /><br /><br />
               <h2 style={styles.sub}>インターンで働く (2017)</h2>
               <img
                 style={styles.subimage}
@@ -139,9 +135,9 @@ export class ProfileComponent extends PureComponent {
                 alt={'work'}
               /><br /><br />
               大学2年になった頃、プログラミングに関してはある程度の自信がありました。<br /><br /><br />
-              しかし独学で開発を学んできた私は、<span className='blue'>「チーム開発の経験がない」</span>というプログラマーの仕事をする上での負い目がありました。
-              それまで一人で作ってきたので、誰かと協力して一つのプロジェクトを作っていくイメージが全く出来なかったのです。<br /><br /><br />
-              そこで、チーム開発を学ぶために<span className='marker'>企業でインターンとして働くことを決めました。</span><br /><br /><br />
+              しかし、独学で開発を学んできた私は<span className='blue'>「チーム開発の経験がない」</span>という欠点がありました。
+              それまでは一人で何もかも作ってきたので、誰かと協力して一つのプロジェクトを作っていくイメージが全く出来なかったのです。<br /><br /><br />
+              私はチーム開発を学ぶために<span className='marker'>企業でインターンとして働くことを決めました。</span><br /><br /><br />
               何社も訪問をした結果、株式会社
               <a 
                 href={'https://whatzmoney.com/'}
@@ -159,7 +155,7 @@ export class ProfileComponent extends PureComponent {
               >
                 Ruby on Rails
               </a>
-              を使った開発から、
+              を使った開発を行い、
               <a 
                 href={'https://git-scm.com/'}
                 target="_blank"
@@ -167,7 +163,7 @@ export class ProfileComponent extends PureComponent {
               >
                 Git
               </a>
-              の使い方までチーム開発に必要な多くのスキルを学びました。<br /><br /><br />
+              の使い方などのチーム開発に必要なスキルを学びました。<br /><br /><br />
               <h2 style={styles.sub}>サービスを開発する (2017)</h2>
               <img
                 style={styles.subimage}
@@ -183,11 +179,10 @@ export class ProfileComponent extends PureComponent {
                 wantedly
               </a>
               で知り合った営業担当の方と、一緒にWebサービスを作ることになりました。<br /><br /><br />
-              2017年の冬といえば、仮想通貨バブルが起きた時期ですが、この時は<span className='blue'>「仮想通貨ポートフォリオ管理アプリ」</span>を作りました。<br /><br /><br />
-              当時、多くの人が複数の取引所に分散して仮想通貨を保有していました。<br /><br /><br />
-              すると<span className='blue'>「自分が総額でいくら仮想通貨を持っているのか分からない」</span>という人が続出します。<br /><br /><br />
-              そこで、<span className='marker'>取引所のAPIキーを入力するだけで、全ての取引所の総額を簡単にチェックできるサービスを作りました。</span><br /><br /><br />
-              それが「
+              2017年の冬といえば仮想通貨バブルですが、当時、仮想通貨を保有する多くの人が複数の取引所に資産を分散させていたため、
+              <span className='blue'>「自分が総額で仮想通貨をいくら持っているのか分からない」</span>人が続出します。<br /><br /><br />
+              そこで、<span className='marker'>仮想通貨の総額を簡単にチェックできるサービスを作りました。</span><br /><br /><br />
+              「
               <a 
                 href={'https://v-cu.com'}
                 target="_blank"
@@ -196,7 +191,7 @@ export class ProfileComponent extends PureComponent {
                 VCU（ブイキュー）
               </a>
               」です。<br /><br /><br />
-              VCUは現在も稼働しており、対応している取引所は<br /><br />
+              VCUは現在も稼働しており、取引所のAPIキーを入力するだけで残高を取得できます。対応している取引所は<br /><br />
               ・<a 
                 href={'https://bitflyer.com/ja-jp/'}
                 target="_blank"
@@ -253,7 +248,7 @@ export class ProfileComponent extends PureComponent {
               >
                 Quoine
               </a><br /><br />
-              です。<br /><br /><br />
+              です。
               また、
               <a 
                 href={'https://www.bitcoin.com/'}
@@ -271,9 +266,8 @@ export class ProfileComponent extends PureComponent {
                 Ethereum
               </a>
               に関しては、アドレスを入力すればブロックチェーンから直接残高を取得できます。<br /><br /><br />
-              リリース直後にバブル崩壊があり、サービスはそんなに使われませんでした。<br /><br /><br />
-              しかし私にとって、VCUは初めてリリースした本格的なWebアプリケーションであり、サーバやインフラに関する知識や経験を積む事が出来ました。<br /><br /><br />
-              <span className='blue'>この時、自分一人でサービスを公開させた経験は、今でも大きな自信になっています。</span><br /><br /><br />
+              VCUは初めてリリースした本格的なWebアプリケーションであり、サーバやインフラに関する経験を積む事が出来ました。
+              <span className='blue'>この時自分一人でサービスを公開させた事は今でも大きな自信になっています。</span><br /><br /><br />
               <h2 style={styles.sub}>MICINへ (2018)</h2>
               <img
                 style={styles.subimage}
@@ -288,8 +282,15 @@ export class ProfileComponent extends PureComponent {
                 src={'/images/profile/blog.jpg'}
                 alt={'blog'}
               /><br /><br />
-              大学3年の前期、<span className='blue'>「サーバ代が負担になる」</span>という問題について真剣に考え始めました。<br /><br /><br />
-              そこで<span className='marker'>新たな収入源としてブログを作ることにしました。</span><br /><br /><br />
+              大学3年の前期、<span className='blue'>「サーバ代が負担になる」</span>問題について真剣に考え始め、<span className='marker'>新たな収入源としてブログを作ることにしました。</span><br /><br /><br />
+              ブログはこちら → 
+              <a 
+                href={'https://monetizealchemist.com/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                人生は運ゲー
+              </a><br /><br /><br />
               現在はこのブログの
               <a 
                 href={'https://www.google.co.jp/adsense/start/#/?modal_active=none'}
@@ -298,16 +299,7 @@ export class ProfileComponent extends PureComponent {
               >
                 Adsence
               </a>
-              収入のみでサーバ代を賄えているので、この計画はそこそこ成功したと思います。<br /><br /><br />
-              ちなみに、ブログメディアを運営する事でSEO対策やWordpress最適化の知識がつきました。<br /><br /><br />
-              ブログはこちら → 
-              <a 
-                href={'https://monetizealchemist.com/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                人生は運ゲー
-              </a>
+              収入のみでサーバ代を賄えています。ちなみに、ブログメディアを運営する事でSEO対策やWordpress最適化の知識がつきました。<br /><br /><br />
               <br /><br /><br />
               <h2 style={styles.sub}>投資シミュレーションゲームの開発 (2018)</h2>
               <img
@@ -327,10 +319,10 @@ export class ProfileComponent extends PureComponent {
               </a>
               にも合格しました。<br /><br /><br />
               「投資シミュレーションゲームを普及させる」というアプローチをしたのですが、
-              現存するほとんどの投資シミュレーションは、レスポンシブ対応すらされていない<span className='blue'>1990年代の様な老舗ゲームばかりでした。</span><br /><br /><br />
+              現存するほとんどの投資シミュレーションゲームは、<span className='blue'>レスポンシブ対応すらされていない古いゲームばかりでした。</span><br /><br /><br />
               「これじゃスマホ世代は投資シミュレーションゲームとかやらないだろうな。」<br /><br /><br />
               と思ったので、<span className='marker'>自分で投資シミュレーションゲームを作ることにしました。</span><br /><br /><br />
-              ゲーム内通貨を使ってアイテムを売買するゲーム「
+              「
               <a 
                 href={'https://babel-bubble.com/'}
                 target="_blank"
@@ -339,9 +331,8 @@ export class ProfileComponent extends PureComponent {
                 Babel bubble（バベルバブル）
               </a>
               」です。<br /><br /><br />
-              アイテムの価格をランダムウォークさせるのではなく、ユーザーの取引によって時価が変動する様にしたことでリアルな取引体験を目指しました。<br /><br /><br />
+              バベルバブルはゲーム内通貨を使ってアイテムを売買するゲームとなっています。<br /><br /><br />
               <h2 style={styles.sub}>終わりに</h2>
-              <span className='marker'>以上がプログラミングを始めてから今までの大まかな経歴です。</span><br /><br /><br />
               <span className='blue'>作ったサービスのリンクはこのページの下の方にあるのでご覧ください。</span>
               <br /><br /><br />
                 <div style={{ width: '200px', marginLeft: 'auto', marginRight: 'auto' }}>
