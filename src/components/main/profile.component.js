@@ -328,20 +328,20 @@ export class ProfileComponent extends PureComponent {
                 src={'/images/props_info.png'}
                 alt={'props_info'}
               /><br /><br />
-              <a 
+              {/* <a 
                 href={''}
                 target="_blank"
                 rel="noopener noreferrer"
-              >
+              > */}
                 Props (iOS) Coming soon
-              </a>
+              {/* </a> */}
               <br /><br />
               <a 
-                href={''}
+                href={'https://play.google.com/store/apps/details?id=com.gitackt.props'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Props (Android) Coming soon
+                Props (Android)
               </a>
               <br /><br /><br />
               <h2 style={styles.sub}>終わりに</h2>

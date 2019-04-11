@@ -34,8 +34,8 @@ export const listData = [
   {
     name: "Props Android",
     status: "android",
-    complete: false,
-    url: "https://babel-bubble.com",
+    complete: true,
+    url: "https://play.google.com/store/apps/details?id=com.gitackt.props",
     image: "/images/services/props.png",
     info: "持ち物管理ができるAndroidアプリです。自分の持ち物をアプリでまとめて管理できます。",
   },
