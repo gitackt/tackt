@@ -40,6 +40,14 @@ export const listData = [
     info: "持ち物管理ができるAndroidアプリです。自分の持ち物をアプリでまとめて管理できます。",
   },
   {
+    name: "人生は運ゲー",
+    status: "active",
+    complete: true,
+    url: "https://monetizealchemist.com",
+    image: "/images/services/monetizealchemist.png",
+    info: "ブログです。お金をかけないで生きるサバイバル術を書いています",
+  },
+  {
     name: "Freesia",
     status: "github",
     complete: true,
@@ -54,13 +62,5 @@ export const listData = [
     url: "https://github.com/gitackt/annabel",
     image: "/images/services/annabel.png",
     info: "複数のYouTube動画を同時に再生できるアプリケーションです。入力されたURLの動画を同時に再生します。",
-  },
-  {
-    name: "人生は運ゲー",
-    status: "active",
-    complete: true,
-    url: "https://monetizealchemist.com",
-    image: "/images/services/monetizealchemist.png",
-    info: "ブログです。",
   },
 ]

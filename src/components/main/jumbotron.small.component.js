@@ -5,7 +5,7 @@ import { particle } from '../../params/particle';
 const styles = {
   container: {
     position: 'relative',
-    paddingTop: '120px',
+    paddingTop: '50px',
     paddingBottom: '100px',
     textAlign: 'center',
     color: 'white',
