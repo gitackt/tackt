@@ -124,7 +124,7 @@ export class ProfileComponent extends PureComponent {
                 ドットインストール
               </a>
               でPHPを勉強しながら都市伝説投稿サイトを作りました。
-              <span className='blue'>「自分の作ったシステムが動く」</span>というこの時の成功体験はその後大きな力になります。<br /><br /><br />
+              <span className='blue'>「自分の作ったシステムが動く」</span>というこの時の成功体験はその後大きな力になっています。<br /><br /><br />
               <h2 style={styles.sub}>インターンで働く (2017)</h2>
               大学2年の頃、プログラミングに関して自信はありましたが、独学で開発を学んできたので<span className='blue'>「チーム開発の経験」</span>がありませんでした。
               そこで、チーム開発を学ぶために<span className='marker'>企業でインターンとして働くことを決めました。</span><br /><br /><br />
