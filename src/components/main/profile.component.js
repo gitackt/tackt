@@ -77,6 +77,10 @@ const styles = {
     width: '100%',
     maxWidth: '400px',
     borderRadius: '10px',
+  },
+  coin: {
+    maxWidth: '50px',
+    borderRadius: '10px',
   }
 };
 
@@ -315,6 +319,37 @@ export class ProfileComponent extends PureComponent {
                 Babel bubble（バベルバブル）
               </a>
               」<br /><br /><br />
+              <img
+                style={styles.coin}
+                src={'/images/balls/bubble_coin.png'}
+                alt={'bubble'}
+              />
+              <img
+                style={styles.coin}
+                src={'/images/balls/gum_coin.png'}
+                alt={'bubble'}
+              />
+              <img
+                style={styles.coin}
+                src={'/images/balls/cake_coin.png'}
+                alt={'bubble'}
+              />
+              <img
+                style={styles.coin}
+                src={'/images/balls/honey_coin.png'}
+                alt={'bubble'}
+              />
+              <img
+                style={styles.coin}
+                src={'/images/balls/cocoa_coin.png'}
+                alt={'bubble'}
+              />
+              <img
+                style={styles.coin}
+                src={'/images/balls/mono_coin.png'}
+                alt={'bubble'}
+              />
+              <br /><br /><br />
               <h2 style={styles.sub}>スマホアプリ (2019)</h2>
               <img
                 style={styles.subimage}
