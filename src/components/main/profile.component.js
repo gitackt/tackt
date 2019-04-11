@@ -343,6 +343,14 @@ export class ProfileComponent extends PureComponent {
               >
                 Props (Android)
               </a>
+              <br /><br />
+              <a 
+                href={'https://note.mu/gitackt/n/n7fd91f76ba8a'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ドキュメント
+              </a>
               <br /><br /><br />
               <h2 style={styles.sub}>終わりに</h2>
               <span className='marker'>サービスはデザインから運用まで全て私が行なっています。</span>
