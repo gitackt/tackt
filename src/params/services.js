@@ -45,7 +45,7 @@ export const listData = [
     complete: true,
     url: "https://monetizealchemist.com",
     image: "/images/services/monetizealchemist.png",
-    info: "ブログです。お金をかけないで生きるサバイバル術を書いています",
+    info: "ブログです。お金をかけないで生きるサバイバル術を書いています。",
   },
   {
     name: "Freesia",
