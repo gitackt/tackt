@@ -5,6 +5,7 @@ const styles = {
   container: {
     textAlign: 'center',
     paddingBottom: '15px',
+    borderTop: 'solid 4px #4b8c85',
   },
   image: {
     maxWidth: '150px',
@@ -30,7 +31,7 @@ const styles = {
     background: '#f2f2f2'
   },
   content: {
-    fontSize: '18px',
+    fontSize: '16px',
     fontWeight: '400',
     color: '#574F5D',
     lineHeight: '1.8',
@@ -95,7 +96,6 @@ export class ProfileComponent extends PureComponent {
             <Grid item xs={12} md={8} style={styles.gridLeft}>
               <div style={styles.content}>
               <h2 style={styles.sub}>プログラミングの始まり (2016)</h2>
-              <br />
               三橋拓人(
               <a 
                 href={'https://twitter.com/picos_tackt?lang=ja'}
