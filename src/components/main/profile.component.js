@@ -7,6 +7,12 @@ const styles = {
     paddingBottom: '15px',
     borderTop: 'solid 4px #4b8c85',
   },
+  profile: {
+    textAlign: 'left',
+    borderRadius: '10px',
+    padding: '15px',
+    background: '#f2f2f2'
+  },
   image: {
     maxWidth: '150px',
     marginLeft: 'auto',
@@ -23,12 +29,6 @@ const styles = {
     borderRadius: '10px',
     margin: '15px',
     padding: '15px',
-  },
-  profile: {
-    textAlign: 'left',
-    borderRadius: '10px',
-    padding: '15px',
-    background: '#f2f2f2'
   },
   eyeCatch: {
     textAlign: 'left',
@@ -106,24 +106,24 @@ export class ProfileComponent extends PureComponent {
     return (
       <div style={{ background: 'white' }}>
         <div>
-          {/* <h2 className='title'>Profile</h2> */}
           <Grid container justify={'center'} style={styles.container}>
             <Grid item xs={12} md={8} style={styles.gridLeft}>
               <div style={styles.content}>
-              {/* <h1 style={styles.mainTitle}>今までの経歴</h1> */}
+              <h1 style={styles.mainTitle}>自己紹介</h1>
               <div style={styles.eyeCatch}>
                 <h3>目次</h3>
                 <ui>
-                  <li>プログラミングの始まり (2016)</li>
+                  <li>はじめに (2016)</li>
                   <li>インターンで働く (2017)</li>
                   <li>サービスを開発する (2017)</li>
                   <li>技術力を高める (2018)</li>
                   <li>ブログを作る (2018)</li>
                   <li>投資ゲームの開発 (2018)</li>
                   <li>スマホアプリの開発 (2019)</li>
+                  <li>スマホアプリの開発 (2019)</li>
                 </ui>
               </div>
-              <h2 style={styles.sub}>プログラミングの始まり (2016)</h2>
+              <h2 style={styles.sub}>はじめに (2016)</h2>
               三橋拓人(
               <a 
                 href={'https://twitter.com/picos_tackt?lang=ja'}
@@ -140,9 +140,8 @@ export class ProfileComponent extends PureComponent {
               >
                 株式会社MICIN
               </a>
-               でエンジニアインターンをしながら、個人でWebサービスやアプリを開発しています。
-               <br /><br /><br />
-              高校3年からプログラミングを始め、<span className='marker'>独学で技術を身につけました。</span>
+               でエンジニアインターンをしながら個人でWebサービスやアプリを開発しています。
+              高校3年からプログラミングを始め<span className='marker'>独学で技術を身につけました。</span>
               大学1年の頃、
               <a 
                 href={'https://dotinstall.com/'}
@@ -152,11 +151,11 @@ export class ProfileComponent extends PureComponent {
                 ドットインストール
               </a>
               でPHPを勉強しながら都市伝説投稿サイトを作りました。
-              <span className='blue'>「自分の作ったシステムが動く」</span>というこの時の成功体験はその後大きな力になっています。<br /><br /><br />
+              <span className='blue'>「自分の作ったシステムが動く」</span>というこの時の成功体験はその後大きな力になっています。
+              現在は主にフロントエンドはReact、React-native、Typescript、サーバサイドはnode.js、Django, Railsを使って開発をしています。<br /><br /><br />
               <h2 style={styles.sub}>インターンで働く (2017)</h2>
-              大学2年の頃、プログラミングに関して自信はありましたが、独学で開発を学んできたので<span className='blue'>「チーム開発の経験」</span>がありませんでした。
-              そこで、チーム開発を学ぶために<span className='marker'>企業でインターンとして働くことを決めました。</span><br /><br /><br />
-              何社も訪問をした結果、
+              大学2年の頃、それまで独学で開発を学んできたので<span className='blue'>「チーム開発の経験」</span>がありませんでした。
+              そこで、チーム開発を学ぶために<span className='marker'>企業でインターンとして働くことを決めました。</span>
               <a 
                 href={'https://rank.whatzmoney.com/'}
                 target="_blank"
@@ -164,8 +163,7 @@ export class ProfileComponent extends PureComponent {
               >
                 株式会社whatzmoney
               </a>
-              で働かせてもらえることになりました。
-              whatzmoneyでは
+              で働かせてもらえることになり、
               <a 
                 href={'https://rubyonrails.org/'}
                 target="_blank"
@@ -188,7 +186,6 @@ export class ProfileComponent extends PureComponent {
               >
                 wantedly
               </a>
-              で知り合った営業担当の方と一緒にWebサービスを作ることになり、
               <span className='marker'>複数の取引所にある仮想通貨の総額</span>を簡単にチェックできるサービス
               「
               <a 
@@ -198,8 +195,8 @@ export class ProfileComponent extends PureComponent {
               >
                 VCU（ブイキュー）
               </a>
-              」を作りました。（デザイン・開発は全て私が担当）<br /><br /><br />
-              VCUは現在も稼働しており、取引所のAPIキーを入力するだけで残高を取得できます。対応している取引所は<br /><br />
+              」を作りました。
+              取引所のAPIキーを入力するだけで残高を取得できます。対応している取引所は<br /><br />
               ・<a 
                 href={'https://bitflyer.com/ja-jp/'}
                 target="_blank"
@@ -282,8 +279,8 @@ export class ProfileComponent extends PureComponent {
               VCUは初めてリリースした本格的なWebアプリケーションであり、サーバやインフラに関する経験を積む事が出来ました。
               <span className='blue'>この時自分一人でサービスを公開させた事は今でも大きな自信になっています。</span><br /><br /><br />
               <h2 style={styles.sub}>技術力を高める (2018)</h2>
-              大学3年になった頃、<span className='blue'>駆け出しの頃から仕事をいただいていた方にMICINを紹介してもらいました。</span><br /><br /><br />
-              MICINは今まで見た事がないようなスーパーエンジニアの方が何人もいて、<span className='marker'>「ここなら絶対に成長できる」と思いインターンを希望しました。</span>
+              大学3年になった頃、<span className='blue'>駆け出しの頃から仕事をいただいていた方にMICINを紹介してもらいました。</span>
+              MICINは今まで見た事がないようなスーパーエンジニアの方が何人もいて、<span className='marker'>「ここなら絶対に成長できる」と思いました。</span>
               MICINではReact-nativeやAngularを使った遠隔診療アプリケーション「
               <a 
                 href={'https://curon.co/'}
@@ -386,7 +383,7 @@ export class ProfileComponent extends PureComponent {
                 src={'/images/services/props.png'}
                 alt={'props'}
               /><br /><br />
-              大学4年になった頃、<span className='blue'>スマホアプリの開発も始めました。</span><br /><br /><br />
+              大学4年になった頃、<span className='blue'>スマホアプリの開発も始めました。</span>
               「同じものを持っているのに、また買ってしまった！」ということがあまりにも多いので、持ち物管理アプリを作りました。<br /><br /><br />
               <img
                 style={styles.subimage}
@@ -418,8 +415,8 @@ export class ProfileComponent extends PureComponent {
               </a>
               <br /><br /><br />
               <h2 style={styles.sub}>終わりに</h2>
-              ここに挙げたサービスは、<span className='marker'>デザインから運用まで全て私が行なっています。</span>
-              Webサービスの開発等に関して色々とお役に立てると思うので、ひとまずtwitter・githubをご覧ください。<br /><br /><br />
+              ここに挙げたオリジナルサービスは、<span className='marker'>デザインから運用まで全て私が行なっています。</span>
+              Webサービスの開発等に関して色々とお役に立てると思うので、ひとまずtwitter・githubをご覧ください。
               また、<span className='blue'>他にも作ったサービス</span>のリンクがこのページの下の方にあるのでご覧ください。
               <br /><br /><br />
                 <div style={{ width: '200px', marginLeft: 'auto', marginRight: 'auto' }}>
@@ -448,7 +445,7 @@ export class ProfileComponent extends PureComponent {
               <div style={styles.profile}>
                 <h3>三橋拓人（みつはしたくと）</h3>
                 <h4>経歴</h4>
-                <p>
+                <p style={{ fontSize: '12px' }}>
                   明治大学 商学部 商学科
                   Finance Course (2016 ~ )<br />
                   株式会社Whatzmoney
@@ -457,11 +454,11 @@ export class ProfileComponent extends PureComponent {
                   Engineer Intern (2018 ~ )<br />
                 </p>
                 <h4>資格</h4>
-                <p>
+                <p style={{ fontSize: '12px' }}>
                   証券アナリスト2次 (CCMA)<br />
                 </p>
                 <h4>技術</h4>
-                <p>
+                <p style={{ fontSize: '12px' }}>
                   Python, Ruby, Django, Rails, HTML, CSS, JavaScript, TypeScript, React, React-native, 
                   Nginx, MySQL, Wordpress, PHP, Node, Docker, AWS, Angular, Vue,
                   Affinity Designer, Clip Studio

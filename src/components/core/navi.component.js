@@ -27,19 +27,6 @@ class NavigationComponent extends Component {
               <ChevronRightIcon />
             </IconButton>
 
-
-            <div 
-              style={{ padding: "20px", paddingTop: "40px", fontSize: "15px", cursor: 'pointer' }}
-              onClick={this.props.onChange}
-            >
-              <h4
-                style={{ paddingTop: "10px", paddingBottom: "10px" }}
-                onClick={() => this.setState({ open: false })}
-              >
-                TOP
-              </h4>
-            </div>
-
             <div style={{ padding: "20px", paddingTop: "-20px", fontSize: "12px" }}>
             <a
                 href="https://twitter.com/picos_tackt?lang=ja"

@@ -92,7 +92,7 @@ const CardContentComponent = (props) => {
   )
 }
 
-const EachComponent = (props) =>{
+export const EachComponent = (props) =>{
 
   return (
     <div>

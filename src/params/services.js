@@ -1,27 +1,19 @@
 export const listData = [
   {
+    name: "Violet",
+    status: "github",
+    complete: true,
+    url: "https://babel-bubble.com",
+    image: "/images/services/violet.png",
+    info: "形態素解析とマルコフ連鎖で自動生成した文章をWordpressに自動投稿するシステムです。",
+  },
+  {
     name: "Babel Bubble",
     status: "active",
     complete: true,
     url: "https://babel-bubble.com",
     image: "/images/services/babelbubble.png",
     info: "無料で遊べる投資シミュレーションゲームです。架空のアイテムをゲーム内通貨で売買して遊びます。",
-  },
-  {
-    name: "VCU",
-    status: "active",
-    complete: true,
-    url: "https://v-cu.com",
-    image: "/images/services/vcu.png",
-    info: "仮想通貨のポートフォリオ管理サービスです。複数の取引所とAPI連携を行い自動でデータを取得します。",
-  },
-  {
-    name: "暗号くん",
-    status: "line",
-    complete: true,
-    url: "https://line.me/R/ti/p/%40hbi0385s",
-    image: "/images/services/ango.png",
-    info: "仮想通貨の情報を返してくれるLINE Botです。イーサリアムの情報をチャットで教えてくれます。",
   },
   {
     name: "Props iOS",
@@ -48,6 +40,14 @@ export const listData = [
     info: "ブログです。お金をかけないで生きるサバイバル術を書いています。",
   },
   {
+    name: "VCU",
+    status: "active",
+    complete: true,
+    url: "https://v-cu.com",
+    image: "/images/services/vcu.png",
+    info: "仮想通貨のポートフォリオ管理サービスです。複数の取引所とAPI連携を行い自動でデータを取得します。",
+  },
+  {
     name: "Freesia",
     status: "github",
     complete: true,
@@ -62,5 +62,13 @@ export const listData = [
     url: "https://github.com/gitackt/annabel",
     image: "/images/services/annabel.png",
     info: "複数のYouTube動画を同時に再生できるアプリケーションです。入力されたURLの動画を同時に再生します。",
+  },
+  {
+    name: "暗号くん",
+    status: "line",
+    complete: true,
+    url: "https://line.me/R/ti/p/%40hbi0385s",
+    image: "/images/services/ango.png",
+    info: "仮想通貨の情報を返してくれるLINE Botです。イーサリアムの情報をチャットで教えてくれます。",
   },
 ]
