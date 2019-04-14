@@ -1,14 +1,98 @@
 import React, { PureComponent } from 'react';
 import Slider from "react-slick";
 import { listData } from '../../params/services';
-import { EachComponent } from './service.component';
+
+const styles = {
+  card: {
+    width: '95%',
+    height: '240px',
+    background: 'white',
+    overflow: 'hidden',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    borderRadius: '10px',
+    textAlign: 'center',
+  },
+  image: {
+    position: 'relative',
+    width: '100%',
+    borderRadius: '10px',
+  },
+};
+
+const CardContentComponent = (props) => {
+
+  return (
+    <div>
+      {props.data.status === 'sold' && (
+        <div className='tag sold'>
+          Sold
+        </div>
+      )}
+      {props.data.status === 'active' && (
+        <div className='tag active'>
+          Active
+        </div>
+      )}
+      {props.data.status === 'deactive' && (
+        <div className='tag deactive'>
+          Deactive
+        </div>
+      )}
+      {props.data.status === 'github' && (
+        <div className='tag github'>
+          Github
+        </div>
+      )}
+      {props.data.status === 'ios' && (
+        <div className='tag ios'>
+          iOS
+        </div>
+      )}
+      {props.data.status === 'android' && (
+        <div className='tag android'>
+          Andoid
+        </div>
+      )}
+      {props.data.status === 'line' && (
+        <div className='tag line'>
+          LINE Bot
+        </div>
+      )}
+      <div style={{ overflow: 'hidden', maxHeight: '160px', borderRadius: '10px' }}>
+        <a
+          href={props.data.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            style={styles.image}
+            src={props.data.image}
+            alt={props.data.name}
+          />
+        </a>
+      </div>
+    </div>
+  )
+}
+
+export const EachComponent = (props) =>{
+
+  return (
+    <div>
+      <div style={styles.card}>
+        <CardContentComponent data={props.data} />
+      </div >
+    </div >
+  );
+}
 
 export class NameComponent extends PureComponent {
 
   settings = {
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
     dots: true,
     infinite: true,
     speed: 500,
@@ -40,7 +124,7 @@ export class NameComponent extends PureComponent {
   render() {
 
     return (
-      <div style={{ marginTop: '40px',marginBottom: '60px', padding: '20px' }}>
+      <div style={{ marginTop: '70px',marginBottom: '20px', padding: '20px' }}>
         <Slider {...this.settings}>
           {listData.map((each) => (
             <EachComponent data={each} />

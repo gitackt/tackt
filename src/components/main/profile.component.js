@@ -173,11 +173,6 @@ export class ProfileComponent extends PureComponent {
               </a>
               を使った「住宅ローン比較サイト」の開発に約一年参加しました。<br /><br /><br />
               <h2 style={styles.sub}>サービスを開発する (2017)</h2>
-              <img
-                style={styles.subimage}
-                src={'/images/services/vcu.png'}
-                alt={'vcu'}
-              /><br /><br />
               2017年の冬といえば仮想通貨バブルですが、
               <span className='marker'>複数の取引所にある仮想通貨の総額</span>を簡単にチェックできるサービス
               「
@@ -309,11 +304,6 @@ export class ProfileComponent extends PureComponent {
               </a>
               収入のみでサーバ代を賄えています。ちなみに、ブログメディアを運営する事でSEO対策やWordpress最適化の知識がつきました。<br /><br /><br />
               <h2 style={styles.sub}>投資シミュレーションゲームの開発 (2018)</h2>
-              <img
-                style={styles.subimage}
-                src={'/images/services/babelbubble.png'}
-                alt={'babelbubble'}
-              /><br /><br />
               大学3年の夏、<span className='blue'>投資シミュレーションゲーム</span>を作ることになりました。
               プログラミングばかりしていますが、学校では金融を勉強しています。
               お金のことに興味があり、3年の夏には
@@ -371,11 +361,6 @@ export class ProfileComponent extends PureComponent {
               />
               <br /><br /><br />
               <h2 style={styles.sub}>スマホアプリの開発 (2019)</h2>
-              <img
-                style={styles.subimage}
-                src={'/images/services/props.png'}
-                alt={'props'}
-              /><br /><br />
               大学4年になった頃、<span className='blue'>スマホアプリの開発も始めました。</span>
               「同じものを持っているのに、また買ってしまった！」ということがあまりにも多いので、持ち物管理アプリを作りました。<br /><br /><br />
               <img
