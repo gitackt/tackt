@@ -8,7 +8,7 @@ export class NameComponent extends PureComponent {
   settings = {
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 3000,
     dots: true,
     infinite: true,
     speed: 500,
