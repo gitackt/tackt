@@ -171,7 +171,7 @@ export class ProfileComponent extends PureComponent {
               >
                 Ruby on Rails
               </a>
-              を使った「住宅ローン比較サイト」の開発に参加しました。<br /><br /><br />
+              を使った「住宅ローン比較サイト」の開発に約一年参加しました。<br /><br /><br />
               <h2 style={styles.sub}>サービスを開発する (2017)</h2>
               <img
                 style={styles.subimage}
@@ -179,13 +179,6 @@ export class ProfileComponent extends PureComponent {
                 alt={'vcu'}
               /><br /><br />
               2017年の冬といえば仮想通貨バブルですが、
-              <a 
-                href={'https://jp.wantedly.com/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                wantedly
-              </a>
               <span className='marker'>複数の取引所にある仮想通貨の総額</span>を簡単にチェックできるサービス
               「
               <a 
@@ -289,7 +282,7 @@ export class ProfileComponent extends PureComponent {
               >
                 Curon
               </a>
-              」の開発に参加しました。<br /><br /><br />
+              」の開発に約一年参加しています。<br /><br /><br />
               <h2 style={styles.sub}>ブログを作る (2018)</h2>
               大学3年の前期、<span className='blue'>「サーバ代が負担になる」</span>問題について真剣に考え始め、<span className='marker'>新たな収入源としてブログを作ることにしました。</span>
               お金をかけないで生きるサバイバル術を書いています。<br /><br /><br />
@@ -321,7 +314,7 @@ export class ProfileComponent extends PureComponent {
                 src={'/images/services/babelbubble.png'}
                 alt={'babelbubble'}
               /><br /><br />
-              大学3年の夏、ゼミの一環で<span className='blue'>投資シミュレーションゲーム</span>を作ることになりました。
+              大学3年の夏、<span className='blue'>投資シミュレーションゲーム</span>を作ることになりました。
               プログラミングばかりしていますが、学校では金融を勉強しています。
               お金のことに興味があり、3年の夏には
               <a 
@@ -415,8 +408,8 @@ export class ProfileComponent extends PureComponent {
               </a>
               <br /><br /><br />
               <h2 style={styles.sub}>終わりに</h2>
-              ここに挙げたオリジナルサービスは、<span className='marker'>デザインから運用まで全て私が行なっています。</span>
-              Webサービスの開発等に関して色々とお役に立てると思うので、ひとまずtwitter・githubをご覧ください。
+              ここに挙げたオリジナルサービスは、<span className='marker'>デザインから開発・運用まで全て私が行なっています。</span>
+              Webサービスの開発等に関して色々とお役に立てると思うのでtwitter・githubをご覧ください。
               また、<span className='blue'>他にも作ったサービス</span>のリンクがこのページの下の方にあるのでご覧ください。
               <br /><br /><br />
                 <div style={{ width: '200px', marginLeft: 'auto', marginRight: 'auto' }}>

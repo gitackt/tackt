@@ -44,7 +44,7 @@ export class PriceComponent extends PureComponent {
             />
             <h2 className='subtitle'>ウェブ運用</h2>
             <p style={styles.content}>
-              複数Webサイトの保守管理経験があります。サイト運営を格安で行うことに関しては自信があり、DjangoやWordpressを使用した本格的なWebアプリを月額約200円で運営しています。サイト管理にお悩みの方は何かお役に立てるかもしれません。
+              複数Webサイトの保守管理経験があります。サイト運営を格安で行うことに関しては自信があり、DjangoやWordpressを使用した本格的なWebアプリを格安で運営しています。サイト管理にお悩みの方は何かお役に立てるかもしれません。
             </p>
             <a
               href={'https://twitter.com/picos_tackt'}
