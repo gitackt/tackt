@@ -2,8 +2,8 @@ export const listData = [
   {
     name: "Violet",
     status: "github",
-    complete: true,
-    url: "https://babel-bubble.com",
+    complete: false,
+    url: "https://github.com/gitackt/violet",
     image: "/images/services/violet.png",
     info: "形態素解析とマルコフ連鎖で自動生成した文章をWordpressに自動投稿するシステムです。",
   },
