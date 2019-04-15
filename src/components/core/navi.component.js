@@ -27,7 +27,7 @@ class NavigationComponent extends Component {
               <ChevronRightIcon />
             </IconButton>
 
-            <div style={{ padding: "20px", paddingTop: "-20px", fontSize: "12px" }}>
+            <div style={{ padding: "20px", fontSize: "12px", marginTop: '50px' }}>
             <a
                 href="https://twitter.com/picos_tackt?lang=ja"
                 style={{ textDecoration: 'none' }}

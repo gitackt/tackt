@@ -5,7 +5,7 @@ const styles = {
   container: {
     textAlign: 'center',
     paddingBottom: '15px',
-    borderTop: 'solid 4px #4b8c85',
+    // borderTop: 'solid 4px #4b8c85',
   },
   profile: {
     textAlign: 'left',
@@ -113,16 +113,14 @@ export class ProfileComponent extends PureComponent {
               <div style={styles.eyeCatch}>
                 <h3>目次</h3>
                 <ui>
-                  <li>はじめに (2016)</li>
-                  <li>インターンで働く (2017)</li>
-                  <li>サービスを開発する (2017)</li>
-                  <li>技術力を高める (2018)</li>
-                  <li>ブログを作る (2018)</li>
-                  <li>投資ゲームの開発 (2018)</li>
-                  <li>スマホアプリの開発 (2019)</li>
+                  <li>はじめに (2015 ~ )</li>
+                  <li>インターンで働く (2017 ~ )</li>
+                  <li>サービスを開発する (2017 ~ )</li>
+                  <li>ブログを運営する (2018 ~ )</li>
+                  <li>スマホアプリの開発 (2019 ~ )</li>
                 </ui>
               </div>
-              <h2 style={styles.sub}>はじめに (2016)</h2>
+              <h2 style={styles.sub}>はじめに (2015 ~ )</h2>
               三橋拓人(
               <a 
                 href={'https://twitter.com/picos_tackt?lang=ja'}
@@ -139,18 +137,18 @@ export class ProfileComponent extends PureComponent {
               >
                 株式会社MICIN
               </a>
-               でエンジニアインターンをしながら個人でWebサービスやアプリを開発しています。
-              高校3年からプログラミングを始め<span className='marker'>独学で技術を身につけました。</span>
-              現在は主にフロントエンドはReact、React-native、Typescript、サーバサイドはnode.js、Django, Railsを使って開発をしています。<br /><br /><br />
-              <h2 style={styles.sub}>インターンで働く (2017)</h2>
-              大学2年の頃、それまで独学で開発を学んできたので<span className='blue'>「チーム開発の経験」</span>がありませんでした。
-              そこで、チーム開発を学ぶために<span className='marker'>企業でインターンとして働くことを決めました。</span>
+               でエンジニアインターンをしながら、個人でWebサービスやアプリを開発しています。<br /><br />
+               主にフロントエンドはReact、React-native、Typescript、サーバサイドはNode.js、Django、Railsを使います。
+              高校3年からプログラミングを始めて独学で技術を身につけました。<br /><br /><br />
+              <h2 style={styles.sub}>インターンで働く (2017 ~ )</h2>
+              <h3>・Whatzmoney（2017 ~ 2018）</h3>
+              大学2年の頃、チーム開発を学ぶために企業でインターンとして働くことにしました。
               <a 
                 href={'https://rank.whatzmoney.com/'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                株式会社whatzmoney
+                株式会社Whatzmoney
               </a>
               で働かせてもらえることになり、
               <a 
@@ -161,9 +159,26 @@ export class ProfileComponent extends PureComponent {
                 Ruby on Rails
               </a>
               を使った「住宅ローン比較サイト」の開発に約１年参加しました。<br /><br /><br />
-              <h2 style={styles.sub}>サービスを開発する (2017)</h2>
+              <h3>・MICIN（2018 ~ ）</h3>
+              大学3年になった頃、駆け出しの頃から仕事をいただいていた方にMICINを紹介してもらいました。
+              MICINではReact-nativeやAngularを使った遠隔診療アプリケーション「
+              <a 
+                href={'https://curon.co/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Curon
+              </a>
+              」の開発に約１年参加しています。<br /><br /><br />
+              <h2 style={styles.sub}>サービスを開発する (2017 ~ )</h2>
+              <h3>・VCU（2017 ~ ）</h3>
+              <img
+                style={styles.subimage}
+                src={'/images/vcu_info.png'}
+                alt={'vcu_info'}
+              /><br /><br />
               2017年の冬といえば仮想通貨バブルですが、
-              <span className='marker'>複数の取引所にある仮想通貨の総額</span>を簡単にチェックできるサービス
+              複数の取引所にある仮想通貨の総額を簡単にチェックできるサービス
               「
               <a 
                 href={'https://v-cu.com'}
@@ -172,65 +187,65 @@ export class ProfileComponent extends PureComponent {
               >
                 VCU（ブイキュー）
               </a>
-              」をDjangoで作りました。
-              取引所のAPIキーを入力するだけで残高を取得できます。対応している取引所は<br /><br />
+              」を作りました。
+              取引所のAPIキーを入力するだけで残高を取得できます。対応している取引所は
               ・<a 
                 href={'https://bitflyer.com/ja-jp/'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Bitflyer
-              </a><br />
+              </a>
               ・<a 
                 href={'https://www.binance.com/en'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Binance
-              </a><br />
+              </a>
               ・<a 
                 href={'https://poloniex.com/'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Poloniex
-              </a><br />
+              </a>
               ・<a 
                 href={'https://bitbank.cc/'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Bitbank
-              </a><br />
+              </a>
               ・<a 
                 href={'https://coincheck.com/ja/'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Coincheck
-              </a><br />
+              </a>
               ・<a 
                 href={'https://zaif.jp/?lang=ja'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Zaif
-              </a><br />
+              </a>
               ・<a 
                 href={'https://www.kucoin.com/'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Kucoin
-              </a><br />
+              </a>
               ・<a 
                 href={'https://www.liquid.com/ja/'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Quoine
-              </a><br /><br />
-              です。
+              </a>
+              です。<br /><br />
               また、
               <a 
                 href={'https://www.bitcoin.com/'}
@@ -247,52 +262,24 @@ export class ProfileComponent extends PureComponent {
               >
                 Ethereum
               </a>
-              に関しては、アドレスを入力すればブロックチェーンから直接残高を取得できます。<br /><br /><br />
+              に関しては、アドレスを入力すればブロックチェーンから直接残高を取得できます。             
+              VCUは初めてリリースした本格的なWebアプリケーションであり、サーバやインフラに関する経験を積む事が出来ました。  <br /><br /><br />
+
+              <h3>・Babel bubble（2018 ~ ）</h3>
               <img
                 style={styles.subimage}
-                src={'/images/vcu_info.png'}
-                alt={'vcu_info'}
+                src={'/images/babel_info.png'}
+                alt={'babel_info'}
               /><br /><br />
-              VCUは初めてリリースした本格的なWebアプリケーションであり、サーバやインフラに関する経験を積む事が出来ました。
-              <span className='blue'>この時自分一人でサービスを公開させた事は今でも大きな自信になっています。</span><br /><br /><br />
-              <h2 style={styles.sub}>技術力を高める (2018)</h2>
-              大学3年になった頃、<span className='blue'>駆け出しの頃から仕事をいただいていた方にMICINを紹介してもらいました。</span>
-              MICINは今まで見た事がないようなスーパーエンジニアの方が何人もいて、<span className='marker'>「ここなら絶対に成長できる」と思いました。</span>
-              MICINではReact-nativeやAngularを使った遠隔診療アプリケーション「
+              大学3年の夏、投資シミュレーションゲーム「
               <a 
-                href={'https://curon.co/'}
+                href={'https://babel-bubble.com/'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Curon
+                Babel bubble
               </a>
-              」の開発に約１年参加しています。<br /><br /><br />
-              <h2 style={styles.sub}>ブログを作る (2018)</h2>
-              大学3年の前期、<span className='blue'>「サーバ代が負担になる」</span>問題について真剣に考え始め、<span className='marker'>新たな収入源としてブログを作ることにしました。</span>
-              <img
-                style={styles.subimage}
-                src={'/images/mone_info.png'}
-                alt={'mone_info'}
-              /><br /><br /><br />
-              ブログはこちら → 
-              <a 
-                href={'https://monetizealchemist.com/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                人生は運ゲー
-              </a><br /><br /><br />
-              現在はこのブログの
-              <a 
-                href={'https://www.google.co.jp/adsense/start/#/?modal_active=none'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Adsence
-              </a>
-              収入のみでサーバ代を賄えています。ちなみに、ブログメディアを運営する事でSEO対策やWordpress最適化の知識がつきました。<br /><br /><br />
-              <h2 style={styles.sub}>投資シミュレーションゲームの開発 (2018)</h2>
-              大学3年の夏、DjangoとReactで<span className='blue'>投資シミュレーションゲーム</span>を作ることになりました。
+              」を作りました。
               プログラミングばかりしていますが、学校では金融を勉強しています。
               お金のことに興味があり、3年の夏には
               <a 
@@ -303,20 +290,6 @@ export class ProfileComponent extends PureComponent {
                 証券アナリスト2次試験
               </a>
               にも合格しました。<br /><br /><br />
-              <img
-                style={styles.subimage}
-                src={'/images/babel_info.png'}
-                alt={'babel_info'}
-              /><br /><br /><br />
-              作った投資ゲーム　→　「
-              <a 
-                href={'https://babel-bubble.com/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Babel bubble（バベルバブル）
-              </a>
-              」<br /><br /><br />
               <img
                 style={styles.coin}
                 src={'/images/balls/bubble_coin.png'}
@@ -347,10 +320,36 @@ export class ProfileComponent extends PureComponent {
                 src={'/images/balls/mono_coin.png'}
                 alt={'bubble'}
               />
-              <br /><br /><br />
-              <h2 style={styles.sub}>スマホアプリの開発 (2019)</h2>
-              大学4年になった頃、React-nativeで<span className='blue'>スマホアプリの開発も始めました。</span>
-              「同じものを持っているのに、また買ってしまった！」ということがあまりにも多いので、持ち物管理アプリを作りました。<br /><br /><br />
+              <br /><br /><br />            
+              <h2 style={styles.sub}>ブログを運営する (2018 ~ )</h2>
+              <h3>・人生は運ゲー（2018 ~ ）</h3>
+              <img
+                style={styles.subimage}
+                src={'/images/mone_info.png'}
+                alt={'mone_info'}
+              /><br /><br /><br />
+              大学3年の前期、<span className='blue'>「サーバ代が負担になる」</span>問題について真剣に考え始め、新たな収入源としてブログを作ることにしました。
+              現在はこのブログの
+              <a 
+                href={'https://www.google.co.jp/adsense/start/#/?modal_active=none'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Adsence
+              </a>
+              収入のみでサーバ代を賄えています。ちなみに、ブログを運営する事でSEO対策やWordpress最適化の知識がつきました。<br /><br /><br />     
+              ブログはこちら → 
+              <a 
+                href={'https://monetizealchemist.com/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                人生は運ゲー
+              </a><br /><br /><br />
+              <h2 style={styles.sub}>スマホアプリの開発 (2019 ~ )</h2>
+              <h3>・Props（2019 ~ ）</h3>
+              2019年から<span className='blue'>スマホアプリの開発も始めました。</span>
+              「同じものを持っているのに、また買ってしまった」ということが多いので、持ち物管理アプリを作りました。<br /><br /><br />
               <img
                 style={styles.subimage}
                 src={'/images/props_info.png'}
@@ -381,7 +380,7 @@ export class ProfileComponent extends PureComponent {
               </a>
               <br /><br /><br />
               <h2 style={styles.sub}>終わりに</h2>
-              ここに挙げたオリジナルサービスは、<span className='marker'>デザインから開発・運用まで全て私が行なっています。</span>
+              ここに挙げたオリジナルサービスは、デザインから開発まで<span className='marker'>全工程を私が作っています。</span>
               また、<span className='blue'>他にも作ったサービス</span>のリンクがこのページの下の方にあるのでご覧ください。
               <br /><br /><br />
                 <div style={{ width: '200px', marginLeft: 'auto', marginRight: 'auto' }}>

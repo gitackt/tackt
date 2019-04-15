@@ -5,7 +5,6 @@ import { listData } from '../../params/services';
 const styles = {
   card: {
     width: '90%',
-    height: '240px',
     background: 'white',
     overflow: 'hidden',
     marginLeft: 'auto',
@@ -59,7 +58,7 @@ const CardContentComponent = (props) => {
           LINE Bot
         </div>
       )}
-      <div style={{ overflow: 'hidden', maxHeight: '160px', borderRadius: '10px' }}>
+      <div style={{ overflow: 'hidden', maxHeight: '150px', borderRadius: '10px' }}>
         <a
           href={props.data.url}
           target="_blank"
@@ -96,7 +95,7 @@ export class NameComponent extends PureComponent {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
@@ -124,7 +123,7 @@ export class NameComponent extends PureComponent {
   render() {
 
     return (
-      <div style={{ marginTop: '70px',marginBottom: '20px', padding: '30px' }}>
+      <div style={{ marginTop: '50px', marginBottom: '5px', padding: '30px', maxWidth: '900px', marginLeft: 'auto', marginRight: 'auto' }}>
         <Slider {...this.settings}>
           {listData.map((each) => (
             <EachComponent data={each} />
