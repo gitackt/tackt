@@ -120,7 +120,6 @@ export class ProfileComponent extends PureComponent {
                   <li>ブログを作る (2018)</li>
                   <li>投資ゲームの開発 (2018)</li>
                   <li>スマホアプリの開発 (2019)</li>
-                  <li>スマホアプリの開発 (2019)</li>
                 </ui>
               </div>
               <h2 style={styles.sub}>はじめに (2016)</h2>
@@ -142,16 +141,6 @@ export class ProfileComponent extends PureComponent {
               </a>
                でエンジニアインターンをしながら個人でWebサービスやアプリを開発しています。
               高校3年からプログラミングを始め<span className='marker'>独学で技術を身につけました。</span>
-              大学1年の頃、
-              <a 
-                href={'https://dotinstall.com/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ドットインストール
-              </a>
-              でPHPを勉強しながら都市伝説投稿サイトを作りました。
-              <span className='blue'>「自分の作ったシステムが動く」</span>というこの時の成功体験はその後大きな力になっています。
               現在は主にフロントエンドはReact、React-native、Typescript、サーバサイドはnode.js、Django, Railsを使って開発をしています。<br /><br /><br />
               <h2 style={styles.sub}>インターンで働く (2017)</h2>
               大学2年の頃、それまで独学で開発を学んできたので<span className='blue'>「チーム開発の経験」</span>がありませんでした。
@@ -171,7 +160,7 @@ export class ProfileComponent extends PureComponent {
               >
                 Ruby on Rails
               </a>
-              を使った「住宅ローン比較サイト」の開発に約一年参加しました。<br /><br /><br />
+              を使った「住宅ローン比較サイト」の開発に約１年参加しました。<br /><br /><br />
               <h2 style={styles.sub}>サービスを開発する (2017)</h2>
               2017年の冬といえば仮想通貨バブルですが、
               <span className='marker'>複数の取引所にある仮想通貨の総額</span>を簡単にチェックできるサービス
@@ -183,7 +172,7 @@ export class ProfileComponent extends PureComponent {
               >
                 VCU（ブイキュー）
               </a>
-              」を作りました。
+              」をDjangoで作りました。
               取引所のAPIキーを入力するだけで残高を取得できます。対応している取引所は<br /><br />
               ・<a 
                 href={'https://bitflyer.com/ja-jp/'}
@@ -277,10 +266,9 @@ export class ProfileComponent extends PureComponent {
               >
                 Curon
               </a>
-              」の開発に約一年参加しています。<br /><br /><br />
+              」の開発に約１年参加しています。<br /><br /><br />
               <h2 style={styles.sub}>ブログを作る (2018)</h2>
               大学3年の前期、<span className='blue'>「サーバ代が負担になる」</span>問題について真剣に考え始め、<span className='marker'>新たな収入源としてブログを作ることにしました。</span>
-              お金をかけないで生きるサバイバル術を書いています。<br /><br /><br />
               <img
                 style={styles.subimage}
                 src={'/images/mone_info.png'}
@@ -304,7 +292,7 @@ export class ProfileComponent extends PureComponent {
               </a>
               収入のみでサーバ代を賄えています。ちなみに、ブログメディアを運営する事でSEO対策やWordpress最適化の知識がつきました。<br /><br /><br />
               <h2 style={styles.sub}>投資シミュレーションゲームの開発 (2018)</h2>
-              大学3年の夏、<span className='blue'>投資シミュレーションゲーム</span>を作ることになりました。
+              大学3年の夏、DjangoとReactで<span className='blue'>投資シミュレーションゲーム</span>を作ることになりました。
               プログラミングばかりしていますが、学校では金融を勉強しています。
               お金のことに興味があり、3年の夏には
               <a 
@@ -361,7 +349,7 @@ export class ProfileComponent extends PureComponent {
               />
               <br /><br /><br />
               <h2 style={styles.sub}>スマホアプリの開発 (2019)</h2>
-              大学4年になった頃、<span className='blue'>スマホアプリの開発も始めました。</span>
+              大学4年になった頃、React-nativeで<span className='blue'>スマホアプリの開発も始めました。</span>
               「同じものを持っているのに、また買ってしまった！」ということがあまりにも多いので、持ち物管理アプリを作りました。<br /><br /><br />
               <img
                 style={styles.subimage}
@@ -394,7 +382,6 @@ export class ProfileComponent extends PureComponent {
               <br /><br /><br />
               <h2 style={styles.sub}>終わりに</h2>
               ここに挙げたオリジナルサービスは、<span className='marker'>デザインから開発・運用まで全て私が行なっています。</span>
-              Webサービスの開発等に関して色々とお役に立てると思うのでtwitter・githubをご覧ください。
               また、<span className='blue'>他にも作ったサービス</span>のリンクがこのページの下の方にあるのでご覧ください。
               <br /><br /><br />
                 <div style={{ width: '200px', marginLeft: 'auto', marginRight: 'auto' }}>

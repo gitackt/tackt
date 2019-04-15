@@ -4,7 +4,7 @@ import { listData } from '../../params/services';
 
 const styles = {
   card: {
-    width: '95%',
+    width: '90%',
     height: '240px',
     background: 'white',
     overflow: 'hidden',
@@ -124,7 +124,7 @@ export class NameComponent extends PureComponent {
   render() {
 
     return (
-      <div style={{ marginTop: '70px',marginBottom: '20px', padding: '20px' }}>
+      <div style={{ marginTop: '70px',marginBottom: '20px', padding: '30px' }}>
         <Slider {...this.settings}>
           {listData.map((each) => (
             <EachComponent data={each} />
