@@ -116,8 +116,9 @@ export class ProfileComponent extends PureComponent {
                   <li>はじめに (2015 ~ )</li>
                   <li>インターンで働く (2017 ~ )</li>
                   <li>サービスを開発する (2017 ~ )</li>
-                  <li>ブログを運営する (2018 ~ )</li>
                   <li>スマホアプリの開発 (2019 ~ )</li>
+                  <li>ブログを運営する (2018 ~ )</li>
+                  <li>自動トレードを作る（2016 ~ ）</li>
                 </ui>
               </div>
               <h2 style={styles.sub}>はじめに (2015 ~ )</h2>
@@ -137,9 +138,9 @@ export class ProfileComponent extends PureComponent {
               >
                 株式会社MICIN
               </a>
-               でエンジニアインターンをしながら、個人でWebサービスやアプリを開発しています。<br /><br />
-               主にフロントエンドはReact、React-native、Typescript、サーバサイドはNode.js、Django、Railsを使います。
+               でエンジニアインターンをしながら、個人でWebサービスやアプリを開発しています。
               高校3年からプログラミングを始めて独学で技術を身につけました。<br /><br /><br />
+              主にフロントエンドはReact、React-native、Typescript、サーバサイドはNode.js、Django、Railsを使っています。<br /><br />
               <h2 style={styles.sub}>インターンで働く (2017 ~ )</h2>
               <h3>・Whatzmoney（2017 ~ 2018）</h3>
               大学2年の頃、チーム開発を学ぶために企業でインターンとして働くことにしました。
@@ -158,7 +159,7 @@ export class ProfileComponent extends PureComponent {
               >
                 Ruby on Rails
               </a>
-              を使った「住宅ローン比較サイト」の開発に約１年参加しました。<br /><br /><br />
+              を使った「住宅ローン比較サイト」の開発に約１年参加しました。<br /><br />
               <h3>・MICIN（2018 ~ ）</h3>
               大学3年になった頃、駆け出しの頃から仕事をいただいていた方にMICINを紹介してもらいました。
               MICINではReact-nativeやAngularを使った遠隔診療アプリケーション「
@@ -263,7 +264,7 @@ export class ProfileComponent extends PureComponent {
                 Ethereum
               </a>
               に関しては、アドレスを入力すればブロックチェーンから直接残高を取得できます。             
-              VCUは初めてリリースした本格的なWebアプリケーションであり、サーバやインフラに関する経験を積む事が出来ました。  <br /><br /><br />
+              VCUは初めてリリースした本格的なWebアプリケーションであり、サーバやインフラに関する経験を積む事が出来ました。  <br /><br />
 
               <h3>・Babel bubble（2018 ~ ）</h3>
               <img
@@ -320,32 +321,7 @@ export class ProfileComponent extends PureComponent {
                 src={'/images/balls/mono_coin.png'}
                 alt={'bubble'}
               />
-              <br /><br /><br />            
-              <h2 style={styles.sub}>ブログを運営する (2018 ~ )</h2>
-              <h3>・人生は運ゲー（2018 ~ ）</h3>
-              <img
-                style={styles.subimage}
-                src={'/images/mone_info.png'}
-                alt={'mone_info'}
-              /><br /><br /><br />
-              大学3年の前期、<span className='blue'>「サーバ代が負担になる」</span>問題について真剣に考え始め、新たな収入源としてブログを作ることにしました。
-              現在はこのブログの
-              <a 
-                href={'https://www.google.co.jp/adsense/start/#/?modal_active=none'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Adsence
-              </a>
-              収入のみでサーバ代を賄えています。ちなみに、ブログを運営する事でSEO対策やWordpress最適化の知識がつきました。<br /><br /><br />     
-              ブログはこちら → 
-              <a 
-                href={'https://monetizealchemist.com/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                人生は運ゲー
-              </a><br /><br /><br />
+              <br /><br />          
               <h2 style={styles.sub}>スマホアプリの開発 (2019 ~ )</h2>
               <h3>・Props（2019 ~ ）</h3>
               2019年から<span className='blue'>スマホアプリの開発も始めました。</span>
@@ -378,10 +354,131 @@ export class ProfileComponent extends PureComponent {
               >
                 ドキュメント
               </a>
+              <br /><br />
+              <h2 style={styles.sub}>ブログを運営する (2018 ~ )</h2>
+              <h3>・人生は運ゲー（2018 ~ ）</h3>
+              <img
+                style={styles.subimage}
+                src={'/images/mone_info.png'}
+                alt={'mone_info'}
+              /><br /><br /><br />
+              大学3年の前期、<span className='blue'>「サーバ代が負担になる」</span>問題について真剣に考え始め、新たな収入源としてブログを作ることにしました。
+              現在はこのブログの
+              <a 
+                href={'https://www.google.co.jp/adsense/start/#/?modal_active=none'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Adsence
+              </a>
+              収入のみでサーバ代を賄えています。ちなみに、ブログを運営する事でSEO対策やWordpress最適化の知識がつきました。   
+              ブログはこちら → 「
+              <a 
+                href={'https://monetizealchemist.com/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                人生は運ゲー
+              </a>」<br /><br /><br />
+              ブログに使えるかと思い、文章自動生成のプログラムもいくつか作りました。
+              形態素解析で自動生成するプログラム「
+              <a 
+                href={'https://github.com/gitackt/violet'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Violet 
+              </a>
+             」（バックグラウンドで動かしてWordpressにそのまま投稿させ続ける事もできる）。
+             一旦google翻訳で英語にしてから日本語に戻すこと自動リライトするプログラム「
+              <a 
+                href={'https://github.com/gitackt/freesia'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Freesia 
+              </a>」<br /><br />
+              <h2 style={styles.sub}>自動トレードを作る（2016 ~ ）</h2>
+              <h3>・機械学習でFX（2016）</h3>
+              <img
+                style={styles.subimage}
+                src={'/images/chart_color.png'}
+                alt={'chart_color'}
+              /><br /><br /><br />
+              機械学習が流行ってたので、Chainerというpythonのライブラリを使ってそれっぽいものを作ってみました。
+              <a 
+                href={'https://www.dukascopy.jp/marketwatch/historical/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                dukascopy
+              </a>
+              というサイトが提供している為替のヒストリカルデータを学習させて、
+              <a 
+                href={'https://www.oanda.jp/trade/practice/openaccountv20.do?p=0'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Oanda
+              </a>
+              というFX業者のデモ口座で何日か運用してみましたが全然儲かりませんでした。（やり方間違えた？）
+              <br /><br />
+              ・
+              <a 
+                href={'https://github.com/gitackt/fx_with_deep'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                機械学習させたデータでFXを取引するコード
+              </a>
+              <br /><br />
+              <h3>・財務データスクレイピング（2017）</h3>
+              今度はファンダメンタル分析をしてみようと思い、財務データやマーケット情報をスクレイピングしてくるプログラムを作りました。
+              今度は取ってくるだけ取ってきて、データだけが溜まりました。<br /><br />
+              ・
+              <a 
+                href={'https://github.com/gitackt/tsubaki/blob/master/research/lib/scraping/financial_infomation.py'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                EDINETから財務データを取ってくるコード
+              </a>
+              <br />
+              ・
+              <a 
+                href={'https://github.com/gitackt/tsubaki/blob/master/research/lib/scraping/stock_scraping.py'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                〇〇証券から株式・ETF・REITの情報を取ってくるコード
+              </a>
+              <br /><br />
+              <h3>・シンプルに自動トレード（2018）</h3>
+              考えてもあれなので、単純にボリンジャーバンドで逆張りするプログラムを作って何日か運用してみました。<br />
+              まさかの、これが少し儲かりました。
+              <br /><br />
+              ・
+              <a 
+                href={'https://github.com/gitackt/tsubaki/tree/master/trading/lib'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ボリンジャーバンド逆張りトレードのコード
+              </a>
               <br /><br /><br />
+              詳しく解説した記事はこちらです<br />
+              <a 
+                href={'https://monetizealchemist.com/2018/03/10/%E3%83%9C%E3%83%AA%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%90%E3%83%B3%E3%83%89%E3%81%A7%E8%80%83%E3%81%88%E3%82%8B%E3%83%86%E3%82%AF%E3%83%8B%E3%82%AB%E3%83%AB%E6%8A%95%E8%B3%87%E6%88%A6%E7%95%A5/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ボリンジャーバンドで考えるテクニカル投資戦略でFX自動トレードを作ってみた
+              </a>
+              <br /><br />
+              
               <h2 style={styles.sub}>終わりに</h2>
-              ここに挙げたオリジナルサービスは、デザインから開発まで<span className='marker'>全工程を私が作っています。</span>
-              また、<span className='blue'>他にも作ったサービス</span>のリンクがこのページの下の方にあるのでご覧ください。
+              ここに挙げたオリジナルサービスは、デザインから開発まで全て私が作っています。
+              <span className='blue'>作ったサービス</span>のリンクがこのページの下の方にあるのでご覧ください。
               <br /><br /><br />
                 <div style={{ width: '200px', marginLeft: 'auto', marginRight: 'auto' }}>
                 <a
