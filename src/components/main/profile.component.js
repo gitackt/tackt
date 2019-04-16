@@ -119,6 +119,7 @@ export class ProfileComponent extends PureComponent {
                   <li>スマホアプリの開発 (2019 ~ )</li>
                   <li>ブログを運営する (2018 ~ )</li>
                   <li>自動トレードを作る（2016 ~ ）</li>
+                  <li>暗号通貨にハマる（2018）</li>
                 </ui>
               </div>
               <h2 style={styles.sub}>はじめに (2015 ~ )</h2>
@@ -140,7 +141,6 @@ export class ProfileComponent extends PureComponent {
               </a>
                でエンジニアインターンをしながら、個人でWebサービスやアプリを開発しています。
               高校3年からプログラミングを始めて独学で技術を身につけました。<br /><br /><br />
-              主にフロントエンドはReact、React-native、Typescript、サーバサイドはNode.js、Django、Railsを使っています。<br /><br />
               <h2 style={styles.sub}>インターンで働く (2017 ~ )</h2>
               <h3>・Whatzmoney（2017 ~ 2018）</h3>
               大学2年の頃、チーム開発を学ぶために企業でインターンとして働くことにしました。
@@ -475,10 +475,47 @@ export class ProfileComponent extends PureComponent {
                 ボリンジャーバンドで考えるテクニカル投資戦略でFX自動トレードを作ってみた
               </a>
               <br /><br />
-              
+              <h2 style={styles.sub}>暗号通貨にハマる（2018）</h2>
+              相場は暴落していましたが、
+              「
+              <a 
+                href={'https://v-cu.com'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                VCU（ブイキュー）
+              </a>
+              」を作った後に暗号通貨やDaapsにハマりました。中でもイーサリアムが好きで、せっせとERC20トークンのAirDropをしたり、
+              <a 
+                href={'https://www.cryptokitties.co/profile/0x9ddb22480bd6f3d56de73457fe657520d5da6693'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CryptoKitties
+              </a>
+              や
+              <a 
+                href={'https://blockchaincuties.com/pets_my'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                BlockchainCuties
+              </a>
+              で遊んでました。
+              また、Web3.jsを使ってイーサリアムのガス相場を取得したり、入力されたアドレスのETH残高を取得できるLINEボット「
+              <a 
+                href={'https://line.me/R/ti/p/%40hbi0385s'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                暗号くん
+              </a>
+              」も作りました。
+              <br /><br />
               <h2 style={styles.sub}>終わりに</h2>
+              主にフロントエンドはReact、React-native、Typescript、サーバサイドはNode.js、Django、Railsを使っています。
               ここに挙げたオリジナルサービスは、デザインから開発まで全て私が作っています。
-              <span className='blue'>作ったサービス</span>のリンクがこのページの下の方にあるのでご覧ください。
+              作ったサービスのリンクがこのページの下の方にあるのでご覧ください。
               <br /><br /><br />
                 <div style={{ width: '200px', marginLeft: 'auto', marginRight: 'auto' }}>
                 <a
