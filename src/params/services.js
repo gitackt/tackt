@@ -1,13 +1,5 @@
 export const listData = [
   {
-    name: "Violet",
-    status: "github",
-    complete: true,
-    url: "https://github.com/gitackt/violet",
-    image: "/images/services/violet.png",
-    info: "形態素解析とマルコフ連鎖で自動生成した文章をWordpressに自動投稿するシステムです。",
-  },
-  {
     name: "Babel Bubble",
     status: "active",
     complete: true,
@@ -54,6 +46,14 @@ export const listData = [
     url: "https://v-cu.com",
     image: "/images/services/vcu.png",
     info: "仮想通貨のポートフォリオ管理サービスです。複数の取引所とAPI連携を行い自動でデータを取得します。",
+  },
+  {
+    name: "Violet",
+    status: "github",
+    complete: true,
+    url: "https://github.com/gitackt/violet",
+    image: "/images/services/violet.png",
+    info: "形態素解析とマルコフ連鎖で自動生成した文章をWordpressに自動投稿するシステムです。",
   },
   {
     name: "Freesia",
