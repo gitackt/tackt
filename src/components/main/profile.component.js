@@ -119,7 +119,6 @@ export class ProfileComponent extends PureComponent {
                   <li>スマホアプリの開発 (2019 ~ )</li>
                   <li>ブログを運営する (2018 ~ )</li>
                   <li>自動トレードを作る（2016 ~ ）</li>
-                  <li>暗号通貨にハマる（2018）</li>
                 </ui>
               </div>
               <h2 style={styles.sub}>はじめに (2015 ~ )</h2>
@@ -173,11 +172,6 @@ export class ProfileComponent extends PureComponent {
               」の開発に約１年参加しています。<br /><br /><br />
               <h2 style={styles.sub}>サービスを開発する (2017 ~ )</h2>
               <h3>・VCU（2017 ~ ）</h3>
-              <img
-                style={styles.subimage}
-                src={'/images/vcu_info.png'}
-                alt={'vcu_info'}
-              /><br /><br />
               2017年の冬といえば仮想通貨バブルですが、
               複数の取引所にある仮想通貨の総額を簡単にチェックできるサービス
               「
@@ -246,7 +240,7 @@ export class ProfileComponent extends PureComponent {
               >
                 Quoine
               </a>
-              です。<br /><br />
+              です。
               また、
               <a 
                 href={'https://www.bitcoin.com/'}
@@ -263,8 +257,7 @@ export class ProfileComponent extends PureComponent {
               >
                 Ethereum
               </a>
-              に関しては、アドレスを入力すればブロックチェーンから直接残高を取得できます。             
-              VCUは初めてリリースした本格的なWebアプリケーションであり、サーバやインフラに関する経験を積む事が出来ました。  <br /><br />
+              に関しては、アドレスを入力すればブロックチェーンから直接残高を取得できます。<br /><br />
 
               <h3>・Babel bubble（2018 ~ ）</h3>
               <img
@@ -357,11 +350,6 @@ export class ProfileComponent extends PureComponent {
               <br /><br />
               <h2 style={styles.sub}>ブログを運営する (2018 ~ )</h2>
               <h3>・人生は運ゲー（2018 ~ ）</h3>
-              <img
-                style={styles.subimage}
-                src={'/images/mone_info.png'}
-                alt={'mone_info'}
-              /><br /><br /><br />
               大学3年の前期、<span className='blue'>「サーバ代が負担になる」</span>問題について真剣に考え始め、新たな収入源としてブログを作ることにしました。
               現在はこのブログの
               <a 
@@ -371,7 +359,7 @@ export class ProfileComponent extends PureComponent {
               >
                 Adsence
               </a>
-              収入のみでサーバ代を賄えています。ちなみに、ブログを運営する事でSEO対策やWordpress最適化の知識がつきました。   
+              収入のみでサーバ代を賄えています。  
               ブログはこちら → 「
               <a 
                 href={'https://monetizealchemist.com/'}
@@ -380,61 +368,10 @@ export class ProfileComponent extends PureComponent {
               >
                 人生は運ゲー
               </a>」<br /><br /><br />
-              ブログに使えるかと思い、文章自動生成のプログラムもいくつか作りました。
-              形態素解析で自動生成するプログラム「
-              <a 
-                href={'https://github.com/gitackt/violet'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Violet 
-              </a>
-             」（バックグラウンドで動かしてWordpressにそのまま投稿させ続ける事もできる）。
-             一旦google翻訳で英語にしてから日本語に戻すこと自動リライトするプログラム「
-              <a 
-                href={'https://github.com/gitackt/freesia'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Freesia 
-              </a>」<br /><br />
               <h2 style={styles.sub}>自動トレードを作る（2016 ~ ）</h2>
-              <h3>・機械学習でFX（2016）</h3>
-              <img
-                style={styles.subimage}
-                src={'/images/chart_color.png'}
-                alt={'chart_color'}
-              /><br /><br /><br />
-              機械学習が流行ってたので、Chainerというpythonのライブラリを使ってそれっぽいものを作ってみました。
-              <a 
-                href={'https://www.dukascopy.jp/marketwatch/historical/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                dukascopy
-              </a>
-              というサイトが提供している為替のヒストリカルデータを学習させて、
-              <a 
-                href={'https://www.oanda.jp/trade/practice/openaccountv20.do?p=0'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Oanda
-              </a>
-              というFX業者のデモ口座で何日か運用してみましたが全然儲かりませんでした。（やり方間違えた？）
-              <br /><br />
-              ・
-              <a 
-                href={'https://github.com/gitackt/fx_with_deep'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                機械学習させたデータでFXを取引するコード
-              </a>
-              <br /><br />
               <h3>・財務データスクレイピング（2017）</h3>
               今度はファンダメンタル分析をしてみようと思い、財務データやマーケット情報をスクレイピングしてくるプログラムを作りました。
-              今度は取ってくるだけ取ってきて、データだけが溜まりました。<br /><br />
+              取ってくるだけ取ってきて、データだけが溜まりました。<br /><br />
               ・
               <a 
                 href={'https://github.com/gitackt/tsubaki/blob/master/research/lib/scraping/financial_infomation.py'}
@@ -474,43 +411,6 @@ export class ProfileComponent extends PureComponent {
               >
                 ボリンジャーバンドで考えるテクニカル投資戦略でFX自動トレードを作ってみた
               </a>
-              <br /><br />
-              <h2 style={styles.sub}>暗号通貨にハマる（2018）</h2>
-              相場は暴落していましたが、
-              「
-              <a 
-                href={'https://v-cu.com'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                VCU（ブイキュー）
-              </a>
-              」を作った後に暗号通貨やDaapsにハマりました。中でもイーサリアムが好きで、せっせとERC20トークンのAirDropをしたり、
-              <a 
-                href={'https://www.cryptokitties.co/profile/0x9ddb22480bd6f3d56de73457fe657520d5da6693'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                CryptoKitties
-              </a>
-              や
-              <a 
-                href={'https://blockchaincuties.com/pets_my'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                BlockchainCuties
-              </a>
-              で遊んでました。
-              また、Web3.jsを使ってイーサリアムのガス相場を取得したり、入力されたアドレスのETH残高を取得できるLINEボット「
-              <a 
-                href={'https://line.me/R/ti/p/%40hbi0385s'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                暗号くん
-              </a>
-              」も作りました。
               <br /><br />
               <h2 style={styles.sub}>終わりに</h2>
               主にフロントエンドはReact、React-native、Typescript、サーバサイドはNode.js、Django、Railsを使っています。

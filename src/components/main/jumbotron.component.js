@@ -7,21 +7,21 @@ class JumbotronComponent extends PureComponent {
     const styles = {
       topImage: {
         width: '80%',
-        maxWidth: '400px',
+        maxWidth: '450px',
         marginTop: '30px',
         marginLeft: 'auto',
         marginRight: 'auto',
       },
       button: {
-        height: '30px',
-        width: '80%',
+        height: '20px',
+        width: '100px',
         borderRadius: '5px',
         background: '#FFAF00',
         marginLeft: 'auto',
         marginRight: 'auto',
         color: 'white',
-        fontSize: '18px',
-        padding: '15px',
+        fontSize: '14px',
+        padding: '10px',
         textDecoration: 'none',
         marginTop: '10px',
         border: 'solid 3px #eda50b',
@@ -29,15 +29,15 @@ class JumbotronComponent extends PureComponent {
         borderBottom: 'solid 4px #eda50b',
       },
       twitter: {
-        height: '30px',
-        width: '80%',
+        height: '20px',
+        width: '100px',
         borderRadius: '5px',
         background: '#35d3ff',
         marginLeft: 'auto',
         marginRight: 'auto',
         color: 'white',
-        fontSize: '18px',
-        padding: '15px',
+        fontSize: '14px',
+        padding: '10px',
         textDecoration: 'none',
         marginTop: '10px',
         border: 'solid 3px #2ac3ed',
@@ -55,28 +55,34 @@ class JumbotronComponent extends PureComponent {
           src={'/images/profile.png'}
           alt={'top'}
         />
-        <div style={{ width: '200px', marginTop: '60px', marginLeft: 'auto', marginRight: 'auto' }}>
-          <a
-            href={'https://twitter.com/picos_tackt?lang=ja'}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: 'none', textAlign: 'center' }}
-          >
-            <div style={styles.twitter}>
-              Twitter
-            </div>
-          </a>
-          <a
-            href={'https://github.com/gitackt'}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: 'none', textAlign: 'center' }}
-          >
-            <div style={styles.button}>
-              Github
-            </div>
-          </a>
-        </div>
+        <table  style={{ marginTop: '60px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <tr>
+          <td>
+            <a
+              href={'https://twitter.com/picos_tackt?lang=ja'}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none', textAlign: 'center' }}
+            >
+              <div style={styles.twitter}>
+                Twitter
+              </div>
+            </a>
+          </td>
+          <td>
+            <a
+              href={'https://github.com/gitackt'}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none', textAlign: 'center' }}
+            >
+              <div style={styles.button}>
+                Github
+              </div>
+            </a>
+          </td>
+          </tr>
+        </table>
       </div>
     );
   }
