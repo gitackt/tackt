@@ -1,8 +1,15 @@
 export const galleryData = [
   {
+    name: "Honey ball",
+    number: 4,
+    term: "2019/5 ~ ",
+    image: "/images/gallery/honey.png",
+    info: "はちみつボールのイラストです。",
+  },
+  {
     name: "TPOK in jelly",
     number: 4,
-    term: "2019/4 ~ ",
+    term: "2019/4 ~ 2019/5",
     image: "/images/gallery/tpok.png",
     info: "タピオカが入ったゼリーのイラストです。",
   },
