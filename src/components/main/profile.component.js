@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import Grid from '@material-ui/core/Grid';
+import { NameComponent } from './name.component';
 
 const styles = {
   container: {
@@ -97,6 +98,15 @@ const styles = {
   coin: {
     maxWidth: '50px',
     borderRadius: '10px',
+  },
+  sub_3: {
+    borderLeft: 'solid 4px #2AD8C9',
+    padding: '5px',
+    paddingLeft: '15px',
+    margin: '5px',
+    marginTop: '20px',
+    marginBottom: '10px',
+    fontWeight: 'normal',
   }
 };
 
@@ -109,18 +119,16 @@ export class ProfileComponent extends PureComponent {
           <Grid container justify={'center'} style={styles.container}>
             <Grid item xs={12} md={8} style={styles.gridLeft}>
               <div style={styles.content}>
-              <h1 style={styles.mainTitle}>自己紹介</h1>
-              <div style={styles.eyeCatch}>
+              {/* <h1 style={styles.mainTitle}>自己紹介</h1> */}
+              {/* <div style={styles.eyeCatch}>
                 <h3>目次</h3>
                 <ui>
                   <li>はじめに (2015 ~ )</li>
-                  <li>インターンで働く (2017 ~ )</li>
-                  <li>サービスを開発する (2017 ~ )</li>
-                  <li>スマホアプリの開発 (2019 ~ )</li>
-                  <li>ブログを運営する (2018 ~ )</li>
-                  <li>自動トレードを作る（2016 ~ ）</li>
+                  <li>インターン (2017 ~ )</li>
+                  <li>サービス開発 (2017 ~ )</li>
+                  <li>その他 (2016 ~ )</li>
                 </ui>
-              </div>
+              </div> */}
               <h2 style={styles.sub}>はじめに (2015 ~ )</h2>
               三橋拓人(
               <a 
@@ -139,9 +147,24 @@ export class ProfileComponent extends PureComponent {
                 株式会社MICIN
               </a>
                でエンジニアインターンをしながら、個人でWebサービスやアプリを開発しています。
-              高校3年からプログラミングを始めて独学で技術を身につけました。<br /><br /><br />
-              <h2 style={styles.sub}>インターンで働く (2017 ~ )</h2>
-              <h3>・Whatzmoney（2017 ~ 2018）</h3>
+              高校3年からプログラミングを始めて独学で技術を身につけました。
+              このサイトに載せてあるオリジナルサービスは、デザインから開発まで全て私が作っています。
+              作ったサービスのリンクがこのページの下の方にあるのでご覧ください。
+              <NameComponent />
+              <br /><br />
+              <h2 style={styles.sub}>インターン</h2>
+              <h3 style={styles.sub_3}>MICIN（2018 ~ ）</h3>
+              大学3年になった頃、駆け出しの頃から仕事をいただいていた方にMICINを紹介してもらいました。
+              MICINではReact-nativeやAngularを使った遠隔診療アプリケーション「
+              <a 
+                href={'https://curon.co/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Curon
+              </a>
+              」の開発に約１年参加しています。<br /><br />
+              <h3 style={styles.sub_3}>Whatzmoney（2017 ~ 2018）</h3>
               大学2年の頃、チーム開発を学ぶために企業でインターンとして働くことにしました。
               <a 
                 href={'https://rank.whatzmoney.com/'}
@@ -158,20 +181,121 @@ export class ProfileComponent extends PureComponent {
               >
                 Ruby on Rails
               </a>
-              を使った「住宅ローン比較サイト」の開発に約１年参加しました。<br /><br />
-              <h3>・MICIN（2018 ~ ）</h3>
-              大学3年になった頃、駆け出しの頃から仕事をいただいていた方にMICINを紹介してもらいました。
-              MICINではReact-nativeやAngularを使った遠隔診療アプリケーション「
+              を使った「住宅ローン比較サイト」の開発に約１年参加しました。<br /><br /><br />
+              <h2 style={styles.sub}>サービス開発</h2>
+              <h3 style={styles.sub_3}>Props（2019）</h3>
+              2019年から<span className='blue'>スマホアプリの開発も始めました。</span>
+              「同じものを持っているのに、また買ってしまった」ということが多いので、持ち物管理アプリを作りました。<br /><br /><br />
+              <img
+                style={styles.subimage}
+                src={'/images/props_info.png'}
+                alt={'props_info'}
+              /><br /><br />
+              {/* <a 
+                href={''}
+                target="_blank"
+                rel="noopener noreferrer"
+              > */}
+                Props (iOS) Coming soon
+              {/* </a> */}
+              <br /><br />
               <a 
-                href={'https://curon.co/'}
+                href={'https://play.google.com/store/apps/details?id=com.gitackt.props'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Curon
+                Props (Android)
               </a>
-              」の開発に約１年参加しています。<br /><br /><br />
-              <h2 style={styles.sub}>サービスを開発する (2017 ~ )</h2>
-              <h3>・VCU（2017 ~ ）</h3>
+              <br /><br />
+              <a 
+                href={'https://note.mu/gitackt/n/n7fd91f76ba8a'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ドキュメント
+              </a>
+              <br /><br />
+              <h3 style={styles.sub_3}>Babel bubble（2018）</h3>
+              大学3年の夏、投資シミュレーションゲーム「
+              <a 
+                href={'https://babel-bubble.com/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Babel bubble
+              </a>
+              」を作りました。
+              プログラミングばかりしていますが、学校では金融を勉強しています。
+              お金のことに興味があり、3年の夏には
+              <a 
+                href={'https://www.saa.or.jp/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                証券アナリスト2次試験
+              </a>
+              にも合格しました。<br /><br />
+              <img
+                style={styles.subimage}
+                src={'/images/babel_info.png'}
+                alt={'babel_info'}
+              /><br /><br />
+              <img
+                style={styles.coin}
+                src={'/images/balls/bubble_coin.png'}
+                alt={'bubble'}
+              />
+              <img
+                style={styles.coin}
+                src={'/images/balls/gum_coin.png'}
+                alt={'bubble'}
+              />
+              <img
+                style={styles.coin}
+                src={'/images/balls/cake_coin.png'}
+                alt={'bubble'}
+              />
+              <img
+                style={styles.coin}
+                src={'/images/balls/honey_coin.png'}
+                alt={'bubble'}
+              />
+              <img
+                style={styles.coin}
+                src={'/images/balls/cocoa_coin.png'}
+                alt={'bubble'}
+              />
+              <img
+                style={styles.coin}
+                src={'/images/balls/mono_coin.png'}
+                alt={'bubble'}
+              />
+              <br /><br />
+              <h3 style={styles.sub_3}>人生は運ゲー（2018）</h3>
+              大学3年の前期、<span className='blue'>「サーバ代が負担になる」</span>問題について真剣に考え始め、新たな収入源としてブログを作ることにしました。
+              現在はこのブログの
+              <a 
+                href={'https://www.google.co.jp/adsense/start/#/?modal_active=none'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Adsence
+              </a>
+              収入のみでサーバ代を賄えています。  
+              ブログはこちら → 「
+              <a 
+                href={'https://monetizealchemist.com/'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                人生は運ゲー
+              </a>」<br /><br />
+              <img
+                style={styles.subimage}
+                src={'/images/mone_info.png'}
+                alt={'mone_info'}
+              /><br /><br />
+              <h3 style={styles.sub_3}>VCU（2017）</h3>
               2017年の冬といえば仮想通貨バブルですが、
               複数の取引所にある仮想通貨の総額を簡単にチェックできるサービス
               「
@@ -258,120 +382,13 @@ export class ProfileComponent extends PureComponent {
                 Ethereum
               </a>
               に関しては、アドレスを入力すればブロックチェーンから直接残高を取得できます。<br /><br />
-
-              <h3>・Babel bubble（2018 ~ ）</h3>
               <img
                 style={styles.subimage}
-                src={'/images/babel_info.png'}
-                alt={'babel_info'}
+                src={'/images/vcu_info.png'}
+                alt={'vcu_info'}
               /><br /><br />
-              大学3年の夏、投資シミュレーションゲーム「
-              <a 
-                href={'https://babel-bubble.com/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Babel bubble
-              </a>
-              」を作りました。
-              プログラミングばかりしていますが、学校では金融を勉強しています。
-              お金のことに興味があり、3年の夏には
-              <a 
-                href={'https://www.saa.or.jp/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                証券アナリスト2次試験
-              </a>
-              にも合格しました。<br /><br /><br />
-              <img
-                style={styles.coin}
-                src={'/images/balls/bubble_coin.png'}
-                alt={'bubble'}
-              />
-              <img
-                style={styles.coin}
-                src={'/images/balls/gum_coin.png'}
-                alt={'bubble'}
-              />
-              <img
-                style={styles.coin}
-                src={'/images/balls/cake_coin.png'}
-                alt={'bubble'}
-              />
-              <img
-                style={styles.coin}
-                src={'/images/balls/honey_coin.png'}
-                alt={'bubble'}
-              />
-              <img
-                style={styles.coin}
-                src={'/images/balls/cocoa_coin.png'}
-                alt={'bubble'}
-              />
-              <img
-                style={styles.coin}
-                src={'/images/balls/mono_coin.png'}
-                alt={'bubble'}
-              />
-              <br /><br />          
-              <h2 style={styles.sub}>スマホアプリの開発 (2019 ~ )</h2>
-              <h3>・Props（2019 ~ ）</h3>
-              2019年から<span className='blue'>スマホアプリの開発も始めました。</span>
-              「同じものを持っているのに、また買ってしまった」ということが多いので、持ち物管理アプリを作りました。<br /><br /><br />
-              <img
-                style={styles.subimage}
-                src={'/images/props_info.png'}
-                alt={'props_info'}
-              /><br /><br />
-              {/* <a 
-                href={''}
-                target="_blank"
-                rel="noopener noreferrer"
-              > */}
-                Props (iOS) Coming soon
-              {/* </a> */}
-              <br /><br />
-              <a 
-                href={'https://play.google.com/store/apps/details?id=com.gitackt.props'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Props (Android)
-              </a>
-              <br /><br />
-              <a 
-                href={'https://note.mu/gitackt/n/n7fd91f76ba8a'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ドキュメント
-              </a>
-              <br /><br />
-              <h2 style={styles.sub}>ブログを運営する (2018 ~ )</h2>
-              <h3>・人生は運ゲー（2018 ~ ）</h3>
-              大学3年の前期、<span className='blue'>「サーバ代が負担になる」</span>問題について真剣に考え始め、新たな収入源としてブログを作ることにしました。
-              現在はこのブログの
-              <a 
-                href={'https://www.google.co.jp/adsense/start/#/?modal_active=none'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Adsence
-              </a>
-              収入のみでサーバ代を賄えています。  
-              ブログはこちら → 「
-              <a 
-                href={'https://monetizealchemist.com/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                人生は運ゲー
-              </a>」<br /><br /><br />
-              <h2 style={styles.sub}>自動トレードを作る（2016 ~ ）</h2>
-              <h3>・財務データスクレイピング（2017）</h3>
-              今度はファンダメンタル分析をしてみようと思い、財務データやマーケット情報をスクレイピングしてくるプログラムを作りました。
-              取ってくるだけ取ってきて、データだけが溜まりました。<br /><br />
+              <h2 style={styles.sub}>その他</h2>
+              <h3 style={styles.sub_3}>財務データスクレイピング（2017）</h3>
               ・
               <a 
                 href={'https://github.com/gitackt/tsubaki/blob/master/research/lib/scraping/financial_infomation.py'}
@@ -390,20 +407,17 @@ export class ProfileComponent extends PureComponent {
                 〇〇証券から株式・ETF・REITの情報を取ってくるコード
               </a>
               <br /><br />
-              <h3>・シンプルに自動トレード（2018）</h3>
-              考えてもあれなので、単純にボリンジャーバンドで逆張りするプログラムを作って何日か運用してみました。<br />
-              まさかの、これが少し儲かりました。
-              <br /><br />
+              <h3 style={styles.sub_3}>シンプルに自動トレード（2018）</h3>
               ・
               <a 
-                href={'https://github.com/gitackt/tsubaki/tree/master/trading/lib'}
+                href={'https://github.com/gitackt/tsubaki/blob/master/trading/lib/order.py'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 ボリンジャーバンド逆張りトレードのコード
               </a>
-              <br /><br /><br />
-              詳しく解説した記事はこちらです<br />
+              <br />
+              ・
               <a 
                 href={'https://monetizealchemist.com/2018/03/10/%E3%83%9C%E3%83%AA%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%90%E3%83%B3%E3%83%89%E3%81%A7%E8%80%83%E3%81%88%E3%82%8B%E3%83%86%E3%82%AF%E3%83%8B%E3%82%AB%E3%83%AB%E6%8A%95%E8%B3%87%E6%88%A6%E7%95%A5/'}
                 target="_blank"
@@ -411,34 +425,7 @@ export class ProfileComponent extends PureComponent {
               >
                 ボリンジャーバンドで考えるテクニカル投資戦略でFX自動トレードを作ってみた
               </a>
-              <br /><br />
-              <h2 style={styles.sub}>終わりに</h2>
-              主にフロントエンドはReact、React-native、Typescript、サーバサイドはNode.js、Django、Railsを使っています。
-              ここに挙げたオリジナルサービスは、デザインから開発まで全て私が作っています。
-              作ったサービスのリンクがこのページの下の方にあるのでご覧ください。
               <br /><br /><br />
-                <div style={{ width: '200px', marginLeft: 'auto', marginRight: 'auto' }}>
-                <a
-                  href={'https://twitter.com/picos_tackt?lang=ja'}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: 'none', textAlign: 'center' }}
-                >
-                  <div style={styles.twitter}>
-                    Twitter
-                  </div>
-                </a>
-                <a
-                  href={'https://github.com/gitackt'}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: 'none', textAlign: 'center' }}
-                >
-                  <div style={styles.button}>
-                    Github
-                  </div>
-                </a>
-              </div>
               </div>
               <div style={styles.profile}>
                 <h3>三橋拓人（みつはしたくと）</h3>

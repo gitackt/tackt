@@ -6,7 +6,6 @@ import GalleryComponent from './components/main/gallery.component';
 import { ProfileComponent } from './components/main/profile.component';
 import { PriceComponent } from './components/main/price.component';
 import JumbotronComponent from './components/main/jumbotron.component';
-import { NameComponent } from './components/main/name.component';
 import { Route, Switch, BrowserRouter as Router, Redirect } from 'react-router-dom';
 
 const styles = {
@@ -23,7 +22,6 @@ class LandingComponent extends Component {
       <div style={styles.background}>
         <NavigationComponent />
         <JumbotronComponent />
-        <NameComponent />
         <ProfileComponent />
         <PriceComponent />
         <ServiceComponent />

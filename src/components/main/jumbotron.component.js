@@ -11,6 +11,7 @@ class JumbotronComponent extends PureComponent {
         marginTop: '30px',
         marginLeft: 'auto',
         marginRight: 'auto',
+        borderRadius: '350px',
       },
       button: {
         height: '20px',
@@ -32,7 +33,7 @@ class JumbotronComponent extends PureComponent {
         height: '20px',
         width: '100px',
         borderRadius: '5px',
-        background: '#35d3ff',
+        background: '#2AD8C9',
         marginLeft: 'auto',
         marginRight: 'auto',
         color: 'white',
@@ -40,9 +41,9 @@ class JumbotronComponent extends PureComponent {
         padding: '10px',
         textDecoration: 'none',
         marginTop: '10px',
-        border: 'solid 3px #2ac3ed',
-        borderTop: 'solid 2px #2ac3ed',
-        borderBottom: 'solid 4px #2ac3ed',
+        border: 'solid 3px #26ccbb',
+        borderTop: 'solid 2px #26ccbb',
+        borderBottom: 'solid 4px #26ccbb',
       },
     };
 
@@ -52,7 +53,7 @@ class JumbotronComponent extends PureComponent {
         <div className='portfolio'><span style={{ color: '#2dd8ca' }}>Portfolio</span> Website</div>
         <img
           style={styles.topImage}
-          src={'/images/profile.png'}
+          src={'/images/gallery/honey.png'}
           alt={'top'}
         />
         <table  style={{ marginTop: '60px', marginLeft: 'auto', marginRight: 'auto' }}>

@@ -123,7 +123,7 @@ export class NameComponent extends PureComponent {
   render() {
 
     return (
-      <div style={{ marginTop: '50px', marginBottom: '5px', padding: '30px', maxWidth: '900px', marginLeft: 'auto', marginRight: 'auto' }}>
+      <div style={{ marginTop: '30px', marginBottom: '5px', padding: '30px', maxWidth: '900px', marginLeft: 'auto', marginRight: 'auto' }}>
         <Slider {...this.settings}>
           {listData.map((each) => (
             <EachComponent data={each} />
