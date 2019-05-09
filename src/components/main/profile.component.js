@@ -161,7 +161,7 @@ export class ProfileComponent extends PureComponent {
               </h3>
               Ruby on Railsを使った「住宅ローン比較サイト」の開発に約１年参加しました。<br /><br /><br />
               <h2 style={styles.sub}>サービス開発</h2>
-              <h3 style={styles.sub_3}>Props（2019）</h3>
+              {/* <h3 style={styles.sub_3}>Props（2019）</h3>
               持ち物管理アプリを作りました。<br /><br />
               <a 
                 href={'https://itunes.apple.com/us/app/props-%E6%8C%81%E3%81%A1%E7%89%A9%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA/id1460285997?l=ja&ls=1&mt=8'}
@@ -183,7 +183,7 @@ export class ProfileComponent extends PureComponent {
                 style={styles.subimage}
                 src={'/images/props_info.png'}
                 alt={'props_info'}
-              /><br /><br />
+              /><br /><br /> */}
 
               <h3 style={styles.sub_3}>Babel bubble（2018）</h3>
               投資シミュレーションゲームを作りました。<br /><br />
@@ -231,7 +231,7 @@ export class ProfileComponent extends PureComponent {
                 alt={'bubble'}
               />
               <br /><br />
-              <h3 style={styles.sub_3}>人生は運ゲー（2018）</h3>
+              {/* <h3 style={styles.sub_3}>人生は運ゲー（2018）</h3>
               サーバ代を稼ぐためブログを作りました。<br /><br />
               <a 
                 href={'https://monetizealchemist.com/'}
@@ -245,7 +245,7 @@ export class ProfileComponent extends PureComponent {
                 style={styles.subimage}
                 src={'/images/mone_info.png'}
                 alt={'mone_info'}
-              /><br /><br />
+              /><br /><br /> */}
               <h3 style={styles.sub_3}>VCU（2017）</h3>
               複数の取引所にある仮想通貨の総額を簡単にチェックできるサービスを作りました。<br /><br />
               <a 
