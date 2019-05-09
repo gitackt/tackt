@@ -119,17 +119,7 @@ export class ProfileComponent extends PureComponent {
           <Grid container justify={'center'} style={styles.container}>
             <Grid item xs={12} md={8} style={styles.gridLeft}>
               <div style={styles.content}>
-              {/* <h1 style={styles.mainTitle}>自己紹介</h1> */}
-              {/* <div style={styles.eyeCatch}>
-                <h3>目次</h3>
-                <ui>
-                  <li>はじめに (2015 ~ )</li>
-                  <li>インターン (2017 ~ )</li>
-                  <li>サービス開発 (2017 ~ )</li>
-                  <li>その他 (2016 ~ )</li>
-                </ui>
-              </div> */}
-              <h2 style={styles.sub}>はじめに (2015 ~ )</h2>
+              <h2 style={styles.sub}>はじめに</h2>
               三橋拓人(
               <a 
                 href={'https://twitter.com/picos_tackt?lang=ja'}
@@ -138,24 +128,20 @@ export class ProfileComponent extends PureComponent {
               >
                 @picos_tackt
               </a>
-              )です。 
-              <a 
-                href={'https://micin.jp/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                株式会社MICIN
-              </a>
-               でエンジニアインターンをしながら、個人でWebサービスやアプリを開発しています。
-              高校3年からプログラミングを始めて独学で技術を身につけました。
-              このサイトに載せてあるオリジナルサービスは、デザインから開発まで全て私が作っています。
-              作ったサービスのリンクがこのページの下の方にあるのでご覧ください。
+              )です。個人でWebサービスやアプリを開発しています。
               <NameComponent />
               <br /><br />
               <h2 style={styles.sub}>インターン</h2>
-              <h3 style={styles.sub_3}>MICIN（2018 ~ ）</h3>
-              大学3年になった頃、駆け出しの頃から仕事をいただいていた方にMICINを紹介してもらいました。
-              MICINではReact-nativeやAngularを使った遠隔診療アプリケーション「
+              <h3 style={styles.sub_3}>
+                <a 
+                  href={'https://micin.jp/'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  MICIN（2018 ~ ）
+                </a>
+              </h3>
+              React-nativeやAngularを使った遠隔診療アプリケーション「
               <a 
                 href={'https://curon.co/'}
                 target="_blank"
@@ -164,40 +150,26 @@ export class ProfileComponent extends PureComponent {
                 Curon
               </a>
               」の開発に約１年参加しています。<br /><br />
-              <h3 style={styles.sub_3}>Whatzmoney（2017 ~ 2018）</h3>
-              大学2年の頃、チーム開発を学ぶために企業でインターンとして働くことにしました。
+              <h3 style={styles.sub_3}>
               <a 
-                href={'https://rank.whatzmoney.com/'}
+                href={'https://micin.jp/'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                株式会社Whatzmoney
+                Whatzmoney（2017 ~ 2018）
               </a>
-              で働かせてもらえることになり、
-              <a 
-                href={'https://rubyonrails.org/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ruby on Rails
-              </a>
-              を使った「住宅ローン比較サイト」の開発に約１年参加しました。<br /><br /><br />
+              </h3>
+              Ruby on Railsを使った「住宅ローン比較サイト」の開発に約１年参加しました。<br /><br /><br />
               <h2 style={styles.sub}>サービス開発</h2>
               <h3 style={styles.sub_3}>Props（2019）</h3>
-              2019年から<span className='blue'>スマホアプリの開発も始めました。</span>
-              「同じものを持っているのに、また買ってしまった」ということが多いので、持ち物管理アプリを作りました。<br /><br /><br />
-              <img
-                style={styles.subimage}
-                src={'/images/props_info.png'}
-                alt={'props_info'}
-              /><br /><br />
-              {/* <a 
-                href={''}
+              持ち物管理アプリを作りました。<br /><br />
+              <a 
+                href={'https://itunes.apple.com/us/app/props-%E6%8C%81%E3%81%A1%E7%89%A9%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA/id1460285997?l=ja&ls=1&mt=8'}
                 target="_blank"
                 rel="noopener noreferrer"
-              > */}
-                Props (iOS) Coming soon
-              {/* </a> */}
+              >
+                Props (iOS)
+              </a>
               <br /><br />
               <a 
                 href={'https://play.google.com/store/apps/details?id=com.gitackt.props'}
@@ -207,16 +179,14 @@ export class ProfileComponent extends PureComponent {
                 Props (Android)
               </a>
               <br /><br />
-              <a 
-                href={'https://note.mu/gitackt/n/n7fd91f76ba8a'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ドキュメント
-              </a>
-              <br /><br />
+              <img
+                style={styles.subimage}
+                src={'/images/props_info.png'}
+                alt={'props_info'}
+              /><br /><br />
+
               <h3 style={styles.sub_3}>Babel bubble（2018）</h3>
-              大学3年の夏、投資シミュレーションゲーム「
+              投資シミュレーションゲームを作りました。<br /><br />
               <a 
                 href={'https://babel-bubble.com/'}
                 target="_blank"
@@ -224,17 +194,7 @@ export class ProfileComponent extends PureComponent {
               >
                 Babel bubble
               </a>
-              」を作りました。
-              プログラミングばかりしていますが、学校では金融を勉強しています。
-              お金のことに興味があり、3年の夏には
-              <a 
-                href={'https://www.saa.or.jp/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                証券アナリスト2次試験
-              </a>
-              にも合格しました。<br /><br />
+              <br /><br />
               <img
                 style={styles.subimage}
                 src={'/images/babel_info.png'}
@@ -272,99 +232,30 @@ export class ProfileComponent extends PureComponent {
               />
               <br /><br />
               <h3 style={styles.sub_3}>人生は運ゲー（2018）</h3>
-              大学3年の前期、<span className='blue'>「サーバ代が負担になる」</span>問題について真剣に考え始め、新たな収入源としてブログを作ることにしました。
-              現在はこのブログの
-              <a 
-                href={'https://www.google.co.jp/adsense/start/#/?modal_active=none'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Adsence
-              </a>
-              収入のみでサーバ代を賄えています。  
-              ブログはこちら → 「
+              サーバ代を稼ぐためブログを作りました。<br /><br />
               <a 
                 href={'https://monetizealchemist.com/'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 人生は運ゲー
-              </a>」<br /><br />
+              </a>
+              <br /><br />
               <img
                 style={styles.subimage}
                 src={'/images/mone_info.png'}
                 alt={'mone_info'}
               /><br /><br />
               <h3 style={styles.sub_3}>VCU（2017）</h3>
-              2017年の冬といえば仮想通貨バブルですが、
-              複数の取引所にある仮想通貨の総額を簡単にチェックできるサービス
-              「
+              複数の取引所にある仮想通貨の総額を簡単にチェックできるサービスを作りました。<br /><br />
               <a 
                 href={'https://v-cu.com'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 VCU（ブイキュー）
-              </a>
-              」を作りました。
-              取引所のAPIキーを入力するだけで残高を取得できます。対応している取引所は
-              ・<a 
-                href={'https://bitflyer.com/ja-jp/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Bitflyer
-              </a>
-              ・<a 
-                href={'https://www.binance.com/en'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Binance
-              </a>
-              ・<a 
-                href={'https://poloniex.com/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Poloniex
-              </a>
-              ・<a 
-                href={'https://bitbank.cc/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Bitbank
-              </a>
-              ・<a 
-                href={'https://coincheck.com/ja/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Coincheck
-              </a>
-              ・<a 
-                href={'https://zaif.jp/?lang=ja'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Zaif
-              </a>
-              ・<a 
-                href={'https://www.kucoin.com/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Kucoin
-              </a>
-              ・<a 
-                href={'https://www.liquid.com/ja/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Quoine
-              </a>
-              です。
+              </a><br /><br />
+              主要な8取引所の仮想通貨残高をAPIキーを入力するだけで取得できます。
               また、
               <a 
                 href={'https://www.bitcoin.com/'}
@@ -386,9 +277,9 @@ export class ProfileComponent extends PureComponent {
                 style={styles.subimage}
                 src={'/images/vcu_info.png'}
                 alt={'vcu_info'}
-              /><br /><br />
+              />
+              <br /><br />
               <h2 style={styles.sub}>その他</h2>
-              <h3 style={styles.sub_3}>財務データスクレイピング（2017）</h3>
               ・
               <a 
                 href={'https://github.com/gitackt/tsubaki/blob/master/research/lib/scraping/financial_infomation.py'}
@@ -406,8 +297,7 @@ export class ProfileComponent extends PureComponent {
               >
                 〇〇証券から株式・ETF・REITの情報を取ってくるコード
               </a>
-              <br /><br />
-              <h3 style={styles.sub_3}>シンプルに自動トレード（2018）</h3>
+              <br />
               ・
               <a 
                 href={'https://github.com/gitackt/tsubaki/blob/master/trading/lib/order.py'}
@@ -415,15 +305,6 @@ export class ProfileComponent extends PureComponent {
                 rel="noopener noreferrer"
               >
                 ボリンジャーバンド逆張りトレードのコード
-              </a>
-              <br />
-              ・
-              <a 
-                href={'https://monetizealchemist.com/2018/03/10/%E3%83%9C%E3%83%AA%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%90%E3%83%B3%E3%83%89%E3%81%A7%E8%80%83%E3%81%88%E3%82%8B%E3%83%86%E3%82%AF%E3%83%8B%E3%82%AB%E3%83%AB%E6%8A%95%E8%B3%87%E6%88%A6%E7%95%A5/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ボリンジャーバンドで考えるテクニカル投資戦略でFX自動トレードを作ってみた
               </a>
               <br /><br /><br />
               </div>
@@ -445,7 +326,7 @@ export class ProfileComponent extends PureComponent {
                 <h4>技術</h4>
                 <p style={{ fontSize: '12px' }}>
                   Python, Ruby, Django, Rails, HTML, CSS, JavaScript, TypeScript, React, React-native, 
-                  Nginx, MySQL, Wordpress, PHP, Node, Docker, AWS, Angular, Vue,
+                  Nginx, MySQL, Wordpress, PHP, Node, Docker, AWS, Angular, Vue, Go,
                   Affinity Designer, Clip Studio
                 </p>
               </div>

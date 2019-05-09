@@ -7,7 +7,7 @@ class JumbotronComponent extends PureComponent {
     const styles = {
       topImage: {
         width: '80%',
-        maxWidth: '450px',
+        maxWidth: '350px',
         marginTop: '30px',
         marginLeft: 'auto',
         marginRight: 'auto',

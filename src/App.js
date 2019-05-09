@@ -23,9 +23,9 @@ class LandingComponent extends Component {
         <NavigationComponent />
         <JumbotronComponent />
         <ProfileComponent />
-        <PriceComponent />
         <ServiceComponent />
         <GalleryComponent />
+        <PriceComponent />
         <FooterComponent />
       </div>
     );

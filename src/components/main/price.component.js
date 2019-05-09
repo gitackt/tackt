@@ -94,6 +94,10 @@ export class PriceComponent extends PureComponent {
             </a>
           </Grid>
         </Grid>
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     );
   }

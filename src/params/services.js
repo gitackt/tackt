@@ -7,14 +7,14 @@ export const listData = [
     image: "/images/services/babelbubble.png",
     info: "無料で遊べる投資シミュレーションゲームです。架空のアイテムをゲーム内通貨で売買して遊びます。",
   },
-  // {
-  //   name: "Props iOS",
-  //   status: "ios",
-  //   complete: false,
-  //   url: "https://babel-bubble.com",
-  //   image: "/images/services/props.png",
-  //   info: "持ち物管理ができるiOSアプリです。自分の持ち物をアプリでまとめて管理できます。",
-  // },
+  {
+    name: "Props iOS",
+    status: "ios",
+    complete: true,
+    url: "https://itunes.apple.com/us/app/props-%E6%8C%81%E3%81%A1%E7%89%A9%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA/id1460285997?l=ja&ls=1&mt=8",
+    image: "/images/services/props.png",
+    info: "持ち物管理ができるiOSアプリです。自分の持ち物をアプリでまとめて管理できます。",
+  },
   {
     name: "Props Android",
     status: "android",
