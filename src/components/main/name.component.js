@@ -5,7 +5,6 @@ import { listData } from '../../params/services';
 const styles = {
   card: {
     width: '90%',
-    background: 'white',
     overflow: 'hidden',
     marginLeft: 'auto',
     marginRight: 'auto',

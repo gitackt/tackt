@@ -7,7 +7,6 @@ const styles = {
   card: {
     width: '95%',
     height: '380px',
-    background: 'white',
     overflow: 'hidden',
     marginLeft: 'auto',
     marginRight: 'auto',
@@ -107,7 +106,7 @@ class ServiceComponent extends PureComponent {
 
   render() {
     return (
-      <div style={{ paddingTop: '5px', textAlign: 'center', background: 'white' }}>
+      <div style={{ paddingTop: '5px', textAlign: 'center' }}>
         <h2 className='title'>Services</h2>
 
         <Grid container justify={'center'} className='container'>

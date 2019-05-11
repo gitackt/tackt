@@ -114,7 +114,7 @@ export class ProfileComponent extends PureComponent {
 
   render() {
     return (
-      <div style={{ background: 'white' }}>
+      <div>
         <div>
           <Grid container justify={'center'} style={styles.container}>
             <Grid item xs={12} md={8} style={styles.gridLeft}>
@@ -141,15 +141,7 @@ export class ProfileComponent extends PureComponent {
                   MICIN（2018 ~ ）
                 </a>
               </h3>
-              React-nativeやAngularを使った遠隔診療アプリケーション「
-              <a 
-                href={'https://curon.co/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Curon
-              </a>
-              」の開発に約１年参加しています。<br /><br />
+              React-nativeやAngularを使った遠隔診療アプリケーションの開発<br /><br />
               <h3 style={styles.sub_3}>
               <a 
                 href={'https://micin.jp/'}
@@ -159,7 +151,7 @@ export class ProfileComponent extends PureComponent {
                 Whatzmoney（2017 ~ 2018）
               </a>
               </h3>
-              Ruby on Railsを使った「住宅ローン比較サイト」の開発に約１年参加しました。<br /><br /><br />
+              Ruby on Railsを使った住宅ローン比較サイトの開発<br /><br /><br />
               <h2 style={styles.sub}>サービス開発</h2>
               {/* <h3 style={styles.sub_3}>Props（2019）</h3>
               持ち物管理アプリを作りました。<br /><br />
@@ -186,7 +178,7 @@ export class ProfileComponent extends PureComponent {
               /><br /><br /> */}
 
               <h3 style={styles.sub_3}>Babel bubble（2018）</h3>
-              投資シミュレーションゲームを作りました。<br /><br />
+              投資シミュレーションゲーム<br /><br />
               <a 
                 href={'https://babel-bubble.com/'}
                 target="_blank"
@@ -247,7 +239,7 @@ export class ProfileComponent extends PureComponent {
                 alt={'mone_info'}
               /><br /><br /> */}
               <h3 style={styles.sub_3}>VCU（2017）</h3>
-              複数の取引所にある仮想通貨の総額を簡単にチェックできるサービスを作りました。<br /><br />
+              仮想通貨の総額を簡単にチェックできるサービス<br /><br />
               <a 
                 href={'https://v-cu.com'}
                 target="_blank"
@@ -255,58 +247,12 @@ export class ProfileComponent extends PureComponent {
               >
                 VCU（ブイキュー）
               </a><br /><br />
-              主要な8取引所の仮想通貨残高をAPIキーを入力するだけで取得できます。
-              また、
-              <a 
-                href={'https://www.bitcoin.com/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Bitcoin
-              </a>
-              と
-              <a 
-                href={'https://www.ethereum.org/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ethereum
-              </a>
-              に関しては、アドレスを入力すればブロックチェーンから直接残高を取得できます。<br /><br />
               <img
                 style={styles.subimage}
                 src={'/images/vcu_info.png'}
                 alt={'vcu_info'}
               />
               <br /><br />
-              <h2 style={styles.sub}>その他</h2>
-              ・
-              <a 
-                href={'https://github.com/gitackt/tsubaki/blob/master/research/lib/scraping/financial_infomation.py'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                EDINETから財務データを取ってくるコード
-              </a>
-              <br />
-              ・
-              <a 
-                href={'https://github.com/gitackt/tsubaki/blob/master/research/lib/scraping/stock_scraping.py'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                〇〇証券から株式・ETF・REITの情報を取ってくるコード
-              </a>
-              <br />
-              ・
-              <a 
-                href={'https://github.com/gitackt/tsubaki/blob/master/trading/lib/order.py'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ボリンジャーバンド逆張りトレードのコード
-              </a>
-              <br /><br /><br />
               </div>
               <div style={styles.profile}>
                 <h3>三橋拓人（みつはしたくと）</h3>

@@ -4,7 +4,6 @@ import Grid from '@material-ui/core/Grid';
 const styles = {
   container: {
     textAlign: 'left',
-    background: 'white',
     marginTop: '30px',
   },
   grid: {
@@ -33,8 +32,8 @@ export class PriceComponent extends PureComponent {
 
   render() {
     return (
-      <div style={{ paddingTop: '5px', background: 'white' }}>
-        <h2 className='title'>Freelance</h2>
+      <div style={{ paddingTop: '5px' }}>
+        <h2 className='title'>Work</h2>
         <Grid container justify={'center'} style={styles.container}>
           <Grid item xs={12} md={3} style={styles.grid}>
             <img

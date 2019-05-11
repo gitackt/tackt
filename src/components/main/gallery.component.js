@@ -71,7 +71,7 @@ class GalleryComponent extends PureComponent {
 
   render() {
     return (
-      <div style={{ paddingTop: '5px', textAlign: 'center', background: 'white' }}>
+      <div style={{ paddingTop: '5px', textAlign: 'center' }}>
         <h2 className='title'>Gallery</h2>
         <Grid container justify={'center'} className='container'>
           {galleryData.map((each) => (
