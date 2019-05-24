@@ -25,7 +25,7 @@ class LandingComponent extends Component {
         <ProfileComponent />
         <ServiceComponent />
         <GalleryComponent />
-        <PriceComponent />
+        {/* <PriceComponent /> */}
         <FooterComponent />
       </div>
     );
