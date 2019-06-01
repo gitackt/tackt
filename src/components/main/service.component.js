@@ -6,7 +6,7 @@ import { listData } from '../../params/services';
 const styles = {
   card: {
     width: '95%',
-    height: '380px',
+    height: '450px',
     overflow: 'hidden',
     marginLeft: 'auto',
     marginRight: 'auto',
@@ -69,6 +69,7 @@ const CardContentComponent = (props) => {
       </div>
       <div className='service-content'>
         <h3>{props.data.name}</h3>
+        <h4>{props.data.skills}</h4>
         <p style={{ height: '95px' }}>
           {props.data.info}
         </p>

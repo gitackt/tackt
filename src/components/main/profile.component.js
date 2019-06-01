@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import Grid from '@material-ui/core/Grid';
-import { NameComponent } from './name.component';
+// import { NameComponent } from './name.component';
 
 const styles = {
   container: {
@@ -50,7 +50,7 @@ const styles = {
   sub: {
     color: '#333035',
     fontWeight: '500',
-    borderBottom: 'solid 3px #333035',
+    // borderBottom: 'solid 3px #333035',
   },
   mainTitle: {
     color: '#333035',
@@ -100,11 +100,10 @@ const styles = {
     borderRadius: '10px',
   },
   sub_3: {
-    borderLeft: 'solid 4px #2AD8C9',
+    // borderLeft: 'solid 4px #2AD8C9',
     padding: '5px',
-    paddingLeft: '15px',
     margin: '5px',
-    marginTop: '20px',
+    marginTop: '10px',
     marginBottom: '10px',
     fontWeight: 'normal',
   }
@@ -119,7 +118,8 @@ export class ProfileComponent extends PureComponent {
           <Grid container justify={'center'} style={styles.container}>
             <Grid item xs={12} md={8} style={styles.gridLeft}>
               <div style={styles.content}>
-              <h2 style={styles.sub}>はじめに</h2>
+              <br />
+              <br />
               三橋拓人(
               <a 
                 href={'https://twitter.com/picos_tackt?lang=ja'}
@@ -128,70 +128,55 @@ export class ProfileComponent extends PureComponent {
               >
                 @picos_tackt
               </a>
-              )です。個人でWebサービスやアプリを開発しています。
-              <NameComponent />
+              )です。個人でWebサービスやアプリを作ってます。
+              {/* <NameComponent /> */}
               <br /><br />
-              <h2 style={styles.sub}>インターン</h2>
+              {/* <h2 style={styles.sub}>Job</h2> */}
               <h3 style={styles.sub_3}>
-                <a 
+                ・<a 
                   href={'https://micin.jp/'}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  MICIN（2018 ~ ）
-                </a>
+                  MICIN inc.
+                </a> - Software Engineer Intern（2018 ~ ）
               </h3>
-              React-nativeやAngularを使った遠隔診療アプリケーションの開発<br /><br />
+              {/* React-nativeやAngularを使った遠隔診療アプリケーションの開発<br /><br /> */}
               <h3 style={styles.sub_3}>
-              <a 
+              ・<a 
                 href={'https://micin.jp/'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Whatzmoney（2017 ~ 2018）
-              </a>
+                Whatzmoney inc.
+              </a> - Software Engineer Intern（2017 ~ 2018）
               </h3>
-              Ruby on Railsを使った住宅ローン比較サイトの開発<br /><br /><br />
-              <h2 style={styles.sub}>サービス開発</h2>
-              {/* <h3 style={styles.sub_3}>Props（2019）</h3>
-              持ち物管理アプリを作りました。<br /><br />
-              <a 
-                href={'https://itunes.apple.com/us/app/props-%E6%8C%81%E3%81%A1%E7%89%A9%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA/id1460285997?l=ja&ls=1&mt=8'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Props (iOS)
-              </a>
-              <br /><br />
-              <a 
-                href={'https://play.google.com/store/apps/details?id=com.gitackt.props'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Props (Android)
-              </a>
-              <br /><br />
-              <img
-                style={styles.subimage}
-                src={'/images/props_info.png'}
-                alt={'props_info'}
-              /><br /><br /> */}
-
-              <h3 style={styles.sub_3}>Babel bubble（2018）</h3>
-              投資シミュレーションゲーム<br /><br />
-              <a 
-                href={'https://babel-bubble.com/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Babel bubble
-              </a>
-              <br /><br />
-              <img
-                style={styles.subimage}
-                src={'/images/babel_info.png'}
-                alt={'babel_info'}
-              /><br /><br />
+              {/* Ruby on Railsを使った住宅ローン比較サイトの開発<br /><br /><br /> */}
+              </div>
+              <br />
+              <br />
+              {/* <div style={styles.profile}>
+                <h3>三橋拓人（みつはしたくと）</h3>
+                <h4>経歴</h4>
+                <p style={{ fontSize: '12px' }}>
+                  明治大学 商学部 商学科
+                  Finance Course (2016 ~ )<br />
+                  株式会社Whatzmoney
+                  Engineer Intern (2017 ~ 2018)<br />
+                  株式会社MICIN
+                  Engineer Intern (2018 ~ )<br />
+                </p>
+                <h4>資格</h4>
+                <p style={{ fontSize: '12px' }}>
+                  証券アナリスト2次 (CCMA)<br />
+                </p>
+                <h4>技術</h4>
+                <p style={{ fontSize: '12px' }}>
+                  Python, Ruby, Django, Rails, HTML, CSS, JavaScript, TypeScript, React, React-native, 
+                  Nginx, MySQL, Wordpress, PHP, Node, Docker, AWS, Angular, Vue, Go,
+                  Affinity Designer, Clip Studio
+                </p>
+              </div> */}
               <img
                 style={styles.coin}
                 src={'/images/balls/bubble_coin.png'}
@@ -222,60 +207,6 @@ export class ProfileComponent extends PureComponent {
                 src={'/images/balls/mono_coin.png'}
                 alt={'bubble'}
               />
-              <br /><br />
-              {/* <h3 style={styles.sub_3}>人生は運ゲー（2018）</h3>
-              サーバ代を稼ぐためブログを作りました。<br /><br />
-              <a 
-                href={'https://monetizealchemist.com/'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                人生は運ゲー
-              </a>
-              <br /><br />
-              <img
-                style={styles.subimage}
-                src={'/images/mone_info.png'}
-                alt={'mone_info'}
-              /><br /><br /> */}
-              <h3 style={styles.sub_3}>VCU（2017）</h3>
-              仮想通貨の総額を簡単にチェックできるサービス<br /><br />
-              <a 
-                href={'https://v-cu.com'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                VCU（ブイキュー）
-              </a><br /><br />
-              <img
-                style={styles.subimage}
-                src={'/images/vcu_info.png'}
-                alt={'vcu_info'}
-              />
-              <br /><br />
-              </div>
-              <div style={styles.profile}>
-                <h3>三橋拓人（みつはしたくと）</h3>
-                <h4>経歴</h4>
-                <p style={{ fontSize: '12px' }}>
-                  明治大学 商学部 商学科
-                  Finance Course (2016 ~ )<br />
-                  株式会社Whatzmoney
-                  Engineer Intern (2017 ~ 2018)<br />
-                  株式会社MICIN
-                  Engineer Intern (2018 ~ )<br />
-                </p>
-                <h4>資格</h4>
-                <p style={{ fontSize: '12px' }}>
-                  証券アナリスト2次 (CCMA)<br />
-                </p>
-                <h4>技術</h4>
-                <p style={{ fontSize: '12px' }}>
-                  Python, Ruby, Django, Rails, HTML, CSS, JavaScript, TypeScript, React, React-native, 
-                  Nginx, MySQL, Wordpress, PHP, Node, Docker, AWS, Angular, Vue, Go,
-                  Affinity Designer, Clip Studio
-                </p>
-              </div>
             </Grid>
           </Grid>
         </div>

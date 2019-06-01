@@ -53,7 +53,7 @@ class JumbotronComponent extends PureComponent {
         <div className='portfolio'><span style={{ color: '#2dd8ca' }}>Portfolio</span> Website</div>
         <img
           style={styles.topImage}
-          src={'/images/gallery/honey.png'}
+          src={'/images/profile.png'}
           alt={'top'}
         />
         <table  style={{ marginTop: '60px', marginLeft: 'auto', marginRight: 'auto' }}>

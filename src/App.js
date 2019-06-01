@@ -4,7 +4,7 @@ import NavigationComponent from './components/core/navi.component';
 import ServiceComponent from './components/main/service.component';
 import GalleryComponent from './components/main/gallery.component';
 import { ProfileComponent } from './components/main/profile.component';
-import { PriceComponent } from './components/main/price.component';
+// import { PriceComponent } from './components/main/price.component';
 import JumbotronComponent from './components/main/jumbotron.component';
 import { Route, Switch, BrowserRouter as Router, Redirect } from 'react-router-dom';
 
