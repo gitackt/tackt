@@ -18,7 +18,7 @@ const styles = {
     position: 'relative',
     width: '100%',
     height: 'auto',
-    borderRadius: '10px 10px 0px 0px',
+    borderRadius: '10px 10px 10px 10px',
   },
   content: {
     width: '100%',
@@ -55,13 +55,12 @@ const EachComponent = (props) =>{
           src={props.data.image}
           alt={props.data.name}
         />
-        <div style={styles.content}>
+        {/* <div style={styles.content}>
           <h3 style={{ color: 'white', fontSize: '16px' }}>{props.data.name}</h3>
           <p style={{ color: '#b7c5cc', fontSize: '12px' }}>
-            {/* {props.data.info} <br /> */}
             {props.data.term}
           </p>
-        </div>
+        </div> */}
       </div >
     </div >
   );
@@ -72,10 +71,13 @@ class GalleryComponent extends PureComponent {
   render() {
     return (
       <div style={{ paddingTop: '5px', textAlign: 'center' }}>
-        <h2 className='title'>Icon Gallery</h2>
+        <br />
+        <br />
+        <br />
+        <h2 className='title'>Icon History</h2>
         <Grid container justify={'center'} className='container'>
           {galleryData.map((each) => (
-            <Grid item xs={12} sm={3} md={2} className='grid'>
+            <Grid item xs={4} sm={2} md={1} className='grid'>
               <EachComponent data={each} />
             </Grid>
           ))}

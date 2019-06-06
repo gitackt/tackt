@@ -68,6 +68,19 @@ class NavigationComponent extends Component {
               </h4>
               </a>
               <a
+                href="https://www.pixiv.net/member.php?id=29647166"
+                style={{ textDecoration: 'none' }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4
+                  style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                  onClick={() => this.setState({ open: false })}
+                >
+                  Pixiv
+              </h4>
+              </a>
+              <a
                 href="https://monetizealchemist.com/"
                 style={{ textDecoration: 'none' }}
                 target="_blank"

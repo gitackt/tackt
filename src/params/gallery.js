@@ -27,4 +27,39 @@ export const galleryData = [
     image: "/images/gallery/pink.jpg",
     info: "ピンク髪ゴシック風です。",
   },
+  {
+    name: "Hige oyaji",
+    number: 2,
+    term: "2018/10 ~ 2018/11",
+    image: "/images/gallery/santa.jpg",
+    info: "サンタさんです。",
+  },
+  {
+    name: "Jack the ripper",
+    number: 2,
+    term: "2018/10",
+    image: "/images/gallery/jack.png",
+    info: "切り裂きジャック風です。",
+  },
+  {
+    name: "Hanaya san",
+    number: 2,
+    term: "2018/9 ~ 2018/10",
+    image: "/images/gallery/flower.jpg",
+    info: "グラデーションです。",
+  },
+  {
+    name: "Soldier",
+    number: 2,
+    term: "2018/8 ~ 2018/9",
+    image: "/images/gallery/sand.jpg",
+    info: "手負いの兵士です。",
+  },  {
+    name: "Pencil",
+    number: 2,
+    term: "2018/8",
+    image: "/images/gallery/pencil.jpg",
+    info: "鉛筆です。",
+  },
+
 ]

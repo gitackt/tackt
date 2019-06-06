@@ -7,83 +7,56 @@ class JumbotronComponent extends PureComponent {
     const styles = {
       topImage: {
         width: '80%',
-        maxWidth: '350px',
+        maxWidth: '450px',
         marginTop: '30px',
         marginLeft: 'auto',
         marginRight: 'auto',
         borderRadius: '350px',
       },
-      button: {
-        height: '20px',
-        width: '100px',
-        borderRadius: '5px',
-        background: '#FFAF00',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        color: 'white',
-        fontSize: '14px',
-        padding: '10px',
-        textDecoration: 'none',
-        marginTop: '10px',
-        border: 'solid 3px #eda50b',
-        borderTop: 'solid 2px #eda50b',
-        borderBottom: 'solid 4px #eda50b',
-      },
-      twitter: {
-        height: '20px',
-        width: '100px',
-        borderRadius: '5px',
-        background: '#2AD8C9',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        color: 'white',
-        fontSize: '14px',
-        padding: '10px',
-        textDecoration: 'none',
-        marginTop: '10px',
-        border: 'solid 3px #26ccbb',
-        borderTop: 'solid 2px #26ccbb',
-        borderBottom: 'solid 4px #26ccbb',
+      coin: {
+        maxWidth: '50px',
+        borderRadius: '10px',
       },
     };
 
     return (
       <div className='main-container'>  
-        <h1 className='jumbotron-title'>Takuto Mitsuhashi</h1>
-        <div className='portfolio'><span style={{ color: '#2dd8ca' }}>Portfolio</span> Website</div>
-        <img
-          style={styles.topImage}
-          src={'/images/profile.png'}
-          alt={'top'}
-        />
-        <table  style={{ marginTop: '60px', marginLeft: 'auto', marginRight: 'auto' }}>
-          <tr>
-          <td>
-            <a
-              href={'https://twitter.com/picos_tackt?lang=ja'}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none', textAlign: 'center' }}
-            >
-              <div style={styles.twitter}>
-                Twitter
-              </div>
-            </a>
-          </td>
-          <td>
-            <a
-              href={'https://github.com/gitackt'}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none', textAlign: 'center' }}
-            >
-              <div style={styles.button}>
-                Github
-              </div>
-            </a>
-          </td>
-          </tr>
-        </table>
+        <h1 className='jumbotron-title'>A Programmer</h1>
+        <div className='portfolio'><span style={{ color: '#2dd8ca' }}>Takuto Mitsuhashi</span></div>
+        <br />
+        <br />
+        <div>
+          <img
+            style={styles.coin}
+            src={'/images/balls/bubble_coin.png'}
+            alt={'bubble'}
+          />
+          <img
+            style={styles.coin}
+            src={'/images/balls/gum_coin.png'}
+            alt={'bubble'}
+          />
+          <img
+            style={styles.coin}
+            src={'/images/balls/cake_coin.png'}
+            alt={'bubble'}
+          />
+          <img
+            style={styles.coin}
+            src={'/images/balls/honey_coin.png'}
+            alt={'bubble'}
+          />
+          <img
+            style={styles.coin}
+            src={'/images/balls/cocoa_coin.png'}
+            alt={'bubble'}
+          />
+          <img
+            style={styles.coin}
+            src={'/images/balls/mono_coin.png'}
+            alt={'bubble'}
+          />
+        </div>
       </div>
     );
   }
