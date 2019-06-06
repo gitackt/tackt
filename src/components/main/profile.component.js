@@ -41,7 +41,7 @@ const styles = {
     marginBottom: '60px',
   },
   content: {
-    fontSize: '16px',
+    fontSize: '14px',
     fontWeight: '400',
     color: '#574F5D',
     lineHeight: '1.8',
@@ -96,7 +96,6 @@ const styles = {
     borderRadius: '10px',
   },
   sub_3: {
-    // borderLeft: 'solid 4px #2AD8C9',
     padding: '5px',
     margin: '5px',
     marginTop: '10px',

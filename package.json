@@ -12,12 +12,14 @@
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "^2.1.8",
-    "react-slick": "^0.23.2"
+    "react-slick": "^0.23.2",
+    "react-snap": "^1.23.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "deploy": "sh deploy.sh",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "postbuild": "react-snap"
   },
   "browserslist": [
     ">0.2%",
