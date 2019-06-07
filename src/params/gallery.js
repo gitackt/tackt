@@ -1,8 +1,15 @@
 export const galleryData = [
   {
+    name: "Daihuku",
+    number: 4,
+    term: "2019/6 ~ ",
+    image: "/images/gallery/kuma.png",
+    info: "大福うさぎです。",
+  },
+  {
     name: "Honey egg",
     number: 4,
-    term: "2019/5 ~ ",
+    term: "2019/5 ~ 2019/6",
     image: "/images/gallery/honey.png",
     info: "はちみつのたまごです。",
   },

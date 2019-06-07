@@ -136,7 +136,7 @@ export class ProfileComponent extends PureComponent {
               </h3>
               <h3 style={styles.sub_3}>
                 <a 
-                  href={'https://micin.jp/'}
+                  href={'https://whatzmoney.co.jp/'}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

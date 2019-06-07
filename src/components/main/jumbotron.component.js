@@ -7,12 +7,12 @@ class JumbotronComponent extends PureComponent {
     const styles = {
       topImage: {
         width: '80%',
-        maxWidth: '450px',
+        maxWidth: '350px',
         marginTop: '30px',
         marginLeft: 'auto',
         marginRight: 'auto',
         paddingBottom: '100px',
-        borderRadius: '350px',
+        borderRadius: '1000px',
       },
     };
 
@@ -22,7 +22,7 @@ class JumbotronComponent extends PureComponent {
         <div className='portfolio'><span style={{ color: '#2dd8ca' }}>Takuto Mitsuhashi</span></div>
         <img
           style={styles.topImage}
-          src={'/images/profile.png'}
+          src={'/images/gallery/kuma.png'}
           alt={'top'}
         />
       </div>
