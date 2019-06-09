@@ -8,11 +8,11 @@ class JumbotronComponent extends PureComponent {
       topImage: {
         width: '80%',
         maxWidth: '350px',
-        marginTop: '30px',
+        marginTop: '50px',
         marginLeft: 'auto',
         marginRight: 'auto',
-        paddingBottom: '100px',
-        borderRadius: '1000px',
+        marginBottom: '70px',
+        borderRadius: '300px',
       },
     };
 

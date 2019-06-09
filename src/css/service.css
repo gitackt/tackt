@@ -4,7 +4,7 @@
 
 .service-button {
   height: 20px;
-  color: #ff517c;
+  color: #F92771;
   background: white;
   font-size: 13px;
   text-decoration: none;
@@ -16,14 +16,14 @@
   padding-right: 50px;
   border-radius: 10px;
   width: 300px;
-  border: solid 1px #ff517c;
+  border: solid 1px #F92771;
 }
 
 .service-button:hover {
   padding-left: 80px;
   padding-right: 80px;
   color: white;
-  background: #ff517c;
+  background: #F92771;
 }
 
 .tag {

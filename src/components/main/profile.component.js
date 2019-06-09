@@ -1,12 +1,10 @@
 import React, { PureComponent } from 'react';
 import Grid from '@material-ui/core/Grid';
-// import { NameComponent } from './name.component';
 
 const styles = {
   container: {
     textAlign: 'center',
     paddingBottom: '15px',
-    // borderTop: 'solid 4px #4b8c85',
   },
   profile: {
     textAlign: 'left',
@@ -101,6 +99,26 @@ const styles = {
     marginTop: '10px',
     marginBottom: '10px',
     fontWeight: 'normal',
+  },
+  baloon: {
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    textAlign: 'left',
+    maxWidth: '400px',
+    borderRadius: '10px',
+    border: 'solid 1px #26ccbb',
+    padding: '30px',
+    marginBottom: '50px',
+    position: 'relative',
+  },
+  baloonProfile: {
+    fontSize: '30px',
+    position: 'absolute',
+    top: -60,
+    left: 10,
+    background: 'white',
+    paddingLeft: '20px',
+    paddingRight: '20px',
   }
 };
 
@@ -113,44 +131,18 @@ export class ProfileComponent extends PureComponent {
           <Grid container justify={'center'} style={styles.container}>
             <Grid item xs={12} md={8} style={styles.gridLeft}>
               <div style={styles.content}>
-              <br />
-              三橋拓人(
-              <a 
-                href={'https://twitter.com/picos_tackt?lang=ja'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                @picos_tackt
-              </a>
-              )です。個人でWebサービスやアプリを作ってます。
-              <br /><br />
-              <div style={styles.profile}>
-              <h3 style={styles.sub_3}>
+              <div style={styles.baloon}>
+                <h3 style={styles.baloonProfile}>Profile</h3>
+                三橋拓人(
                 <a 
-                  href={'https://micin.jp/'}
+                  href={'https://twitter.com/picos_tackt?lang=ja'}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  MICIN inc.
-                </a> - Software Engineer Intern（2018 ~ ）
-              </h3>
-              <h3 style={styles.sub_3}>
-                <a 
-                  href={'https://whatzmoney.co.jp/'}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Whatzmoney inc.
-                </a> - Software Engineer Intern（2017 ~ 2018）
-              </h3>
-              </div>
-              <p style={{ fontSize: '12px' }}>
-                  Python, Ruby, Django, Rails, HTML, CSS, JavaScript, TypeScript, React, React-native, 
-                  Nginx, MySQL, Wordpress, PHP, Node, Docker, AWS, Angular, Vue, Go,
-                  Affinity Designer, Clip Studio
-                </p>
-              </div>
-              <table  style={{ marginTop: '10px', marginLeft: 'auto', marginRight: 'auto' }}>
+                  @picos_tackt
+                </a>
+                )です。個人でWebサービスやアプリを作ってます。
+                <table  style={{ marginTop: '10px', marginLeft: 'auto', marginRight: 'auto' }}>
                 <tr>
                 <td>
                   <a
@@ -178,9 +170,35 @@ export class ProfileComponent extends PureComponent {
                 </td>
                 </tr>
               </table>
+              </div>
+              <div style={styles.profile}>
+              <h3 style={styles.sub_3}>
+                <a 
+                  href={'https://micin.jp/'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  MICIN inc.
+                </a> <br /> - Software Engineer Intern（2018 ~ ）
+              </h3>
+              <h3 style={styles.sub_3}>
+                <a 
+                  href={'https://whatzmoney.co.jp/'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Whatzmoney inc.
+                </a> <br /> - Software Engineer Intern（2017 ~ 2018）
+              </h3>
+              </div>
               <br />
               <br />
-              <br />
+              <p style={{ fontSize: '12px' }}>
+                Python, Ruby, Django, Rails, HTML, CSS, JavaScript, TypeScript, React, React-native, 
+                Nginx, MySQL, Wordpress, PHP, Node, Docker, AWS, Angular, Vue, Go,
+                Affinity Designer, Clip Studio
+              </p>
+              </div>
             </Grid>
           </Grid>
         </div>
