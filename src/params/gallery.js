@@ -1,72 +1,51 @@
 export const galleryData = [
   {
     name: "Daihuku",
-    number: 4,
-    term: "2019/6 ~ ",
     image: "/images/gallery/kuma.png",
     info: "大福うさぎです。",
   },
   {
     name: "Honey egg",
-    number: 4,
-    term: "2019/5 ~ 2019/6",
     image: "/images/gallery/honey.png",
     info: "はちみつのたまごです。",
   },
   {
     name: "TPOK in jelly",
-    number: 4,
-    term: "2019/4 ~ 2019/5",
     image: "/images/gallery/tpok.png",
     info: "タピオカが入ったゼリーです。",
   },
   {
     name: "Golden baby",
-    number: 3,
-    term: "2019/1 ~ 2019/3",
     image: "/images/gallery/golden.png",
     info: "金色の赤ちゃんです。",
   },
   {
     name: "Pink Twintail",
-    number: 2,
-    term: "2018/11 ~ 2018/12",
     image: "/images/gallery/pink.jpg",
     info: "ピンク髪ゴシック風です。",
   },
   {
     name: "Hige oyaji",
-    number: 2,
-    term: "2018/10 ~ 2018/11",
     image: "/images/gallery/santa.jpg",
     info: "サンタさんです。",
   },
   {
     name: "Jack the ripper",
-    number: 2,
-    term: "2018/10",
     image: "/images/gallery/jack.png",
     info: "切り裂きジャック風です。",
   },
   {
     name: "Hanaya san",
-    number: 2,
-    term: "2018/9 ~ 2018/10",
     image: "/images/gallery/flower.jpg",
     info: "グラデーションです。",
   },
   {
     name: "Soldier",
-    number: 2,
-    term: "2018/8 ~ 2018/9",
     image: "/images/gallery/sand.jpg",
     info: "手負いの兵士です。",
   },  {
     name: "Pencil",
-    number: 2,
-    term: "2018/8",
     image: "/images/gallery/pencil.jpg",
     info: "鉛筆です。",
   },
-
 ]

@@ -1,4 +1,4 @@
-.main-container {
+.jumbotron-container {
   margin-top: 60px;
   display: flex;
   justify-content: center;
@@ -12,19 +12,19 @@
   font-size: 20px;
 }
 
-.portfolio {
+.jumbotron-subtitle {
   color: #6D6C6A;
   text-align: center;
   font-size: 30px;
   font-weight: bold;
 }
 
-.slide-content {
-  font-size: 16px;
-}
-
-@media (min-width: 700px) {
-  .slide-content {
-    font-size: 18px;
-  }
+.jumbotron-image {
+  width: 80%;
+  max-width: 350px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  border-radius: 300px;
 }

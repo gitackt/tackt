@@ -1,110 +1,22 @@
 import React, { PureComponent } from 'react';
-import Grid from '@material-ui/core/Grid';
+import { jobData } from '../../params/job';
 
 const styles = {
-  container: {
-    textAlign: 'center',
-    paddingBottom: '15px',
+  content: {
+    maxWidth: '600px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    padding: '15px',
   },
   profile: {
-    textAlign: 'left',
     borderRadius: '10px',
-    padding: '15px',
+    padding: '20px',
     background: '#f2f2f2'
-  },
-  image: {
-    maxWidth: '150px',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    borderRadius: '10px',
-  },
-  gridLeft: {
-    textAlign: 'left',
-    borderRadius: '10px',
-    padding: '25px',
-  },
-  grid: {
-    textAlign: 'center',
-    borderRadius: '10px',
-    margin: '15px',
-    padding: '15px',
-  },
-  eyeCatch: {
-    textAlign: 'left',
-    borderRadius: '5px',
-    padding: '35px',
-    paddingTop: '10px',
-    background: '#f2f2f2',
-    marginTop: '30px',
-    marginBottom: '60px',
-  },
-  content: {
-    fontSize: '14px',
-    fontWeight: '400',
-    color: '#574F5D',
-    lineHeight: '1.8',
-    marginBottom : '1.8em',
-  },
-  sub: {
-    color: '#333035',
-    fontWeight: '500',
-    // borderBottom: 'solid 3px #333035',
-  },
-  mainTitle: {
-    color: '#333035',
-    fontWeight: '500',
-    fontSize: '28px',
-    paddingLeft: '10px',
-  },
-  button: {
-    height: '20px',
-    width: '100px',
-    borderRadius: '5px',
-    background: '#FFAF00',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    color: 'white',
-    fontSize: '14px',
-    padding: '10px',
-    textDecoration: 'none',
-    marginTop: '10px',
-    border: 'solid 3px #eda50b',
-    borderTop: 'solid 2px #eda50b',
-    borderBottom: 'solid 4px #eda50b',
-  },
-  twitter: {
-    height: '20px',
-    width: '100px',
-    borderRadius: '5px',
-    background: '#2AD8C9',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    color: 'white',
-    fontSize: '14px',
-    padding: '10px',
-    textDecoration: 'none',
-    marginTop: '10px',
-    border: 'solid 3px #26ccbb',
-    borderTop: 'solid 2px #26ccbb',
-    borderBottom: 'solid 4px #26ccbb',
-  },
-  subimage: {
-    width: '100%',
-    maxWidth: '400px',
-    borderRadius: '10px',
-  },
-  sub_3: {
-    padding: '5px',
-    margin: '5px',
-    marginTop: '10px',
-    marginBottom: '10px',
-    fontWeight: 'normal',
   },
   baloon: {
     marginLeft: 'auto',
     marginRight: 'auto',
     textAlign: 'left',
-    maxWidth: '400px',
     borderRadius: '10px',
     border: 'solid 1px #26ccbb',
     padding: '30px',
@@ -113,12 +25,13 @@ const styles = {
   },
   baloonProfile: {
     fontSize: '30px',
-    position: 'absolute',
-    top: -60,
-    left: 10,
     background: 'white',
     paddingLeft: '20px',
     paddingRight: '20px',
+    position: 'absolute',
+    color: '#26ccbb',
+    top: -60,
+    left: 10,
   }
 };
 
@@ -126,83 +39,40 @@ export class ProfileComponent extends PureComponent {
 
   render() {
     return (
-      <div>
-        <div>
-          <Grid container justify={'center'} style={styles.container}>
-            <Grid item xs={12} md={8} style={styles.gridLeft}>
-              <div style={styles.content}>
-              <div style={styles.baloon}>
-                <h3 style={styles.baloonProfile}>Profile</h3>
-                三橋拓人(
+        <div style={styles.content}>
+          <div style={styles.baloon}>
+            <h3 style={styles.baloonProfile}>Profile</h3>
+            三橋拓人(
+            <a 
+              href={'https://twitter.com/picos_tackt?lang=ja'}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @picos_tackt
+            </a>
+            )です。個人でWebサービスやアプリを作ってます。
+          </div>
+          <div style={styles.profile}>
+            {jobData.map((each) => (
+              <div style={{ padding: '10px' }}>
                 <a 
-                  href={'https://twitter.com/picos_tackt?lang=ja'}
+                  href={each.url}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  @picos_tackt
-                </a>
-                )です。個人でWebサービスやアプリを作ってます。
-                <table  style={{ marginTop: '10px', marginLeft: 'auto', marginRight: 'auto' }}>
-                <tr>
-                <td>
-                  <a
-                    href={'https://twitter.com/picos_tackt?lang=ja'}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: 'none', textAlign: 'center' }}
-                  >
-                    <div style={styles.twitter}>
-                      Twitter
-                    </div>
-                  </a>
-                </td>
-                <td>
-                  <a
-                    href={'https://github.com/gitackt'}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: 'none', textAlign: 'center' }}
-                  >
-                    <div style={styles.button}>
-                      Github
-                    </div>
-                  </a>
-                </td>
-                </tr>
-              </table>
+                  {each.company}
+                </a> 
+                <br />
+                {each.position}
               </div>
-              <div style={styles.profile}>
-              <h3 style={styles.sub_3}>
-                <a 
-                  href={'https://micin.jp/'}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  MICIN inc.
-                </a> <br /> - Software Engineer Intern（2018 ~ ）
-              </h3>
-              <h3 style={styles.sub_3}>
-                <a 
-                  href={'https://whatzmoney.co.jp/'}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Whatzmoney inc.
-                </a> <br /> - Software Engineer Intern（2017 ~ 2018）
-              </h3>
-              </div>
-              <br />
-              <br />
-              <p style={{ fontSize: '12px' }}>
-                Python, Ruby, Django, Rails, HTML, CSS, JavaScript, TypeScript, React, React-native, 
-                Nginx, MySQL, Wordpress, PHP, Node, Docker, AWS, Angular, Vue, Go,
-                Affinity Designer, Clip Studio
-              </p>
-              </div>
-            </Grid>
-          </Grid>
+            ))}
+          </div>
+          <p style={{ padding: '10px', fontSize: '12px' }}>
+            Python, Ruby, Django, Rails, HTML, CSS, JavaScript, TypeScript, React, React-native, 
+            Nginx, MySQL, Wordpress, PHP, Node, Docker, AWS, Angular, Vue, Go,
+            Affinity Designer, Clip Studio
+          </p>
         </div>
-      </div>
     );
   }
 }

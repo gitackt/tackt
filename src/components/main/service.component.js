@@ -69,7 +69,7 @@ const CardContentComponent = (props) => {
       </div>
       <div className='service-content'>
         <h3>{props.data.name}</h3>
-        <h4>{props.data.skills}</h4>
+        <h5>{props.data.skills}</h5>
         <p style={{ height: '95px' }}>
           {props.data.info}
         </p>

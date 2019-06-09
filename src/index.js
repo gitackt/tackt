@@ -6,8 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import './css/index.css';
 import './css/contents.css';
 import './css/service.css';
-import './css/jumbo.css';
-import './css/button.css';
+import './css/jumbotron.css';
 
 
 const rootElement = document.getElementById("root");

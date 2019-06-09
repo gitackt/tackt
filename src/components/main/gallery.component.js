@@ -20,29 +20,6 @@ const styles = {
     height: 'auto',
     borderRadius: '10px 10px 10px 10px',
   },
-  content: {
-    width: '100%',
-    background: 'rgb(49, 57, 66)',
-    height: '70px',
-    paddingTop: '3px',
-    paddingBottom: '15px',
-    position: 'relative',
-    zIndex: 123,
-    marginTop: '-5px',
-    borderRadius: '0px 0px 10px 10px',
-  },
-  number: {
-    color: 'white', 
-    fontSize: '20px',
-    background: '#eb346b',
-    borderRadius: '60px',
-    padding: '5px',
-    width: '70px',
-    position: 'absolute',
-    zIndex: 12345,
-    marginLeft: '25px',
-    marginTop: '25px',
-  },
 };
 
 const EachComponent = (props) =>{
@@ -55,12 +32,6 @@ const EachComponent = (props) =>{
           src={props.data.image}
           alt={props.data.name}
         />
-        {/* <div style={styles.content}>
-          <h3 style={{ color: 'white', fontSize: '16px' }}>{props.data.name}</h3>
-          <p style={{ color: '#b7c5cc', fontSize: '12px' }}>
-            {props.data.term}
-          </p>
-        </div> */}
       </div >
     </div >
   );
@@ -70,14 +41,11 @@ class GalleryComponent extends PureComponent {
 
   render() {
     return (
-      <div style={{ paddingTop: '5px', textAlign: 'center' }}>
-        <br />
-        <br />
-        <br />
+      <div style={{ paddingTop: '70px', textAlign: 'center' }}>
         <h2 className='title'>Icon History</h2>
         <Grid container justify={'center'} className='container'>
           {galleryData.map((each) => (
-            <Grid item xs={4} sm={2} md={1} className='grid'>
+            <Grid item xs={3} sm={2} md={1} className='grid'>
               <EachComponent data={each} />
             </Grid>
           ))}

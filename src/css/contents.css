@@ -16,29 +16,10 @@
 
 .title {
   width: 90%;
-  color: #6D6C6A;
+  color: #26ccbb;
   max-width: 1200px;
   text-align: left;
   font-size: 28px;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: solid 2px #EAEAEA;
-}
-
-.title .info {
-  font-size: 15px;
-  font-weight: normal;
-  margin-top: 10px;
-}
-
-.subtitle {
-  width: 80%;
-  color: #6D6C6A;
-  max-width: 1200px;
-  text-align: center;
-  padding: 20px;
-  font-size: 26px;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: solid 2px #EAEAEA;
 }
