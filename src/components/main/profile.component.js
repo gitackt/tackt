@@ -26,8 +26,8 @@ const styles = {
   baloonProfile: {
     fontSize: '30px',
     background: 'white',
-    paddingLeft: '20px',
-    paddingRight: '20px',
+    paddingLeft: '10px',
+    paddingRight: '10px',
     position: 'absolute',
     color: '#26ccbb',
     top: -60,

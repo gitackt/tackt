@@ -6,7 +6,7 @@ import { galleryData } from '../../params/gallery';
 const styles = {
   list: {
     width: '95%',
-    maxWidth: '300px',
+    maxWidth: '60px',
     background: '#ffffff',
     overflow: 'hidden',
     marginLeft: 'auto',
@@ -42,10 +42,9 @@ class GalleryComponent extends PureComponent {
   render() {
     return (
       <div style={{ paddingTop: '70px', textAlign: 'center' }}>
-        <h2 className='title'>Icon History</h2>
         <Grid container justify={'center'} className='container'>
           {galleryData.map((each) => (
-            <Grid item xs={3} sm={2} md={1} className='grid'>
+            <Grid item xs={2} sm={1} className='grid'>
               <EachComponent data={each} />
             </Grid>
           ))}

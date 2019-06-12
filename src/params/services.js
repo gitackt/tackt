@@ -2,8 +2,8 @@ export const listData = [
   {
     name: "格付けくん",
     skills: "Vue.js, Golang",
-    status: "deactive",
-    complete: false,
+    status: "active",
+    complete: true,
     url: "https://kakutsuke-kun.com",
     image: "/images/services/rank_info.png",
     info: "フリーランス・個人の口コミサイトです。日頃の感謝や、仕事のお礼など、相手の評価につながる口コミを書くことが出来ます。",
