@@ -12,6 +12,10 @@ export const menuData = [
     url: "https://github.com/gitackt",
   },
   {
+    name: "Flickr",
+    url: "https://flic.kr/ps/3LSjVt",
+  },
+  {
     name: "Pixiv",
     url: "https://www.pixiv.net/member.php?id=29647166",
   },

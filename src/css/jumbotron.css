@@ -19,9 +19,12 @@
   font-weight: bold;
 }
 
+.small-container {
+  height: 400px;
+}
+
 .jumbotron-image {
-  width: 80%;
-  max-width: 350px;
+  width:280px;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
