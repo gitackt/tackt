@@ -11,7 +11,7 @@ class JumbotronComponent extends PureComponent {
         <div className='small-container'> 
           <img
             className='jumbotron-image'
-            src={'/images/gallery/kuma.png'}
+            src={'/images/kuma.png'}
             alt={'top'}
           />
         </div>

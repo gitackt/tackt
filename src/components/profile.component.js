@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { jobData } from '../../params/job';
+import { jobData } from '../params/job';
 
 const styles = {
   content: {

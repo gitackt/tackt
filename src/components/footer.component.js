@@ -1,4 +1,6 @@
 import React, { PureComponent } from 'react';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 const styles = {
   container: {
@@ -18,11 +20,37 @@ const styles = {
 
 class FooterComponent extends PureComponent {
 
+  state = {
+    value: null,
+  }
+
+  onSubmit() {
+    alert('next quiz comming soon.. please wait')
+  }
+
   render() {
 
     return (
       <div>
         <div style={styles.container}>
+        <TextField
+          label="Answer"
+          value={this.state.value}
+          onChange={value => this.setState({ value: value.target.value })}
+          margin="normal"
+          variant="outlined"
+        />
+        <br />
+        <Button 
+          variant="outlined" 
+          color="secondary" 
+          onClick={() => this.onSubmit()}
+        >
+          Submit
+        </Button>
+        <br />
+        <br />
+
         <div>
           <img
             style={styles.coin}

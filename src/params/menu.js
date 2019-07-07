@@ -1,5 +1,9 @@
 export const menuData = [
   {
+    name: "Github",
+    url: "https://github.com/gitackt",
+  },
+  {
     name: "Twitter",
     url: "https://twitter.com/picos_tackt?lang=ja",
   },
@@ -8,16 +12,12 @@ export const menuData = [
     url: "https://www.facebook.com/profile.php?id=100013371464347",
   },
   {
-    name: "Github",
-    url: "https://github.com/gitackt",
+    name: "Instagram",
+    url: "https://www.instagram.com/picos_tackt/",
   },
   {
-    name: "Flickr",
-    url: "https://flic.kr/ps/3LSjVt",
-  },
-  {
-    name: "Pixiv",
-    url: "https://www.pixiv.net/member.php?id=29647166",
+    name: "Ethereum",
+    url: "https://etherscan.io/address/0x9Ddb22480BD6F3D56de73457Fe657520D5da6693",
   },
   {
     name: "Blog",
@@ -26,9 +26,5 @@ export const menuData = [
   {
     name: "Shop",
     url: "https://tackt.official.ec/",
-  },
-  {
-    name: "Ethereum",
-    url: "https://etherscan.io/address/0x9Ddb22480BD6F3D56de73457Fe657520D5da6693",
   },
 ]

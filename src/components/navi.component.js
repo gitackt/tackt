@@ -6,7 +6,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Toolbar from '@material-ui/core/Toolbar';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import { menuData } from '../../params/menu';
+import { menuData } from '../params/menu';
 
 class NavigationComponent extends Component {
 
