@@ -59,11 +59,14 @@ export class ProfileComponent extends PureComponent {
                   href={each.url}
                   target="_blank"
                   rel="noopener noreferrer"
+                  style={{ fontStyle: 'bold' }}
                 >
                   {each.company}
                 </a> 
                 <br />
-                {each.position}
+                <span style={{ marginTop: '15px', fontSize: '12px' }}>{each.position}</span>
+                <br />
+                <span style={{ marginTop: '15px', fontSize: '12px' }}>{each.term}</span>
               </div>
             ))}
           </div>
