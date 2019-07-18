@@ -47,7 +47,7 @@ export const listData = [
   {
     name: "VCU",
     skills: "Django",
-    status: "active",
+    status: "deactive",
     complete: true,
     url: "https://v-cu.com",
     image: "/images/services/vcu_info.png",

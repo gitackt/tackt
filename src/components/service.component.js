@@ -74,7 +74,7 @@ const CardContentComponent = (props) => {
           {props.data.info}
         </p>
         <p>
-          {props.data.complete ? (
+          {props.data.complete && props.data.status !== "deactive" ? (
             <a
               href={props.data.url}
               target="_blank"
@@ -84,7 +84,11 @@ const CardContentComponent = (props) => {
               サービスを見る
             </a>
           ) : (
-            "Coming soon..."
+            props.data.status === "deactive" ? (
+              "Not working."
+            ) : (
+              "Coming soon..."
+            )
           )}
         </p>
       </div>
