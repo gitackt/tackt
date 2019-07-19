@@ -2,7 +2,7 @@ export const jobData = [
   {
     company: "Crezit inc.",
     position: "Contract Software Engineer",
-    term: "2019/7 ~ ",
+    term: "2019/8 ~ ",
     url: "https://crezit.jp/",
   },
   {
