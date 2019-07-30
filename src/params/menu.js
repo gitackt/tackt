@@ -9,7 +9,7 @@ export const menuData = [
   },
   {
     name: "Facebook",
-    url: "https://www.facebook.com/profile.php?id=100013371464347",
+    url: "https://www.facebook.com/gitackt",
   },
   {
     name: "Instagram",
