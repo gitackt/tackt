@@ -55,7 +55,7 @@ class FooterComponent extends PureComponent {
             alt={'bubble'}
           />
         </div>
-          <h6>Copyright 2018~{new Date().getFullYear()} Takuto Mitsuhashi</h6>
+          <h6>Copyright 2016~{new Date().getFullYear()} Takuto Mitsuhashi</h6>
         </div>
       </div>
     );
