@@ -22,7 +22,7 @@ const styles = {
     marginRight: 'auto',
     textAlign: 'left',
     borderRadius: '10px',
-    border: 'solid 1px #26ccbb',
+    // border: 'solid 1px #26ccbb',
     padding: '30px',
     marginBottom: '50px',
     position: 'relative',
@@ -64,7 +64,7 @@ export class ProfileComponent extends PureComponent {
     return (
         <div style={styles.content}>
           <div style={styles.baloon}>
-            <h3 style={styles.baloonProfile}>Profile</h3>
+            {/* <h3 style={styles.baloonProfile}>Profile</h3> */}
             三橋拓人(
             <a 
               href={'https://twitter.com/picos_tackt?lang=ja'}
