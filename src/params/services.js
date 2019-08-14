@@ -1,23 +1,5 @@
 export const listData = [
   {
-    name: "格付けくん",
-    skills: "Vue.js, Golang",
-    status: "active",
-    complete: true,
-    url: "https://kakutsuke-kun.com",
-    image: "/images/services/rank_info.png",
-    info: "フリーランス・個人の口コミサイトです。日頃の感謝や、仕事のお礼など、相手の評価につながる口コミを書くことが出来ます。",
-  },
-  {
-    name: "Babel Bubble",
-    skills: "React.js, Django",
-    status: "active",
-    complete: true,
-    url: "https://babel-bubble.com",
-    image: "/images/services/babel_info.png",
-    info: "無料で遊べる投資シミュレーションゲームです。架空のアイテムをゲーム内通貨で売買して遊びます。",
-  },
-  {
     name: "人生は運ゲー",
     skills: "Wordpress",
     status: "active",
@@ -43,6 +25,24 @@ export const listData = [
     url: "https://play.google.com/store/apps/details?id=com.gitackt.props",
     image: "/images/services/props_info.png",
     info: "持ち物管理ができるAndroidアプリです。自分の持ち物をアプリでまとめて管理できます。",
+  },
+  {
+    name: "格付けくん",
+    skills: "Vue.js, Golang",
+    status: "deactive",
+    complete: true,
+    url: "https://kakutsuke-kun.com",
+    image: "/images/services/rank_info.png",
+    info: "フリーランス・個人の口コミサイトです。日頃の感謝や、仕事のお礼など、相手の評価につながる口コミを書くことが出来ます。",
+  },
+  {
+    name: "Babel Bubble",
+    skills: "React.js, Django",
+    status: "deactive",
+    complete: true,
+    url: "https://babel-bubble.com",
+    image: "/images/services/babel_info.png",
+    info: "無料で遊べる投資シミュレーションゲームです。架空のアイテムをゲーム内通貨で売買して遊びます。",
   },
   {
     name: "VCU",
