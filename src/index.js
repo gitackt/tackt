@@ -1,17 +1,16 @@
 import React from 'react';
-import App from './App';
-import { hydrate, render } from 'react-dom';
-import registerServiceWorker from './registerServiceWorker';
-
+import ReactDOM from 'react-dom';
 import './css/index.css';
 import './css/contents.css';
 import './css/service.css';
 import './css/jumbotron.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
 
-const rootElement = document.getElementById('root');
-if (rootElement.hasChildNodes()) {
-  hydrate(<App />, rootElement);
-} else {
-  render(<App />, rootElement);
-}
-registerServiceWorker();
+ReactDOM.render(<App />, document.getElementById('root'));
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+// serviceWorker.unregister();
+serviceWorker.register();
