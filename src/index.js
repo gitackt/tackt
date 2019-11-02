@@ -1,6 +1,6 @@
 import React from 'react';
 import App from './App';
-import { hydrate, render } from "react-dom";
+import { hydrate, render } from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 
 import './css/index.css';
@@ -8,8 +8,7 @@ import './css/contents.css';
 import './css/service.css';
 import './css/jumbotron.css';
 
-
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById('root');
 if (rootElement.hasChildNodes()) {
   hydrate(<App />, rootElement);
 } else {

@@ -9,7 +9,6 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { menuData } from '../params/menu';
 
 class NavigationComponent extends Component {
-
   state = {
     open: false
   };
@@ -17,7 +16,7 @@ class NavigationComponent extends Component {
   render() {
     return (
       <div>
-        <Drawer open={this.state.open} >
+        <Drawer open={this.state.open}>
           <div style={{ width: '200px', height: '100px' }}>
             <IconButton
               onClick={() => this.setState({ open: false })}
@@ -26,8 +25,10 @@ class NavigationComponent extends Component {
               <ChevronRightIcon />
             </IconButton>
 
-            <div style={{ padding: "20px", fontSize: "12px", marginTop: '50px' }}>
-              {menuData.map((each) => (
+            <div
+              style={{ padding: '20px', fontSize: '12px', marginTop: '50px' }}
+            >
+              {menuData.map(each => (
                 <a
                   href={each.url}
                   style={{ textDecoration: 'none' }}
@@ -35,7 +36,7 @@ class NavigationComponent extends Component {
                   rel="noopener noreferrer"
                 >
                   <h4
-                    style={{ paddingTop: "10px", paddingBottom: "10px" }}
+                    style={{ paddingTop: '10px', paddingBottom: '10px' }}
                     onClick={() => this.setState({ open: false })}
                   >
                     {each.name}
@@ -49,7 +50,7 @@ class NavigationComponent extends Component {
         <AppBar style={{ background: 'transparent', boxShadow: 'none' }}>
           <Toolbar>
             <IconButton
-              color={"#44373c"}
+              color={'#44373c'}
               onClick={() => this.setState({ open: true })}
             >
               <MenuIcon />

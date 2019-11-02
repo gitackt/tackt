@@ -11,55 +11,33 @@ const styles = {
     marginLeft: 'auto',
     marginRight: 'auto',
     borderRadius: '10px',
-    textAlign: 'center',
+    textAlign: 'center'
   },
   image: {
     position: 'relative',
     width: '100%',
-    height: 'auto',
-  },
+    height: 'auto'
+  }
 };
 
-
-const CardContentComponent = (props) => {
-
+const CardContentComponent = props => {
   return (
     <div>
-      {props.data.status === 'sold' && (
-        <div className='tag sold'>
-          Sold
-        </div>
-      )}
+      {props.data.status === 'sold' && <div className="tag sold">Sold</div>}
       {props.data.status === 'active' && (
-        <div className='tag active'>
-          Active
-        </div>
+        <div className="tag active">Active</div>
       )}
       {props.data.status === 'deactive' && (
-        <div className='tag deactive'>
-          Deactive
-        </div>
+        <div className="tag deactive">Deactive</div>
       )}
       {props.data.status === 'github' && (
-        <div className='tag github'>
-          Github
-        </div>
+        <div className="tag github">Github</div>
       )}
-      {props.data.status === 'ios' && (
-        <div className='tag ios'>
-          iOS
-        </div>
-      )}
+      {props.data.status === 'ios' && <div className="tag ios">iOS</div>}
       {props.data.status === 'android' && (
-        <div className='tag android'>
-          Andoid
-        </div>
+        <div className="tag android">Andoid</div>
       )}
-      {props.data.status === 'line' && (
-        <div className='tag line'>
-          LINE Bot
-        </div>
-      )}
+      {props.data.status === 'line' && <div className="tag line">LINE Bot</div>}
       <div style={{ overflow: 'hidden', maxHeight: '140px' }}>
         <img
           style={styles.image}
@@ -67,56 +45,49 @@ const CardContentComponent = (props) => {
           alt={props.data.name}
         />
       </div>
-      <div className='service-content'>
+      <div className="service-content">
         <h3>{props.data.name}</h3>
-        {/* <h5>{props.data.skills}</h5> */}
-        <p style={{ height: '95px' }}>
-          {props.data.info}
-        </p>
+        <p style={{ height: '95px' }}>{props.data.info}</p>
         <p>
-          {props.data.complete && props.data.status !== "deactive" ? (
+          {props.data.complete && props.data.status !== 'deactive' ? (
             <a
               href={props.data.url}
               target="_blank"
               rel="noopener noreferrer"
-              className='service-button'
+              className="service-button"
             >
               サービスを見る
             </a>
+          ) : props.data.status === 'deactive' ? (
+            'Not working.'
           ) : (
-            props.data.status === "deactive" ? (
-              "Not working."
-            ) : (
-              "Coming soon..."
-            )
+            'Coming soon...'
           )}
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const EachComponent = (props) =>{
-
+export const EachComponent = props => {
   return (
     <div>
       <div style={styles.card}>
         <CardContentComponent data={props.data} />
-      </div >
-    </div >
+      </div>
+    </div>
   );
-}
+};
 
 class ServiceComponent extends PureComponent {
-
   render() {
     return (
       <div style={{ paddingTop: '5px', textAlign: 'center' }}>
-        <h2 className='title'>Services</h2>
+        <h2 className="title">Services</h2>
 
-        <Grid container justify={'center'} className='container'>
-          {listData.map((each) => (
-            <Grid item xs={12} sm={6} md={4} className='grid'>
+        <Grid container justify={'center'} className="container">
+          {listData.map(each => (
+            <Grid item xs={12} sm={6} md={4} className="grid">
               <EachComponent data={each} />
             </Grid>
           ))}
@@ -127,4 +98,3 @@ class ServiceComponent extends PureComponent {
 }
 
 export default ServiceComponent;
-

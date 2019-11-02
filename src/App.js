@@ -4,17 +4,21 @@ import NavigationComponent from './components/navi.component';
 import ServiceComponent from './components/service.component';
 import { ProfileComponent } from './components/profile.component';
 import JumbotronComponent from './components/jumbotron.component';
-import { Route, Switch, BrowserRouter as Router, Redirect } from 'react-router-dom';
+import {
+  Route,
+  Switch,
+  BrowserRouter as Router,
+  Redirect
+} from 'react-router-dom';
 
 const styles = {
   background: {
     width: '100%',
-    height: '100%',
+    height: '100%'
   }
-}
+};
 
 class LandingComponent extends Component {
-
   render() {
     return (
       <div style={styles.background}>
@@ -30,13 +34,12 @@ class LandingComponent extends Component {
 
 class App extends Component {
   render() {
-
     return (
       <div>
         <Router>
           <Switch>
             <Route exact={true} path="/" component={LandingComponent} />
-            <Route render={() => (<Redirect to={"/"} />)} />
+            <Route render={() => <Redirect to={'/'} />} />
           </Switch>
         </Router>
       </div>
