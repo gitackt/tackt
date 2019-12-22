@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 
 import { listData } from '../params/services';
 
-const styles = {
+const styles: any = {
   card: {
     width: '95%',
     height: '450px',
@@ -20,7 +20,7 @@ const styles = {
   }
 };
 
-const CardContentComponent = props => {
+const CardContentComponent = (props: any) => {
   return (
     <div>
       {props.data.status === 'sold' && <div className="tag sold">Sold</div>}
@@ -69,7 +69,7 @@ const CardContentComponent = props => {
   );
 };
 
-export const EachComponent = props => {
+export const EachComponent = (props: any) => {
   return (
     <div>
       <div style={styles.card}>

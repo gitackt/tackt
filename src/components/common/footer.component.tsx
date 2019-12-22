@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 
-const styles = {
+const styles: any = {
   container: {
     position: 'relative',
     paddingTop: '10px',

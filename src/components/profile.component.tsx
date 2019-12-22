@@ -4,7 +4,7 @@ import { skillData } from '../params/skill';
 import { certificationData } from '../params/certification';
 import Grid from '@material-ui/core/Grid';
 
-const styles = {
+const styles: any = {
   content: {
     maxWidth: '1000px',
     marginLeft: 'auto',
@@ -17,10 +17,10 @@ const styles = {
     border: 'solid 1px #26ccbb'
   },
   baloon: {
+    textAlign: 'center',
     maxWidth: '600px',
     marginLeft: 'auto',
     marginRight: 'auto',
-    textAlign: 'left',
     borderRadius: '10px',
     padding: '30px',
     marginBottom: '50px',
@@ -70,7 +70,7 @@ export class ProfileComponent extends PureComponent {
           >
             @picos_tackt
           </a>
-          )です。個人でWebサービスやアプリを作ってます。アイコンも作っています。
+          )です。Webサービスやアプリを作ってます。
           <div style={styles.shareContainer}>
             <a
               href={'https://www.facebook.com/gitackt'}
@@ -120,7 +120,7 @@ export class ProfileComponent extends PureComponent {
         </div>
 
         <Grid container justify={'center'} className="container">
-          <Grid item xs={12} sm={6} md={4} className="grid">
+          <Grid item xs={12} sm={6} md={6} className="grid">
             <h3 style={styles.smallProfile}>Experiences</h3>
             <div style={styles.profile}>
               {jobData.map(each => (
@@ -145,7 +145,7 @@ export class ProfileComponent extends PureComponent {
               ))}
             </div>
           </Grid>
-          <Grid item xs={12} sm={6} md={4} className="grid">
+          <Grid item xs={12} sm={6} md={6} className="grid">
             <h3 style={styles.smallProfile}>Certifications</h3>
             <div style={styles.profile}>
               {certificationData.map(each => (
@@ -170,21 +170,21 @@ export class ProfileComponent extends PureComponent {
               ))}
             </div>
           </Grid>
-          <Grid item xs={12} sm={6} md={4} className="grid">
-            <h3 style={styles.smallProfile}>Skills</h3>
+          <Grid item xs={12} sm={12} md={12} className="grid">
+            <h3 style={styles.smallProfile}>Main skills used</h3>
             <div style={styles.profile}>
               {skillData.map(each => (
                 <div style={{ padding: '10px' }}>
                   <span
                     style={{
                       marginTop: '15px',
+                      marginRight: '25px',
                       fontSize: '14px',
                       color: '#26ccbb'
                     }}
                   >
                     {each.term}
                   </span>
-                  <br />
                   <span style={{ fontSize: '13px' }}>{each.name}</span>
                 </div>
               ))}

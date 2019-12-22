@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import FooterComponent from './components/footer.component';
-import NavigationComponent from './components/navi.component';
+import FooterComponent from './components/common/footer.component';
+import NavigationComponent from './components/common/navi.component';
 import ServiceComponent from './components/service.component';
 import { ProfileComponent } from './components/profile.component';
 import JumbotronComponent from './components/jumbotron.component';
