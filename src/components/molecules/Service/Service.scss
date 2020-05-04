@@ -1,0 +1,28 @@
+@import "../../../App.scss";
+
+.serviceContainer {
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 90%;
+  max-width: 900px;
+  font-family: "Fredoka One", cursive;
+}
+
+.serviceTitle {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.serviceDiscription {
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+
+.serviceUrl {
+  font-size: 16px;
+  color: $primary;
+}

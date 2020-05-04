@@ -18,6 +18,7 @@ const scrollTop = (): number => {
 
 const App: React.FC<Props> = () => {
   const [className, setClassName] = React.useState("root")
+  const [colorClass, setColorClass] = React.useState("profileColor")
 
   React.useEffect(() => {
     document.addEventListener("scroll", onScroll)
@@ -41,17 +42,35 @@ const App: React.FC<Props> = () => {
   const onScroll = (): void => {
     const position = scrollTop()
     if (position <= profile) {
-      !className.includes("pink") && setClassName("root pink")
+      if (!className.includes("pink")) {
+        setClassName("root pink")
+        setColorClass("profileColor")
+      }
     } else if (position <= pHeight) {
-      !className.includes("redPurple") && setClassName("root redPurple")
+      if (!className.includes("redPurple")) {
+        setClassName("root redPurple")
+        setColorClass("productColor")
+      }
     } else if (position <= eHeight) {
-      !className.includes("bluePurple") && setClassName("root bluePurple")
+      if (!className.includes("bluePurple")) {
+        setClassName("root bluePurple")
+        setColorClass("eigineeringColor")
+      }
     } else if (position <= dHeight) {
-      !className.includes("blueGreen") && setClassName("root blueGreen")
+      if (!className.includes("blueGreen")) {
+        setClassName("root blueGreen")
+        setColorClass("designColor")
+      }
     } else if (position <= wHeight) {
-      !className.includes("yellowGreen") && setClassName("root yellowGreen")
+      if (!className.includes("yellowGreen")) {
+        setClassName("root yellowGreen")
+        setColorClass("writingColor")
+      }
     } else {
-      !className.includes("primary") && setClassName("root primary")
+      if (!className.includes("primary")) {
+        setClassName("root primary")
+        setColorClass("primaryColor")
+      }
     }
   }
 
@@ -64,6 +83,7 @@ const App: React.FC<Props> = () => {
             content={content}
             key={content.title}
             id={content.title}
+            colorClass={colorClass}
           />
         )
       })}

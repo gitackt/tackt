@@ -1,19 +1,20 @@
 $primary: #fff;
 
-$lightRedPurple: #e4b9eb;
-$lightBluePurple: #b2c4f0;
+$lightPink: #ffc3d7;
+$lightRedPurple: #ebaeed;
+$lightBluePurple: #c3aafa;
 $lightBlueGreen: #99dcd4;
 $lightYellowGreen: #b0d0a1;
 
 $backgroundPink: #ffadc8;
-$backgroundRedPurple: #d5a6dd;
-$backgroundBluePurple: #a8bae7;
+$backgroundRedPurple: #d595d7;
+$backgroundBluePurple: #b49aec;
 $backgroundBlueGreen: #8ed6cd;
 $backgroundYellowGreen: #a7c798;
 
 .root {
   width: 100%;
-  height: 5000px;
+  height: 100%;
   margin: 0;
   color: $primary;
   background-color: $backgroundPink;

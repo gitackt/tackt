@@ -3,11 +3,18 @@
 .content {
   text-align: center;
   width: 100%;
+  height: 800px;
 }
 
 .contentTitle {
   font-family: "Fredoka One", cursive;
   font-size: 40px;
+}
+
+.contentSubTitle {
+  font-family: "Fredoka One", cursive;
+  font-size: 30px;
+  padding: 30px;
 }
 
 .contentBorder {
@@ -20,4 +27,28 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.profileColor {
+  background-color: $lightPink;
+}
+
+.productColor {
+  background-color: $lightRedPurple;
+}
+
+.eigineeringColor {
+  background-color: $lightBluePurple;
+}
+
+.designColor {
+  background-color: $lightBlueGreen;
+}
+
+.writingColor {
+  background-color: $lightYellowGreen;
+}
+
+.primaryColor {
+  background-color: $primary;
 }
