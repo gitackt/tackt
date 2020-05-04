@@ -13,6 +13,8 @@ export const appState = {
           term: "2020/4 ~",
         },
       ] as Array<Service>,
+      experiences: [],
+      writings: [],
     },
   ],
 }

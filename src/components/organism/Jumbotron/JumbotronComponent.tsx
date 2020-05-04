@@ -9,7 +9,7 @@ const styles = {
   },
 }
 
-const Jumbotron: React.FC<Props> = () => {
+const JumbotronComponent: React.FC<Props> = () => {
   return (
     <div className="jumbotron" style={styles.contentHeight}>
       <div className="jumbotronInnerContainer">
@@ -36,4 +36,4 @@ const Jumbotron: React.FC<Props> = () => {
   )
 }
 
-export default Jumbotron
+export default JumbotronComponent

@@ -3,7 +3,8 @@ import "bulma/css/bulma.css"
 import "./App.scss"
 import { appState } from "./entity/appState"
 
-import Jumbotron from "./components/organism/Jumbotron/Jumbotron"
+import JumbotronComponent from "./components/organism/Jumbotron/JumbotronComponent"
+import ContentComponent from "./components/organism/Content/ContentComponent"
 
 interface Props {}
 
@@ -42,9 +43,9 @@ const App: React.FC<Props> = () => {
 
   return (
     <div className={className}>
-      <Jumbotron />
-      {appState.contents.map((each) => {
-        return <div>{each.title}</div>
+      <JumbotronComponent />
+      {appState.contents.map((content) => {
+        return <ContentComponent content={content} />
       })}
     </div>
   )
