@@ -12,11 +12,22 @@ const ServiceComponent: React.FC<Props> = (props) => {
 
   return (
     <div className={cardClass}>
-      <div className="serviceTitle">{props.service.title}</div>
-      <div className="serviceDiscription">{props.service.discription}</div>
-      <a className="serviceUrl" href={props.service.url} target={"_blank"}>
-        {props.service.url}
-      </a>
+      <div className="columns">
+        <div className="column is-two-thirds">
+          <div className="serviceTitle">{props.service.title}</div>
+          <div className="serviceDiscription">{props.service.discription}</div>
+        </div>
+        <div className="column">
+          <a
+            className="serviceUrl"
+            href={props.service.url}
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
+            {props.service.url}
+          </a>
+        </div>
+      </div>
     </div>
   )
 }
