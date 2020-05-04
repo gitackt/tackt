@@ -1,9 +1,12 @@
+import { Skill } from "../interfaces/Skill"
 import { Service } from "../interfaces/Service"
+import { Experience } from "../interfaces/Experience"
+import { Writing } from "../interfaces/Writing"
 
 export interface Content {
   title: string
-  backgroundColor: string
+  skills: Array<Skill>
   services: Array<Service>
-  experiences: Array<any>
-  writings: Array<any>
+  experiences: Array<Experience>
+  writings: Array<Writing>
 }

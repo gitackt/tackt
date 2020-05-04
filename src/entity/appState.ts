@@ -4,7 +4,7 @@ export const appState = {
   contents: [
     {
       title: "Product",
-      backgroundColor: "#D5A6DD",
+      skills: [],
       services: [
         {
           title: "potato sand",

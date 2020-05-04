@@ -4,3 +4,20 @@
   text-align: center;
   width: 100%;
 }
+
+.contentTitle {
+  font-family: "Fredoka One", cursive;
+  font-size: 40px;
+}
+
+.contentBorder {
+  height: 1.5px;
+  width: 15%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: $primary;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
