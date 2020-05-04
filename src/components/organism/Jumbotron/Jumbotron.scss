@@ -1,0 +1,101 @@
+@import "../../../App.scss";
+
+.jumbotron {
+  text-align: center;
+  width: 100%;
+  display: table;
+  font-family: "Fredoka One", cursive;
+  animation: fadeInAnimation 1s ease;
+}
+
+.jumbotronInnerContainer {
+  display: table-cell;
+  vertical-align: middle;
+  margin-top: -50px;
+}
+
+.profileImage {
+  width: 200px;
+  height: auto;
+  animation: imageAnimation 0.8s ease 0.7s;
+}
+
+.profileTitle {
+  font-size: 35px;
+}
+
+.profileSubTitle {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.profileBorder {
+  height: 1.5px;
+  width: 80%;
+  border-radius: 5px;
+  background-color: $primary;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  animation: borderAnimation 1s ease;
+}
+
+.snsContainer {
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sns {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes imageAnimation {
+  0% {
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes borderAnimation {
+  0% {
+    width: 5%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profileTitle {
+    font-size: 30px;
+  }
+  .profileSubTitle {
+    font-size: 20px;
+  }
+  .jumbotron {
+    padding-top: 25%;
+    padding-bottom: 25%;
+  }
+}

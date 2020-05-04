@@ -13,7 +13,20 @@ $backgroundYellowGreen: #a7c798;
 
 .root {
   width: 100%;
-  height: 100%;
+  height: 5000px;
   margin: 0;
   color: $primary;
+  background-color: $backgroundPink;
+}
+
+.pink {
+  background-color: $backgroundPink;
+}
+
+.redPurple {
+  background-color: $backgroundRedPurple;
+}
+
+.yellowGreen {
+  background-color: $backgroundYellowGreen;
 }
