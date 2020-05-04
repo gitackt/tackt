@@ -18,14 +18,16 @@ const ServiceComponent: React.FC<Props> = (props) => {
           <div className="serviceDiscription">{props.service.discription}</div>
         </div>
         <div className="column">
-          <a
-            className="serviceUrl"
-            href={props.service.url}
-            target={"_blank"}
-            rel="noopener noreferrer"
-          >
-            {props.service.url}
-          </a>
+          {props.service.url !== "#" && (
+            <a
+              className="serviceUrl"
+              href={props.service.url}
+              target={"_blank"}
+              rel="noopener noreferrer"
+            >
+              {props.service.url}
+            </a>
+          )}
         </div>
       </div>
     </div>

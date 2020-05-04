@@ -11,21 +11,21 @@
 .jumbotronInnerContainer {
   display: table-cell;
   vertical-align: middle;
-  margin-top: -50px;
+  margin-top: -80px;
 }
 
 .profileImage {
-  width: 200px;
+  width: 350px;
   height: auto;
   animation: imageAnimation 0.8s ease 0.7s;
 }
 
 .profileTitle {
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .profileSubTitle {
-  font-size: 20px;
+  font-size: 30px;
   padding: 20px;
 }
 
@@ -89,10 +89,10 @@
 
 @media screen and (max-width: 480px) {
   .profileTitle {
-    font-size: 30px;
+    font-size: 35px;
   }
   .profileSubTitle {
-    font-size: 20px;
+    font-size: 25px;
   }
   .jumbotron {
     padding-top: 25%;

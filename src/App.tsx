@@ -25,7 +25,7 @@ const App: React.FC<Props> = () => {
     return (): void => document.removeEventListener("scroll", onScroll)
   })
 
-  const profile = 600
+  const profile = 550
   const pHeight = document.getElementById("Product")
     ? profile + document.getElementById("Product")!.clientHeight
     : 0
