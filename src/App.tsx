@@ -25,12 +25,18 @@ const App: React.FC<Props> = () => {
 
   const onScroll = (): void => {
     const position = scrollTop()
-    if (position <= 400) {
+    if (position <= 600) {
       !className.includes("pink") && setClassName("root pink")
     } else if (position <= 1200) {
       !className.includes("redPurple") && setClassName("root redPurple")
-    } else {
+    } else if (position <= 1800) {
+      !className.includes("bluePurple") && setClassName("root bluePurple")
+    } else if (position <= 2400) {
+      !className.includes("blueGreen") && setClassName("root blueGreen")
+    } else if (position <= 3000) {
       !className.includes("yellowGreen") && setClassName("root yellowGreen")
+    } else {
+      !className.includes("primary") && setClassName("root primary")
     }
   }
 
