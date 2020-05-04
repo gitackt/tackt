@@ -1,25 +1,14 @@
 import React from "react"
+import "bulma/css/bulma.css"
 import "./App.css"
-import {
-  Route,
-  Switch,
-  BrowserRouter as Router,
-  Redirect,
-} from "react-router-dom"
-
-const LandingComponent = () => {
-  return <div className="background">test</div>
-}
+import { appState } from "./entity/appState"
 
 const App = () => {
   return (
-    <div>
-      <Router>
-        <Switch>
-          <Route exact={true} path="/" component={LandingComponent} />
-          <Route render={() => <Redirect to={"/"} />} />
-        </Switch>
-      </Router>
+    <div className="root">
+      {appState.contents.map((each) => {
+        return <div>{each.title}</div>
+      })}
     </div>
   )
 }

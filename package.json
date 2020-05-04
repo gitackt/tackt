@@ -9,17 +9,18 @@
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
     "@types/react-router-dom": "^5.1.5",
-    "react": "^16.13.1`",
-    "react-dom": "^16.13.1`",
+    "bulma": "^0.8.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.1`",
+    "react-scripts": "^3.4.1",
     "react-snap": "^1.23.0",
     "typescript": "^3.8.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "routine": "sh routine.sh",
-    "deploy": "sh deploy.sh",
+    "deploy": "yarn build && firebase deploy",
     "build": "react-scripts build",
     "postbuild": "react-snap"
   },
