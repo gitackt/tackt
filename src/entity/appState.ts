@@ -16,5 +16,26 @@ export const appState = {
       experiences: [],
       writings: [],
     },
+    {
+      title: "Engineering",
+      skills: [],
+      services: [],
+      experiences: [],
+      writings: [],
+    },
+    {
+      title: "Design",
+      skills: [],
+      services: [],
+      experiences: [],
+      writings: [],
+    },
+    {
+      title: "Writing",
+      skills: [],
+      services: [],
+      experiences: [],
+      writings: [],
+    },
   ],
 }

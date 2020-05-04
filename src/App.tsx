@@ -24,17 +24,31 @@ const App: React.FC<Props> = () => {
     return (): void => document.removeEventListener("scroll", onScroll)
   })
 
+  const profile = 600
+  const pHeight = document.getElementById("Product")
+    ? profile + document.getElementById("Product")!.clientHeight
+    : 0
+  const eHeight = document.getElementById("Engineering")
+    ? pHeight + document.getElementById("Engineering")!.clientHeight
+    : 0
+  const dHeight = document.getElementById("Design")
+    ? eHeight + document.getElementById("Design")!.clientHeight
+    : 0
+  const wHeight = document.getElementById("Writing")
+    ? dHeight + document.getElementById("Writing")!.clientHeight
+    : 0
+
   const onScroll = (): void => {
     const position = scrollTop()
-    if (position <= 600) {
+    if (position <= profile) {
       !className.includes("pink") && setClassName("root pink")
-    } else if (position <= 1200) {
+    } else if (position <= pHeight) {
       !className.includes("redPurple") && setClassName("root redPurple")
-    } else if (position <= 1800) {
+    } else if (position <= eHeight) {
       !className.includes("bluePurple") && setClassName("root bluePurple")
-    } else if (position <= 2400) {
+    } else if (position <= dHeight) {
       !className.includes("blueGreen") && setClassName("root blueGreen")
-    } else if (position <= 3000) {
+    } else if (position <= wHeight) {
       !className.includes("yellowGreen") && setClassName("root yellowGreen")
     } else {
       !className.includes("primary") && setClassName("root primary")
@@ -45,7 +59,13 @@ const App: React.FC<Props> = () => {
     <div className={className}>
       <JumbotronComponent />
       {appState.contents.map((content) => {
-        return <ContentComponent content={content} />
+        return (
+          <ContentComponent
+            content={content}
+            key={content.title}
+            id={content.title}
+          />
+        )
       })}
     </div>
   )
