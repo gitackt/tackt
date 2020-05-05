@@ -44,7 +44,18 @@ export const appState = {
       title: "Engineering",
       skills: [],
       services: [],
-      experiences: [],
+      experiences: [
+        {
+          name: "Crezit inc.",
+          pisition: "Software Engineer",
+          title: "CREZIT (デジタルネイティブ向けモバイルクレジット)",
+          discription:
+            "創業メンバーとして新卒入社しました。利息0%で10万円借りる事ができるサービスを開発しています。",
+          url: "https://crezit.jp/",
+          term: "2019/8 ~",
+          imageUrl: "./images/experiences/crezit.png",
+        },
+      ],
       writings: [],
     },
     {

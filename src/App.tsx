@@ -25,23 +25,20 @@ const App: React.FC<Props> = () => {
     return (): void => document.removeEventListener("scroll", onScroll)
   })
 
-  const profile = 400
-  const pHeight = document.getElementById("Product")
-    ? profile + document.getElementById("Product")!.clientHeight
-    : 0
-  const eHeight = document.getElementById("Engineering")
-    ? pHeight + document.getElementById("Engineering")!.clientHeight
-    : 0
-  const dHeight = document.getElementById("Design")
-    ? eHeight + document.getElementById("Design")!.clientHeight
-    : 0
-  const wHeight = document.getElementById("Writing")
-    ? dHeight + document.getElementById("Writing")!.clientHeight
-    : 0
+  const pElement = document.getElementById("Product")
+  const eElement = document.getElementById("Engineering")
+  const dElement = document.getElementById("Design")
+  const wElement = document.getElementById("Writing")
+
+  const profileHeight = 400
+  const pHeight = pElement ? profileHeight + pElement.clientHeight : 0
+  const eHeight = eElement ? pHeight + eElement.clientHeight : 0
+  const dHeight = dElement ? eHeight + dElement.clientHeight : 0
+  const wHeight = wElement ? dHeight + wElement.clientHeight : 0
 
   const onScroll = (): void => {
     const position = scrollTop()
-    if (position <= profile) {
+    if (position <= profileHeight) {
       if (!className.includes("pink")) {
         setClassName("root pink")
         setColorClass("profileColor")

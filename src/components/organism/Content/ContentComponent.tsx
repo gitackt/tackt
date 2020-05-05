@@ -2,6 +2,7 @@ import React from "react"
 import "./Content.scss"
 import { Content } from "../../../interfaces/Content"
 import ServiceComponent from "../../../components/molecules/Service/ServiceComponent"
+import ExperienceComponent from "../../../components/molecules/Experience/ExperienceComponent"
 
 interface Props {
   id: string
@@ -21,6 +22,19 @@ const ContentComponent: React.FC<Props> = (props) => {
               <ServiceComponent
                 key={service.title}
                 service={service}
+                cardClass={props.colorClass}
+              />
+            )
+          })}
+        </div>
+      )}
+      {props.content.experiences.length !== 0 && (
+        <div>
+          {props.content.experiences.map((experience) => {
+            return (
+              <ExperienceComponent
+                key={experience.title}
+                experience={experience}
                 cardClass={props.colorClass}
               />
             )

@@ -12,8 +12,8 @@ const ServiceComponent: React.FC<Props> = (props) => {
 
   return (
     <div className={cardClass}>
-      <div className="columns">
-        <div className="column serviceImageContainer">
+      <div className="columns columnContainer">
+        <div className="column">
           <img
             className="serviceImage"
             src={props.service.imageUrl}
