@@ -63,7 +63,16 @@ export const appState = {
     {
       title: "Writing",
       skills: [],
-      services: [],
+      services: [
+        {
+          title: "人生は運ゲー",
+          discription:
+            "個人ブログです。お金をかけないで生きるサバイバル術を書いています。",
+          url: "https://monetizealchemist.com/",
+          imageUrl: "./images/services/monetizealchemist_info.png",
+          term: "2017/12 ~",
+        },
+      ],
       experiences: [],
       writings: [],
     },
@@ -72,33 +81,51 @@ export const appState = {
       skills: [],
       services: [
         {
-          title: "potato sand（開発中）",
+          title: "potato sand",
           discription:
-            "オセロゲームです。ハンバーガーでポテトをサンドしてひっくり返します。TypescriptとReact.jsを使用して作りました。",
+            "（開発中）\n オセロゲームです。ハンバーガーでポテトをサンドしてひっくり返します。TypescriptとReact.jsを使用して作りました。",
           url: "https://potato-sand.web.app/",
           imageUrl: "./images/services/potato_info.png",
           term: "2020/4 ~",
         },
         {
-          title: "格付けくん（サービス終了）",
+          title: "Props iOS",
           discription:
-            "個人の口コミサイトです。日頃の感謝や、仕事のお礼など、相手の評価につながる口コミを書くことが出来ます。フロントエンドはVue.js、バックエンドはGolang(Echo)を使って作りました。",
+            "持ち物管理ができるiOSアプリです。自分の持ち物をアプリでまとめて管理できます。",
+          url:
+            "https://apps.apple.com/us/app/props-%E6%8C%81%E3%81%A1%E7%89%A9%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA/id1460285997?l=ja&ls=1",
+          imageUrl: "./images/services/props_info.png",
+          term: "2018/8 ~",
+        },
+        {
+          title: "Props Android",
+          discription:
+            "（開発中）\n 持ち物管理ができるAndroidアプリです。自分の持ち物をアプリでまとめて管理できます。",
+          url:
+            "https://play.google.com/store/apps/details?id=com.gitackt.props",
+          imageUrl: "./images/services/props_info.png",
+          term: "2018/8 ~",
+        },
+        {
+          title: "格付けくん",
+          discription:
+            "（サービス終了）\n 個人の口コミサイトです。日頃の感謝や、仕事のお礼など、相手の評価につながる口コミを書くことが出来ます。フロントエンドはVue.js、バックエンドはGolang(Echo)を使って作りました。",
           url: "#",
           imageUrl: "./images/services/rank_info.png",
           term: "2019/4 ~ 2019/8",
         },
         {
-          title: "Babel Bubble（サービス終了）",
+          title: "Babel Bubble",
           discription:
-            "無料で遊べる投資シミュレーションゲームです。架空のアイテムをゲーム内通貨で売買して遊びます。フロントエンドはReact.js、バックエンドはPython(Django)を使って作りました。",
+            "（サービス終了）\n 無料で遊べる投資シミュレーションゲームです。架空のアイテムをゲーム内通貨で売買して遊びます。フロントエンドはReact.js、バックエンドはPython(Django)を使って作りました。",
           url: "#",
           imageUrl: "./images/services/babel_info.png",
           term: "2018/7 ~ 2019/7",
         },
         {
-          title: "VCU（サービス終了）",
+          title: "VCU",
           discription:
-            "仮想通貨のポートフォリオ管理サービスです。複数の取引所とAPI連携を行い自動でデータを取得します。Python(Django)を使って作りました。",
+            "（サービス終了）\n 仮想通貨のポートフォリオ管理サービスです。複数の取引所とAPI連携を行い自動でデータを取得します。Python(Django)を使って作りました。",
           url: "#",
           imageUrl: "./images/services/vcu_info.png",
           term: "2017/12 ~ 2019/6",

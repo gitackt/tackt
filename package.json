@@ -21,7 +21,7 @@
   "scripts": {
     "start": "react-scripts start",
     "routine": "sh routine.sh",
-    "deploy": "yarn build && firebase deploy",
+    "deploy": "rm -rf build/* && yarn build && firebase deploy",
     "build": "react-scripts build",
     "postbuild": "react-snap"
   },

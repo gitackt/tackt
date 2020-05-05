@@ -13,14 +13,14 @@ const ServiceComponent: React.FC<Props> = (props) => {
   return (
     <div className={cardClass}>
       <div className="columns columnContainer">
-        <div className="column">
+        <div className="column is-two-fifths">
           <img
             className="serviceImage"
             src={props.service.imageUrl}
             alt={props.service.imageUrl}
           />
         </div>
-        <div className="column is-three-quarters">
+        <div className="column">
           <div className="serviceTitle">{props.service.title}</div>
           <div className="serviceDiscription">{props.service.discription}</div>
           <div className="serviceUrlContainer">
@@ -31,7 +31,7 @@ const ServiceComponent: React.FC<Props> = (props) => {
                 target={"_blank"}
                 rel="noopener noreferrer"
               >
-                {props.service.url}
+                {props.service.url.slice(0, 30)}
               </a>
             )}
           </div>
