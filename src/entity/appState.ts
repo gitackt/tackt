@@ -1,6 +1,73 @@
 export const appState = {
   contents: [
     {
+      title: "Engineering",
+      skills: [],
+      services: [],
+      experiences: [
+        {
+          name: "Crezit inc.",
+          pisition: "Software Engineer",
+          term: "2019/8 ~",
+          corpUrl: "https://corp.crezit.jp/",
+          works: [
+            {
+              title: "CREZIT (デジタルネイティブ向けモバイルクレジット)",
+              discription:
+                "創業メンバーとして新卒入社しました。利息0%で10万円借りる事ができるサービスを開発しています。",
+              url: "https://crezit.jp/",
+              imageUrl: "./images/experiences/crezit.png",
+            },
+          ],
+        },
+        {
+          name: "MICIN inc.",
+          pisition: "Software Engineer Internship",
+          term: "2018/3 ~ 2020/2",
+          corpUrl: "https://micin.jp/",
+          works: [
+            {
+              title: "Curon (オンライン診療サービス)",
+              discription:
+                "学生時代にインターンをしていました。React-nativeを使ったモバイルアプリケーション開発をしていました。",
+              url: "https://curon.co/",
+              imageUrl: "./images/experiences/curon.png",
+            },
+          ],
+        },
+      ],
+      writings: [],
+    },
+    {
+      title: "Design",
+      skills: [],
+      services: [],
+      experiences: [
+        {
+          name: "AZ",
+          pisition: "Graphic Designer",
+          term: "2020/4 ~",
+          corpUrl: "#",
+          works: [
+            {
+              title: "AZ（D2Cアパレルブランド）",
+              discription: "ブランドロゴのキャラクターを描きました。",
+              url: "#",
+              imageUrl: "./images/experiences/az.png",
+            },
+          ],
+        },
+      ],
+      writings: [],
+    },
+    {
+      title: "Writing",
+      skills: [],
+      services: [],
+      experiences: [],
+      writings: [],
+    },
+    {
       title: "Product",
       skills: [],
       services: [
@@ -37,38 +104,6 @@ export const appState = {
           term: "2017/12 ~ 2019/6",
         },
       ],
-      experiences: [],
-      writings: [],
-    },
-    {
-      title: "Engineering",
-      skills: [],
-      services: [],
-      experiences: [
-        {
-          name: "Crezit inc.",
-          pisition: "Software Engineer",
-          title: "CREZIT (デジタルネイティブ向けモバイルクレジット)",
-          discription:
-            "創業メンバーとして新卒入社しました。利息0%で10万円借りる事ができるサービスを開発しています。",
-          url: "https://crezit.jp/",
-          term: "2019/8 ~",
-          imageUrl: "./images/experiences/crezit.png",
-        },
-      ],
-      writings: [],
-    },
-    {
-      title: "Design",
-      skills: [],
-      services: [],
-      experiences: [],
-      writings: [],
-    },
-    {
-      title: "Writing",
-      skills: [],
-      services: [],
       experiences: [],
       writings: [],
     },

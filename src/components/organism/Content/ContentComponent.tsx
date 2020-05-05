@@ -33,7 +33,7 @@ const ContentComponent: React.FC<Props> = (props) => {
           {props.content.experiences.map((experience) => {
             return (
               <ExperienceComponent
-                key={experience.title}
+                key={experience.name}
                 experience={experience}
                 cardClass={props.colorClass}
               />

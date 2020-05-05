@@ -27,30 +27,31 @@
   font-size: 16px;
   padding-top: 23px;
   padding-left: 25px;
-  padding-right: 50px;
+  padding-right: 5%;
   color: white;
   text-align: right;
   font-family: "Fredoka One", cursive;
 }
 
 .experienceTitle {
-  font-size: 19px;
+  font-size: 17px;
   padding-bottom: 15px;
+  height: 60px;
 }
 
 .experienceDiscription {
   font-size: 14px;
   margin-bottom: 30px;
+  height: 60px;
 }
 
 .experienceUrl {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   background-color: $primary;
   color: $secondary;
   padding: 15px;
   border-radius: 10px;
-  max-width: 300px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -58,12 +59,14 @@
 
 .columnContainer {
   text-align: left;
-  padding: 5%;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 5%;
 }
 
 .experienceImage {
   width: 350px;
-  height: 200px;
+  height: 201px;
   border-radius: 10px;
   object-fit: cover;
 }

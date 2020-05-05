@@ -1,9 +1,9 @@
+import { Work } from "./Work"
+
 export interface Experience {
   name: string
   pisition: string
-  title: string
-  discription: string
-  url: string
   term: string
-  imageUrl: string
+  corpUrl: string
+  works: Array<Work>
 }

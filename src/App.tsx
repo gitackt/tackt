@@ -25,16 +25,16 @@ const App: React.FC<Props> = () => {
     return (): void => document.removeEventListener("scroll", onScroll)
   })
 
-  const pElement = document.getElementById("Product")
   const eElement = document.getElementById("Engineering")
   const dElement = document.getElementById("Design")
   const wElement = document.getElementById("Writing")
+  const pElement = document.getElementById("Product")
 
-  const profileHeight = 400
-  const pHeight = pElement ? profileHeight + pElement.clientHeight : 0
-  const eHeight = eElement ? pHeight + eElement.clientHeight : 0
+  const profileHeight = 500
+  const eHeight = eElement ? profileHeight + eElement.clientHeight : 0
   const dHeight = dElement ? eHeight + dElement.clientHeight : 0
   const wHeight = wElement ? dHeight + wElement.clientHeight : 0
+  const pHeight = pElement ? wHeight + pElement.clientHeight : 0
 
   const onScroll = (): void => {
     const position = scrollTop()
@@ -42,11 +42,6 @@ const App: React.FC<Props> = () => {
       if (!className.includes("pink")) {
         setClassName("root pink")
         setColorClass("profileColor")
-      }
-    } else if (position <= pHeight) {
-      if (!className.includes("redPurple")) {
-        setClassName("root redPurple")
-        setColorClass("productColor")
       }
     } else if (position <= eHeight) {
       if (!className.includes("bluePurple")) {
@@ -62,6 +57,11 @@ const App: React.FC<Props> = () => {
       if (!className.includes("yellowGreen")) {
         setClassName("root yellowGreen")
         setColorClass("writingColor")
+      }
+    } else if (position <= pHeight) {
+      if (!className.includes("redPurple")) {
+        setClassName("root redPurple")
+        setColorClass("productColor")
       }
     } else {
       if (!className.includes("primary")) {
