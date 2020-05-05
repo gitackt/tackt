@@ -4,14 +4,11 @@ import { Experience } from "../../../interfaces/Experience"
 
 interface Props {
   experience: Experience
-  cardClass: string
 }
 
 const ExperienceComponent: React.FC<Props> = (props) => {
-  const cardClass = "experienceContainer " + props.cardClass
-
   return (
-    <div className={cardClass}>
+    <div className="experienceContainer">
       <div className="columns">
         <div className="column experienceName">{props.experience.name}</div>
         <div className="column experiencePosition">

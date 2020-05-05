@@ -7,7 +7,6 @@ import ExperienceComponent from "../../../components/molecules/Experience/Experi
 interface Props {
   id: string
   content: Content
-  colorClass: string
 }
 
 const ContentComponent: React.FC<Props> = (props) => {
@@ -18,13 +17,7 @@ const ContentComponent: React.FC<Props> = (props) => {
       {props.content.services.length !== 0 && (
         <div>
           {props.content.services.map((service) => {
-            return (
-              <ServiceComponent
-                key={service.title}
-                service={service}
-                cardClass={props.colorClass}
-              />
-            )
+            return <ServiceComponent key={service.title} service={service} />
           })}
         </div>
       )}
@@ -35,7 +28,6 @@ const ContentComponent: React.FC<Props> = (props) => {
               <ExperienceComponent
                 key={experience.name}
                 experience={experience}
-                cardClass={props.colorClass}
               />
             )
           })}

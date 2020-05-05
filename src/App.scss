@@ -8,10 +8,10 @@ $lightYellowGreen: #b0d0a1;
 $lightRedPurple: #ebaeed;
 
 $backgroundPink: #ffadc8;
-$backgroundBluePurple: #b49aec;
-$backgroundBlueGreen: #7fccc3;
-$backgroundYellowGreen: #a7c798;
-$backgroundRedPurple: #d595d7;
+$backgroundRedPurple: #513957;
+$backgroundBluePurple: #395557;
+$backgroundBlueGreen: #3d3957;
+$backgroundYellowGreen: #573954;
 
 .root {
   width: 100%;
@@ -27,20 +27,64 @@ $backgroundRedPurple: #d595d7;
 
 .redPurple {
   background-color: $backgroundRedPurple;
+  animation: redPurpleAnimation 1s ease;
 }
 
 .bluePurple {
   background-color: $backgroundBluePurple;
+  animation: bluePurpleAnimation 1s ease;
 }
 
 .blueGreen {
   background-color: $backgroundBlueGreen;
+  animation: blueGreenAnimation 1s ease;
 }
 
 .yellowGreen {
   background-color: $backgroundYellowGreen;
+  animation: yellowGreenAnimation 1s ease;
 }
 
 .primary {
   background-color: $primary;
+}
+
+@keyframes redPurpleAnimation {
+  0% {
+    background-color: $backgroundPink;
+  }
+
+  100% {
+    background-color: $backgroundRedPurple;
+  }
+}
+
+@keyframes bluePurpleAnimation {
+  0% {
+    background-color: $backgroundRedPurple;
+  }
+
+  100% {
+    background-color: $backgroundBluePurple;
+  }
+}
+
+@keyframes blueGreenAnimation {
+  0% {
+    background-color: $backgroundBluePurple;
+  }
+
+  100% {
+    background-color: $backgroundBlueGreen;
+  }
+}
+
+@keyframes yellowGreenAnimation {
+  0% {
+    background-color: $backgroundBlueGreen;
+  }
+
+  100% {
+    background-color: $backgroundYellowGreen;
+  }
 }

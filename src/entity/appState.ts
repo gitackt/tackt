@@ -14,7 +14,7 @@ export const appState = {
             {
               title: "CREZIT (デジタルネイティブ向けモバイルクレジット)",
               discription:
-                "創業メンバーとして新卒入社しました。利息0%で10万円借りる事ができるサービスを開発しています。",
+                "３人目の創業メンバーとして新卒入社しました。利息0%で10万円借りる事ができるサービスを開発しています。",
               url: "https://crezit.jp/",
               imageUrl: "./images/experiences/crezit.png",
             },
@@ -29,7 +29,7 @@ export const appState = {
             {
               title: "Curon (オンライン診療サービス)",
               discription:
-                "学生時代にインターンをしていました。React-nativeを使ったモバイルアプリケーション開発をしていました。",
+                "学生時代にインターンをしていました。React-nativeを使ってモバイルアプリケーション開発をしていました。",
               url: "https://curon.co/",
               imageUrl: "./images/experiences/curon.png",
             },

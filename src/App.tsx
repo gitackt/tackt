@@ -18,7 +18,6 @@ const scrollTop = (): number => {
 
 const App: React.FC<Props> = () => {
   const [className, setClassName] = React.useState("root")
-  const [colorClass, setColorClass] = React.useState("profileColor")
 
   React.useEffect(() => {
     document.addEventListener("scroll", onScroll)
@@ -30,7 +29,7 @@ const App: React.FC<Props> = () => {
   const wElement = document.getElementById("Writing")
   const pElement = document.getElementById("Product")
 
-  const profileHeight = 800
+  const profileHeight = 400
   const eHeight = eElement ? profileHeight + eElement.clientHeight : 0
   const dHeight = dElement ? eHeight + dElement.clientHeight : 0
   const wHeight = wElement ? dHeight + wElement.clientHeight : 0
@@ -41,32 +40,26 @@ const App: React.FC<Props> = () => {
     if (position <= profileHeight) {
       if (!className.includes("pink")) {
         setClassName("root pink")
-        setColorClass("profileColor")
       }
     } else if (position <= eHeight) {
-      if (!className.includes("bluePurple")) {
-        setClassName("root bluePurple")
-        setColorClass("eigineeringColor")
-      }
-    } else if (position <= dHeight) {
-      if (!className.includes("blueGreen")) {
-        setClassName("root blueGreen")
-        setColorClass("designColor")
-      }
-    } else if (position <= wHeight) {
-      if (!className.includes("yellowGreen")) {
-        setClassName("root yellowGreen")
-        setColorClass("writingColor")
-      }
-    } else if (position <= pHeight) {
       if (!className.includes("redPurple")) {
         setClassName("root redPurple")
-        setColorClass("productColor")
+      }
+    } else if (position <= dHeight) {
+      if (!className.includes("bluePurple")) {
+        setClassName("root bluePurple")
+      }
+    } else if (position <= wHeight) {
+      if (!className.includes("blueGreen")) {
+        setClassName("root blueGreen")
+      }
+    } else if (position <= pHeight) {
+      if (!className.includes("yellowGreen")) {
+        setClassName("root yellowGreen")
       }
     } else {
       if (!className.includes("primary")) {
         setClassName("root primary")
-        setColorClass("primaryColor")
       }
     }
   }
@@ -80,7 +73,6 @@ const App: React.FC<Props> = () => {
             content={content}
             key={content.title}
             id={content.title}
-            colorClass={colorClass}
           />
         )
       })}

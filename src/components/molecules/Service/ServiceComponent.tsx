@@ -4,14 +4,11 @@ import { Service } from "../../../interfaces/Service"
 
 interface Props {
   service: Service
-  cardClass: string
 }
 
 const ServiceComponent: React.FC<Props> = (props) => {
-  const cardClass = "serviceContainer " + props.cardClass
-
   return (
-    <div className={cardClass}>
+    <div className="serviceContainer">
       <div className="columns columnContainer">
         <div className="column is-two-fifths">
           <img
