@@ -7,7 +7,7 @@ export const appState = {
         {
           title: "potato sand（開発中）",
           discription:
-            "オセロゲームです。ハンバーガーでポテトをサンドしてひっくり返します。",
+            "オセロゲームです。ハンバーガーでポテトをサンドしてひっくり返します。TypescriptとReact.jsを使用して作りました。",
           url: "https://potato-sand.web.app/",
           imageUrl: "./images/services/potato_info.png",
           term: "2020/4 ~",
@@ -15,7 +15,7 @@ export const appState = {
         {
           title: "格付けくん（サービス終了）",
           discription:
-            "個人の口コミサイトです。日頃の感謝や、仕事のお礼など、相手の評価につながる口コミを書くことが出来ます。",
+            "個人の口コミサイトです。日頃の感謝や、仕事のお礼など、相手の評価につながる口コミを書くことが出来ます。フロントエンドはVue.js、バックエンドはGolang(Echo)を使って作りました。",
           url: "#",
           imageUrl: "./images/services/rank_info.png",
           term: "2019/4 ~ 2019/8",
@@ -23,7 +23,7 @@ export const appState = {
         {
           title: "Babel Bubble（サービス終了）",
           discription:
-            "無料で遊べる投資シミュレーションゲームです。架空のアイテムをゲーム内通貨で売買して遊びます。",
+            "無料で遊べる投資シミュレーションゲームです。架空のアイテムをゲーム内通貨で売買して遊びます。フロントエンドはReact.js、バックエンドはPython(Django)を使って作りました。",
           url: "#",
           imageUrl: "./images/services/babel_info.png",
           term: "2018/7 ~ 2019/7",
@@ -31,7 +31,7 @@ export const appState = {
         {
           title: "VCU（サービス終了）",
           discription:
-            "仮想通貨のポートフォリオ管理サービスです。複数の取引所とAPI連携を行い自動でデータを取得します。",
+            "仮想通貨のポートフォリオ管理サービスです。複数の取引所とAPI連携を行い自動でデータを取得します。Python(Django)を使って作りました。",
           url: "#",
           imageUrl: "./images/services/vcu_info.png",
           term: "2017/12 ~ 2019/6",
