@@ -30,7 +30,7 @@ const App: React.FC<Props> = () => {
   const wElement = document.getElementById("Writing")
   const pElement = document.getElementById("Product")
 
-  const profileHeight = 500
+  const profileHeight = 800
   const eHeight = eElement ? profileHeight + eElement.clientHeight : 0
   const dHeight = dElement ? eHeight + dElement.clientHeight : 0
   const wHeight = wElement ? dHeight + wElement.clientHeight : 0
