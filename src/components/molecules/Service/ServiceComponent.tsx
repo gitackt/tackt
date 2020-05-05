@@ -13,21 +13,28 @@ const ServiceComponent: React.FC<Props> = (props) => {
   return (
     <div className={cardClass}>
       <div className="columns">
-        <div className="column is-two-thirds">
+        <div className="column serviceImageContainer">
+          <img
+            className="serviceImage"
+            src={props.service.imageUrl}
+            alt={props.service.imageUrl}
+          />
+        </div>
+        <div className="column is-three-quarters">
           <div className="serviceTitle">{props.service.title}</div>
           <div className="serviceDiscription">{props.service.discription}</div>
-        </div>
-        <div className="column">
-          {props.service.url !== "#" && (
-            <a
-              className="serviceUrl"
-              href={props.service.url}
-              target={"_blank"}
-              rel="noopener noreferrer"
-            >
-              {props.service.url}
-            </a>
-          )}
+          <div className="serviceUrlContainer">
+            {props.service.url !== "#" && (
+              <a
+                className="serviceUrl"
+                href={props.service.url}
+                target={"_blank"}
+                rel="noopener noreferrer"
+              >
+                {props.service.url}
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </div>
