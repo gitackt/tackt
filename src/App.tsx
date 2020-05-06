@@ -27,7 +27,7 @@ const App: React.FC<Props> = () => {
 
   const eElement = document.getElementById("Engineering")
 
-  const profileHeight = 800
+  const profileHeight = 700
   const eHeight = eElement ? profileHeight + eElement.clientHeight : 0
 
   const onScroll = (): void => {
