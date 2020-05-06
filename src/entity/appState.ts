@@ -14,7 +14,7 @@ export const appState = {
             {
               title: "CREZIT (デジタルネイティブ向けモバイルクレジット)",
               discription:
-                "３人目の創業メンバーとして新卒入社しました。利息0%で10万円借りる事ができるサービスを開発しています。",
+                "３人目の創業メンバーとして新卒入社しました。TypescriptとNuxt.js, React.jsを使って、利息0%で10万円借りる事ができるサービスを開発しています。",
               url: "https://crezit.jp/",
               imageUrl: "./images/experiences/crezit.png",
             },
@@ -29,9 +29,24 @@ export const appState = {
             {
               title: "Curon (オンライン診療サービス)",
               discription:
-                "学生時代にインターンをしていました。React-nativeを使ってモバイルアプリケーション開発をしていました。",
+                "学生時代に２年間インターンをしていました。TypescriptとReact-native, Angular.jsを使って、モバイルアプリケーション開発をしていました。",
               url: "https://curon.co/",
               imageUrl: "./images/experiences/curon.png",
+            },
+          ],
+        },
+        {
+          name: "WhatzMoney inc.",
+          pisition: "Software Engineer Internship",
+          term: "2017/4 ~ 2018/3",
+          corpUrl: "https://whatzmoney.com/",
+          works: [
+            {
+              title: "WhatzMoney（ローンシミュレーション）",
+              discription:
+                "１年間プログラマーのアルバイトをしていました。Ruby on Railsを使って、住宅ローンの比較サイトを開発していました。",
+              url: "https://rank.whatzmoney.com/",
+              imageUrl: "./images/experiences/whatzmoney.png",
             },
           ],
         },
