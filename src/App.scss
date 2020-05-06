@@ -8,7 +8,7 @@ $lightYellowGreen: #b0d0a1;
 $lightRedPurple: #ebaeed;
 
 $backgroundPink: #ffadc8;
-$backgroundRedPurple: #4e3457;
+$backgroundRedPurple: #310c32;
 
 .root {
   width: 100%;
@@ -23,12 +23,12 @@ $backgroundRedPurple: #4e3457;
 }
 
 .anim {
-  animation: pinknimation 0.5s ease;
+  animation: pinknimation 0.4s ease;
 }
 
 .redPurple {
   background-color: $backgroundRedPurple;
-  animation: redPurpleAnimation 0.5s ease;
+  animation: redPurpleAnimation 0.4s ease;
 }
 
 @keyframes pinknimation {

@@ -27,7 +27,7 @@ const App: React.FC<Props> = () => {
 
   const eElement = document.getElementById("Engineering")
 
-  const profileHeight = 400
+  const profileHeight = 800
   const eHeight = eElement ? profileHeight + eElement.clientHeight : 0
 
   const onScroll = (): void => {
@@ -42,6 +42,10 @@ const App: React.FC<Props> = () => {
       }
     } else if (position <= eHeight) {
       if (!className.includes("redPurple")) {
+        // window.scrollTo({
+        //   top: 1000,
+        //   behavior: "smooth",
+        // })
         setClassName("root redPurple")
       }
       if (firstScroll) {
