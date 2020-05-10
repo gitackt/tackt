@@ -23,15 +23,20 @@ $backgroundRedPurple: #2f0c29;
 }
 
 .anim {
-  animation: pinknimation 0.4s ease;
+  animation: pinkAnimation 0.2s ease;
+}
+
+.contentAnim {
+  animation: startAnimation 1s ease;
+  opacity: 1;
 }
 
 .redPurple {
   background-color: $backgroundRedPurple;
-  animation: redPurpleAnimation 0.4s ease;
+  animation: redPurpleAnimation 0.2s ease;
 }
 
-@keyframes pinknimation {
+@keyframes pinkAnimation {
   0% {
     background-color: $backgroundRedPurple;
   }
@@ -48,5 +53,17 @@ $backgroundRedPurple: #2f0c29;
 
   100% {
     background-color: $backgroundRedPurple;
+  }
+}
+
+@keyframes startAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

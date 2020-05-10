@@ -7,11 +7,12 @@ import ExperienceComponent from "../../../components/molecules/Experience/Experi
 interface Props {
   id: string
   content: Content
+  contentStyle: string
 }
 
 const ContentComponent: React.FC<Props> = (props) => {
   return (
-    <div className="content" id={props.id}>
+    <div className={props.contentStyle} id={props.id}>
       <div className="contentTitle">{props.content.title}</div>
       <div className="contentBorder" />
       {props.content.services.length !== 0 && (

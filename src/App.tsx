@@ -18,6 +18,7 @@ const scrollTop = (): number => {
 
 const App: React.FC<Props> = () => {
   const [className, setClassName] = React.useState("root")
+  const [contentStyle, setContentStyle] = React.useState("content")
   const [firstScroll, setFirstScroll] = React.useState(true)
 
   React.useEffect(() => {
@@ -27,7 +28,7 @@ const App: React.FC<Props> = () => {
 
   const eElement = document.getElementById("Engineering")
 
-  const profileHeight = 700
+  const profileHeight = 400
   const eHeight = eElement ? profileHeight + eElement.clientHeight : 0
 
   const onScroll = (): void => {
@@ -36,17 +37,16 @@ const App: React.FC<Props> = () => {
       if (!className.includes("pink")) {
         if (!firstScroll) {
           setClassName("root pink anim")
+          setContentStyle("content")
         } else {
           setClassName("root pink")
+          setContentStyle("content")
         }
       }
     } else if (position <= eHeight) {
       if (!className.includes("redPurple")) {
-        // window.scrollTo({
-        //   top: 1000,
-        //   behavior: "smooth",
-        // })
         setClassName("root redPurple")
+        setContentStyle("content contentAnim")
       }
       if (firstScroll) {
         setFirstScroll(false)
@@ -60,6 +60,7 @@ const App: React.FC<Props> = () => {
       {appState.contents.map((content) => {
         return (
           <ContentComponent
+            contentStyle={contentStyle}
             content={content}
             key={content.title}
             id={content.title}

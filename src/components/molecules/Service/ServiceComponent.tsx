@@ -10,7 +10,7 @@ const ServiceComponent: React.FC<Props> = (props) => {
   return (
     <div className="serviceContainer">
       <div className="columns columnContainer">
-        <div className="column is-two-fifths">
+        <div className="column is-one-third imageServiceContainer">
           <img
             className="serviceImage"
             src={props.service.imageUrl}

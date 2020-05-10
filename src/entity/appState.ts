@@ -29,7 +29,7 @@ export const appState = {
             {
               title: "Curon (オンライン診療サービス)",
               discription:
-                "学生時代に２年間インターンをしていました。TypescriptとReact-native, Angular.jsを使って、モバイルアプリケーション開発をしていました。",
+                "２年間インターンをしていました。TypescriptとReact-native, Angular.jsを使って、モバイルアプリケーション開発をしていました。",
               url: "https://curon.co/",
               imageUrl: "./images/experiences/curon.png",
             },
@@ -115,7 +115,7 @@ export const appState = {
         {
           title: "Props Android",
           discription:
-            "（開発中）\n 持ち物管理ができるAndroidアプリです。自分の持ち物をアプリでまとめて管理できます。",
+            "（サービス終了）\n 持ち物管理ができるAndroidアプリです。自分の持ち物をアプリでまとめて管理できます。",
           url:
             "https://play.google.com/store/apps/details?id=com.gitackt.props",
           imageUrl: "./images/services/props_info.png",
@@ -134,7 +134,7 @@ export const appState = {
           discription:
             "（サービス終了）\n 無料で遊べる投資シミュレーションゲームです。架空のアイテムをゲーム内通貨で売買して遊びます。フロントエンドはReact.js、バックエンドはPython(Django)を使って作りました。",
           url: "#",
-          imageUrl: "./images/services/babel_info.png",
+          imageUrl: "./images/services/babel.png",
           term: "2018/7 ~ 2019/7",
         },
         {
@@ -142,8 +142,16 @@ export const appState = {
           discription:
             "（サービス終了）\n 仮想通貨のポートフォリオ管理サービスです。複数の取引所とAPI連携を行い自動でデータを取得します。Python(Django)を使って作りました。",
           url: "#",
-          imageUrl: "./images/services/vcu_info.png",
+          imageUrl: "./images/services/vcu.png",
           term: "2017/12 ~ 2019/6",
+        },
+        {
+          title: "ヒモフレ",
+          discription:
+            "（ボツ）\n ヒモのためのマッチングアプリです。デザインだけ作りました。",
+          url: "#",
+          imageUrl: "./images/services/himohure.png",
+          term: "2019/6 ~ 2019/6",
         },
       ],
       experiences: [],
