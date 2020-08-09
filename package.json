@@ -43,6 +43,7 @@
     "deploy": "rm -rf build/* && yarn build && firebase deploy",
     "build": "react-scripts build",
     "postbuild": "react-snap",
+    "type-check": "tsc --pretty --noEmit",
     "format": "prettier --write \"src/**/*.{js,ts,tsx}\"",
     "lint": "eslint src --ext ts --ext tsx --ext js"
   },
