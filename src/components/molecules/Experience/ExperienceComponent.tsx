@@ -9,9 +9,9 @@ interface Props {
 const ExperienceComponent: React.FC<Props> = props => {
   return (
     <div className="experienceContainer">
-      <div className="columns">
-        <div className="column experienceName">{props.experience.name}</div>
-        <div className="column experiencePosition">
+      <div>
+        <div className="experienceName">{props.experience.name}</div>
+        <div className="experiencePosition">
           {props.experience.pisition}
           <br />
           {props.experience.term}
@@ -20,11 +20,11 @@ const ExperienceComponent: React.FC<Props> = props => {
       {props.experience.works.map(work => {
         return (
           <div key={work.title}>
-            <div className="columns columnContainer">
-              <div className="column">
+            <div className="columnContainer">
+              <div>
                 <img className="experienceImage" src={work.imageUrl} alt={work.imageUrl} />
               </div>
-              <div className="column">
+              <div>
                 <div className="experienceTitle">{work.title}</div>
                 <div className="experienceDiscription">{work.discription}</div>
                 <div>

@@ -9,11 +9,11 @@
   text-align: left;
   width: 90%;
   max-width: 900px;
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .serviceTitle {
   font-size: 21px;
+  padding-top: 15px;
   padding-bottom: 25px;
 }
 
@@ -30,6 +30,8 @@
 
 .columnContainer {
   text-align: left;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .imageServiceContainer {
@@ -37,7 +39,7 @@
 }
 
 .serviceImage {
-  width: 230px;
+  width: 100%;
   height: 230px;
   border-radius: 10px;
   object-fit: cover;

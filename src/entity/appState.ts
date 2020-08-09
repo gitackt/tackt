@@ -1,7 +1,13 @@
-export const appState = {
+import { Content } from '../interfaces/Content'
+
+type State = {
+  contents: Content[]
+}
+
+export const appState: State = {
   contents: [
     {
-      title: 'Engineering',
+      title: 'Experiences',
       skills: [],
       services: [],
       experiences: [
@@ -14,7 +20,7 @@ export const appState = {
             {
               title: 'CREZIT (デジタルネイティブ向けモバイルクレジット)',
               discription:
-                '３人目の創業メンバーとして新卒入社しました。TypescriptとNuxt.js, React.jsを使って、利息0%で10万円借りる事ができるサービスを開発しています。',
+                '３人目の創業メンバーとして新卒入社しました。Typescript, React.js, Golangで利息0%で10万円借りる事ができるサービスを開発しています。',
               url: 'https://crezit.jp/',
               imageUrl: './images/experiences/crezit.png',
             },
@@ -54,10 +60,25 @@ export const appState = {
       writings: [],
     },
     {
-      title: 'Design',
+      title: 'Projects',
       skills: [],
       services: [],
       experiences: [
+        // {
+        //   name: '留学アシスタント',
+        //   pisition: 'Frontend Engineer',
+        //   term: '2020/7 ~',
+        //   corpUrl: 'https://studyabroadces.com/',
+        //   works: [
+        //     {
+        //       title: '留学チェッカー（留学情報サイト）',
+        //       discription:
+        //         'フロントエンドのリファクタリング・Typescriptへの移行を行い、その後の開発も行っています。',
+        //       url: '#',
+        //       imageUrl: './images/experiences/az.png',
+        //     },
+        //   ],
+        // },
         {
           name: 'AZ',
           pisition: 'Graphic Designer',
@@ -76,24 +97,16 @@ export const appState = {
       writings: [],
     },
     {
-      title: 'Writing',
+      title: 'Products',
       skills: [],
       services: [
         {
-          title: '人生は運ゲー',
+          title: 'トップハムゴッサム',
           discription: '個人ブログです。お金をかけないで生きるサバイバル術を書いています。',
           url: 'https://monetizealchemist.com/',
           imageUrl: './images/services/monetizealchemist_info.png',
           term: '2017/12 ~',
         },
-      ],
-      experiences: [],
-      writings: [],
-    },
-    {
-      title: 'Product',
-      skills: [],
-      services: [
         {
           title: 'potato sand',
           discription:
@@ -169,11 +182,6 @@ export const snsState = [
     linkUrl: 'https://github.com/gitackt',
   },
   {
-    name: 'leetcode',
-    imgUrl: './images/sns/leetcode.svg',
-    linkUrl: 'https://leetcode.com/gitackt',
-  },
-  {
     name: 'instagram',
     imgUrl: './images/sns/instagram.svg',
     linkUrl: 'https://www.instagram.com/picos_tackt',
@@ -185,7 +193,156 @@ export const snsState = [
   },
   {
     name: 'weibo',
-    imgUrl: './images/sns/weibo.svg',
+    imgUrl: './images/sns/sinaweibo.svg',
     linkUrl: 'https://weibo.com/u/738186502',
+  },
+  {
+    name: 'leetcode',
+    imgUrl: './images/sns/leetcode.svg',
+    linkUrl: 'https://leetcode.com/gitackt',
+  },
+]
+
+export const skills = [
+  {
+    name: 'Typescript',
+    imgUrl: './images/techs/typescript.svg',
+    linkUrl: 'https://www.typescriptlang.org/',
+  },
+  {
+    name: 'React',
+    imgUrl: './images/techs/react.svg',
+    linkUrl: 'https://ja.reactjs.org/',
+  },
+  {
+    name: 'Node.js',
+    imgUrl: './images/techs/node-dot-js.svg',
+    linkUrl: 'https://nodejs.org/ja/',
+  },
+  {
+    name: 'Next.js',
+    imgUrl: './images/techs/next-dot-js.svg',
+    linkUrl: 'https://nextjs.org/',
+  },
+  {
+    name: 'Ant Design',
+    imgUrl: './images/techs/ant.svg',
+    linkUrl: 'https://ant.design/',
+  },
+  {
+    name: 'Eslint',
+    imgUrl: './images/techs/eslint.svg',
+    linkUrl: 'https://eslint.org/',
+  },
+  {
+    name: 'Jest',
+    imgUrl: './images/techs/jest.svg',
+    linkUrl: 'https://jestjs.io/ja/',
+  },
+  {
+    name: 'Prettier',
+    imgUrl: './images/techs/prettier.svg',
+    linkUrl: 'https://prettier.io/',
+  },
+  {
+    name: 'Nodemon',
+    imgUrl: './images/techs/nodemon.svg',
+    linkUrl: 'https://nodemon.io/',
+  },
+  {
+    name: 'Sentry',
+    imgUrl: './images/techs/sentry.svg',
+    linkUrl: 'https://sentry.io/welcome/',
+  },
+  {
+    name: 'Docker',
+    imgUrl: './images/techs/docker.svg',
+    linkUrl: 'https://www.docker.com/',
+  },
+  {
+    name: 'GCP',
+    imgUrl: './images/techs/googlecloud.svg',
+    linkUrl: 'https://console.cloud.google.com/?hl=ja',
+  },
+  {
+    name: 'MySQL',
+    imgUrl: './images/techs/mysql.svg',
+    linkUrl: 'https://www.mysql.com/jp/',
+  },
+  {
+    name: 'Python',
+    imgUrl: './images/techs/python.svg',
+    linkUrl: 'https://www.python.org/',
+  },
+  {
+    name: 'Goole',
+    imgUrl: './images/techs/google.svg',
+    linkUrl: 'https://www.google.com/?hl=ja',
+  },
+  {
+    name: 'Apple',
+    imgUrl: './images/techs/apple.svg',
+    linkUrl: 'https://www.apple.com/jp/',
+  },
+  {
+    name: 'HUAWEI',
+    imgUrl: './images/techs/huawei.svg',
+    linkUrl: 'https://consumer.huawei.com/jp/',
+  },
+  {
+    name: 'Firebase',
+    imgUrl: './images/techs/firebase.svg',
+    linkUrl: 'https://firebase.google.com/?hl=ja',
+  },
+  {
+    name: 'Github',
+    imgUrl: './images/techs/github.svg',
+    linkUrl: 'https://github.co.jp/',
+  },
+  {
+    name: 'Figma',
+    imgUrl: './images/techs/figma.svg',
+    linkUrl: 'https://www.figma.com/',
+  },
+  {
+    name: 'Notion',
+    imgUrl: './images/techs/notion.svg',
+    linkUrl: 'https://www.notion.so/',
+  },
+  {
+    name: 'Slack',
+    imgUrl: './images/techs/slack.svg',
+    linkUrl: 'https://slack.com/intl/ja-jp/',
+  },
+  {
+    name: 'VS Code',
+    imgUrl: './images/techs/visualstudiocode.svg',
+    linkUrl: 'https://azure.microsoft.com/ja-jp/products/visual-studio-code/',
+  },
+  {
+    name: 'Auth 0',
+    imgUrl: './images/techs/auth0.svg',
+    linkUrl: 'https://auth0.com/jp/',
+  },
+  {
+    name: 'Nginx',
+    imgUrl: './images/techs/nginx.svg',
+    linkUrl: 'https://nginx.org/en/',
+  },
+  {
+    name: 'Flutter',
+    imgUrl: './images/techs/flutter.svg',
+    linkUrl: 'https://flutter.dev/',
+  },
+]
+
+export const links = [
+  {
+    name: 'wantedly',
+    linkUrl: 'https://www.wantedly.com/users/19180819',
+  },
+  {
+    name: 'forkwell',
+    linkUrl: 'https://portfolio.forkwell.com/@gitackt',
   },
 ]

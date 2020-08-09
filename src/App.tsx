@@ -5,6 +5,7 @@ import { appState } from './entity/appState'
 
 import JumbotronComponent from './components/organism/Jumbotron/JumbotronComponent'
 import ContentComponent from './components/organism/Content/ContentComponent'
+import SkillComponent from './components/organism/Skill/SkillComponent'
 
 const scrollTop = (): number => {
   return Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop)
@@ -20,7 +21,7 @@ const App: React.FC = () => {
     return (): void => document.removeEventListener('scroll', onScroll)
   })
 
-  const eElement = document.getElementById('Engineering')
+  const eElement = document.getElementById('Experiences')
 
   const profileHeight = 400
   const eHeight = eElement ? profileHeight + eElement.clientHeight : 0
@@ -61,6 +62,7 @@ const App: React.FC = () => {
           />
         )
       })}
+      <SkillComponent />
     </div>
   )
 }
