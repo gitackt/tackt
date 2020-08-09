@@ -1,10 +1,10 @@
-@import "../../../App.scss";
+@import '../../../App.scss';
 
 .jumbotron {
   text-align: center;
   width: 100%;
   display: table;
-  font-family: "Fredoka One", cursive;
+  font-family: 'Fredoka One', cursive;
   animation: fadeInAnimation 1s ease;
 }
 
@@ -17,7 +17,7 @@
 .profileImage {
   width: 350px;
   height: auto;
-  animation: imageAnimation 0.8s ease 0.9s infinite alternate;
+  animation: imageAnimation 0.8s ease 0.9s alternate;
 }
 
 .profileTitle {
@@ -53,6 +53,11 @@
   width: 40px;
   height: 40px;
   margin: 10px;
+}
+
+.sns path {
+  color: #fff;
+  fill: red;
 }
 
 @keyframes fadeInAnimation {

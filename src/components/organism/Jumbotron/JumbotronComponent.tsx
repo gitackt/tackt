@@ -1,7 +1,7 @@
-import React from "react"
-import "./Jumbotron.scss"
+import React from 'react'
+import './Jumbotron.scss'
 
-interface Props {}
+import { snsState } from '../../../entity/appState'
 
 const styles = {
   contentHeight: {
@@ -9,55 +9,20 @@ const styles = {
   },
 }
 
-const JumbotronComponent: React.FC<Props> = () => {
+const JumbotronComponent: React.FC = () => {
   return (
     <div className="jumbotron" style={styles.contentHeight}>
       <div className="jumbotronInnerContainer">
-        <img
-          className="profileImage"
-          src="./images/profile.png"
-          alt="profile"
-        />
+        <img className="profileImage" src="./images/profile.png" alt="profile" />
         <div className="profileTitle">Takuto Mitsuhashi</div>
         <div className="profileSubTitle">Portfolio Website.</div>
         <div className="profileBorder" />
         <div className="snsContainer">
-          <a
-            href="https://www.facebook.com/gitackt"
-            target={"_blank"}
-            rel="noopener noreferrer"
-          >
-            <img
-              className="sns"
-              src="./images/sns/facebook.png"
-              alt="facebook"
-            />
-          </a>
-          <a
-            href="https://github.com/gitackt"
-            target={"_blank"}
-            rel="noopener noreferrer"
-          >
-            <img className="sns" src="./images/sns/github.png" alt="github" />
-          </a>
-          <a
-            href="https://www.instagram.com/picos_tackt/"
-            target={"_blank"}
-            rel="noopener noreferrer"
-          >
-            <img
-              className="sns"
-              src="./images/sns/instagram.png"
-              alt="instagram"
-            />
-          </a>
-          <a
-            href="https://twitter.com/picos_tackt?lang=ja"
-            target={"_blank"}
-            rel="noopener noreferrer"
-          >
-            <img className="sns" src="./images/sns/twitter.png" alt="twitter" />
-          </a>
+          {snsState.map(sns => (
+            <a key={sns.name} href={sns.linkUrl} target={'_blank'} rel="noopener noreferrer">
+              <img className="sns" src={sns.imgUrl} alt={sns.name} />
+            </a>
+          ))}
         </div>
       </div>
     </div>

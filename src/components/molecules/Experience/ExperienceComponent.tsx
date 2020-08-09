@@ -1,12 +1,12 @@
-import React from "react"
-import "./Experience.scss"
-import { Experience } from "../../../interfaces/Experience"
+import React from 'react'
+import './Experience.scss'
+import { Experience } from '../../../interfaces/Experience'
 
 interface Props {
   experience: Experience
 }
 
-const ExperienceComponent: React.FC<Props> = (props) => {
+const ExperienceComponent: React.FC<Props> = props => {
   return (
     <div className="experienceContainer">
       <div className="columns">
@@ -17,27 +17,19 @@ const ExperienceComponent: React.FC<Props> = (props) => {
           {props.experience.term}
         </div>
       </div>
-      {props.experience.works.map((work) => {
+      {props.experience.works.map(work => {
         return (
-          <div>
+          <div key={work.title}>
             <div className="columns columnContainer">
               <div className="column">
-                <img
-                  className="experienceImage"
-                  src={work.imageUrl}
-                  alt={work.imageUrl}
-                />
+                <img className="experienceImage" src={work.imageUrl} alt={work.imageUrl} />
               </div>
               <div className="column">
                 <div className="experienceTitle">{work.title}</div>
                 <div className="experienceDiscription">{work.discription}</div>
                 <div>
-                  {work.url !== "#" && (
-                    <a
-                      href={work.url}
-                      target={"_blank"}
-                      rel="noopener noreferrer"
-                    >
+                  {work.url !== '#' && (
+                    <a href={work.url} target={'_blank'} rel="noopener noreferrer">
                       <div className="experienceUrl">サービスを見る</div>
                     </a>
                   )}

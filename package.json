@@ -16,14 +16,34 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.1",
     "react-snap": "^1.23.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-react": "^7.19.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.10",
+    "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn run type-check"
+    }
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": [
+      "yarn lint",
+      "yarn format"
+    ]
   },
   "scripts": {
     "start": "react-scripts start",
     "routine": "sh routine.sh",
     "deploy": "rm -rf build/* && yarn build && firebase deploy",
     "build": "react-scripts build",
-    "postbuild": "react-snap"
+    "postbuild": "react-snap",
+    "format": "prettier --write \"src/**/*.{js,ts,tsx}\"",
+    "lint": "eslint src --ext ts --ext tsx --ext js"
   },
   "browserslist": [
     ">0.2%",

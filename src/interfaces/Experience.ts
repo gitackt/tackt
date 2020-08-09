@@ -1,4 +1,4 @@
-import { Work } from "./Work"
+import { Work } from './Work'
 
 export interface Experience {
   name: string

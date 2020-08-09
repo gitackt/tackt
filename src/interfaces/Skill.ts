@@ -1,7 +1,7 @@
 enum Grade {
-  VeryGood = "VeryGood",
-  Good = "Good",
-  Normal = "Normal",
+  VeryGood = 'VeryGood',
+  Good = 'Good',
+  Normal = 'Normal',
 }
 
 export interface Skill {
