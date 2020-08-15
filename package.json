@@ -40,7 +40,7 @@
   "scripts": {
     "start": "react-scripts start",
     "routine": "sh routine.sh",
-    "deploy": "rm -rf build/* && yarn build && firebase deploy",
+    "deploy": "./deploy.sh",
     "build": "react-scripts build",
     "postbuild": "react-snap",
     "type-check": "tsc --pretty --noEmit",

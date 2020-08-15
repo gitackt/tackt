@@ -64,21 +64,21 @@ export const appState: State = {
       skills: [],
       services: [],
       experiences: [
-        // {
-        //   name: '留学アシスタント',
-        //   pisition: 'Frontend Engineer',
-        //   term: '2020/7 ~',
-        //   corpUrl: 'https://studyabroadces.com/',
-        //   works: [
-        //     {
-        //       title: '留学チェッカー（留学情報サイト）',
-        //       discription:
-        //         'フロントエンドのリファクタリング・Typescriptへの移行を行い、その後の開発も行っています。',
-        //       url: '#',
-        //       imageUrl: './images/experiences/az.png',
-        //     },
-        //   ],
-        // },
+        {
+          name: '留学アシスタント',
+          pisition: 'Frontend Engineer',
+          term: '2020/7 ~',
+          corpUrl: 'https://studyabroadces.com/',
+          works: [
+            {
+              title: '留学アシスタント（留学情報サイト）',
+              discription:
+                'フロントエンドのリファクタリング・Typescriptへの移行・リリースまでの機能開発を行いました。',
+              url: 'https://www.studyabroadassistant.com/',
+              imageUrl: './images/experiences/study.png',
+            },
+          ],
+        },
         {
           name: 'AZ',
           pisition: 'Graphic Designer',
@@ -118,9 +118,8 @@ export const appState: State = {
         {
           title: 'Props iOS',
           discription:
-            '持ち物管理ができるiOSアプリです。自分の持ち物をアプリでまとめて管理できます。',
-          url:
-            'https://apps.apple.com/us/app/props-%E6%8C%81%E3%81%A1%E7%89%A9%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA/id1460285997?l=ja&ls=1',
+            '（サービス終了）\n 持ち物管理ができるiOSアプリです。自分の持ち物をアプリでまとめて管理できます。',
+          url: '#',
           imageUrl: './images/services/props_info.png',
           term: '2018/8 ~',
         },
@@ -128,7 +127,7 @@ export const appState: State = {
           title: 'Props Android',
           discription:
             '（サービス終了）\n 持ち物管理ができるAndroidアプリです。自分の持ち物をアプリでまとめて管理できます。',
-          url: 'https://play.google.com/store/apps/details?id=com.gitackt.props',
+          url: '#',
           imageUrl: './images/services/props_info.png',
           term: '2018/8 ~',
         },
@@ -225,7 +224,7 @@ export const skills = [
     linkUrl: 'https://nextjs.org/',
   },
   {
-    name: 'Ant Design',
+    name: 'Ant D',
     imgUrl: './images/techs/ant.svg',
     linkUrl: 'https://ant.design/',
   },
@@ -275,7 +274,7 @@ export const skills = [
     linkUrl: 'https://www.python.org/',
   },
   {
-    name: 'Goole',
+    name: 'Google',
     imgUrl: './images/techs/google.svg',
     linkUrl: 'https://www.google.com/?hl=ja',
   },

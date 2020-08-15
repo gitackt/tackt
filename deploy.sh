@@ -1,3 +1,4 @@
+rm -rf build/*
 yarn build
 cd build 
 git init

@@ -11,10 +11,10 @@ const SkillComponent: React.FC = () => {
       <Container className="skillContainer">
         <Row>
           {skills.map(skill => (
-            <Col key={skill.name} xs={4} sm={2}>
-              <img className="skillImage" src={skill.imgUrl} alt={skill.imgUrl} />
+            <Col key={skill.name} xs={3} sm={1} className="col">
               <a href={skill.linkUrl} target={'_blank'} rel="noopener noreferrer">
-                <div className="skillName">{skill.name}</div>
+                <img className="skillImage" src={skill.imgUrl} alt={skill.imgUrl} />
+                {/* <div className="skillName">{skill.name}</div> */}
               </a>
             </Col>
           ))}

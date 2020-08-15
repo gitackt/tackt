@@ -23,7 +23,7 @@ const App: React.FC = () => {
 
   const eElement = document.getElementById('Experiences')
 
-  const profileHeight = 450
+  const profileHeight = 600
   const eHeight = eElement ? profileHeight + eElement.clientHeight : 0
 
   const onScroll = (): void => {
