@@ -40,7 +40,7 @@
   "scripts": {
     "start": "react-scripts start",
     "routine": "sh routine.sh",
-    "deploy": "./deploy.sh",
+    "deploy": "sh deploy.sh",
     "build": "react-scripts build",
     "postbuild": "react-snap",
     "type-check": "tsc --pretty --noEmit",
