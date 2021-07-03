@@ -1,69 +1,66 @@
 import React from 'react'
-import 'bulma/css/bulma.css'
-import './App.scss'
-import { appState } from './entity/appState'
+import { Box } from '@chakra-ui/react'
 
-import JumbotronComponent from './components/organism/Jumbotron/JumbotronComponent'
-import ContentComponent from './components/organism/Content/ContentComponent'
-import SkillComponent from './components/organism/Skill/SkillComponent'
+import { JumbotronComponent } from './components/JumbotronComponent'
+import * as styles from './styles'
 
-const scrollTop = (): number => {
-  return Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop)
+type Experience = {
+  title: string
+  date: Date
+}
+
+type Certification = {
+  title: string
+  date: Date
+}
+
+type Article = {
+  title: string
+  date: Date
+}
+
+const experiences: Array<Experience> = []
+const certifications: Array<Certification> = []
+const articles: Array<Article> = []
+
+const ExperienceComponent = ({ experiences }: { experiences: Array<Experience> }) => {
+  return (
+    <div>
+      {experiences.map(experience => (
+        <div key={experience.title}>{experience.title}</div>
+      ))}
+    </div>
+  )
+}
+
+const CertificationComponent = ({ certifications }: { certifications: Array<Certification> }) => {
+  return (
+    <div>
+      {certifications.map(certification => (
+        <div key={certification.title}>{certification.title}</div>
+      ))}
+    </div>
+  )
+}
+
+const ArticlesComponent = ({ articles }: { articles: Array<Article> }) => {
+  return (
+    <div>
+      {articles.map(article => (
+        <div key={article.title}>{article.title}</div>
+      ))}
+    </div>
+  )
 }
 
 const App: React.FC = () => {
-  const [className, setClassName] = React.useState('root')
-  const [contentStyle, setContentStyle] = React.useState('content')
-  const [firstScroll, setFirstScroll] = React.useState(true)
-
-  React.useEffect(() => {
-    document.addEventListener('scroll', onScroll)
-    return (): void => document.removeEventListener('scroll', onScroll)
-  })
-
-  const eElement = document.getElementById('Experiences')
-
-  const profileHeight = 600
-  const eHeight = eElement ? profileHeight + eElement.clientHeight : 0
-
-  const onScroll = (): void => {
-    const position = scrollTop()
-    if (position <= profileHeight) {
-      if (!className.includes('pink')) {
-        if (!firstScroll) {
-          setClassName('root pink anim')
-          setContentStyle('content')
-        } else {
-          setClassName('root pink')
-          setContentStyle('content')
-        }
-      }
-    } else if (position <= eHeight) {
-      if (!className.includes('redPurple')) {
-        setClassName('root redPurple')
-        setContentStyle('content contentAnim')
-      }
-      if (firstScroll) {
-        setFirstScroll(false)
-      }
-    }
-  }
-
   return (
-    <div className={className}>
+    <Box background={styles.background} padding={styles.md}>
       <JumbotronComponent />
-      {appState.contents.map(content => {
-        return (
-          <ContentComponent
-            contentStyle={contentStyle}
-            content={content}
-            key={content.title}
-            id={content.title}
-          />
-        )
-      })}
-      <SkillComponent />
-    </div>
+      <ExperienceComponent experiences={experiences} />
+      <CertificationComponent certifications={certifications} />
+      <ArticlesComponent articles={articles} />
+    </Box>
   )
 }
 
