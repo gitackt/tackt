@@ -7,18 +7,18 @@ import { List } from './components/List'
 import * as styles from './styles'
 
 const experiences: Array<List> = [
-  { title: 'Crezit holdings株式会社', link: 'https://corp.crezit.jp', date: '2020/10~' },
+  { title: 'Crezit holdings株式会社', link: 'https://corp.crezit.jp', date: '2019/10 ~ now' },
   { title: '株式会社MICIN', link: 'https://micin.jp/', date: '2018/03~2020/02' },
-  { title: 'WhatzMoney株式会社', link: 'https://whatzmoney.co.jp/', date: '2017/04~2018/03' },
-  { title: '明治大学', link: 'https://www.meiji.ac.jp/', date: '2016/04~2020/03' },
+  { title: 'WhatzMoney株式会社', link: 'https://whatzmoney.co.jp/', date: '2017/04 ~ 2018/03' },
+  { title: '明治大学', link: 'https://www.meiji.ac.jp/', date: '2016/04 ~ 2020/03' },
 ]
 
 const certifications: Array<List> = [
   {
     title: '日本証券アナリスト協会検定会員補（CCMA）',
-    date: '2020/08',
+    date: '2019/08',
   },
-  { title: '基本情報技術者試験　合格', date: '2020/08' },
+  { title: '基本情報技術者試験　合格', date: '2019/08' },
 ]
 
 const articles: Array<List> = [
