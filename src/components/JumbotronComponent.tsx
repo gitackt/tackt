@@ -5,10 +5,10 @@ export const JumbotronComponent: React.FC = () => {
   return (
     <Center>
       <Box marginY="240px">
-        <Text fontSize="24px" fontFamily="Comfortaa" textAlign="center">
+        <Text fontSize="24px" textAlign="center">
           TAKUTO MITSUHASHI
         </Text>
-        <Text fontSize="18px" fontFamily="Comfortaa" textAlign="center">
+        <Text fontSize="18px" textAlign="center">
           PORTFOLIO WEBSITE
         </Text>
       </Box>
