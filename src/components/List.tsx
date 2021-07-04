@@ -4,9 +4,10 @@ import { Box, Text, Flex, Spacer, Link } from '@chakra-ui/react'
 import * as styles from '../styles'
 
 export type List = {
-  title: string
-  link?: string
-  date?: string
+  left: string
+  right?: string
+  leftLink?: string
+  rightLink?: string
 }
 
 export type Props = {
@@ -16,30 +17,36 @@ export type Props = {
 
 export const List: React.FC<Props> = ({ title, lists }: Props) => {
   return (
-    <Box paddingY={styles.x3l}>
-      <Box padding={styles.x3l}>
-        <Text fontFamily="Comfortaa" fontSize="24px" textAlign="center">
+    <Box paddingY={styles.x2l}>
+      <Box padding={styles.x2l}>
+        <Text fontFamily="Comfortaa" fontSize="32px" textAlign="center">
           {title}
         </Text>
       </Box>
       {lists.map(list => (
         <Flex
           align="center"
-          key={list.title}
-          paddingY={styles.xl}
+          key={list.left}
+          paddingY={styles.md}
           borderBottom={`1px solid ${styles.gray}`}
         >
-          {list.link ? (
-            <Link href={list.link} color={styles.primary} isExternal>
-              {list.title}
+          {list.leftLink ? (
+            <Link href={list.leftLink} color={styles.primary} isExternal>
+              {list.left}
             </Link>
           ) : (
-            <Text>{list.title}</Text>
+            <Text>{list.left}</Text>
           )}
-          {list.date && (
+          {list.right && (
             <Fragment>
               <Spacer />
-              <Text>{list.date}</Text>
+              {list.rightLink ? (
+                <Link href={list.rightLink} color={styles.primary} isExternal>
+                  {list.right}
+                </Link>
+              ) : (
+                <Text>{list.right}</Text>
+              )}
             </Fragment>
           )}
         </Flex>
